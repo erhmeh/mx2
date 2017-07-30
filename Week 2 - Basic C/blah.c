@@ -1,5 +1,5 @@
 #include <stdio.h>
 
 int main(){
-  printf("%d\n",42);
+  printf("The meaning of life is: %d\n",42);
 }
