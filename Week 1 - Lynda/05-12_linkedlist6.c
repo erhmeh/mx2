@@ -74,4 +74,3 @@ struct stats *create(void)
 	}
 	return(baby);
 }
-
