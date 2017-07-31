@@ -7,7 +7,7 @@ int main()
 
 	pokey = 987;
 	p = &pokey;
-	
+
 	printf("The address of `pokey` is %p\n",&pokey);
 	printf("The contents of `pokey` are %d\n",pokey);
 
@@ -16,4 +16,3 @@ int main()
 
 	return(0);
 }
-

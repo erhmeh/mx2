@@ -1,0 +1,7 @@
+/home/solo/Desktop/mx2/Week 2 - Basic C/sample3.c: In function ‘main’:
+/home/solo/Desktop/mx2/Week 2 - Basic C/sample3.c:9:16: warning: implicit declaration of function ‘myFunction’ [-Wimplicit-function-declaration]
+   printf("%d", myFunction(n));
+                ^
+/tmp/ccfjZELS.o: In function `myFunction':
+sample3.c:(.text+0x128): undefined reference to `pow'
+collect2: error: ld returned 1 exit status
