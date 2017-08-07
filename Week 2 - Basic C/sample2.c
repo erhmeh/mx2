@@ -1,19 +1,26 @@
 #include <stdio.h>
+int PrintData(int number)
 
-int main(){
-  printf("Enter a sentence: ");
-  myFunction();
+{
 
-  return 0;
+    printf("%d", number);
+
+    return number + 1;
+
 }
 
-void myFunction(){
-  char c;
-  scanf("%c",&c);
+int main()
 
-  if(c !='\n')
-  {
-    myFunction();
-    printf("%c",c);
-  }
+{
+
+    for(int x = 0; x<3; x++)
+
+    {
+
+        PrintData(x);
+
+    }
+
+    return(0);
+
 }
