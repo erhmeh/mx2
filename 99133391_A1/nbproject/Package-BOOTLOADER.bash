@@ -10,9 +10,9 @@ CND_CONF=BOOTLOADER
 CND_DISTDIR=dist
 TMPDIR=build/${CND_CONF}/${IMAGE_TYPE}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/MX2_A1_Skeleton.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-OUTPUT_BASENAME=MX2_A1_Skeleton.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-PACKAGE_TOP_DIR=mx2a1skeleton/
+OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/99133391_A1.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+OUTPUT_BASENAME=99133391_A1.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+PACKAGE_TOP_DIR=99133391a1/
 
 # Functions
 function checkReturnCode
@@ -57,15 +57,15 @@ mkdir -p ${TMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory ${TMPDIR}/mx2a1skeleton/bin
+makeDirectory ${TMPDIR}/99133391a1/bin
 copyFileToTmpDir "${OUTPUT_PATH}" "${TMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}" 0755
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/package/mx2a1skeleton.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/package/99133391a1.tar
 cd ${TMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/mx2a1skeleton.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/99133391a1.tar *
 checkReturnCode
 
 # Cleanup

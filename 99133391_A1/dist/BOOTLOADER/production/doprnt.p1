@@ -1,10 +1,10 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"10 C:\Program Files (x86)\Microchip\xc8\v1.38\include\stdarg.h
+"10 C:\Program Files (x86)\Microchip\xc8\v1.42\include\stdarg.h
 [v ___va_start `(*v ~T0 @X0 0 ef ]
 [p i ___va_start ]
-"16 C:\Program Files (x86)\Microchip\xc8\v1.38\include\conio.h
+"16 C:\Program Files (x86)\Microchip\xc8\v1.42\include\conio.h
 [v _putch `(v ~T0 @X0 0 ef1`uc ]
-"13 C:\Program Files (x86)\Microchip\xc8\v1.38\include\stdarg.h
+"13 C:\Program Files (x86)\Microchip\xc8\v1.42\include\stdarg.h
 [v ___va_arg `(*v ~T0 @X0 0 ev`*v ]
 [p i ___va_arg ]
 [; ;__size_t.h: 4: typedef unsigned size_t;
@@ -104,29 +104,29 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;string.h: 14: extern void * memcpy(void *, const void *, size_t);
 [; ;string.h: 15: extern void * memmove(void *, const void *, size_t);
 [; ;string.h: 16: extern void * memset(void *, int, size_t);
-[; ;string.h: 34: extern char * strcat(char *, const char *);
-[; ;string.h: 35: extern char * strcpy(char *, const char *);
-[; ;string.h: 36: extern char * strncat(char *, const char *, size_t);
-[; ;string.h: 37: extern char * strncpy(char *, const char *, size_t);
-[; ;string.h: 38: extern char * strdup(const char *);
-[; ;string.h: 39: extern char * strtok(char *, const char *);
-[; ;string.h: 42: extern int memcmp(const void *, const void *, size_t);
-[; ;string.h: 43: extern int strcmp(const char *, const char *);
-[; ;string.h: 44: extern int stricmp(const char *, const char *);
-[; ;string.h: 45: extern int strncmp(const char *, const char *, size_t);
-[; ;string.h: 46: extern int strnicmp(const char *, const char *, size_t);
-[; ;string.h: 47: extern void * memchr(const void *, int, size_t);
-[; ;string.h: 48: extern size_t strcspn(const char *, const char *);
-[; ;string.h: 49: extern char * strpbrk(const char *, const char *);
-[; ;string.h: 50: extern size_t strspn(const char *, const char *);
-[; ;string.h: 51: extern char * strstr(const char *, const char *);
-[; ;string.h: 52: extern char * stristr(const char *, const char *);
-[; ;string.h: 53: extern char * strerror(int);
-[; ;string.h: 54: extern size_t strlen(const char *);
-[; ;string.h: 55: extern char * strchr(const char *, int);
-[; ;string.h: 56: extern char * strichr(const char *, int);
-[; ;string.h: 57: extern char * strrchr(const char *, int);
-[; ;string.h: 58: extern char * strrichr(const char *, int);
+[; ;string.h: 36: extern char * strcat(char *, const char *);
+[; ;string.h: 37: extern char * strcpy(char *, const char *);
+[; ;string.h: 38: extern char * strncat(char *, const char *, size_t);
+[; ;string.h: 39: extern char * strncpy(char *, const char *, size_t);
+[; ;string.h: 40: extern char * strdup(const char *);
+[; ;string.h: 41: extern char * strtok(char *, const char *);
+[; ;string.h: 44: extern int memcmp(const void *, const void *, size_t);
+[; ;string.h: 45: extern int strcmp(const char *, const char *);
+[; ;string.h: 46: extern int stricmp(const char *, const char *);
+[; ;string.h: 47: extern int strncmp(const char *, const char *, size_t);
+[; ;string.h: 48: extern int strnicmp(const char *, const char *, size_t);
+[; ;string.h: 49: extern void * memchr(const void *, int, size_t);
+[; ;string.h: 50: extern size_t strcspn(const char *, const char *);
+[; ;string.h: 51: extern char * strpbrk(const char *, const char *);
+[; ;string.h: 52: extern size_t strspn(const char *, const char *);
+[; ;string.h: 53: extern char * strstr(const char *, const char *);
+[; ;string.h: 54: extern char * stristr(const char *, const char *);
+[; ;string.h: 55: extern char * strerror(int);
+[; ;string.h: 56: extern size_t strlen(const char *);
+[; ;string.h: 57: extern char * strchr(const char *, int);
+[; ;string.h: 58: extern char * strichr(const char *, int);
+[; ;string.h: 59: extern char * strrchr(const char *, int);
+[; ;string.h: 60: extern char * strrichr(const char *, int);
 [; ;sys.h: 22: extern int execl(char *, char *, ...);
 [; ;sys.h: 23: extern int execv(char *, char **);
 [; ;sys.h: 24: extern int execve(char *, char **, char **);
@@ -181,7 +181,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;math.h: 53: extern double fmod(double, double);
 [; ;math.h: 54: extern double trunc(double);
 [; ;math.h: 55: extern double round(double);
-"13 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\doprnt.c
+"13 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\doprnt.c
 [p n 350 ]
 "354
 [v _dpowers `Cui ~T0 @X0 -> 0 `x s ]
@@ -299,15 +299,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;doprnt.c: 810: continue;
 "810
 [e $U 8  ]
-[; ;doprnt.c: 817: case 'u':
-"817
-[e :U 20 ]
-[; ;doprnt.c: 818: flag |= 0x40;
-"818
-[e =| _flag -> -> 64 `i `uc ]
-[; ;doprnt.c: 819: break;
-"819
-[e $U 12  ]
 "822
 }
 [; ;doprnt.c: 822: }
@@ -318,13 +309,9 @@ Version 3.2 HI-TECH Software Intermediate Code
  , $ -> -> 100 `ui `c 16
  , $ -> -> 105 `ui `c 17
  , $ -> -> 99 `ui `c 18
- , $ -> -> 117 `ui `c 20
  19 ]
 "822
 [e :U 12 ]
-[; ;doprnt.c: 1251: if((flag & 0x40) == 0x00)
-"1251
-[e $ ! == & -> _flag `i -> 64 `i -> 0 `i 21  ]
 [; ;doprnt.c: 1253: {
 "1253
 {
@@ -333,7 +320,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e = _val -> *U -> ( ___va_arg , (. -> *U -> &U _ap `**i `*v -> 0 `i `*i `ui ]
 [; ;doprnt.c: 1261: if((int)val < 0) {
 "1261
-[e $ ! < -> _val `i -> 0 `i 22  ]
+[e $ ! < -> _val `i -> 0 `i 20  ]
 {
 [; ;doprnt.c: 1262: flag |= 0x03;
 "1262
@@ -343,54 +330,40 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e = _val -U _val ]
 "1264
 }
-[e :U 22 ]
+[e :U 20 ]
 "1266
 }
 [; ;doprnt.c: 1264: }
 [; ;doprnt.c: 1266: }
-[e $U 23  ]
-"1268
-[e :U 21 ]
-[; ;doprnt.c: 1268: else
-[; ;doprnt.c: 1273: {
-"1273
-{
-[; ;doprnt.c: 1286: val = (*(unsigned *)__va_arg((*(unsigned **)ap), (unsigned)0));
-"1286
-[e = _val *U -> ( ___va_arg , (. -> *U -> &U _ap `**ui `*v -> -> 0 `i `ui `*ui ]
-"1287
-}
-[e :U 23 ]
-[; ;doprnt.c: 1287: }
 [; ;doprnt.c: 1305: for(c = 1 ; c != sizeof dpowers/sizeof dpowers[0] ; c++)
 "1305
 {
 [e = _c -> -> 1 `i `c ]
-[e $ != -> -> _c `i `ui / -> # _dpowers `ui -> # *U + &U _dpowers * -> -> -> 0 `i `ui `ux -> -> # *U &U _dpowers `ui `ux `ui 24  ]
-[e $U 25  ]
+[e $ != -> -> _c `i `ui / -> # _dpowers `ui -> # *U + &U _dpowers * -> -> -> 0 `i `ui `ux -> -> # *U &U _dpowers `ui `ux `ui 21  ]
+[e $U 22  ]
 "1306
-[e :U 24 ]
+[e :U 21 ]
 [; ;doprnt.c: 1306: if(val < dpowers[c])
-[e $ ! < _val *U + &U _dpowers * -> -> _c `uc `ux -> -> # *U &U _dpowers `ui `ux 27  ]
+[e $ ! < _val *U + &U _dpowers * -> -> _c `uc `ux -> -> # *U &U _dpowers `ui `ux 24  ]
 [; ;doprnt.c: 1307: break;
 "1307
-[e $U 25  ]
-[e :U 27 ]
+[e $U 22  ]
+[e :U 24 ]
 "1305
 [e ++ _c -> -> 1 `i `c ]
-[e $ != -> -> _c `i `ui / -> # _dpowers `ui -> # *U + &U _dpowers * -> -> -> 0 `i `ui `ux -> -> # *U &U _dpowers `ui `ux `ui 24  ]
-[e :U 25 ]
+[e $ != -> -> _c `i `ui / -> # _dpowers `ui -> # *U + &U _dpowers * -> -> -> 0 `i `ui `ux -> -> # *U &U _dpowers `ui `ux `ui 21  ]
+[e :U 22 ]
 "1422
 }
 [; ;doprnt.c: 1422: {
 {
 [; ;doprnt.c: 1438: if(flag & 0x03)
 "1438
-[e $ ! != & -> _flag `i -> 3 `i -> 0 `i 28  ]
+[e $ ! != & -> _flag `i -> 3 `i -> 0 `i 25  ]
 [; ;doprnt.c: 1439: (putch('-') );
 "1439
 [e ( _putch (1 -> -> 45 `ui `uc ]
-[e :U 28 ]
+[e :U 25 ]
 "1469
 }
 [; ;doprnt.c: 1469: }
@@ -399,8 +372,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e = _prec _c ]
 [; ;doprnt.c: 1474: while(prec--) {
 "1474
-[e $U 29  ]
-[e :U 30 ]
+[e $U 26  ]
+[e :U 27 ]
 {
 [; ;doprnt.c: 1478: {
 "1478
@@ -416,10 +389,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e ( _putch (1 -> _c `uc ]
 "1525
 }
-[e :U 29 ]
+[e :U 26 ]
 "1474
-[e $ != -> -- _prec -> -> 1 `i `c `i -> -> -> 0 `i `c `i 30  ]
-[e :U 31 ]
+[e $ != -> -- _prec -> -> 1 `i `c `i -> -> -> 0 `i `c `i 27  ]
+[e :U 28 ]
 "1533
 }
 [e :U 8 ]
