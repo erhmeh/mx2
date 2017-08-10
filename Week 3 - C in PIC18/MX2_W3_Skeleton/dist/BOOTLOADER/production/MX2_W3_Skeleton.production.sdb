@@ -1,10 +1,10 @@
-[p LITE_MODE AUTOSTATIC IEEE_DBL LFSROK EMI_WORD IEEE_FLT ]
+[p LITE_MODE AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
 [d version 1.1 ]
 [d edition pro ]
 [d chip 18F67J50 ]
 [d frameptr 4065 ]
-"34 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/LCD.c
-[e E7847 . `uc
+"34 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/LCD.c
+[e E6903 . `uc
 eP0 0
 eP1 1
 eP2 2
@@ -15,18 +15,18 @@ eP6 6
 eP7 7
 ]
 "41
-[e E7705 . `uc
+[e E6761 . `uc
 eCommand 0
 eData 1
 ]
 "49
-[e E7892 . `uc
+[e E6948 . `uc
 eTypeInput 0
 eTypeOutputOpenDrain 1
 eTypeOutputOpenSource 2
 eTypeOutputPushPull 3
 ]
-[e E7419 . `uc
+[e E6475 . `uc
 ePinErrorNone 0
 ePinErrorCannotDriveHigh 1
 ePinErrorCannotDriveLow 2
@@ -35,33 +35,33 @@ ePinErrorPinInput 4
 ePinErrorState 5
 ]
 "63
-[e E7768 . `uc
+[e E6824 . `uc
 eSPI1 0
 eSPI2 1
 ]
-[e E7772 . `uc
+[e E6828 . `uc
 eSPI_Mode0 0
 eSPI_Mode1 1
 eSPI_Mode2 2
 eSPI_Mode3 3
 ]
 "64
-[e E7778 . `uc
+[e E6834 . `uc
 eSPI_8Bit 0
 eSPI_9Bit 1
 ]
 "98
-[e E7752 . `uc
+[e E6808 . `uc
 eLED1 0
 eLED2 1
 ]
-"16 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/LED.c
-[e E7683 . `uc
+"16 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/LED.c
+[e E6739 . `uc
 eLED1 0
 eLED2 1
 ]
 "20
-[e E7705 . `uc
+[e E6761 . `uc
 eP0 0
 eP1 1
 eP2 2
@@ -71,13 +71,13 @@ eP5 5
 eP6 6
 eP7 7
 ]
-[e E7750 . `uc
+[e E6806 . `uc
 eTypeInput 0
 eTypeOutputOpenDrain 1
 eTypeOutputOpenSource 2
 eTypeOutputPushPull 3
 ]
-[e E7419 . `uc
+[e E6475 . `uc
 ePinErrorNone 0
 ePinErrorCannotDriveHigh 1
 ePinErrorCannotDriveLow 2
@@ -85,8 +85,8 @@ ePinErrorCannotDrive 3
 ePinErrorPinInput 4
 ePinErrorState 5
 ]
-"22 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-[e E7730 . `uc
+"22 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+[e E6786 . `uc
 ePortA 0
 ePortB 1
 ePortC 2
@@ -96,7 +96,7 @@ ePortF 5
 ePortG 6
 ]
 "113
-[e E7704 . `uc
+[e E6760 . `uc
 eP0_1 0
 eP2_3 1
 eP4_5 2
@@ -106,13 +106,13 @@ eP10_11 5
 eP12_13 6
 eP14_15 7
 ]
-[e E7413 . `uc
+[e E6469 . `uc
 eHL 0
 eLow 1
 eHigh 2
 eNone 3
 ]
-[e E7419 . `uc
+[e E6475 . `uc
 ePinErrorNone 0
 ePinErrorCannotDriveHigh 1
 ePinErrorCannotDriveLow 2
@@ -121,7 +121,7 @@ ePinErrorPinInput 4
 ePinErrorState 5
 ]
 "117
-[e E7694 . `uc
+[e E6750 . `uc
 eP0 0
 eP1 1
 eP2 2
@@ -132,7 +132,7 @@ eP6 6
 eP7 7
 ]
 "127
-[e E7720 . `uc
+[e E6776 . `uc
 eP0_3 0
 eP4_7 1
 eP8_11 2
@@ -143,30 +143,30 @@ eP24_27 6
 eP28_31 7
 ]
 "163
-[e E7739 . `uc
+[e E6795 . `uc
 eTypeInput 0
 eTypeOutputOpenDrain 1
 eTypeOutputOpenSource 2
 eTypeOutputPushPull 3
 ]
-"10 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/SPI.c
-[e E7698 . `uc
+"10 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/SPI.c
+[e E6754 . `uc
 eSPI_8Bit 0
 eSPI_9Bit 1
 ]
-[e E7688 . `uc
+[e E6744 . `uc
 eSPI1 0
 eSPI2 1
 ]
 "13
-[e E7692 . `uc
+[e E6748 . `uc
 eSPI_Mode0 0
 eSPI_Mode1 1
 eSPI_Mode2 2
 eSPI_Mode3 3
 ]
 "39
-[e E7770 . `uc
+[e E6826 . `uc
 eP0 0
 eP1 1
 eP2 2
@@ -176,13 +176,13 @@ eP5 5
 eP6 6
 eP7 7
 ]
-[e E7815 . `uc
+[e E6871 . `uc
 eTypeInput 0
 eTypeOutputOpenDrain 1
 eTypeOutputOpenSource 2
 eTypeOutputPushPull 3
 ]
-[e E7419 . `uc
+[e E6475 . `uc
 ePinErrorNone 0
 ePinErrorCannotDriveHigh 1
 ePinErrorCannotDriveLow 2
@@ -190,15 +190,15 @@ ePinErrorCannotDrive 3
 ePinErrorPinInput 4
 ePinErrorState 5
 ]
-"209 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.c
-[e E7413 . `uc
+"209 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.c
+[e E6469 . `uc
 eHL 0
 eLow 1
 eHigh 2
 eNone 3
 ]
 "221
-[e E7419 . `uc
+[e E6475 . `uc
 ePinErrorNone 0
 ePinErrorCannotDriveHigh 1
 ePinErrorCannotDriveLow 2
@@ -207,7 +207,7 @@ ePinErrorPinInput 4
 ePinErrorState 5
 ]
 "288
-[e E7427 . `uc
+[e E6483 . `uc
 ea 95
 eb 124
 ec 88
@@ -272,8 +272,8 @@ eY 102
 eZ 91
 eDot 128
 ]
-"29 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\HMI.c
-[e E7949 . `uc
+"29 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/HMI.c
+[e E7005 . `uc
 eP0 0
 eP1 1
 eP2 2
@@ -284,7 +284,7 @@ eP6 6
 eP7 7
 ]
 "49
-[e E7975 . `uc
+[e E7031 . `uc
 eP0_3 0
 eP4_7 1
 eP8_11 2
@@ -295,23 +295,23 @@ eP24_27 6
 eP28_31 7
 ]
 "91
-[e E7811 . `uc
+[e E6867 . `uc
 eSPI_8Bit 0
 eSPI_9Bit 1
 ]
-[e E7801 . `uc
+[e E6857 . `uc
 eSPI1 0
 eSPI2 1
 ]
 "124
-[e E7805 . `uc
+[e E6861 . `uc
 eSPI_Mode0 0
 eSPI_Mode1 1
 eSPI_Mode2 2
 eSPI_Mode3 3
 ]
 "233
-[e E7427 . `uc
+[e E6483 . `uc
 ea 95
 eb 124
 ec 88
@@ -376,15 +376,15 @@ eY 102
 eZ 91
 eDot 128
 ]
-"6 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/ADC.c
-[e E7686 . `uc
+"6 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/ADC.c
+[e E6742 . `uc
 eADC_Ch0 0
 eADC_Ch1 1
 eADC_Ch2 2
 eADC_Ch3 3
 ]
-"8 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/I2C.c
-[e E7824 . `uc
+"8 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/I2C.c
+[e E6880 . `uc
 eI2C_Idle 0
 eI2C_WriteStart 1
 eI2C_WriteWaitClearFlag 2
@@ -410,15 +410,15 @@ eI2C_ReadStop 160
 eI2C_ReadStopClearFlag 176
 ]
 "193
-[e E7911 . `uc
+[e E6967 . `uc
 eI2C_Ch1 0
 eI2C_Ch2 1
 ]
-[e E7907 . `uc
+[e E6963 . `uc
 eI2C_HighSpeed 1
 eI2C_LowSpeed 0
 ]
-[e E7915 . `uc
+[e E6971 . `uc
 eI2C_Slave10bitISR 15
 eI2C_Slave7bitISR 14
 eI2C_Master 8
@@ -427,7 +427,7 @@ eI2C_Slave10bit 7
 eI2C_Slave7bit 6
 ]
 "206
-[e E7694 . `uc
+[e E6750 . `uc
 eP0 0
 eP1 1
 eP2 2
@@ -437,13 +437,13 @@ eP5 5
 eP6 6
 eP7 7
 ]
-[e E7739 . `uc
+[e E6795 . `uc
 eTypeInput 0
 eTypeOutputOpenDrain 1
 eTypeOutputOpenSource 2
 eTypeOutputPushPull 3
 ]
-[e E7419 . `uc
+[e E6475 . `uc
 ePinErrorNone 0
 ePinErrorCannotDriveHigh 1
 ePinErrorCannotDriveLow 2
@@ -452,12 +452,12 @@ ePinErrorPinInput 4
 ePinErrorState 5
 ]
 "362
-[e E7849 . `uc
+[e E6905 . `uc
 eI2C_NACK 0
 eI2C_ACK 1
 ]
-"33 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Motor.c
-[e E7702 . `uc
+"33 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Motor.c
+[e E6758 . `uc
 eP0 0
 eP1 1
 eP2 2
@@ -467,13 +467,13 @@ eP5 5
 eP6 6
 eP7 7
 ]
-[e E7747 . `uc
+[e E6803 . `uc
 eTypeInput 0
 eTypeOutputOpenDrain 1
 eTypeOutputOpenSource 2
 eTypeOutputPushPull 3
 ]
-[e E7419 . `uc
+[e E6475 . `uc
 ePinErrorNone 0
 ePinErrorCannotDriveHigh 1
 ePinErrorCannotDriveLow 2
@@ -482,15 +482,15 @@ ePinErrorPinInput 4
 ePinErrorState 5
 ]
 "77
-[e E7895 . `uc
+[e E6951 . `uc
 eMXK_Motor 8
 eMXK_IMU 4
 eMXK_HMI 1
 eMXK_FPGA 2
 eMXK_None 0
 ]
-"12 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/MXK.c
-[e E7694 . `uc
+"12 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/MXK.c
+[e E6750 . `uc
 eP0 0
 eP1 1
 eP2 2
@@ -500,13 +500,13 @@ eP5 5
 eP6 6
 eP7 7
 ]
-[e E7739 . `uc
+[e E6795 . `uc
 eTypeInput 0
 eTypeOutputOpenDrain 1
 eTypeOutputOpenSource 2
 eTypeOutputPushPull 3
 ]
-[e E7419 . `uc
+[e E6475 . `uc
 ePinErrorNone 0
 ePinErrorCannotDriveHigh 1
 ePinErrorCannotDriveLow 2
@@ -515,7 +515,7 @@ ePinErrorPinInput 4
 ePinErrorState 5
 ]
 "22
-[e E7720 . `uc
+[e E6776 . `uc
 eP0_3 0
 eP4_7 1
 eP8_11 2
@@ -526,12 +526,12 @@ eP24_27 6
 eP28_31 7
 ]
 "31
-[e E7876 . `uc
+[e E6932 . `uc
 eMXK_Busy 0
 eMXK_Idle 1
 ]
 "38
-[e E7730 . `uc
+[e E6786 . `uc
 ePortA 0
 ePortB 1
 ePortC 2
@@ -541,84 +541,84 @@ ePortF 5
 ePortG 6
 ]
 "55
-[e E7913 . `uc
+[e E6969 . `uc
 eLED1 0
 eLED2 1
 ]
 "83
-[e E7869 . `uc
+[e E6925 . `uc
 eMXK_Motor 8
 eMXK_IMU 4
 eMXK_HMI 1
 eMXK_FPGA 2
 eMXK_None 0
 ]
-"41 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/system.c
-[e E7373 . `uc
+"41 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/system.c
+[e E6429 . `uc
 SYSTEM_STATE_USB_START 0
 SYSTEM_STATE_USB_SUSPEND 1
 SYSTEM_STATE_USB_RESUME 2
 ]
 "45
-[e E8315 . `uc
+[e E7371 . `uc
 eLED1 0
 eLED2 1
 ]
-"14 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Events.c
-[e E7728 . `uc
+"14 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Events.c
+[e E6784 . `uc
 eLED1 0
 eLED2 1
 ]
-"26 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Functions.c
-[e E8181 . `uc
+"26 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Functions.c
+[e E7237 . `uc
 eADC_Ch0 0
 eADC_Ch1 1
 eADC_Ch2 2
 eADC_Ch3 3
 ]
-"31 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\main.c
-[e E7882 . `uc
+"31 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/main.c
+[e E6938 . `uc
 eMXK_Motor 8
 eMXK_IMU 4
 eMXK_HMI 1
 eMXK_FPGA 2
 eMXK_None 0
 ]
-"8 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\awdiv.c
+"8 /opt/microchip/xc8/v1.43/sources/common/awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
-"62 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+"62 /opt/microchip/xc8/v1.43/sources/common/float.c
 [v ___ftpack __ftpack `(f  1 e 4 0 ]
-"86 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+"86 /opt/microchip/xc8/v1.43/sources/common/ftadd.c
 [v ___ftadd __ftadd `(f  1 e 4 0 ]
-"54 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftdiv.c
+"54 /opt/microchip/xc8/v1.43/sources/common/ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 4 0 ]
-"62 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftmul.c
+"62 /opt/microchip/xc8/v1.43/sources/common/ftmul.c
 [v ___ftmul __ftmul `(f  1 e 4 0 ]
-"20 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftsub.c
+"20 /opt/microchip/xc8/v1.43/sources/common/ftsub.c
 [v ___ftsub __ftsub `(f  1 e 4 0 ]
-"8 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lldiv.c
+"8 /opt/microchip/xc8/v1.43/sources/common/lldiv.c
 [v ___lldiv __lldiv `(ul  1 e 4 0 ]
-"8 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\llmod.c
+"8 /opt/microchip/xc8/v1.43/sources/common/llmod.c
 [v ___llmod __llmod `(ul  1 e 4 0 ]
-"8 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwdiv.c
+"8 /opt/microchip/xc8/v1.43/sources/common/lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
-"8 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\lwmod.c
+"8 /opt/microchip/xc8/v1.43/sources/common/lwmod.c
 [v ___lwmod __lwmod `(ui  1 e 2 0 ]
-"10 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcadd.c
+"10 /opt/microchip/xc8/v1.43/sources/common/sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "245
 [v ___flsub __flsub `(d  1 e 4 0 ]
-"11 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcdiv.c
+"11 /opt/microchip/xc8/v1.43/sources/common/sprcdiv.c
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
-"8 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\sprcmul.c
+"8 /opt/microchip/xc8/v1.43/sources/common/sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
-"15 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul16.c
+"15 /opt/microchip/xc8/v1.43/sources/common/Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
-"15 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul32.c
+"15 /opt/microchip/xc8/v1.43/sources/common/Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"10 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\xxtofl.c
+"10 /opt/microchip/xc8/v1.43/sources/common/xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
-"9 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Events.c
+"9 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Events.c
 [v _Event_ADCSequenceComplete Event_ADCSequenceComplete `(v  1 e 1 0 ]
 "17
 [v _Event_DIPSwitch Event_DIPSwitch `(v  1 e 1 0 ]
@@ -634,7 +634,7 @@ eMXK_None 0
 [v _Event_HMI_UpButton Event_HMI_UpButton `(v  1 e 1 0 ]
 "123
 [v _Event_HMI_DownButton Event_HMI_DownButton `(v  1 e 1 0 ]
-"21 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\HMI.c
+"21 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/HMI.c
 [v _HMI_InitButtons HMI_InitButtons `(v  1 e 1 0 ]
 "27
 [v _HMI_LeftSwitch HMI_LeftSwitch `(uc  1 e 1 0 ]
@@ -666,7 +666,7 @@ eMXK_None 0
 [v _HMI_SetNumber HMI_SetNumber `(v  1 e 1 0 ]
 "226
 [v _HMI_SetSegments HMI_SetSegments `(v  1 e 1 0 ]
-"19 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/ADC.c
+"19 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/ADC.c
 [v _ADC_Init ADC_Init `(v  1 e 1 0 ]
 "63
 [v _ADC_Calibrate ADC_Calibrate `(v  1 e 1 0 ]
@@ -690,13 +690,13 @@ eMXK_None 0
 [v _ADC_Sample ADC_Sample `(uc  1 e 1 0 ]
 "271
 [v _rand rand `(uc  1 e 1 0 ]
-"18 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Button.c
+"18 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Button.c
 [v _Button_Init Button_Init `(v  1 e 1 0 ]
 "57
 [v _Button_Poll Button_Poll `(uc  1 e 1 0 ]
-"3 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Colours.c
+"3 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Colours.c
 [v _Colour_To565 Colour_To565 `(us  1 e 2 0 ]
-"175 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Console.c
+"175 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Console.c
 [v _Console_NewLine Console_NewLine `(v  1 e 1 0 ]
 "192
 [v _Console_FormFeed Console_FormFeed `(v  1 e 1 0 ]
@@ -712,9 +712,11 @@ eMXK_None 0
 [v _Console_ClearCursor Console_ClearCursor `(v  1 e 1 0 ]
 "322
 [v _Console_PrintChar Console_PrintChar `T(v  1 e 1 0 ]
+"426
+[v _Console_PrintString Console_PrintString `(v  1 e 1 0 ]
 "435
 [v _Console_MakeField Console_MakeField `(*.39us  1 e 2 0 ]
-"29 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/I2C.c
+"29 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/I2C.c
 [v _I2CT_InitR I2CT_InitR `(uc  1 e 1 0 ]
 "45
 [v _I2CT_InitW I2CT_InitW `(uc  1 e 1 0 ]
@@ -742,9 +744,9 @@ eMXK_None 0
 [v _I2C1_ISR I2C1_ISR `T(v  1 e 1 0 ]
 "487
 [v _I2C2_ISR I2C2_ISR `T(v  1 e 1 0 ]
-"38 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/ISR.c
+"38 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/ISR.c
 [v _ISR_Function ISR_Function `II(v  1 e 1 0 ]
-"32 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/LCD.c
+"32 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/LCD.c
 [v _Reset_Low Reset_Low `T(v  1 e 1 0 ]
 "36
 [v _Reset_High Reset_High `T(v  1 e 1 0 ]
@@ -756,6 +758,8 @@ eMXK_None 0
 [v _LCD_Write LCD_Write `(v  1 e 1 0 ]
 "95
 [v _LCD_Reset LCD_Reset `(v  1 e 1 0 ]
+"172
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
 "198
 [v _LCD_Word_Write LCD_Word_Write `(v  1 e 1 0 ]
 "214
@@ -766,26 +770,26 @@ eMXK_None 0
 [v _LCD_Fill LCD_Fill `(v  1 e 1 0 ]
 "318
 [v _LCD_FillRectangle LCD_FillRectangle `(v  1 e 1 0 ]
-"15 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Point.h
-[s S660 Point 4 `s 1 x 2 0 `s 1 y 2 2 ]
-"336 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/LCD.c
-[v _ToPoint ToPoint `T(S660  1 e 4 0 ]
+"15 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Point.h
+[s S595 Point 4 `s 1 x 2 0 `s 1 y 2 2 ]
+"336 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/LCD.c
+[v _ToPoint ToPoint `T(S595  1 e 4 0 ]
 "343
 [v _LCD_DrawPixel LCD_DrawPixel `(v  1 e 1 0 ]
 "353
 [v _LCD_DrawLine LCD_DrawLine `(v  1 e 1 0 ]
 "393
 [v _LCD_DrawField LCD_DrawField `(v  1 e 1 0 ]
-"15 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/LED.c
+"15 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/LED.c
 [v _LED_Init LED_Init `(v  1 e 1 0 ]
 "33
 [v _LED_Set LED_Set `(v  1 e 1 0 ]
 "50
 [v _LED_Toggle LED_Toggle `(v  1 e 1 0 ]
-"75 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Motor.c
+"75 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Motor.c
 [v _Motor_Step Motor_Step `(v  1 e 1 0 ]
 [v i2_Motor_Step Motor_Step `(v  1 e 1 0 ]
-"10 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/MXK.c
+"10 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/MXK.c
 [v _MXK_InitTestButton MXK_InitTestButton `(v  1 e 1 0 ]
 "14
 [v _MXK_TestButton MXK_TestButton `(uc  1 e 1 0 ]
@@ -810,9 +814,9 @@ eMXK_None 0
 [v i2_MXK_Queue MXK_Queue `(v  1 e 1 0 ]
 "153
 [v _MXK_Dequeue MXK_Dequeue `(v  1 e 1 0 ]
-"3 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Point.c
+"3 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Point.c
 [v _Point_Init Point_Init `(v  1 e 1 0 ]
-"533 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"533 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 "509
 "512
 "515
@@ -822,60 +826,60 @@ eMXK_None 0
 [s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
 `uc 1 mBit4_7 1 0 :4:4 
 ]
-"21 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"439 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"21 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"439 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S65 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 mBit1_4 1 0 :4:1 
 `uc 1 . 1 0 :3:5 
 ]
-"21 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"445 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"21 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"445 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S69 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 mBit2_5 1 0 :4:2 
 `uc 1 . 1 0 :2:6 
 ]
-"21 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"451 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"21 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"451 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S73 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 mBit3_6 1 0 :4:3 
 `uc 1 . 1 0 :1:7 
 ]
-"21 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"459 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"21 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"459 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S77 . 1 `uc 1 mBit0_2 1 0 :3:0 
 `uc 1 mBit3_5 1 0 :3:3 
 `uc 1 mBit6_7 1 0 :2:6 
 ]
-"21 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"465 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"21 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"465 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S81 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 mBit1_3 1 0 :3:1 
 `uc 1 mBit4_6 1 0 :3:4 
 `uc 1 . 1 0 :1:7 
 ]
-"21 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"472 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"21 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"472 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S86 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 mBit2_4 1 0 :3:2 
 `uc 1 mBit5_7 1 0 :3:5 
 ]
-"21 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"480 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"21 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"480 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S90 . 1 `uc 1 mBit0_1 1 0 :2:0 
 `uc 1 mBit2_3 1 0 :2:2 
 `uc 1 mBit4_5 1 0 :2:4 
 `uc 1 . 1 0 :2:6 
 ]
-"21 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"487 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"21 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"487 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S95 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 mBit1_2 1 0 :2:1 
 `uc 1 mBit3_4 1 0 :2:3 
 `uc 1 mBit5_6 1 0 :2:5 
 `uc 1 . 1 0 :1:7 
 ]
-"21 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"497 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"21 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"497 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S101 . 1 `uc 1 mBit0 1 0 :1:0 
 `uc 1 mBit1 1 0 :1:1 
 `uc 1 mBit2 1 0 :1:2 
@@ -885,77 +889,77 @@ eMXK_None 0
 `uc 1 mBit6 1 0 :1:6 
 `uc 1 mBit7 1 0 :1:7 
 ]
-"21 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
+"21 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
 [u S110 . 1 `uc 1 mBits 1 0 `S62 1 . 1 0 `S65 1 . 1 0 `S69 1 . 1 0 `S73 1 . 1 0 `S77 1 . 1 0 `S81 1 . 1 0 `S86 1 . 1 0 `S90 1 . 1 0 `S95 1 . 1 0 `S101 1 . 1 0 ]
 [s S122 Byte 1 `S110 1 . 1 0 ]
 [s S124 . 2 `S122 1 LS_Byte 1 0 `S122 1 MS_Byte 1 1 ]
-"520 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"520 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S127 . 2 `uc 1 L 1 0 `uc 1 H 1 1 ]
-"21 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
+"21 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
 [u S130 . 2 `us 1 mBits 2 0 `S124 1 . 2 0 `S127 1 . 2 0 ]
 [s S134 Word 2 `S130 1 . 2 0 ]
 [u S136 PortProperty 2 `us 1 mWord 2 0 `S134 1 mType 2 0 ]
 [v _GetPortProperties GetPortProperties `(*.32S136  1 e 2 0 ]
-"426 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"426 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 "429
 "434
 [s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
 `uc 1 mBit4_7 1 0 :4:4 
 ]
-"44 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"439 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"44 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"439 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S65 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 mBit1_4 1 0 :4:1 
 `uc 1 . 1 0 :3:5 
 ]
-"44 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"445 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"44 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"445 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S69 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 mBit2_5 1 0 :4:2 
 `uc 1 . 1 0 :2:6 
 ]
-"44 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"451 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"44 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"451 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S73 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 mBit3_6 1 0 :4:3 
 `uc 1 . 1 0 :1:7 
 ]
-"44 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"459 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"44 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"459 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S77 . 1 `uc 1 mBit0_2 1 0 :3:0 
 `uc 1 mBit3_5 1 0 :3:3 
 `uc 1 mBit6_7 1 0 :2:6 
 ]
-"44 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"465 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"44 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"465 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S81 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 mBit1_3 1 0 :3:1 
 `uc 1 mBit4_6 1 0 :3:4 
 `uc 1 . 1 0 :1:7 
 ]
-"44 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"472 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"44 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"472 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S86 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 mBit2_4 1 0 :3:2 
 `uc 1 mBit5_7 1 0 :3:5 
 ]
-"44 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"480 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"44 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"480 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S90 . 1 `uc 1 mBit0_1 1 0 :2:0 
 `uc 1 mBit2_3 1 0 :2:2 
 `uc 1 mBit4_5 1 0 :2:4 
 `uc 1 . 1 0 :2:6 
 ]
-"44 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"487 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"44 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"487 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S95 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 mBit1_2 1 0 :2:1 
 `uc 1 mBit3_4 1 0 :2:3 
 `uc 1 mBit5_6 1 0 :2:5 
 `uc 1 . 1 0 :1:7 
 ]
-"44 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"497 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"44 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"497 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S101 . 1 `uc 1 mBit0 1 0 :1:0 
 `uc 1 mBit1 1 0 :1:1 
 `uc 1 mBit2 1 0 :1:2 
@@ -965,70 +969,70 @@ eMXK_None 0
 `uc 1 mBit6 1 0 :1:6 
 `uc 1 mBit7 1 0 :1:7 
 ]
-"44 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
+"44 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
 [u S110 . 1 `uc 1 mBits 1 0 `S62 1 . 1 0 `S65 1 . 1 0 `S69 1 . 1 0 `S73 1 . 1 0 `S77 1 . 1 0 `S81 1 . 1 0 `S86 1 . 1 0 `S90 1 . 1 0 `S95 1 . 1 0 `S101 1 . 1 0 ]
 [s S122 Byte 1 `S110 1 . 1 0 ]
 [v _GetPortPORT GetPortPORT `(*.39S122  1 e 2 0 ]
-"426 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"426 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 "429
 "434
 [s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
 `uc 1 mBit4_7 1 0 :4:4 
 ]
-"67 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"439 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"67 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"439 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S65 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 mBit1_4 1 0 :4:1 
 `uc 1 . 1 0 :3:5 
 ]
-"67 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"445 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"67 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"445 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S69 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 mBit2_5 1 0 :4:2 
 `uc 1 . 1 0 :2:6 
 ]
-"67 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"451 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"67 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"451 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S73 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 mBit3_6 1 0 :4:3 
 `uc 1 . 1 0 :1:7 
 ]
-"67 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"459 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"67 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"459 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S77 . 1 `uc 1 mBit0_2 1 0 :3:0 
 `uc 1 mBit3_5 1 0 :3:3 
 `uc 1 mBit6_7 1 0 :2:6 
 ]
-"67 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"465 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"67 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"465 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S81 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 mBit1_3 1 0 :3:1 
 `uc 1 mBit4_6 1 0 :3:4 
 `uc 1 . 1 0 :1:7 
 ]
-"67 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"472 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"67 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"472 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S86 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 mBit2_4 1 0 :3:2 
 `uc 1 mBit5_7 1 0 :3:5 
 ]
-"67 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"480 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"67 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"480 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S90 . 1 `uc 1 mBit0_1 1 0 :2:0 
 `uc 1 mBit2_3 1 0 :2:2 
 `uc 1 mBit4_5 1 0 :2:4 
 `uc 1 . 1 0 :2:6 
 ]
-"67 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"487 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"67 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"487 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S95 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 mBit1_2 1 0 :2:1 
 `uc 1 mBit3_4 1 0 :2:3 
 `uc 1 mBit5_6 1 0 :2:5 
 `uc 1 . 1 0 :1:7 
 ]
-"67 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"497 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"67 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"497 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S101 . 1 `uc 1 mBit0 1 0 :1:0 
 `uc 1 mBit1 1 0 :1:1 
 `uc 1 mBit2 1 0 :1:2 
@@ -1038,20 +1042,20 @@ eMXK_None 0
 `uc 1 mBit6 1 0 :1:6 
 `uc 1 mBit7 1 0 :1:7 
 ]
-"67 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
+"67 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
 [u S110 . 1 `uc 1 mBits 1 0 `S62 1 . 1 0 `S65 1 . 1 0 `S69 1 . 1 0 `S73 1 . 1 0 `S77 1 . 1 0 `S81 1 . 1 0 `S86 1 . 1 0 `S90 1 . 1 0 `S95 1 . 1 0 `S101 1 . 1 0 ]
 [s S122 Byte 1 `S110 1 . 1 0 ]
 [v _GetPortTRIS GetPortTRIS `(*.39S122  1 e 2 0 ]
 "112
-[v _Port_CheckPairType Port_CheckPairType `(E7419  1 e 1 0 ]
+[v _Port_CheckPairType Port_CheckPairType `(E6475  1 e 1 0 ]
 "126
-[v _Port_CheckQuadType Port_CheckQuadType `(E7419  1 e 1 0 ]
+[v _Port_CheckQuadType Port_CheckQuadType `(E6475  1 e 1 0 ]
 "138
-[v _Port_CheckPortType Port_CheckPortType `(E7419  1 e 1 0 ]
+[v _Port_CheckPortType Port_CheckPortType `(E6475  1 e 1 0 ]
 "150
 [v _Port_Init Port_Init `(v  1 e 1 0 ]
 "189
-[v _Port_SetPinType Port_SetPinType `(E7419  1 e 1 0 ]
+[v _Port_SetPinType Port_SetPinType `(E6475  1 e 1 0 ]
 "247
 [v _Port_SetPin Port_SetPin `(v  1 e 1 0 ]
 [v i2_Port_SetPin Port_SetPin `(v  1 e 1 0 ]
@@ -1064,18 +1068,18 @@ eMXK_None 0
 "384
 [v _Port_GetPair Port_GetPair `(uc  1 e 1 0 ]
 "399
-[v _Port_SetQuadType Port_SetQuadType `(E7419  1 e 1 0 ]
+[v _Port_SetQuadType Port_SetQuadType `(E6475  1 e 1 0 ]
 "460
 [v _Port_SetQuad Port_SetQuad `(v  1 e 1 0 ]
 "498
 [v _Port_GetQuad Port_GetQuad `(uc  1 e 1 0 ]
 "513
-[v _Port_SetType Port_SetType `(E7419  1 e 1 0 ]
+[v _Port_SetType Port_SetType `(E6475  1 e 1 0 ]
 "570
 [v _Port_Set Port_Set `(v  1 e 1 0 ]
 "613
 [v _Port_Get Port_Get `(uc  1 e 1 0 ]
-"12 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/SPI.c
+"12 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/SPI.c
 [v _SPI_Init SPI_Init `(v  1 e 1 0 ]
 "133
 [v _SPI_Busy SPI_Busy `T(uc  1 e 1 0 ]
@@ -1091,7 +1095,7 @@ eMXK_None 0
 [v _SPI_DCS SPI_DCS `(v  1 e 1 0 ]
 "226
 [v _SPI_Send SPI_Send `(uc  1 e 1 0 ]
-"20 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Timer0.c
+"20 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Timer0.c
 [v _Timer0_Clear Timer0_Clear `(v  1 e 1 0 ]
 "25
 [v _Timer0_Init Timer0_Init `(v  1 e 1 0 ]
@@ -1105,11 +1109,11 @@ eMXK_None 0
 [v i2_Timer0_Stop Timer0_Stop `(v  1 e 1 0 ]
 "94
 [v _Timer0_ISR Timer0_ISR `(v  1 e 1 0 ]
-"3 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Timer2.c
+"3 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Timer2.c
 [v _Timer2_Clear Timer2_Clear `(v  1 e 1 0 ]
 "10
 [v _Timer2_Init Timer2_Init `(v  1 e 1 0 ]
-"32 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.c
+"32 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.c
 [v _Byte_SetBit Byte_SetBit `(v  1 e 1 0 ]
 [v i2_Byte_SetBit Byte_SetBit `(v  1 e 1 0 ]
 "38
@@ -1138,7 +1142,7 @@ eMXK_None 0
 "194
 [v _Word_SetWord Word_SetWord `(v  1 e 1 0 ]
 "220
-[v _PortProperty_Valid PortProperty_Valid `(E7419  1 e 1 0 ]
+[v _PortProperty_Valid PortProperty_Valid `(E6475  1 e 1 0 ]
 "240
 [v _delay_ms delay_ms `(v  1 e 1 0 ]
 "255
@@ -1152,11 +1156,11 @@ eMXK_None 0
 [v _itos itos `(v  1 e 1 0 ]
 "393
 [v _swap swap `(v  1 e 1 0 ]
-"22 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\main.c
+"22 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/main.c
 [v _main main `(v  1 e 1 0 ]
-"3083 C:\Program Files (x86)\Microchip\xc8\v1.38\include\pic18f67j50.h
+"2847 /opt/microchip/xc8/v1.43/include/pic18f67j50.h
 [v _SSP2CON2 SSP2CON2 `VEuc  1 e 1 @3947 ]
-[s S11062 . 1 `uc 1 SEN 1 0 :1:0 
+[s S12156 . 1 `uc 1 SEN 1 0 :1:0 
 `uc 1 RSEN 1 0 :1:1 
 `uc 1 PEN 1 0 :1:2 
 `uc 1 RCEN 1 0 :1:3 
@@ -1165,99 +1169,63 @@ eMXK_None 0
 `uc 1 ACKSTAT 1 0 :1:6 
 `uc 1 GCEN 1 0 :1:7 
 ]
-"3159
-[s S11071 . 1 `uc 1 . 1 0 :1:0 
+"2890
+[s S12165 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 ADMSK1 1 0 :1:1 
 `uc 1 ADMSK2 1 0 :1:2 
 `uc 1 ADMSK3 1 0 :1:3 
 `uc 1 ADMSK4 1 0 :1:4 
 `uc 1 ADMSK5 1 0 :1:5 
 ]
-[s S11203 . 1 `uc 1 . 1 0 :5:0 
-`uc 1 ACKDT2 1 0 :1:5 
-]
-[s S11206 . 1 `uc 1 . 1 0 :4:0 
-`uc 1 ACKEN2 1 0 :1:4 
-]
-[s S11209 . 1 `uc 1 . 1 0 :6:0 
-`uc 1 ACKSTAT2 1 0 :1:6 
-]
-[s S11212 . 1 `uc 1 . 1 0 :1:0 
+[s S12242 . 1 `uc 1 SEN2 1 0 :1:0 
 `uc 1 ADMSK12 1 0 :1:1 
-]
-[s S11215 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 ADMSK22 1 0 :1:2 
-]
-[s S11218 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 ADMSK32 1 0 :1:3 
-]
-[s S11221 . 1 `uc 1 . 1 0 :4:0 
-`uc 1 ADMSK42 1 0 :1:4 
-]
-[s S11224 . 1 `uc 1 . 1 0 :5:0 
-`uc 1 ADMSK52 1 0 :1:5 
-]
-[s S11227 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 ACKEN2 1 0 :1:4 
+`uc 1 ACKDT2 1 0 :1:5 
+`uc 1 ACKSTAT2 1 0 :1:6 
 `uc 1 GCEN2 1 0 :1:7 
 ]
-[s S11230 . 1 `uc 1 . 1 0 :2:0 
-`uc 1 PEN2 1 0 :1:2 
-]
-[s S11233 . 1 `uc 1 . 1 0 :3:0 
-`uc 1 RCEN2 1 0 :1:3 
-]
-[s S11236 . 1 `uc 1 . 1 0 :1:0 
+[s S12251 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 RSEN2 1 0 :1:1 
+`uc 1 PEN2 1 0 :1:2 
+`uc 1 RCEN2 1 0 :1:3 
+`uc 1 ADMSK42 1 0 :1:4 
+`uc 1 ADMSK52 1 0 :1:5 
 ]
-[s S11239 . 1 `uc 1 SEN2 1 0 :1:0 
-]
-[u S11241 . 1 `S11062 1 . 1 0 `S11071 1 . 1 0 `S11203 1 . 1 0 `S11206 1 . 1 0 `S11209 1 . 1 0 `S11212 1 . 1 0 `S11215 1 . 1 0 `S11218 1 . 1 0 `S11221 1 . 1 0 `S11224 1 . 1 0 `S11227 1 . 1 0 `S11230 1 . 1 0 `S11233 1 . 1 0 `S11236 1 . 1 0 `S11239 1 . 1 0 ]
-[v _SSP2CON2bits SSP2CON2bits `VES11241  1 e 1 @3947 ]
-"3293
+[u S12258 . 1 `S12156 1 . 1 0 `S12165 1 . 1 0 `S12242 1 . 1 0 `S12251 1 . 1 0 ]
+[v _SSP2CON2bits SSP2CON2bits `VES12258  1 e 1 @3947 ]
+"3025
 [v _SSP2CON1 SSP2CON1 `VEuc  1 e 1 @3948 ]
-[s S512 . 1 `uc 1 SSPM 1 0 :4:0 
+[s S482 . 1 `uc 1 SSPM 1 0 :4:0 
 `uc 1 CKP 1 0 :1:4 
 `uc 1 SSPEN 1 0 :1:5 
 `uc 1 SSPOV 1 0 :1:6 
 `uc 1 WCOL 1 0 :1:7 
 ]
-"3344
-[s S518 . 1 `uc 1 SSPM0 1 0 :1:0 
+"3055
+[s S488 . 1 `uc 1 SSPM0 1 0 :1:0 
 `uc 1 SSPM1 1 0 :1:1 
 `uc 1 SSPM2 1 0 :1:2 
 `uc 1 SSPM3 1 0 :1:3 
 ]
-[s S523 . 1 `uc 1 . 1 0 :4:0 
-`uc 1 CKP2 1 0 :1:4 
-]
-[s S526 . 1 `uc 1 . 1 0 :5:0 
-`uc 1 SSPEN2 1 0 :1:5 
-]
-[s S529 . 1 `uc 1 SSPM02 1 0 :1:0 
-]
-[s S531 . 1 `uc 1 . 1 0 :1:0 
+[s S493 . 1 `uc 1 SSPM02 1 0 :1:0 
 `uc 1 SSPM12 1 0 :1:1 
-]
-[s S534 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 SSPM22 1 0 :1:2 
-]
-[s S537 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 SSPM32 1 0 :1:3 
-]
-[s S540 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 CKP2 1 0 :1:4 
+`uc 1 SSPEN2 1 0 :1:5 
 `uc 1 SSPOV2 1 0 :1:6 
-]
-[s S543 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 WCOL2 1 0 :1:7 
 ]
-[u S546 . 1 `S512 1 . 1 0 `S518 1 . 1 0 `S523 1 . 1 0 `S526 1 . 1 0 `S529 1 . 1 0 `S531 1 . 1 0 `S534 1 . 1 0 `S537 1 . 1 0 `S540 1 . 1 0 `S543 1 . 1 0 ]
-[v _SSP2CON1bits SSP2CON1bits `VES546  1 e 1 @3948 ]
-"3433
+[u S502 . 1 `S482 1 . 1 0 `S488 1 . 1 0 `S493 1 . 1 0 ]
+[v _SSP2CON1bits SSP2CON1bits `VES502  1 e 1 @3948 ]
+"3145
 [v _SSP2STAT SSP2STAT `VEuc  1 e 1 @3949 ]
 [s S390 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R_NOT_W 1 0 :1:2 
 ]
-"3598
+"3287
 [s S393 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 D_NOT_A 1 0 :1:5 
 ]
@@ -1307,92 +1275,80 @@ eMXK_None 0
 `uc 1 . 1 0 :2:3 
 `uc 1 D 1 0 :1:5 
 ]
-[s S5640 . 1 `uc 1 BF2 1 0 :1:0 
-]
-[s S5642 . 1 `uc 1 . 1 0 :6:0 
-`uc 1 CKE2 1 0 :1:6 
-]
-[s S5645 . 1 `uc 1 . 1 0 :5:0 
-`uc 1 DA2 1 0 :1:5 
-]
-[s S5648 . 1 `uc 1 . 1 0 :5:0 
-`uc 1 DATA_ADDRESS2 1 0 :1:5 
-]
-[s S5651 . 1 `uc 1 . 1 0 :5:0 
-`uc 1 D_A2 1 0 :1:5 
-]
-[s S5654 . 1 `uc 1 . 1 0 :5:0 
-`uc 1 D_nA2 1 0 :1:5 
-]
-[s S5657 . 1 `uc 1 . 1 0 :5:0 
-`uc 1 I2C_DAT2 1 0 :1:5 
-]
-[s S5660 . 1 `uc 1 . 1 0 :2:0 
+[s S6881 . 1 `uc 1 BF2 1 0 :1:0 
+`uc 1 UA2 1 0 :1:1 
 `uc 1 I2C_READ2 1 0 :1:2 
-]
-[s S5663 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 I2C_START2 1 0 :1:3 
-]
-[s S5666 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 I2C_STOP2 1 0 :1:4 
-]
-[s S5669 . 1 `uc 1 . 1 0 :4:0 
-`uc 1 P2 1 0 :1:4 
-]
-[s S5672 . 1 `uc 1 . 1 0 :2:0 
-`uc 1 READ_WRITE2 1 0 :1:2 
-]
-[s S5675 . 1 `uc 1 . 1 0 :2:0 
-`uc 1 RW2 1 0 :1:2 
-]
-[s S5678 . 1 `uc 1 . 1 0 :2:0 
-`uc 1 R_W2 1 0 :1:2 
-]
-[s S5681 . 1 `uc 1 . 1 0 :2:0 
-`uc 1 R_nW2 1 0 :1:2 
-]
-[s S5684 . 1 `uc 1 . 1 0 :3:0 
-`uc 1 S2 1 0 :1:3 
-]
-[s S5687 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 DA2 1 0 :1:5 
+`uc 1 CKE2 1 0 :1:6 
 `uc 1 SMP2 1 0 :1:7 
 ]
-[s S5690 . 1 `uc 1 . 1 0 :3:0 
+[s S6890 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE2 1 0 :1:2 
+`uc 1 S2 1 0 :1:3 
+`uc 1 P2 1 0 :1:4 
+`uc 1 DATA_ADDRESS2 1 0 :1:5 
+]
+[s S6896 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW2 1 0 :1:2 
 `uc 1 START2 1 0 :1:3 
-]
-[s S5693 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 STOP2 1 0 :1:4 
+`uc 1 D_A2 1 0 :1:5 
 ]
-[s S5696 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 UA2 1 0 :1:1 
+[s S6902 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A2 1 0 :1:5 
 ]
-[s S5699 . 1 `uc 1 . 1 0 :5:0 
+[s S6905 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_nA2 1 0 :1:5 
+]
+[s S6910 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W2 1 0 :1:2 
+]
+[s S6913 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_nW2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 I2C_DAT2 1 0 :1:5 
+]
+[s S6918 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W2 1 0 :1:2 
+]
+[s S6921 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_A2 1 0 :1:5 
+]
+[s S6924 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
 `uc 1 nA2 1 0 :1:5 
 ]
-[s S5702 . 1 `uc 1 . 1 0 :5:0 
+[s S6929 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE2 1 0 :1:2 
+]
+[s S6932 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS2 1 0 :1:5 
+]
+[s S6935 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
 `uc 1 nADDRESS2 1 0 :1:5 
 ]
-[s S5705 . 1 `uc 1 . 1 0 :2:0 
-`uc 1 nW2 1 0 :1:2 
-]
-[s S5708 . 1 `uc 1 . 1 0 :2:0 
-`uc 1 nWRITE2 1 0 :1:2 
-]
-[u S5711 . 1 `S390 1 . 1 0 `S393 1 . 1 0 `S396 1 . 1 0 `S405 1 . 1 0 `S410 1 . 1 0 `S416 1 . 1 0 `S421 1 . 1 0 `S424 1 . 1 0 `S427 1 . 1 0 `S432 1 . 1 0 `S437 1 . 1 0 `S5640 1 . 1 0 `S5642 1 . 1 0 `S5645 1 . 1 0 `S5648 1 . 1 0 `S5651 1 . 1 0 `S5654 1 . 1 0 `S5657 1 . 1 0 `S5660 1 . 1 0 `S5663 1 . 1 0 `S5666 1 . 1 0 `S5669 1 . 1 0 `S5672 1 . 1 0 `S5675 1 . 1 0 `S5678 1 . 1 0 `S5681 1 . 1 0 `S5684 1 . 1 0 `S5687 1 . 1 0 `S5690 1 . 1 0 `S5693 1 . 1 0 `S5696 1 . 1 0 `S5699 1 . 1 0 `S5702 1 . 1 0 `S5705 1 . 1 0 `S5708 1 . 1 0 ]
-[v _SSP2STATbits SSP2STATbits `VES5711  1 e 1 @3949 ]
-"3995
+[u S6940 . 1 `S390 1 . 1 0 `S393 1 . 1 0 `S396 1 . 1 0 `S405 1 . 1 0 `S410 1 . 1 0 `S416 1 . 1 0 `S421 1 . 1 0 `S424 1 . 1 0 `S427 1 . 1 0 `S432 1 . 1 0 `S437 1 . 1 0 `S6881 1 . 1 0 `S6890 1 . 1 0 `S6896 1 . 1 0 `S6902 1 . 1 0 `S6905 1 . 1 0 `S6910 1 . 1 0 `S6913 1 . 1 0 `S6918 1 . 1 0 `S6921 1 . 1 0 `S6924 1 . 1 0 `S6929 1 . 1 0 `S6932 1 . 1 0 `S6935 1 . 1 0 ]
+[v _SSP2STATbits SSP2STATbits `VES6940  1 e 1 @3949 ]
+"3696
 [v _SSP2BUF SSP2BUF `VEuc  1 e 1 @3951 ]
-"5281
+"4909
 [v _PORTA PORTA `VEuc  1 e 1 @3968 ]
-"5440
+"5065
 [v _PORTB PORTB `VEuc  1 e 1 @3969 ]
-"5616
+"5242
 [v _PORTC PORTC `VEuc  1 e 1 @3970 ]
-"5794
+"5418
 [v _PORTD PORTD `VEuc  1 e 1 @3971 ]
-"5947
+"5572
 [v _PORTE PORTE `VEuc  1 e 1 @3972 ]
-"6225
+"5809
 [v _PORTF PORTF `VEuc  1 e 1 @3973 ]
 [s S279 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 RF2 1 0 :1:2 
@@ -1402,7 +1358,7 @@ eMXK_None 0
 `uc 1 RF6 1 0 :1:6 
 `uc 1 RF7 1 0 :1:7 
 ]
-"6269
+"5853
 [s S287 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 AN7 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
@@ -1428,37 +1384,37 @@ eMXK_None 0
 ]
 [u S310 . 1 `S279 1 . 1 0 `S287 1 . 1 0 `S294 1 . 1 0 `S297 1 . 1 0 `S304 1 . 1 0 `S307 1 . 1 0 ]
 [v _PORTFbits PORTFbits `VES310  1 e 1 @3973 ]
-"6358
+"5943
 [v _PORTG PORTG `VEuc  1 e 1 @3974 ]
-"6520
+"6101
 [v _LATA LATA `VEuc  1 e 1 @3977 ]
-"6652
+"6213
 [v _LATB LATB `VEuc  1 e 1 @3978 ]
-"6784
+"6325
 [v _LATC LATC `VEuc  1 e 1 @3979 ]
-"6916
+"6437
 [v _LATD LATD `VEuc  1 e 1 @3980 ]
-"7048
+"6549
 [v _LATE LATE `VEuc  1 e 1 @3981 ]
-"7180
+"6661
 [v _LATF LATF `VEuc  1 e 1 @3982 ]
-"7284
+"6751
 [v _LATG LATG `VEuc  1 e 1 @3983 ]
-"7371
+"6827
 [v _TRISA TRISA `VEuc  1 e 1 @3986 ]
-"7592
+"7049
 [v _TRISB TRISB `VEuc  1 e 1 @3987 ]
-"7813
+"7271
 [v _TRISC TRISC `VEuc  1 e 1 @3988 ]
-"8034
+"7493
 [v _TRISD TRISD `VEuc  1 e 1 @3989 ]
-"8255
+"7715
 [v _TRISE TRISE `VEuc  1 e 1 @3990 ]
-"8476
+"7937
 [v _TRISF TRISF `VEuc  1 e 1 @3991 ]
-"8653
+"8115
 [v _TRISG TRISG `VEuc  1 e 1 @3992 ]
-[s S11962 . 1 `uc 1 TUN0 1 0 :1:0 
+[s S12956 . 1 `uc 1 TUN0 1 0 :1:0 
 `uc 1 TUN1 1 0 :1:1 
 `uc 1 TUN2 1 0 :1:2 
 `uc 1 TUN3 1 0 :1:3 
@@ -1467,10 +1423,10 @@ eMXK_None 0
 `uc 1 PLLEN 1 0 :1:6 
 `uc 1 INTSRC 1 0 :1:7 
 ]
-"8819
-[u S11971 . 1 `S11962 1 . 1 0 ]
-[v _OSCTUNEbits OSCTUNEbits `VES11971  1 e 1 @3995 ]
-[s S5268 . 1 `uc 1 TMR1IE 1 0 :1:0 
+"8282
+[u S12965 . 1 `S12956 1 . 1 0 ]
+[v _OSCTUNEbits OSCTUNEbits `VES12965  1 e 1 @3995 ]
+[s S6582 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR2IE 1 0 :1:1 
 `uc 1 CCP1IE 1 0 :1:2 
 `uc 1 SSP1IE 1 0 :1:3 
@@ -1479,20 +1435,20 @@ eMXK_None 0
 `uc 1 ADIE 1 0 :1:6 
 `uc 1 PMPIE 1 0 :1:7 
 ]
-"9069
-[s S5277 . 1 `uc 1 . 1 0 :3:0 
+"8532
+[s S6591 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 SSPIE 1 0 :1:3 
 `uc 1 TXIE 1 0 :1:4 
 `uc 1 RCIE 1 0 :1:5 
 ]
-[s S5282 . 1 `uc 1 . 1 0 :7:0 
+[s S6596 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 PSPIE 1 0 :1:7 
 ]
-[u S5285 . 1 `S5268 1 . 1 0 `S5277 1 . 1 0 `S5282 1 . 1 0 ]
-[v _PIE1bits PIE1bits `VES5285  1 e 1 @3997 ]
-"9133
+[u S6599 . 1 `S6582 1 . 1 0 `S6591 1 . 1 0 `S6596 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES6599  1 e 1 @3997 ]
+"8597
 [v _PIR1 PIR1 `VEuc  1 e 1 @3998 ]
-[s S5194 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[s S6511 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 CCP1IF 1 0 :1:2 
 `uc 1 SSP1IF 1 0 :1:3 
@@ -1501,18 +1457,18 @@ eMXK_None 0
 `uc 1 ADIF 1 0 :1:6 
 `uc 1 PMPIF 1 0 :1:7 
 ]
-"9160
-[s S5203 . 1 `uc 1 . 1 0 :3:0 
+"8624
+[s S6520 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 SSPIF 1 0 :1:3 
 `uc 1 TXIF 1 0 :1:4 
 `uc 1 RCIF 1 0 :1:5 
 ]
-[s S5208 . 1 `uc 1 . 1 0 :7:0 
+[s S6525 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 PSPIF 1 0 :1:7 
 ]
-[u S5211 . 1 `S5194 1 . 1 0 `S5203 1 . 1 0 `S5208 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES5211  1 e 1 @3998 ]
-[s S5108 . 1 `uc 1 TMR1IP 1 0 :1:0 
+[u S6528 . 1 `S6511 1 . 1 0 `S6520 1 . 1 0 `S6525 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES6528  1 e 1 @3998 ]
+[s S6428 . 1 `uc 1 TMR1IP 1 0 :1:0 
 `uc 1 TMR2IP 1 0 :1:1 
 `uc 1 CCP1IP 1 0 :1:2 
 `uc 1 SSP1IP 1 0 :1:3 
@@ -1521,20 +1477,20 @@ eMXK_None 0
 `uc 1 ADIP 1 0 :1:6 
 `uc 1 PMPIP 1 0 :1:7 
 ]
-"9251
-[s S5117 . 1 `uc 1 . 1 0 :3:0 
+"8716
+[s S6437 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 SSPIP 1 0 :1:3 
 `uc 1 TXIP 1 0 :1:4 
 `uc 1 RCIP 1 0 :1:5 
 ]
-[s S5122 . 1 `uc 1 . 1 0 :7:0 
+[s S6442 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 PSPIP 1 0 :1:7 
 ]
-[u S5125 . 1 `S5108 1 . 1 0 `S5117 1 . 1 0 `S5122 1 . 1 0 ]
-[v _IPR1bits IPR1bits `VES5125  1 e 1 @3999 ]
-"9394
+[u S6445 . 1 `S6428 1 . 1 0 `S6437 1 . 1 0 `S6442 1 . 1 0 ]
+[v _IPR1bits IPR1bits `VES6445  1 e 1 @3999 ]
+"8861
 [v _PIR2 PIR2 `VEuc  1 e 1 @4001 ]
-[s S5307 . 1 `uc 1 CCP3IE 1 0 :1:0 
+[s S6621 . 1 `uc 1 CCP3IE 1 0 :1:0 
 `uc 1 CCP4IE 1 0 :1:1 
 `uc 1 CCP5IE 1 0 :1:2 
 `uc 1 TMR4IE 1 0 :1:3 
@@ -1543,32 +1499,23 @@ eMXK_None 0
 `uc 1 BCL2IE 1 0 :1:6 
 `uc 1 SSP2IE 1 0 :1:7 
 ]
-"9596
-[s S5316 . 1 `uc 1 RXB0IE 1 0 :1:0 
-]
-[s S5318 . 1 `uc 1 . 1 0 :1:0 
+"9051
+[s S6630 . 1 `uc 1 RXB0IE 1 0 :1:0 
 `uc 1 RXB1IE 1 0 :1:1 
-]
-[s S5321 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 RXBNIE 1 0 :1:1 
-]
-[s S5324 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 TXB0IE 1 0 :1:2 
-]
-[s S5327 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 TXB1IE 1 0 :1:3 
-]
-[s S5330 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 TXB2IE 1 0 :1:4 
 ]
-[s S5333 . 1 `uc 1 . 1 0 :4:0 
+[s S6636 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIE 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
 `uc 1 TXBNIE 1 0 :1:4 
 ]
-[u S5336 . 1 `S5307 1 . 1 0 `S5316 1 . 1 0 `S5318 1 . 1 0 `S5321 1 . 1 0 `S5324 1 . 1 0 `S5327 1 . 1 0 `S5330 1 . 1 0 `S5333 1 . 1 0 ]
-[v _PIE3bits PIE3bits `VES5336  1 e 1 @4003 ]
-"9675
+[u S6641 . 1 `S6621 1 . 1 0 `S6630 1 . 1 0 `S6636 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES6641  1 e 1 @4003 ]
+"9131
 [v _PIR3 PIR3 `VEuc  1 e 1 @4004 ]
-[s S5233 . 1 `uc 1 CCP3IF 1 0 :1:0 
+[s S6550 . 1 `uc 1 CCP3IF 1 0 :1:0 
 `uc 1 CCP4IF 1 0 :1:1 
 `uc 1 CCP5IF 1 0 :1:2 
 `uc 1 TMR4IF 1 0 :1:3 
@@ -1577,16 +1524,15 @@ eMXK_None 0
 `uc 1 BCL2IF 1 0 :1:6 
 `uc 1 SSP2IF 1 0 :1:7 
 ]
-"9700
-[s S5242 . 1 `uc 1 . 1 0 :1:0 
+"9154
+[s S6559 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 RXBNIF 1 0 :1:1 
-]
-[s S5245 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 . 1 0 :2:2 
 `uc 1 TXBNIF 1 0 :1:4 
 ]
-[u S5248 . 1 `S5233 1 . 1 0 `S5242 1 . 1 0 `S5245 1 . 1 0 ]
-[v _PIR3bits PIR3bits `VES5248  1 e 1 @4004 ]
-[s S5147 . 1 `uc 1 CCP3IP 1 0 :1:0 
+[u S6564 . 1 `S6550 1 . 1 0 `S6559 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES6564  1 e 1 @4004 ]
+[s S6467 . 1 `uc 1 CCP3IP 1 0 :1:0 
 `uc 1 CCP4IP 1 0 :1:1 
 `uc 1 CCP5IP 1 0 :1:2 
 `uc 1 TMR4IP 1 0 :1:3 
@@ -1595,51 +1541,46 @@ eMXK_None 0
 `uc 1 BCL2IP 1 0 :1:6 
 `uc 1 SSP2IP 1 0 :1:7 
 ]
-"9779
-[s S5156 . 1 `uc 1 . 1 0 :1:0 
+"9232
+[s S6476 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 RXBNIP 1 0 :1:1 
-]
-[s S5159 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 . 1 0 :2:2 
 `uc 1 TXBNIP 1 0 :1:4 
 ]
-[u S5162 . 1 `S5147 1 . 1 0 `S5156 1 . 1 0 `S5159 1 . 1 0 ]
-[v _IPR3bits IPR3bits `VES5162  1 e 1 @4005 ]
-"12136
-[v _ANCON0 ANCON0 `VEuc  1 e 1 @4033 ]
-[s S10434 . 1 `uc 1 ADCS 1 0 :3:0 
+[u S6481 . 1 `S6467 1 . 1 0 `S6476 1 . 1 0 ]
+[v _IPR3bits IPR3bits `VES6481  1 e 1 @4005 ]
+[s S11582 . 1 `uc 1 ADCS 1 0 :3:0 
 `uc 1 ACQT 1 0 :3:3 
 `uc 1 ADCAL 1 0 :1:6 
 `uc 1 ADFM 1 0 :1:7 
 ]
-"12245
-[s S10439 . 1 `uc 1 ADCS0 1 0 :1:0 
+"11645
+[s S11587 . 1 `uc 1 ADCS0 1 0 :1:0 
 `uc 1 ADCS1 1 0 :1:1 
 `uc 1 ADCS2 1 0 :1:2 
 `uc 1 ACQT0 1 0 :1:3 
 `uc 1 ACQT1 1 0 :1:4 
 `uc 1 ACQT2 1 0 :1:5 
 ]
-[s S10446 . 1 `uc 1 . 1 0 :3:0 
+[s S11594 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 CHSN3 1 0 :1:3 
-]
-[s S10449 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 VCFG01 1 0 :1:4 
-]
-[s S10452 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 VCFG11 1 0 :1:5 
 ]
-[u S10455 . 1 `S10434 1 . 1 0 `S10439 1 . 1 0 `S10446 1 . 1 0 `S10449 1 . 1 0 `S10452 1 . 1 0 ]
-[v _ADCON1bits ADCON1bits `VES10455  1 e 1 @4033 ]
-[s S10360 . 1 `uc 1 . 1 0 :1:0 
+[u S11599 . 1 `S11582 1 . 1 0 `S11587 1 . 1 0 `S11594 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES11599  1 e 1 @4033 ]
+"11715
+[v _ANCON0 ANCON0 `VEuc  1 e 1 @4033 ]
+[s S11511 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO_NOT_DONE 1 0 :1:1 
 ]
-"12436
-[s S10363 . 1 `uc 1 ADON 1 0 :1:0 
+"11834
+[s S11514 . 1 `uc 1 ADON 1 0 :1:0 
 `uc 1 GO_nDONE 1 0 :1:1 
 `uc 1 CHS 1 0 :4:2 
 `uc 1 VCFG 1 0 :2:6 
 ]
-[s S10368 . 1 `uc 1 . 1 0 :1:0 
+[s S11519 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 DONE 1 0 :1:1 
 `uc 1 CHS0 1 0 :1:2 
 `uc 1 CHS1 1 0 :1:3 
@@ -1648,154 +1589,97 @@ eMXK_None 0
 `uc 1 VCFG0 1 0 :1:6 
 `uc 1 VCFG1 1 0 :1:7 
 ]
-[s S10377 . 1 `uc 1 . 1 0 :1:0 
+[s S11528 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO_DONE 1 0 :1:1 
 ]
-[s S10380 . 1 `uc 1 . 1 0 :1:0 
+[s S11531 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO 1 0 :1:1 
 ]
-[s S10383 . 1 `uc 1 . 1 0 :1:0 
+[s S11534 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 NOT_DONE 1 0 :1:1 
 ]
-[s S10386 . 1 `uc 1 . 1 0 :7:0 
+[s S11537 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GODONE 1 0 :1:1 
+`uc 1 . 1 0 :5:2 
 `uc 1 ADCAL 1 0 :1:7 
 ]
-[s S10389 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 GODONE 1 0 :1:1 
-]
-[u S10392 . 1 `S10360 1 . 1 0 `S10363 1 . 1 0 `S10368 1 . 1 0 `S10377 1 . 1 0 `S10380 1 . 1 0 `S10383 1 . 1 0 `S10386 1 . 1 0 `S10389 1 . 1 0 ]
-[v _ADCON0bits ADCON0bits `VES10392  1 e 1 @4034 ]
-"12531
+[u S11542 . 1 `S11511 1 . 1 0 `S11514 1 . 1 0 `S11519 1 . 1 0 `S11528 1 . 1 0 `S11531 1 . 1 0 `S11534 1 . 1 0 `S11537 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES11542  1 e 1 @4034 ]
+"12004
 [v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
-"12537
+"12011
 [v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
-"12543
+"12018
 [v _SSP1CON2 SSP1CON2 `VEuc  1 e 1 @4037 ]
-"12624
-[s S11078 . 1 `uc 1 . 1 0 :5:0 
-`uc 1 ACKDT1 1 0 :1:5 
-]
-[s S11081 . 1 `uc 1 . 1 0 :4:0 
-`uc 1 ACKEN1 1 0 :1:4 
-]
-[s S11084 . 1 `uc 1 . 1 0 :6:0 
-`uc 1 ACKSTAT1 1 0 :1:6 
-]
-[s S11087 . 1 `uc 1 . 1 0 :1:0 
+"12066
+[s S12172 . 1 `uc 1 SEN1 1 0 :1:0 
 `uc 1 ADMSK11 1 0 :1:1 
-]
-[s S11090 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 ADMSK21 1 0 :1:2 
-]
-[s S11093 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 ADMSK31 1 0 :1:3 
-]
-[s S11096 . 1 `uc 1 . 1 0 :4:0 
-`uc 1 ADMSK41 1 0 :1:4 
-]
-[s S11099 . 1 `uc 1 . 1 0 :5:0 
-`uc 1 ADMSK51 1 0 :1:5 
-]
-[s S11102 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 ACKEN1 1 0 :1:4 
+`uc 1 ACKDT1 1 0 :1:5 
+`uc 1 ACKSTAT1 1 0 :1:6 
 `uc 1 GCEN1 1 0 :1:7 
 ]
-[s S11105 . 1 `uc 1 . 1 0 :2:0 
-`uc 1 PEN1 1 0 :1:2 
-]
-[s S11108 . 1 `uc 1 . 1 0 :3:0 
-`uc 1 RCEN1 1 0 :1:3 
-]
-[s S11111 . 1 `uc 1 . 1 0 :1:0 
+[s S12181 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 RSEN1 1 0 :1:1 
+`uc 1 PEN1 1 0 :1:2 
+`uc 1 RCEN1 1 0 :1:3 
+`uc 1 ADMSK41 1 0 :1:4 
+`uc 1 ADMSK51 1 0 :1:5 
 ]
-[s S11114 . 1 `uc 1 SEN1 1 0 :1:0 
-]
-[u S11116 . 1 `S11062 1 . 1 0 `S11071 1 . 1 0 `S11078 1 . 1 0 `S11081 1 . 1 0 `S11084 1 . 1 0 `S11087 1 . 1 0 `S11090 1 . 1 0 `S11093 1 . 1 0 `S11096 1 . 1 0 `S11099 1 . 1 0 `S11102 1 . 1 0 `S11105 1 . 1 0 `S11108 1 . 1 0 `S11111 1 . 1 0 `S11114 1 . 1 0 ]
-[v _SSP1CON2bits SSP1CON2bits `VES11116  1 e 1 @4037 ]
-"12962
+[u S12188 . 1 `S12156 1 . 1 0 `S12165 1 . 1 0 `S12172 1 . 1 0 `S12181 1 . 1 0 ]
+[v _SSP1CON2bits SSP1CON2bits `VES12188  1 e 1 @4037 ]
+"12372
 [v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @4038 ]
-"13018
-[s S5882 . 1 `uc 1 . 1 0 :4:0 
-`uc 1 CKP1 1 0 :1:4 
-]
-[s S5885 . 1 `uc 1 . 1 0 :5:0 
-`uc 1 SSPEN1 1 0 :1:5 
-]
-[s S5888 . 1 `uc 1 SSPM01 1 0 :1:0 
-]
-[s S5890 . 1 `uc 1 . 1 0 :1:0 
+"12407
+[s S7088 . 1 `uc 1 SSPM01 1 0 :1:0 
 `uc 1 SSPM11 1 0 :1:1 
-]
-[s S5893 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 SSPM21 1 0 :1:2 
-]
-[s S5896 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 SSPM31 1 0 :1:3 
-]
-[s S5899 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 CKP1 1 0 :1:4 
+`uc 1 SSPEN1 1 0 :1:5 
 `uc 1 SSPOV1 1 0 :1:6 
-]
-[s S5902 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 WCOL1 1 0 :1:7 
 ]
-[u S5905 . 1 `S512 1 . 1 0 `S518 1 . 1 0 `S5882 1 . 1 0 `S5885 1 . 1 0 `S5888 1 . 1 0 `S5890 1 . 1 0 `S5893 1 . 1 0 `S5896 1 . 1 0 `S5899 1 . 1 0 `S5902 1 . 1 0 ]
-[v _SSP1CON1bits SSP1CON1bits `VES5905  1 e 1 @4038 ]
-"13241
+[u S7097 . 1 `S482 1 . 1 0 `S488 1 . 1 0 `S7088 1 . 1 0 ]
+[v _SSP1CON1bits SSP1CON1bits `VES7097  1 e 1 @4038 ]
+"12610
 [v _SSP1STAT SSP1STAT `VEuc  1 e 1 @4039 ]
-"13371
+"12710
 [s S442 . 1 `uc 1 BF1 1 0 :1:0 
-]
-[s S444 . 1 `uc 1 . 1 0 :6:0 
-`uc 1 CKE1 1 0 :1:6 
-]
-[s S447 . 1 `uc 1 . 1 0 :5:0 
-`uc 1 DA 1 0 :1:5 
-]
-[s S450 . 1 `uc 1 . 1 0 :5:0 
-`uc 1 DA1 1 0 :1:5 
-]
-[s S453 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 UA1 1 0 :1:1 
 `uc 1 RW 1 0 :1:2 
-]
-[s S456 . 1 `uc 1 . 1 0 :2:0 
-`uc 1 RW1 1 0 :1:2 
-]
-[s S459 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 START 1 0 :1:3 
+`uc 1 STOP 1 0 :1:4 
+`uc 1 DA 1 0 :1:5 
+`uc 1 CKE1 1 0 :1:6 
 `uc 1 SMP1 1 0 :1:7 
 ]
-[s S462 . 1 `uc 1 . 1 0 :3:0 
-`uc 1 START 1 0 :1:3 
-]
-[s S465 . 1 `uc 1 . 1 0 :3:0 
+[s S451 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW1 1 0 :1:2 
 `uc 1 START1 1 0 :1:3 
-]
-[s S468 . 1 `uc 1 . 1 0 :4:0 
-`uc 1 STOP 1 0 :1:4 
-]
-[s S471 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 STOP1 1 0 :1:4 
+`uc 1 DA1 1 0 :1:5 
 ]
-[s S474 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 UA1 1 0 :1:1 
-]
-[s S477 . 1 `uc 1 . 1 0 :2:0 
+[s S457 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 NOT_W 1 0 :1:2 
 ]
-[s S480 . 1 `uc 1 . 1 0 :5:0 
+[s S460 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 NOT_A 1 0 :1:5 
 ]
-[u S483 . 1 `S390 1 . 1 0 `S393 1 . 1 0 `S396 1 . 1 0 `S405 1 . 1 0 `S410 1 . 1 0 `S416 1 . 1 0 `S421 1 . 1 0 `S424 1 . 1 0 `S427 1 . 1 0 `S432 1 . 1 0 `S437 1 . 1 0 `S442 1 . 1 0 `S444 1 . 1 0 `S447 1 . 1 0 `S450 1 . 1 0 `S453 1 . 1 0 `S456 1 . 1 0 `S459 1 . 1 0 `S462 1 . 1 0 `S465 1 . 1 0 `S468 1 . 1 0 `S471 1 . 1 0 `S474 1 . 1 0 `S477 1 . 1 0 `S480 1 . 1 0 ]
-[v _SSP1STATbits SSP1STATbits `VES483  1 e 1 @4039 ]
-"13898
+[u S463 . 1 `S390 1 . 1 0 `S393 1 . 1 0 `S396 1 . 1 0 `S405 1 . 1 0 `S410 1 . 1 0 `S416 1 . 1 0 `S421 1 . 1 0 `S424 1 . 1 0 `S427 1 . 1 0 `S432 1 . 1 0 `S437 1 . 1 0 `S442 1 . 1 0 `S451 1 . 1 0 `S457 1 . 1 0 `S460 1 . 1 0 ]
+[v _SSP1STATbits SSP1STATbits `VES463  1 e 1 @4039 ]
+"13208
 [v _SSP1ADD SSP1ADD `VEuc  1 e 1 @4040 ]
-"14264
+"13492
 [v _SSP1BUF SSP1BUF `VEuc  1 e 1 @4041 ]
-[s S12287 . 1 `uc 1 T2CKPS 1 0 :2:0 
+[s S13281 . 1 `uc 1 T2CKPS 1 0 :2:0 
 `uc 1 TMR2ON 1 0 :1:2 
 `uc 1 TOUTPS 1 0 :4:3 
 ]
-"14296
-[s S12291 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+"13525
+[s S13285 . 1 `uc 1 T2CKPS0 1 0 :1:0 
 `uc 1 T2CKPS1 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 T2OUTPS0 1 0 :1:3 
@@ -1803,29 +1687,29 @@ eMXK_None 0
 `uc 1 T2OUTPS2 1 0 :1:5 
 `uc 1 T2OUTPS3 1 0 :1:6 
 ]
-[u S12299 . 1 `S12287 1 . 1 0 `S12291 1 . 1 0 ]
-[v _T2CONbits T2CONbits `VES12299  1 e 1 @4042 ]
-"14345
+[u S13293 . 1 `S13281 1 . 1 0 `S13285 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES13293  1 e 1 @4042 ]
+"13575
 [v _PR2 PR2 `VEuc  1 e 1 @4043 ]
-[s S11984 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+[s S12978 . 1 `uc 1 NOT_BOR 1 0 :1:0 
 ]
-"14773
-[s S11986 . 1 `uc 1 . 1 0 :1:0 
+"14011
+[s S12980 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 NOT_POR 1 0 :1:1 
 ]
-[s S11989 . 1 `uc 1 . 1 0 :2:0 
+[s S12983 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 NOT_PD 1 0 :1:2 
 ]
-[s S11992 . 1 `uc 1 . 1 0 :3:0 
+[s S12986 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 NOT_TO 1 0 :1:3 
 ]
-[s S11995 . 1 `uc 1 . 1 0 :4:0 
+[s S12989 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 NOT_RI 1 0 :1:4 
 ]
-[s S11998 . 1 `uc 1 . 1 0 :5:0 
+[s S12992 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 NOT_CM 1 0 :1:5 
 ]
-[s S12001 . 1 `uc 1 nBOR 1 0 :1:0 
+[s S12995 . 1 `uc 1 nBOR 1 0 :1:0 
 `uc 1 nPOR 1 0 :1:1 
 `uc 1 nPD 1 0 :1:2 
 `uc 1 nTO 1 0 :1:3 
@@ -1834,33 +1718,33 @@ eMXK_None 0
 `uc 1 . 1 0 :1:6 
 `uc 1 IPEN 1 0 :1:7 
 ]
-[s S12010 . 1 `uc 1 BOR 1 0 :1:0 
+[s S13004 . 1 `uc 1 BOR 1 0 :1:0 
 `uc 1 POR 1 0 :1:1 
 `uc 1 PD 1 0 :1:2 
 `uc 1 TO 1 0 :1:3 
 `uc 1 RI 1 0 :1:4 
 `uc 1 CM 1 0 :1:5 
 ]
-[u S12017 . 1 `S11984 1 . 1 0 `S11986 1 . 1 0 `S11989 1 . 1 0 `S11992 1 . 1 0 `S11995 1 . 1 0 `S11998 1 . 1 0 `S12001 1 . 1 0 `S12010 1 . 1 0 ]
-[v _RCONbits RCONbits `VES12017  1 e 1 @4048 ]
-[s S12168 . 1 `uc 1 T0PS 1 0 :3:0 
+[u S13011 . 1 `S12978 1 . 1 0 `S12980 1 . 1 0 `S12983 1 . 1 0 `S12986 1 . 1 0 `S12989 1 . 1 0 `S12992 1 . 1 0 `S12995 1 . 1 0 `S13004 1 . 1 0 ]
+[v _RCONbits RCONbits `VES13011  1 e 1 @4048 ]
+[s S13162 . 1 `uc 1 T0PS 1 0 :3:0 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
 `uc 1 T0CS 1 0 :1:5 
 `uc 1 T08BIT 1 0 :1:6 
 `uc 1 TMR0ON 1 0 :1:7 
 ]
-"15662
-[s S12175 . 1 `uc 1 T0PS0 1 0 :1:0 
+"14905
+[s S13169 . 1 `uc 1 T0PS0 1 0 :1:0 
 `uc 1 T0PS1 1 0 :1:1 
 `uc 1 T0PS2 1 0 :1:2 
 `uc 1 T0PS3 1 0 :1:3 
 ]
-[u S12180 . 1 `S12168 1 . 1 0 `S12175 1 . 1 0 ]
-[v _T0CONbits T0CONbits `VES12180  1 e 1 @4053 ]
-"15716
+[u S13174 . 1 `S13162 1 . 1 0 `S13169 1 . 1 0 ]
+[v _T0CONbits T0CONbits `VES13174  1 e 1 @4053 ]
+"14960
 [v _TMR0 TMR0 `VEus  1 e 2 @4054 ]
-[s S11545 . 1 `uc 1 RBIF 1 0 :1:0 
+[s S12535 . 1 `uc 1 RBIF 1 0 :1:0 
 `uc 1 INT0IF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 RBIE 1 0 :1:3 
@@ -1869,8 +1753,8 @@ eMXK_None 0
 `uc 1 PEIE_GIEL 1 0 :1:6 
 `uc 1 GIE_GIEH 1 0 :1:7 
 ]
-"16203
-[s S11554 . 1 `uc 1 . 1 0 :1:0 
+"15471
+[s S12544 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 INT0F 1 0 :1:1 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -1879,52 +1763,52 @@ eMXK_None 0
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-[s S11563 . 1 `uc 1 . 1 0 :6:0 
+[s S12553 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 GIEL 1 0 :1:6 
 `uc 1 GIEH 1 0 :1:7 
 ]
-[u S11567 . 1 `S11545 1 . 1 0 `S11554 1 . 1 0 `S11563 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES11567  1 e 1 @4082 ]
-"46 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Events.c
+[u S12557 . 1 `S12535 1 . 1 0 `S12544 1 . 1 0 `S12553 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES12557  1 e 1 @4082 ]
+"46 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Events.c
 [v _val val `us  1 s 2 val ]
 "70
 [v _pShiftVal pShiftVal `us  1 e 2 0 ]
-"26 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Functions.c
-[s S10351 ADC 5 `E7686 1 mChannel 1 0 `us 1 mValue 2 1 `*.39S10351 1 mNext 2 3 ]
-[v _ADC_AN0 ADC_AN0 `S10351  1 e 5 0 ]
+"26 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Functions.c
+[s S11502 ADC 5 `E6742 1 mChannel 1 0 `us 1 mValue 2 1 `*.39S11502 1 mNext 2 3 ]
+[v _ADC_AN0 ADC_AN0 `S11502  1 e 5 0 ]
 "27
-[v _ADC_AN1 ADC_AN1 `S10351  1 e 5 0 ]
+[v _ADC_AN1 ADC_AN1 `S11502  1 e 5 0 ]
 "28
-[v _ADC_AN2 ADC_AN2 `S10351  1 e 5 0 ]
+[v _ADC_AN2 ADC_AN2 `S11502  1 e 5 0 ]
 "29
-[v _ADC_AN3 ADC_AN3 `S10351  1 e 5 0 ]
-[s S9775 . 1 `uc 1 pButton 1 0 :4:0 
+[v _ADC_AN3 ADC_AN3 `S11502  1 e 5 0 ]
+[s S10977 . 1 `uc 1 pButton 1 0 :4:0 
 `uc 1 . 1 0 :4:4 
 ]
-"17 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\HMI.c
-[s S9778 . 1 `uc 1 GLED 1 0 :1:0 
+"17 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/HMI.c
+[s S10980 . 1 `uc 1 GLED 1 0 :1:0 
 `uc 1 RLED 1 0 :1:1 
 `uc 1 BLED 1 0 :1:2 
 `uc 1 YLED 1 0 :1:3 
 `uc 1 . 1 0 :4:4 
 ]
-[s S9784 . 1 `uc 1 UPLED 1 0 :1:0 
+[s S10986 . 1 `uc 1 UPLED 1 0 :1:0 
 `uc 1 DOWNLED 1 0 :1:1 
 `uc 1 LEFTLED 1 0 :1:2 
 `uc 1 RIGHTLED 1 0 :1:3 
 `uc 1 . 1 0 :4:4 
 ]
-[u S9790 . 1 `S9775 1 . 1 0 `S9778 1 . 1 0 `S9784 1 . 1 0 ]
-[s S9794 . 8 `[6]uc 1 pSevenSegment 6 0 `S9790 1 . 1 6 `uc 1 pBarGraph 1 7 ]
-[u S9798 . 8 `[8]uc 1 Bytes 8 0 `S9794 1 . 8 0 ]
+[u S10992 . 1 `S10977 1 . 1 0 `S10980 1 . 1 0 `S10986 1 . 1 0 ]
+[s S10996 . 8 `[6]uc 1 pSevenSegment 6 0 `S10992 1 . 1 6 `uc 1 pBarGraph 1 7 ]
+[u S11000 . 8 `[8]uc 1 Bytes 8 0 `S10996 1 . 8 0 ]
 [s S23 Button 10 `uc 1 mState 1 0 `uc 1 mCount 1 1 `us 1 mThreshold 2 2 `*.38(v 1 mFunction 3 4 `*.38(uc 1 mGetState 3 7 ]
-[s S9813 HMI 58 `S9798 1 . 8 0 `S23 1 mRight 10 8 `S23 1 mLeft 10 18 `S23 1 mUp 10 28 `S23 1 mDown 10 38 `S23 1 mDIP 10 48 ]
-[v _HMIBoard HMIBoard `S9813  1 e 58 0 ]
-"5 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/ADC.c
+[s S11015 HMI 58 `S11000 1 . 8 0 `S23 1 mRight 10 8 `S23 1 mLeft 10 18 `S23 1 mUp 10 28 `S23 1 mDown 10 38 `S23 1 mDIP 10 48 ]
+[v _HMIBoard HMIBoard `S11015  1 e 58 0 ]
+"5 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/ADC.c
 [v _ADC_Initialised ADC_Initialised `uc  1 s 1 ADC_Initialised ]
 "6
-[v _lCurrent lCurrent `*.39S10351  1 s 2 lCurrent ]
-"30 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Console.c
+[v _lCurrent lCurrent `*.39S11502  1 s 2 lCurrent ]
+"30 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Console.c
 [v _change change `uc  1 s 1 change ]
 "31
 [v _clearall clearall `uc  1 s 1 clearall ]
@@ -1935,20 +1819,20 @@ eMXK_None 0
 [v _lCBuffer lCBuffer `[15]us  1 s 30 lCBuffer ]
 "35
 [v _lBuffer lBuffer `[15][20]uc  1 s 300 lBuffer ]
-[s S660 Point 4 `s 1 x 2 0 `s 1 y 2 2 ]
+[s S595 Point 4 `s 1 x 2 0 `s 1 y 2 2 ]
 "50
-[v _gCursor gCursor `S660  1 s 4 gCursor ]
+[v _gCursor gCursor `S595  1 s 4 gCursor ]
 "51
-[v _gCharSize gCharSize `S660  1 s 4 gCharSize ]
+[v _gCharSize gCharSize `S595  1 s 4 gCharSize ]
 "52
-[v _gLineSize gLineSize `S660  1 s 4 gLineSize ]
+[v _gLineSize gLineSize `S595  1 s 4 gLineSize ]
 "53
 [v _gForecolour gForecolour `us  1 s 2 gForecolour ]
 "54
 [v _gBackcolour gBackcolour `us  1 s 2 gBackcolour ]
 "56
 [v _Font5x7 Font5x7 `C[480]uc  1 e 480 0 ]
-"6 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/I2C.c
+"6 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/I2C.c
 [v _I2C1_Done I2C1_Done `*.38(v  1 e 3 0 ]
 "7
 [v _I2C2_Done I2C2_Done `*.38(v  1 e 3 0 ]
@@ -1956,33 +1840,33 @@ eMXK_None 0
 [v _I2C1_More I2C1_More `*.38(uc  1 e 3 0 ]
 "9
 [v _I2C2_More I2C2_More `*.38(uc  1 e 3 0 ]
-[s S10680 I2CT 7 `uc 1 mAddress 1 0 `*.2uc 1 mData 3 1 `uc 1 mIndex 1 4 `uc 1 mCount 1 5 `E7824 1 mState 1 6 ]
+[s S11820 I2CT 7 `uc 1 mAddress 1 0 `*.2uc 1 mData 3 1 `uc 1 mIndex 1 4 `uc 1 mCount 1 5 `E6880 1 mState 1 6 ]
 "11
-[v _I2C1T I2C1T `S10680  1 e 7 0 ]
-[v _I2C2T I2C2T `S10680  1 e 7 0 ]
-"7 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/LCD.c
+[v _I2C1T I2C1T `S11820  1 e 7 0 ]
+[v _I2C2T I2C2T `S11820  1 e 7 0 ]
+"7 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/LCD.c
 [v _w w `uc  1 s 1 w ]
 "8
 [v _l l `uc  1 s 1 l ]
 "114
 [v _InitList InitList `C[89]us  1 e 178 0 ]
-"20 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Motor.c
+"20 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Motor.c
 [v _lStepFunction lStepFunction `*.38(v  1 e 3 0 ]
-[s S11619 Motor 6 `s 1 mDelta 2 0 `s 1 mFrequency 2 2 `us 1 mAddress 2 4 ]
+[s S12613 Motor 6 `s 1 mDelta 2 0 `s 1 mFrequency 2 2 `us 1 mAddress 2 4 ]
 "21
-[v _lMotor lMotor `*.2S11619  1 e 2 0 ]
-"5 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/MXK.c
+[v _lMotor lMotor `*.2S12613  1 e 2 0 ]
+"5 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/MXK.c
 [v _TestButton TestButton `S23  1 e 10 0 ]
 "6
 [v _DIPSwitch DIPSwitch `S23  1 e 10 0 ]
 "31
-[v _Bus_State Bus_State `E7876  1 e 1 0 ]
+[v _Bus_State Bus_State `E6932  1 e 1 0 ]
 "32
 [v _lQueue lQueue `VE*.38(v  1 e 3 0 ]
 [s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
 `uc 1 mBit4_7 1 0 :4:4 
 ]
-"8 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
+"8 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
 [s S65 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 mBit1_4 1 0 :4:1 
 `uc 1 . 1 0 :3:5 
@@ -2057,44 +1941,35 @@ eMXK_None 0
 [v _PortF_Property PortF_Property `CS136  1 s 2 PortF_Property ]
 "19
 [v _PortG_Property PortG_Property `CS136  1 s 2 PortG_Property ]
-"10 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/SPI.c
-[u S509 . 3 `*.2S122 1 SSPSTATT 3 0 `*.2S483 1 SSPSTATTb 3 0 ]
-[u S557 . 3 `*.2S122 1 SSPCON1T 3 0 `S546 1 SSPCON1Tb 1 0 ]
-[s S560 SPI 11 `uc 1 mBusy 1 0 `E7778 1 mBits 1 1 `E7768 1 mChannel 1 2 `S509 1 . 3 3 `S557 1 . 3 6 `*.39uc 1 SSPBUF 2 9 ]
-[v _SPI2 SPI2 `S560  1 e 11 0 ]
-[v _SPI1 SPI1 `S560  1 e 11 0 ]
-"17 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Timer0.c
+"10 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/SPI.c
+[u S479 . 3 `*.2S122 1 SSPSTATT 3 0 `*.2S463 1 SSPSTATTb 3 0 ]
+[u S506 . 3 `*.2S122 1 SSPCON1T 3 0 `S502 1 SSPCON1Tb 1 0 ]
+[s S509 SPI 11 `uc 1 mBusy 1 0 `E6834 1 mBits 1 1 `E6824 1 mChannel 1 2 `S479 1 . 3 3 `S506 1 . 3 6 `*.39uc 1 SSPBUF 2 9 ]
+[v _SPI2 SPI2 `S509  1 e 11 0 ]
+[v _SPI1 SPI1 `S509  1 e 11 0 ]
+"17 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Timer0.c
 [v _COUNTER COUNTER `us  1 s 2 COUNTER ]
 "18
 [v _INDEX INDEX `uc  1 s 1 INDEX ]
 "74
 [v _gISR gISR `*.38(v  1 s 3 gISR ]
-"3 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.c
+"3 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.c
 [v _MASKS MASKS `C[9]uc  1 s 9 MASKS ]
-"22 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\main.c
+"22 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"84
+"85
 } 0
-"33 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/MXK.c
+"33 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/MXK.c
 [v _MXK_Init MXK_Init `(v  1 e 1 0 ]
 {
 "69
 } 0
-"240 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.c
-[v _delay_ms delay_ms `(v  1 e 1 0 ]
-{
-"242
-[v delay_ms@u u `VEul  1 a 4 2 ]
-"240
-[v delay_ms@ms ms `us  1 p 2 0 ]
-"254
-} 0
-"399 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-[v _Port_SetQuadType Port_SetQuadType `(E7419  1 e 1 0 ]
+"399 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+[v _Port_SetQuadType Port_SetQuadType `(E6475  1 e 1 0 ]
 {
 "401
-[v Port_SetQuadType@Output Output `E7419  1 a 1 47 ]
+[v Port_SetQuadType@Output Output `E6475  1 a 1 54 ]
 [s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
 `uc 1 mBit4_7 1 0 :4:4 
 ]
@@ -2152,74 +2027,16 @@ eMXK_None 0
 [s S134 Word 2 `S130 1 . 2 0 ]
 [u S136 PortProperty 2 `us 1 mWord 2 0 `S134 1 mType 2 0 ]
 [s S139 Port 10 `*.32S136 1 mProperties 2 0 `*.39S122 1 mDirection 2 2 `*.39S122 1 mOutput 2 4 `*.39S122 1 mInput 2 6 `S134 1 mType 2 8 ]
-[v Port_SetQuadType@pInput pInput `C*.39S139  1 p 2 3 ]
-[v Port_SetQuadType@pQuad pQuad `E7720  1 p 1 5 ]
-[v Port_SetQuadType@pType pType `E7739  1 p 1 6 ]
+[v Port_SetQuadType@pInput pInput `C*.39S139  1 p 2 0 ]
+[v Port_SetQuadType@pQuad pQuad `E6776  1 p 1 2 ]
+[v Port_SetQuadType@pType pType `E6795  1 p 1 3 ]
 "459
 } 0
-"101 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.c
-[v _Byte_SetQuad Byte_SetQuad `(v  1 e 1 0 ]
-{
-[s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
-`uc 1 mBit4_7 1 0 :4:4 
-]
-[s S65 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 mBit1_4 1 0 :4:1 
-`uc 1 . 1 0 :3:5 
-]
-[s S69 . 1 `uc 1 . 1 0 :2:0 
-`uc 1 mBit2_5 1 0 :4:2 
-`uc 1 . 1 0 :2:6 
-]
-[s S73 . 1 `uc 1 . 1 0 :3:0 
-`uc 1 mBit3_6 1 0 :4:3 
-`uc 1 . 1 0 :1:7 
-]
-[s S77 . 1 `uc 1 mBit0_2 1 0 :3:0 
-`uc 1 mBit3_5 1 0 :3:3 
-`uc 1 mBit6_7 1 0 :2:6 
-]
-[s S81 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 mBit1_3 1 0 :3:1 
-`uc 1 mBit4_6 1 0 :3:4 
-`uc 1 . 1 0 :1:7 
-]
-[s S86 . 1 `uc 1 . 1 0 :2:0 
-`uc 1 mBit2_4 1 0 :3:2 
-`uc 1 mBit5_7 1 0 :3:5 
-]
-[s S90 . 1 `uc 1 mBit0_1 1 0 :2:0 
-`uc 1 mBit2_3 1 0 :2:2 
-`uc 1 mBit4_5 1 0 :2:4 
-`uc 1 . 1 0 :2:6 
-]
-[s S95 . 1 `uc 1 . 1 0 :1:0 
-`uc 1 mBit1_2 1 0 :2:1 
-`uc 1 mBit3_4 1 0 :2:3 
-`uc 1 mBit5_6 1 0 :2:5 
-`uc 1 . 1 0 :1:7 
-]
-[s S101 . 1 `uc 1 mBit0 1 0 :1:0 
-`uc 1 mBit1 1 0 :1:1 
-`uc 1 mBit2 1 0 :1:2 
-`uc 1 mBit3 1 0 :1:3 
-`uc 1 mBit4 1 0 :1:4 
-`uc 1 mBit5 1 0 :1:5 
-`uc 1 mBit6 1 0 :1:6 
-`uc 1 mBit7 1 0 :1:7 
-]
-[u S110 . 1 `uc 1 mBits 1 0 `S62 1 . 1 0 `S65 1 . 1 0 `S69 1 . 1 0 `S73 1 . 1 0 `S77 1 . 1 0 `S81 1 . 1 0 `S86 1 . 1 0 `S90 1 . 1 0 `S95 1 . 1 0 `S101 1 . 1 0 ]
-[s S122 Byte 1 `S110 1 . 1 0 ]
-[v Byte_SetQuad@pInput pInput `*.39S122  1 p 2 11 ]
-[v Byte_SetQuad@pQuad pQuad `uc  1 p 1 13 ]
-[v Byte_SetQuad@pValue pValue `uc  1 p 1 14 ]
-"104
-} 0
-"150 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
+"150
 [v _Port_Init Port_Init `(v  1 e 1 0 ]
 {
 "166
-[v Port_Init@i i `uc  1 a 1 15 ]
+[v Port_Init@i i `uc  1 a 1 11 ]
 [s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
 `uc 1 mBit4_7 1 0 :4:4 
 ]
@@ -2277,15 +2094,15 @@ eMXK_None 0
 [s S134 Word 2 `S130 1 . 2 0 ]
 [u S136 PortProperty 2 `us 1 mWord 2 0 `S134 1 mType 2 0 ]
 [s S139 Port 10 `*.32S136 1 mProperties 2 0 `*.39S122 1 mDirection 2 2 `*.39S122 1 mOutput 2 4 `*.39S122 1 mInput 2 6 `S134 1 mType 2 8 ]
-[v Port_Init@pInput pInput `C*.39S139  1 p 2 10 ]
-[v Port_Init@pPort pPort `E7730  1 p 1 12 ]
+[v Port_Init@pInput pInput `C*.39S139  1 p 2 6 ]
+[v Port_Init@pPort pPort `E6786  1 p 1 8 ]
 "186
 } 0
 "513
-[v _Port_SetType Port_SetType `(E7419  1 e 1 0 ]
+[v _Port_SetType Port_SetType `(E6475  1 e 1 0 ]
 {
 "515
-[v Port_SetType@Output Output `E7419  1 a 1 9 ]
+[v Port_SetType@Output Output `E6475  1 a 1 5 ]
 [s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
 `uc 1 mBit4_7 1 0 :4:4 
 ]
@@ -2343,15 +2160,15 @@ eMXK_None 0
 [s S134 Word 2 `S130 1 . 2 0 ]
 [u S136 PortProperty 2 `us 1 mWord 2 0 `S134 1 mType 2 0 ]
 [s S139 Port 10 `*.32S136 1 mProperties 2 0 `*.39S122 1 mDirection 2 2 `*.39S122 1 mOutput 2 4 `*.39S122 1 mInput 2 6 `S134 1 mType 2 8 ]
-[v Port_SetType@pInput pInput `C*.39S139  1 p 2 6 ]
-[v Port_SetType@pType pType `E7739  1 p 1 8 ]
+[v Port_SetType@pInput pInput `C*.39S139  1 p 2 0 ]
+[v Port_SetType@pType pType `E6795  1 p 1 2 ]
 "569
 } 0
 "138
-[v _Port_CheckPortType Port_CheckPortType `(E7419  1 e 1 0 ]
+[v _Port_CheckPortType Port_CheckPortType `(E6475  1 e 1 0 ]
 {
 "140
-[v Port_CheckPortType@Output Output `E7419  1 a 1 47 ]
+[v Port_CheckPortType@Output Output `E6475  1 a 1 0 ]
 [s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
 `uc 1 mBit4_7 1 0 :4:4 
 ]
@@ -2409,19 +2226,19 @@ eMXK_None 0
 [s S134 Word 2 `S130 1 . 2 0 ]
 [u S136 PortProperty 2 `us 1 mWord 2 0 `S134 1 mType 2 0 ]
 [s S139 Port 10 `*.32S136 1 mProperties 2 0 `*.39S122 1 mDirection 2 2 `*.39S122 1 mOutput 2 4 `*.39S122 1 mInput 2 6 `S134 1 mType 2 8 ]
-[v Port_CheckPortType@pInput pInput `C*.39S139  1 p 2 3 ]
-[v Port_CheckPortType@pDrive pDrive `E7413  1 p 1 5 ]
+[v Port_CheckPortType@pInput pInput `C*.39S139  1 p 2 54 ]
+[v Port_CheckPortType@pDrive pDrive `E6469  1 p 1 56 ]
 "147
 } 0
 "126
-[v _Port_CheckQuadType Port_CheckQuadType `(E7419  1 e 1 0 ]
+[v _Port_CheckQuadType Port_CheckQuadType `(E6475  1 e 1 0 ]
 {
 "128
-[v Port_CheckQuadType@Output Output `E7419  1 a 1 2 ]
+[v Port_CheckQuadType@Output Output `E6475  1 a 1 53 ]
 "130
-[v Port_CheckQuadType@Pair2 Pair2 `E7704  1 a 1 1 ]
+[v Port_CheckQuadType@Pair2 Pair2 `E6760  1 a 1 52 ]
 "129
-[v Port_CheckQuadType@Pair1 Pair1 `E7704  1 a 1 0 ]
+[v Port_CheckQuadType@Pair1 Pair1 `E6760  1 a 1 51 ]
 [s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
 `uc 1 mBit4_7 1 0 :4:4 
 ]
@@ -2479,13 +2296,13 @@ eMXK_None 0
 [s S134 Word 2 `S130 1 . 2 0 ]
 [u S136 PortProperty 2 `us 1 mWord 2 0 `S134 1 mType 2 0 ]
 [s S139 Port 10 `*.32S136 1 mProperties 2 0 `*.39S122 1 mDirection 2 2 `*.39S122 1 mOutput 2 4 `*.39S122 1 mInput 2 6 `S134 1 mType 2 8 ]
-[v Port_CheckQuadType@pInput pInput `C*.39S139  1 p 2 0 ]
-[v Port_CheckQuadType@pQuad pQuad `E7720  1 p 1 2 ]
-[v Port_CheckQuadType@pDrive pDrive `E7413  1 p 1 3 ]
+[v Port_CheckQuadType@pInput pInput `C*.39S139  1 p 2 47 ]
+[v Port_CheckQuadType@pQuad pQuad `E6776  1 p 1 49 ]
+[v Port_CheckQuadType@pDrive pDrive `E6469  1 p 1 50 ]
 "137
 } 0
 "112
-[v _Port_CheckPairType Port_CheckPairType `(E7419  1 e 1 0 ]
+[v _Port_CheckPairType Port_CheckPairType `(E6475  1 e 1 0 ]
 {
 [s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
 `uc 1 mBit4_7 1 0 :4:4 
@@ -2545,16 +2362,16 @@ eMXK_None 0
 [u S136 PortProperty 2 `us 1 mWord 2 0 `S134 1 mType 2 0 ]
 [v Port_CheckPairType@Props Props `*.34S136  1 a 2 45 ]
 "114
-[v Port_CheckPairType@Output Output `E7419  1 a 1 44 ]
+[v Port_CheckPairType@Output Output `E6475  1 a 1 44 ]
 "118
-[v Port_CheckPairType@Pin2 Pin2 `E7694  1 a 1 43 ]
+[v Port_CheckPairType@Pin2 Pin2 `E6750  1 a 1 43 ]
 "117
-[v Port_CheckPairType@Pin1 Pin1 `E7694  1 a 1 42 ]
+[v Port_CheckPairType@Pin1 Pin1 `E6750  1 a 1 42 ]
 "112
 [s S139 Port 10 `*.32S136 1 mProperties 2 0 `*.39S122 1 mDirection 2 2 `*.39S122 1 mOutput 2 4 `*.39S122 1 mInput 2 6 `S134 1 mType 2 8 ]
 [v Port_CheckPairType@pInput pInput `C*.39S139  1 p 2 38 ]
-[v Port_CheckPairType@pPair pPair `E7704  1 p 1 40 ]
-[v Port_CheckPairType@pDrive pDrive `E7413  1 p 1 41 ]
+[v Port_CheckPairType@pPair pPair `E6760  1 p 1 40 ]
+[v Port_CheckPairType@pDrive pDrive `E6469  1 p 1 41 ]
 "125
 } 0
 "570
@@ -2565,7 +2382,7 @@ eMXK_None 0
 "573
 [v Port_Set@TypeRequired TypeRequired `us  1 a 2 34 ]
 "572
-[v Port_Set@Type Type `E7739  1 a 1 38 ]
+[v Port_Set@Type Type `E6795  1 a 1 38 ]
 [s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
 `uc 1 mBit4_7 1 0 :4:4 
 ]
@@ -2627,7 +2444,7 @@ eMXK_None 0
 [v Port_Set@pValue pValue `uc  1 p 1 17 ]
 "612
 } 0
-"110 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.c
+"110 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.c
 [v _Byte_SetByte Byte_SetByte `(v  1 e 1 0 ]
 {
 [s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
@@ -2684,66 +2501,66 @@ eMXK_None 0
 [v Byte_SetByte@pValue pValue `uc  1 p 1 2 ]
 "113
 } 0
-"426 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"426 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 "429
 "434
 [s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
 `uc 1 mBit4_7 1 0 :4:4 
 ]
-"67 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"439 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"67 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"439 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S65 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 mBit1_4 1 0 :4:1 
 `uc 1 . 1 0 :3:5 
 ]
-"67 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"445 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"67 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"445 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S69 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 mBit2_5 1 0 :4:2 
 `uc 1 . 1 0 :2:6 
 ]
-"67 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"451 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"67 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"451 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S73 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 mBit3_6 1 0 :4:3 
 `uc 1 . 1 0 :1:7 
 ]
-"67 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"459 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"67 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"459 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S77 . 1 `uc 1 mBit0_2 1 0 :3:0 
 `uc 1 mBit3_5 1 0 :3:3 
 `uc 1 mBit6_7 1 0 :2:6 
 ]
-"67 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"465 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"67 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"465 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S81 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 mBit1_3 1 0 :3:1 
 `uc 1 mBit4_6 1 0 :3:4 
 `uc 1 . 1 0 :1:7 
 ]
-"67 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"472 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"67 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"472 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S86 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 mBit2_4 1 0 :3:2 
 `uc 1 mBit5_7 1 0 :3:5 
 ]
-"67 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"480 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"67 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"480 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S90 . 1 `uc 1 mBit0_1 1 0 :2:0 
 `uc 1 mBit2_3 1 0 :2:2 
 `uc 1 mBit4_5 1 0 :2:4 
 `uc 1 . 1 0 :2:6 
 ]
-"67 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"487 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"67 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"487 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S95 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 mBit1_2 1 0 :2:1 
 `uc 1 mBit3_4 1 0 :2:3 
 `uc 1 mBit5_6 1 0 :2:5 
 `uc 1 . 1 0 :1:7 
 ]
-"67 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"497 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"67 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"497 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S101 . 1 `uc 1 mBit0 1 0 :1:0 
 `uc 1 mBit1 1 0 :1:1 
 `uc 1 mBit2 1 0 :1:2 
@@ -2753,17 +2570,17 @@ eMXK_None 0
 `uc 1 mBit6 1 0 :1:6 
 `uc 1 mBit7 1 0 :1:7 
 ]
-"67 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
+"67 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
 [u S110 . 1 `uc 1 mBits 1 0 `S62 1 . 1 0 `S65 1 . 1 0 `S69 1 . 1 0 `S73 1 . 1 0 `S77 1 . 1 0 `S81 1 . 1 0 `S86 1 . 1 0 `S90 1 . 1 0 `S95 1 . 1 0 `S101 1 . 1 0 ]
 [s S122 Byte 1 `S110 1 . 1 0 ]
 [v _GetPortTRIS GetPortTRIS `(*.39S122  1 e 2 0 ]
 {
-[v GetPortTRIS@pInput pInput `E7730  1 a 1 wreg ]
-[v GetPortTRIS@pInput pInput `E7730  1 a 1 wreg ]
-[v GetPortTRIS@pInput pInput `E7730  1 a 1 2 ]
+[v GetPortTRIS@pInput pInput `E6786  1 a 1 wreg ]
+[v GetPortTRIS@pInput pInput `E6786  1 a 1 wreg ]
+[v GetPortTRIS@pInput pInput `E6786  1 a 1 2 ]
 "88
 } 0
-"533 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"533 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 "509
 "512
 "515
@@ -2773,60 +2590,60 @@ eMXK_None 0
 [s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
 `uc 1 mBit4_7 1 0 :4:4 
 ]
-"21 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"439 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"21 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"439 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S65 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 mBit1_4 1 0 :4:1 
 `uc 1 . 1 0 :3:5 
 ]
-"21 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"445 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"21 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"445 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S69 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 mBit2_5 1 0 :4:2 
 `uc 1 . 1 0 :2:6 
 ]
-"21 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"451 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"21 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"451 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S73 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 mBit3_6 1 0 :4:3 
 `uc 1 . 1 0 :1:7 
 ]
-"21 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"459 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"21 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"459 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S77 . 1 `uc 1 mBit0_2 1 0 :3:0 
 `uc 1 mBit3_5 1 0 :3:3 
 `uc 1 mBit6_7 1 0 :2:6 
 ]
-"21 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"465 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"21 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"465 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S81 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 mBit1_3 1 0 :3:1 
 `uc 1 mBit4_6 1 0 :3:4 
 `uc 1 . 1 0 :1:7 
 ]
-"21 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"472 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"21 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"472 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S86 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 mBit2_4 1 0 :3:2 
 `uc 1 mBit5_7 1 0 :3:5 
 ]
-"21 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"480 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"21 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"480 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S90 . 1 `uc 1 mBit0_1 1 0 :2:0 
 `uc 1 mBit2_3 1 0 :2:2 
 `uc 1 mBit4_5 1 0 :2:4 
 `uc 1 . 1 0 :2:6 
 ]
-"21 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"487 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"21 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"487 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S95 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 mBit1_2 1 0 :2:1 
 `uc 1 mBit3_4 1 0 :2:3 
 `uc 1 mBit5_6 1 0 :2:5 
 `uc 1 . 1 0 :1:7 
 ]
-"21 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"497 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"21 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"497 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S101 . 1 `uc 1 mBit0 1 0 :1:0 
 `uc 1 mBit1 1 0 :1:1 
 `uc 1 mBit2 1 0 :1:2 
@@ -2836,83 +2653,83 @@ eMXK_None 0
 `uc 1 mBit6 1 0 :1:6 
 `uc 1 mBit7 1 0 :1:7 
 ]
-"21 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
+"21 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
 [u S110 . 1 `uc 1 mBits 1 0 `S62 1 . 1 0 `S65 1 . 1 0 `S69 1 . 1 0 `S73 1 . 1 0 `S77 1 . 1 0 `S81 1 . 1 0 `S86 1 . 1 0 `S90 1 . 1 0 `S95 1 . 1 0 `S101 1 . 1 0 ]
 [s S122 Byte 1 `S110 1 . 1 0 ]
 [s S124 . 2 `S122 1 LS_Byte 1 0 `S122 1 MS_Byte 1 1 ]
-"520 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"520 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S127 . 2 `uc 1 L 1 0 `uc 1 H 1 1 ]
-"21 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
+"21 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
 [u S130 . 2 `us 1 mBits 2 0 `S124 1 . 2 0 `S127 1 . 2 0 ]
 [s S134 Word 2 `S130 1 . 2 0 ]
 [u S136 PortProperty 2 `us 1 mWord 2 0 `S134 1 mType 2 0 ]
 [v _GetPortProperties GetPortProperties `(*.32S136  1 e 2 0 ]
 {
-[v GetPortProperties@pInput pInput `E7730  1 a 1 wreg ]
-[v GetPortProperties@pInput pInput `E7730  1 a 1 wreg ]
-[v GetPortProperties@pInput pInput `E7730  1 a 1 2 ]
+[v GetPortProperties@pInput pInput `E6786  1 a 1 wreg ]
+[v GetPortProperties@pInput pInput `E6786  1 a 1 wreg ]
+[v GetPortProperties@pInput pInput `E6786  1 a 1 2 ]
 "42
 } 0
-"426 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"426 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 "429
 "434
 [s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
 `uc 1 mBit4_7 1 0 :4:4 
 ]
-"44 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"439 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"44 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"439 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S65 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 mBit1_4 1 0 :4:1 
 `uc 1 . 1 0 :3:5 
 ]
-"44 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"445 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"44 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"445 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S69 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 mBit2_5 1 0 :4:2 
 `uc 1 . 1 0 :2:6 
 ]
-"44 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"451 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"44 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"451 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S73 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 mBit3_6 1 0 :4:3 
 `uc 1 . 1 0 :1:7 
 ]
-"44 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"459 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"44 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"459 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S77 . 1 `uc 1 mBit0_2 1 0 :3:0 
 `uc 1 mBit3_5 1 0 :3:3 
 `uc 1 mBit6_7 1 0 :2:6 
 ]
-"44 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"465 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"44 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"465 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S81 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 mBit1_3 1 0 :3:1 
 `uc 1 mBit4_6 1 0 :3:4 
 `uc 1 . 1 0 :1:7 
 ]
-"44 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"472 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"44 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"472 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S86 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 mBit2_4 1 0 :3:2 
 `uc 1 mBit5_7 1 0 :3:5 
 ]
-"44 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"480 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"44 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"480 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S90 . 1 `uc 1 mBit0_1 1 0 :2:0 
 `uc 1 mBit2_3 1 0 :2:2 
 `uc 1 mBit4_5 1 0 :2:4 
 `uc 1 . 1 0 :2:6 
 ]
-"44 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"487 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"44 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"487 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S95 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 mBit1_2 1 0 :2:1 
 `uc 1 mBit3_4 1 0 :2:3 
 `uc 1 mBit5_6 1 0 :2:5 
 `uc 1 . 1 0 :1:7 
 ]
-"44 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-"497 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.h
+"44 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+"497 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.h
 [s S101 . 1 `uc 1 mBit0 1 0 :1:0 
 `uc 1 mBit1 1 0 :1:1 
 `uc 1 mBit2 1 0 :1:2 
@@ -2922,26 +2739,985 @@ eMXK_None 0
 `uc 1 mBit6 1 0 :1:6 
 `uc 1 mBit7 1 0 :1:7 
 ]
-"44 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
+"44 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
 [u S110 . 1 `uc 1 mBits 1 0 `S62 1 . 1 0 `S65 1 . 1 0 `S69 1 . 1 0 `S73 1 . 1 0 `S77 1 . 1 0 `S81 1 . 1 0 `S86 1 . 1 0 `S90 1 . 1 0 `S95 1 . 1 0 `S101 1 . 1 0 ]
 [s S122 Byte 1 `S110 1 . 1 0 ]
 [v _GetPortPORT GetPortPORT `(*.39S122  1 e 2 0 ]
 {
-[v GetPortPORT@pInput pInput `E7730  1 a 1 wreg ]
-[v GetPortPORT@pInput pInput `E7730  1 a 1 wreg ]
-[v GetPortPORT@pInput pInput `E7730  1 a 1 2 ]
+[v GetPortPORT@pInput pInput `E6786  1 a 1 wreg ]
+[v GetPortPORT@pInput pInput `E6786  1 a 1 wreg ]
+[v GetPortPORT@pInput pInput `E6786  1 a 1 2 ]
 "65
 } 0
-"15 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/LED.c
+"15 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/LED.c
 [v _LED_Init LED_Init `(v  1 e 1 0 ]
 {
-[v LED_Init@pLED pLED `E7683  1 a 1 wreg ]
-[v LED_Init@pLED pLED `E7683  1 a 1 wreg ]
-[v LED_Init@pLED pLED `E7683  1 a 1 45 ]
+[v LED_Init@pLED pLED `E6739  1 a 1 wreg ]
+[v LED_Init@pLED pLED `E6739  1 a 1 wreg ]
+[v LED_Init@pLED pLED `E6739  1 a 1 45 ]
 "27
 } 0
-"189 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
-[v _Port_SetPinType Port_SetPinType `(E7419  1 e 1 0 ]
+"33
+[v _LED_Set LED_Set `(v  1 e 1 0 ]
+{
+[v LED_Set@pLED pLED `E6739  1 a 1 wreg ]
+[v LED_Set@pLED pLED `E6739  1 a 1 wreg ]
+[v LED_Set@pValue pValue `uc  1 p 1 20 ]
+[v LED_Set@pLED pLED `E6739  1 a 1 21 ]
+"44
+} 0
+"153 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/MXK.c
+[v _MXK_Dequeue MXK_Dequeue `(v  1 e 1 0 ]
+{
+"158
+} 0
+"75 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Motor.c
+[v _Motor_Step Motor_Step `(v  1 e 1 0 ]
+{
+"112
+} 0
+"89 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Timer0.c
+[v _Timer0_Stop Timer0_Stop `(v  1 e 1 0 ]
+{
+"93
+} 0
+"83
+[v _Timer0_Restart Timer0_Restart `(v  1 e 1 0 ]
+{
+"88
+} 0
+"105 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/MXK.c
+[v _MXK_SwitchTo MXK_SwitchTo `(uc  1 e 1 0 ]
+{
+[v MXK_SwitchTo@pModule pModule `E6925  1 a 1 wreg ]
+"107
+[v MXK_SwitchTo@CUR CUR `uc  1 a 1 6 ]
+"105
+[v MXK_SwitchTo@pModule pModule `E6925  1 a 1 wreg ]
+"107
+[v MXK_SwitchTo@pModule pModule `E6925  1 a 1 7 ]
+"123
+} 0
+"130
+[v _MXK_Release MXK_Release `(uc  1 e 1 0 ]
+{
+"138
+} 0
+"144
+[v _MXK_Queue MXK_Queue `(v  1 e 1 0 ]
+{
+[v MXK_Queue@pCallback pCallback `*.38(v  1 p 3 0 ]
+"147
+} 0
+"82
+[v _MXK_BlockSwitchTo MXK_BlockSwitchTo `(uc  1 e 1 0 ]
+{
+[v MXK_BlockSwitchTo@pModule pModule `E6925  1 a 1 wreg ]
+"85
+[v MXK_BlockSwitchTo@CUR CUR `uc  1 a 1 6 ]
+"82
+[v MXK_BlockSwitchTo@pModule pModule `E6925  1 a 1 wreg ]
+"85
+[v MXK_BlockSwitchTo@pModule pModule `E6925  1 a 1 7 ]
+"99
+} 0
+"255 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.c
+[v _delay_us delay_us `(v  1 e 1 0 ]
+{
+"256
+[v delay_us@u u `ul  1 a 4 2 ]
+"255
+[v delay_us@us us `us  1 p 2 0 ]
+"266
+} 0
+"172 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/LCD.c
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+{
+"174
+[v LCD_Init@i i `us  1 a 2 55 ]
+"193
+} 0
+"248
+[v _Set_Rotation Set_Rotation `(v  1 e 1 0 ]
+{
+[v Set_Rotation@m m `uc  1 a 1 wreg ]
+"250
+[v Set_Rotation@rotation rotation `uc  1 a 1 6 ]
+"248
+[v Set_Rotation@m m `uc  1 a 1 wreg ]
+"250
+[v Set_Rotation@m m `uc  1 a 1 5 ]
+"286
+} 0
+"287
+[v _LCD_Fill LCD_Fill `(v  1 e 1 0 ]
+{
+"297
+[v LCD_Fill@j j `uc  1 a 1 12 ]
+"296
+[v LCD_Fill@i i `uc  1 a 1 11 ]
+"287
+[v LCD_Fill@pColour pColour `us  1 p 2 9 ]
+"303
+} 0
+"214
+[v _Set_Addr_Window Set_Addr_Window `(v  1 e 1 0 ]
+{
+[v Set_Addr_Window@xs xs `uc  1 a 1 wreg ]
+[v Set_Addr_Window@xs xs `uc  1 a 1 wreg ]
+[v Set_Addr_Window@ys ys `uc  1 p 1 5 ]
+[v Set_Addr_Window@xe xe `uc  1 p 1 6 ]
+[v Set_Addr_Window@ye ye `uc  1 p 1 7 ]
+"216
+[v Set_Addr_Window@xs xs `uc  1 a 1 8 ]
+"232
+} 0
+"198
+[v _LCD_Word_Write LCD_Word_Write `(v  1 e 1 0 ]
+{
+[v LCD_Word_Write@value value `us  1 p 2 5 ]
+"202
+} 0
+"67
+[v _LCD_Write LCD_Write `(v  1 e 1 0 ]
+{
+[v LCD_Write@value value `uc  1 a 1 wreg ]
+[v LCD_Write@value value `uc  1 a 1 wreg ]
+[v LCD_Write@mode mode `E6761  1 p 1 3 ]
+"89
+[v LCD_Write@value value `uc  1 a 1 4 ]
+"93
+} 0
+"226 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/SPI.c
+[v _SPI_Send SPI_Send `(uc  1 e 1 0 ]
+{
+[s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+[s S65 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S69 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S73 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S77 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S81 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S86 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S90 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S95 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S101 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S110 . 1 `uc 1 mBits 1 0 `S62 1 . 1 0 `S65 1 . 1 0 `S69 1 . 1 0 `S73 1 . 1 0 `S77 1 . 1 0 `S81 1 . 1 0 `S86 1 . 1 0 `S90 1 . 1 0 `S95 1 . 1 0 `S101 1 . 1 0 ]
+[s S122 Byte 1 `S110 1 . 1 0 ]
+[s S390 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+[s S393 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+[s S396 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S405 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S410 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+[s S416 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S421 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+[s S424 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+[s S427 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S432 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[s S437 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S442 . 1 `uc 1 BF1 1 0 :1:0 
+`uc 1 UA1 1 0 :1:1 
+`uc 1 RW 1 0 :1:2 
+`uc 1 START 1 0 :1:3 
+`uc 1 STOP 1 0 :1:4 
+`uc 1 DA 1 0 :1:5 
+`uc 1 CKE1 1 0 :1:6 
+`uc 1 SMP1 1 0 :1:7 
+]
+[s S451 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW1 1 0 :1:2 
+`uc 1 START1 1 0 :1:3 
+`uc 1 STOP1 1 0 :1:4 
+`uc 1 DA1 1 0 :1:5 
+]
+[s S457 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+]
+[s S460 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_A 1 0 :1:5 
+]
+[u S463 . 1 `S390 1 . 1 0 `S393 1 . 1 0 `S396 1 . 1 0 `S405 1 . 1 0 `S410 1 . 1 0 `S416 1 . 1 0 `S421 1 . 1 0 `S424 1 . 1 0 `S427 1 . 1 0 `S432 1 . 1 0 `S437 1 . 1 0 `S442 1 . 1 0 `S451 1 . 1 0 `S457 1 . 1 0 `S460 1 . 1 0 ]
+[u S479 . 3 `*.2S122 1 SSPSTATT 3 0 `*.2S463 1 SSPSTATTb 3 0 ]
+[s S482 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+[s S488 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[s S493 . 1 `uc 1 SSPM02 1 0 :1:0 
+`uc 1 SSPM12 1 0 :1:1 
+`uc 1 SSPM22 1 0 :1:2 
+`uc 1 SSPM32 1 0 :1:3 
+`uc 1 CKP2 1 0 :1:4 
+`uc 1 SSPEN2 1 0 :1:5 
+`uc 1 SSPOV2 1 0 :1:6 
+`uc 1 WCOL2 1 0 :1:7 
+]
+[u S502 . 1 `S482 1 . 1 0 `S488 1 . 1 0 `S493 1 . 1 0 ]
+[u S506 . 3 `*.2S122 1 SSPCON1T 3 0 `S502 1 SSPCON1Tb 1 0 ]
+[s S509 SPI 11 `uc 1 mBusy 1 0 `E6834 1 mBits 1 1 `E6824 1 mChannel 1 2 `S479 1 . 3 3 `S506 1 . 3 6 `*.39uc 1 SSPBUF 2 9 ]
+[v SPI_Send@pInput pInput `*.39S509  1 p 2 0 ]
+[v SPI_Send@pData pData `uc  1 p 1 2 ]
+"272
+} 0
+"40 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/LCD.c
+[v _Mode_Set Mode_Set `T(v  1 e 1 0 ]
+{
+[v Mode_Set@pMode pMode `E6761  1 a 1 wreg ]
+[v Mode_Set@pMode pMode `E6761  1 a 1 wreg ]
+"42
+[v Mode_Set@pMode pMode `E6761  1 a 1 0 ]
+"43
+} 0
+"46
+[v _Configure_GPIOs Configure_GPIOs `(v  1 e 1 0 ]
+{
+"66
+} 0
+"201 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/SPI.c
+[v _SPI_MaxSpeed SPI_MaxSpeed `(v  1 e 1 0 ]
+{
+[s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+[s S65 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S69 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S73 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S77 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S81 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S86 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S90 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S95 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S101 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S110 . 1 `uc 1 mBits 1 0 `S62 1 . 1 0 `S65 1 . 1 0 `S69 1 . 1 0 `S73 1 . 1 0 `S77 1 . 1 0 `S81 1 . 1 0 `S86 1 . 1 0 `S90 1 . 1 0 `S95 1 . 1 0 `S101 1 . 1 0 ]
+[s S122 Byte 1 `S110 1 . 1 0 ]
+[s S390 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+[s S393 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+[s S396 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S405 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S410 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+[s S416 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S421 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+[s S424 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+[s S427 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S432 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[s S437 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S442 . 1 `uc 1 BF1 1 0 :1:0 
+`uc 1 UA1 1 0 :1:1 
+`uc 1 RW 1 0 :1:2 
+`uc 1 START 1 0 :1:3 
+`uc 1 STOP 1 0 :1:4 
+`uc 1 DA 1 0 :1:5 
+`uc 1 CKE1 1 0 :1:6 
+`uc 1 SMP1 1 0 :1:7 
+]
+[s S451 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW1 1 0 :1:2 
+`uc 1 START1 1 0 :1:3 
+`uc 1 STOP1 1 0 :1:4 
+`uc 1 DA1 1 0 :1:5 
+]
+[s S457 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+]
+[s S460 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_A 1 0 :1:5 
+]
+[u S463 . 1 `S390 1 . 1 0 `S393 1 . 1 0 `S396 1 . 1 0 `S405 1 . 1 0 `S410 1 . 1 0 `S416 1 . 1 0 `S421 1 . 1 0 `S424 1 . 1 0 `S427 1 . 1 0 `S432 1 . 1 0 `S437 1 . 1 0 `S442 1 . 1 0 `S451 1 . 1 0 `S457 1 . 1 0 `S460 1 . 1 0 ]
+[u S479 . 3 `*.2S122 1 SSPSTATT 3 0 `*.2S463 1 SSPSTATTb 3 0 ]
+[s S482 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+[s S488 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[s S493 . 1 `uc 1 SSPM02 1 0 :1:0 
+`uc 1 SSPM12 1 0 :1:1 
+`uc 1 SSPM22 1 0 :1:2 
+`uc 1 SSPM32 1 0 :1:3 
+`uc 1 CKP2 1 0 :1:4 
+`uc 1 SSPEN2 1 0 :1:5 
+`uc 1 SSPOV2 1 0 :1:6 
+`uc 1 WCOL2 1 0 :1:7 
+]
+[u S502 . 1 `S482 1 . 1 0 `S488 1 . 1 0 `S493 1 . 1 0 ]
+[u S506 . 3 `*.2S122 1 SSPCON1T 3 0 `S502 1 SSPCON1Tb 1 0 ]
+[s S509 SPI 11 `uc 1 mBusy 1 0 `E6834 1 mBits 1 1 `E6824 1 mChannel 1 2 `S479 1 . 3 3 `S506 1 . 3 6 `*.39uc 1 SSPBUF 2 9 ]
+[v SPI_MaxSpeed@pInput pInput `*.39S509  1 p 2 15 ]
+"211
+} 0
+"12
+[v _SPI_Init SPI_Init `(v  1 e 1 0 ]
+{
+[s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+"14
+[s S65 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S69 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S73 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S77 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S81 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S86 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S90 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S95 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S101 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S110 . 1 `uc 1 mBits 1 0 `S62 1 . 1 0 `S65 1 . 1 0 `S69 1 . 1 0 `S73 1 . 1 0 `S77 1 . 1 0 `S81 1 . 1 0 `S86 1 . 1 0 `S90 1 . 1 0 `S95 1 . 1 0 `S101 1 . 1 0 ]
+[s S122 Byte 1 `S110 1 . 1 0 ]
+[s S390 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+[s S393 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+[s S396 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S405 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S410 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+[s S416 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S421 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+[s S424 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+[s S427 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S432 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[s S437 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S442 . 1 `uc 1 BF1 1 0 :1:0 
+`uc 1 UA1 1 0 :1:1 
+`uc 1 RW 1 0 :1:2 
+`uc 1 START 1 0 :1:3 
+`uc 1 STOP 1 0 :1:4 
+`uc 1 DA 1 0 :1:5 
+`uc 1 CKE1 1 0 :1:6 
+`uc 1 SMP1 1 0 :1:7 
+]
+[s S451 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW1 1 0 :1:2 
+`uc 1 START1 1 0 :1:3 
+`uc 1 STOP1 1 0 :1:4 
+`uc 1 DA1 1 0 :1:5 
+]
+[s S457 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+]
+[s S460 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_A 1 0 :1:5 
+]
+[u S463 . 1 `S390 1 . 1 0 `S393 1 . 1 0 `S396 1 . 1 0 `S405 1 . 1 0 `S410 1 . 1 0 `S416 1 . 1 0 `S421 1 . 1 0 `S424 1 . 1 0 `S427 1 . 1 0 `S432 1 . 1 0 `S437 1 . 1 0 `S442 1 . 1 0 `S451 1 . 1 0 `S457 1 . 1 0 `S460 1 . 1 0 ]
+[u S479 . 3 `*.2S122 1 SSPSTATT 3 0 `*.2S463 1 SSPSTATTb 3 0 ]
+[s S482 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+[s S488 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[s S493 . 1 `uc 1 SSPM02 1 0 :1:0 
+`uc 1 SSPM12 1 0 :1:1 
+`uc 1 SSPM22 1 0 :1:2 
+`uc 1 SSPM32 1 0 :1:3 
+`uc 1 CKP2 1 0 :1:4 
+`uc 1 SSPEN2 1 0 :1:5 
+`uc 1 SSPOV2 1 0 :1:6 
+`uc 1 WCOL2 1 0 :1:7 
+]
+[u S502 . 1 `S482 1 . 1 0 `S488 1 . 1 0 `S493 1 . 1 0 ]
+[u S506 . 3 `*.2S122 1 SSPCON1T 3 0 `S502 1 SSPCON1Tb 1 0 ]
+[s S509 SPI 11 `uc 1 mBusy 1 0 `E6834 1 mBits 1 1 `E6824 1 mChannel 1 2 `S479 1 . 3 3 `S506 1 . 3 6 `*.39uc 1 SSPBUF 2 9 ]
+[v SPI_Init@pInput pInput `*.39S509  1 a 2 51 ]
+"12
+[v SPI_Init@pClock pClock `ul  1 p 4 45 ]
+[v SPI_Init@pChannel pChannel `E6744  1 p 1 49 ]
+[v SPI_Init@pMode pMode `E6748  1 p 1 50 ]
+"132
+} 0
+"10 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Timer2.c
+[v _Timer2_Init Timer2_Init `(v  1 e 1 0 ]
+{
+"18
+[v Timer2_Init@DIVIDE DIVIDE `ul  1 a 4 26 ]
+"17
+[v Timer2_Init@pCPUClock pCPUClock `ul  1 a 4 22 ]
+"18
+[v Timer2_Init@RDIV RDIV `ul  1 a 4 18 ]
+"10
+[v Timer2_Init@pFrequency pFrequency `ul  1 p 4 13 ]
+"12
+[v Timer2_Init@PRESCALE PRESCALE `C[3]uc  1 s 3 PRESCALE ]
+"13
+[v Timer2_Init@INDEX INDEX `uc  1 s 1 INDEX ]
+"14
+[v Timer2_Init@PRE PRE `uc  1 s 1 PRE ]
+"15
+[v Timer2_Init@DIV DIV `ul  1 s 4 DIV ]
+"51
+} 0
+"8 /opt/microchip/xc8/v1.43/sources/common/lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"11
+[v ___lldiv@quotient quotient `ul  1 a 4 8 ]
+"12
+[v ___lldiv@counter counter `uc  1 a 1 12 ]
+"8
+[v ___lldiv@dividend dividend `ul  1 p 4 0 ]
+[v ___lldiv@divisor divisor `ul  1 p 4 4 ]
+"31
+} 0
+"3 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Timer2.c
+[v _Timer2_Clear Timer2_Clear `(v  1 e 1 0 ]
+{
+"8
+} 0
+"181 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/SPI.c
+[v _SPI_DisableISR SPI_DisableISR `(v  1 e 1 0 ]
+{
+[s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+[s S65 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S69 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S73 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S77 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S81 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S86 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S90 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S95 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S101 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S110 . 1 `uc 1 mBits 1 0 `S62 1 . 1 0 `S65 1 . 1 0 `S69 1 . 1 0 `S73 1 . 1 0 `S77 1 . 1 0 `S81 1 . 1 0 `S86 1 . 1 0 `S90 1 . 1 0 `S95 1 . 1 0 `S101 1 . 1 0 ]
+[s S122 Byte 1 `S110 1 . 1 0 ]
+[s S390 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+[s S393 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+[s S396 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S405 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S410 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+[s S416 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S421 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+[s S424 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+[s S427 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S432 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[s S437 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S442 . 1 `uc 1 BF1 1 0 :1:0 
+`uc 1 UA1 1 0 :1:1 
+`uc 1 RW 1 0 :1:2 
+`uc 1 START 1 0 :1:3 
+`uc 1 STOP 1 0 :1:4 
+`uc 1 DA 1 0 :1:5 
+`uc 1 CKE1 1 0 :1:6 
+`uc 1 SMP1 1 0 :1:7 
+]
+[s S451 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW1 1 0 :1:2 
+`uc 1 START1 1 0 :1:3 
+`uc 1 STOP1 1 0 :1:4 
+`uc 1 DA1 1 0 :1:5 
+]
+[s S457 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+]
+[s S460 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_A 1 0 :1:5 
+]
+[u S463 . 1 `S390 1 . 1 0 `S393 1 . 1 0 `S396 1 . 1 0 `S405 1 . 1 0 `S410 1 . 1 0 `S416 1 . 1 0 `S421 1 . 1 0 `S424 1 . 1 0 `S427 1 . 1 0 `S432 1 . 1 0 `S437 1 . 1 0 `S442 1 . 1 0 `S451 1 . 1 0 `S457 1 . 1 0 `S460 1 . 1 0 ]
+[u S479 . 3 `*.2S122 1 SSPSTATT 3 0 `*.2S463 1 SSPSTATTb 3 0 ]
+[s S482 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+[s S488 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[s S493 . 1 `uc 1 SSPM02 1 0 :1:0 
+`uc 1 SSPM12 1 0 :1:1 
+`uc 1 SSPM22 1 0 :1:2 
+`uc 1 SSPM32 1 0 :1:3 
+`uc 1 CKP2 1 0 :1:4 
+`uc 1 SSPEN2 1 0 :1:5 
+`uc 1 SSPOV2 1 0 :1:6 
+`uc 1 WCOL2 1 0 :1:7 
+]
+[u S502 . 1 `S482 1 . 1 0 `S488 1 . 1 0 `S493 1 . 1 0 ]
+[u S506 . 3 `*.2S122 1 SSPCON1T 3 0 `S502 1 SSPCON1Tb 1 0 ]
+[s S509 SPI 11 `uc 1 mBusy 1 0 `E6834 1 mBits 1 1 `E6824 1 mChannel 1 2 `S479 1 . 3 3 `S506 1 . 3 6 `*.39uc 1 SSPBUF 2 9 ]
+[v SPI_DisableISR@pInput pInput `*.39S509  1 p 2 0 ]
+"189
+} 0
+"219
+[v _SPI_DCS SPI_DCS `(v  1 e 1 0 ]
+{
+[s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+[s S65 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S69 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S73 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S77 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S81 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S86 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S90 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S95 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S101 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S110 . 1 `uc 1 mBits 1 0 `S62 1 . 1 0 `S65 1 . 1 0 `S69 1 . 1 0 `S73 1 . 1 0 `S77 1 . 1 0 `S81 1 . 1 0 `S86 1 . 1 0 `S90 1 . 1 0 `S95 1 . 1 0 `S101 1 . 1 0 ]
+[s S122 Byte 1 `S110 1 . 1 0 ]
+[s S390 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+[s S393 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+[s S396 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S405 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S410 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+[s S416 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S421 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+[s S424 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+[s S427 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S432 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[s S437 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S442 . 1 `uc 1 BF1 1 0 :1:0 
+`uc 1 UA1 1 0 :1:1 
+`uc 1 RW 1 0 :1:2 
+`uc 1 START 1 0 :1:3 
+`uc 1 STOP 1 0 :1:4 
+`uc 1 DA 1 0 :1:5 
+`uc 1 CKE1 1 0 :1:6 
+`uc 1 SMP1 1 0 :1:7 
+]
+[s S451 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW1 1 0 :1:2 
+`uc 1 START1 1 0 :1:3 
+`uc 1 STOP1 1 0 :1:4 
+`uc 1 DA1 1 0 :1:5 
+]
+[s S457 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+]
+[s S460 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_A 1 0 :1:5 
+]
+[u S463 . 1 `S390 1 . 1 0 `S393 1 . 1 0 `S396 1 . 1 0 `S405 1 . 1 0 `S410 1 . 1 0 `S416 1 . 1 0 `S421 1 . 1 0 `S424 1 . 1 0 `S427 1 . 1 0 `S432 1 . 1 0 `S437 1 . 1 0 `S442 1 . 1 0 `S451 1 . 1 0 `S457 1 . 1 0 `S460 1 . 1 0 ]
+[u S479 . 3 `*.2S122 1 SSPSTATT 3 0 `*.2S463 1 SSPSTATTb 3 0 ]
+[s S482 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+[s S488 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[s S493 . 1 `uc 1 SSPM02 1 0 :1:0 
+`uc 1 SSPM12 1 0 :1:1 
+`uc 1 SSPM22 1 0 :1:2 
+`uc 1 SSPM32 1 0 :1:3 
+`uc 1 CKP2 1 0 :1:4 
+`uc 1 SSPEN2 1 0 :1:5 
+`uc 1 SSPOV2 1 0 :1:6 
+`uc 1 WCOL2 1 0 :1:7 
+]
+[u S502 . 1 `S482 1 . 1 0 `S488 1 . 1 0 `S493 1 . 1 0 ]
+[u S506 . 3 `*.2S122 1 SSPCON1T 3 0 `S502 1 SSPCON1Tb 1 0 ]
+[s S509 SPI 11 `uc 1 mBusy 1 0 `E6834 1 mBits 1 1 `E6824 1 mChannel 1 2 `S479 1 . 3 3 `S506 1 . 3 6 `*.39uc 1 SSPBUF 2 9 ]
+[v SPI_DCS@pInput pInput `*.39S509  1 p 2 0 ]
+"225
+} 0
+"189 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+[v _Port_SetPinType Port_SetPinType `(E6475  1 e 1 0 ]
 {
 [s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
 `uc 1 mBit4_7 1 0 :4:4 
@@ -3001,15 +3777,15 @@ eMXK_None 0
 [u S136 PortProperty 2 `us 1 mWord 2 0 `S134 1 mType 2 0 ]
 [v Port_SetPinType@Props Props `*.32S136  1 a 2 43 ]
 "192
-[v Port_SetPinType@Output Output `E7419  1 a 1 42 ]
+[v Port_SetPinType@Output Output `E6475  1 a 1 42 ]
 "189
 [s S139 Port 10 `*.32S136 1 mProperties 2 0 `*.39S122 1 mDirection 2 2 `*.39S122 1 mOutput 2 4 `*.39S122 1 mInput 2 6 `S134 1 mType 2 8 ]
 [v Port_SetPinType@pInput pInput `C*.39S139  1 p 2 38 ]
-[v Port_SetPinType@pPin pPin `E7694  1 p 1 40 ]
-[v Port_SetPinType@pType pType `E7739  1 p 1 41 ]
+[v Port_SetPinType@pPin pPin `E6750  1 p 1 40 ]
+[v Port_SetPinType@pType pType `E6795  1 p 1 41 ]
 "246
 } 0
-"149 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.c
+"149 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.c
 [v _Word_SetPair Word_SetPair `(v  1 e 1 0 ]
 {
 [s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
@@ -3129,6 +3905,134 @@ eMXK_None 0
 [v Byte_SetPair@pValue pValue `uc  1 p 1 14 ]
 "86
 } 0
+"220
+[v _PortProperty_Valid PortProperty_Valid `(E6475  1 e 1 0 ]
+{
+"223
+[v PortProperty_Valid@Errors Errors `C[4][4]E6475  1 a 16 21 ]
+"222
+[v PortProperty_Valid@Pair Pair `E6469  1 a 1 37 ]
+[s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+"220
+[s S65 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S69 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S73 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S77 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S81 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S86 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S90 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S95 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S101 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S110 . 1 `uc 1 mBits 1 0 `S62 1 . 1 0 `S65 1 . 1 0 `S69 1 . 1 0 `S73 1 . 1 0 `S77 1 . 1 0 `S81 1 . 1 0 `S86 1 . 1 0 `S90 1 . 1 0 `S95 1 . 1 0 `S101 1 . 1 0 ]
+[s S122 Byte 1 `S110 1 . 1 0 ]
+[s S124 . 2 `S122 1 LS_Byte 1 0 `S122 1 MS_Byte 1 1 ]
+[s S127 . 2 `uc 1 L 1 0 `uc 1 H 1 1 ]
+[u S130 . 2 `us 1 mBits 2 0 `S124 1 . 2 0 `S127 1 . 2 0 ]
+[s S134 Word 2 `S130 1 . 2 0 ]
+[u S136 PortProperty 2 `us 1 mWord 2 0 `S134 1 mType 2 0 ]
+[v PortProperty_Valid@pInput pInput `*.34S136  1 p 2 15 ]
+[v PortProperty_Valid@pPinDrive pPinDrive `E6469  1 p 1 17 ]
+[v PortProperty_Valid@pPin pPin `uc  1 p 1 18 ]
+"222
+[v PortProperty_Valid@F6830 F6830 `C[4][4]E6475  1 s 16 F6830 ]
+"238
+} 0
+"101
+[v _Byte_SetQuad Byte_SetQuad `(v  1 e 1 0 ]
+{
+[s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+[s S65 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S69 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S73 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S77 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S81 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S86 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S90 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S95 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S101 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S110 . 1 `uc 1 mBits 1 0 `S62 1 . 1 0 `S65 1 . 1 0 `S69 1 . 1 0 `S73 1 . 1 0 `S77 1 . 1 0 `S81 1 . 1 0 `S86 1 . 1 0 `S90 1 . 1 0 `S95 1 . 1 0 `S101 1 . 1 0 ]
+[s S122 Byte 1 `S110 1 . 1 0 ]
+[v Byte_SetQuad@pInput pInput `*.39S122  1 p 2 11 ]
+[v Byte_SetQuad@pQuad pQuad `uc  1 p 1 13 ]
+[v Byte_SetQuad@pValue pValue `uc  1 p 1 14 ]
+"104
+} 0
 "47
 [v _Byte_SetZone Byte_SetZone `T(v  1 e 1 0 ]
 {
@@ -3194,17 +4098,47 @@ eMXK_None 0
 [v Byte_SetZone@pValue pValue `uc  1 p 1 5 ]
 "63
 } 0
-"220
-[v _PortProperty_Valid PortProperty_Valid `(E7419  1 e 1 0 ]
+"95 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/LCD.c
+[v _LCD_Reset LCD_Reset `(v  1 e 1 0 ]
 {
-"223
-[v PortProperty_Valid@Errors Errors `C[4][4]E7419  1 a 16 21 ]
-"222
-[v PortProperty_Valid@Pair Pair `E7413  1 a 1 37 ]
+"107
+} 0
+"240 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.c
+[v _delay_ms delay_ms `(v  1 e 1 0 ]
+{
+"242
+[v delay_ms@u u `VEul  1 a 4 2 ]
+"240
+[v delay_ms@ms ms `us  1 p 2 0 ]
+"254
+} 0
+"32 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/LCD.c
+[v _Reset_Low Reset_Low `T(v  1 e 1 0 ]
+{
+"35
+} 0
+"36
+[v _Reset_High Reset_High `T(v  1 e 1 0 ]
+{
+"39
+} 0
+"50 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/LED.c
+[v _LED_Toggle LED_Toggle `(v  1 e 1 0 ]
+{
+[v LED_Toggle@pLED pLED `E6739  1 a 1 wreg ]
+[v LED_Toggle@pLED pLED `E6739  1 a 1 wreg ]
+[v LED_Toggle@pLED pLED `E6739  1 a 1 24 ]
+"61
+} 0
+"278 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+[v _Port_TogglePin Port_TogglePin `(v  1 e 1 0 ]
+{
+"280
+[v Port_TogglePin@Value Value `uc  1 a 1 23 ]
 [s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
 `uc 1 mBit4_7 1 0 :4:4 
 ]
-"220
+"278
 [s S65 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 mBit1_4 1 0 :4:1 
 `uc 1 . 1 0 :3:5 
@@ -3257,47 +4191,16 @@ eMXK_None 0
 [u S130 . 2 `us 1 mBits 2 0 `S124 1 . 2 0 `S127 1 . 2 0 ]
 [s S134 Word 2 `S130 1 . 2 0 ]
 [u S136 PortProperty 2 `us 1 mWord 2 0 `S134 1 mType 2 0 ]
-[v PortProperty_Valid@pInput pInput `*.34S136  1 p 2 15 ]
-[v PortProperty_Valid@pPinDrive pPinDrive `E7413  1 p 1 17 ]
-[v PortProperty_Valid@pPin pPin `uc  1 p 1 18 ]
-"222
-[v PortProperty_Valid@F7774 F7774 `C[4][4]E7419  1 s 16 F7774 ]
-"238
+[s S139 Port 10 `*.32S136 1 mProperties 2 0 `*.39S122 1 mDirection 2 2 `*.39S122 1 mOutput 2 4 `*.39S122 1 mInput 2 6 `S134 1 mType 2 8 ]
+[v Port_TogglePin@pInput pInput `C*.39S139  1 p 2 20 ]
+[v Port_TogglePin@pPin pPin `E6750  1 p 1 22 ]
+"284
 } 0
-"33 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/LED.c
-[v _LED_Set LED_Set `(v  1 e 1 0 ]
-{
-[v LED_Set@pLED pLED `E7683  1 a 1 wreg ]
-[v LED_Set@pLED pLED `E7683  1 a 1 wreg ]
-[v LED_Set@pValue pValue `uc  1 p 1 20 ]
-[v LED_Set@pLED pLED `E7683  1 a 1 21 ]
-"44
-} 0
-"153 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/MXK.c
-[v _MXK_Dequeue MXK_Dequeue `(v  1 e 1 0 ]
-{
-"158
-} 0
-"75 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Motor.c
-[v _Motor_Step Motor_Step `(v  1 e 1 0 ]
-{
-"112
-} 0
-"89 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Timer0.c
-[v _Timer0_Stop Timer0_Stop `(v  1 e 1 0 ]
-{
-"93
-} 0
-"83
-[v _Timer0_Restart Timer0_Restart `(v  1 e 1 0 ]
-{
-"88
-} 0
-"247 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
+"247
 [v _Port_SetPin Port_SetPin `(v  1 e 1 0 ]
 {
 "249
-[v Port_SetPin@Type Type `E7739  1 a 1 19 ]
+[v Port_SetPin@Type Type `E6795  1 a 1 19 ]
 [s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
 `uc 1 mBit4_7 1 0 :4:4 
 ]
@@ -3356,11 +4259,11 @@ eMXK_None 0
 [u S136 PortProperty 2 `us 1 mWord 2 0 `S134 1 mType 2 0 ]
 [s S139 Port 10 `*.32S136 1 mProperties 2 0 `*.39S122 1 mDirection 2 2 `*.39S122 1 mOutput 2 4 `*.39S122 1 mInput 2 6 `S134 1 mType 2 8 ]
 [v Port_SetPin@pInput pInput `C*.39S139  1 p 2 15 ]
-[v Port_SetPin@pPin pPin `E7694  1 p 1 17 ]
+[v Port_SetPin@pPin pPin `E6750  1 p 1 17 ]
 [v Port_SetPin@pValue pValue `uc  1 p 1 18 ]
 "270
 } 0
-"156 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.c
+"156 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.c
 [v _Word_GetPair Word_GetPair `(uc  1 e 1 0 ]
 {
 [s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
@@ -3602,66 +4505,159 @@ eMXK_None 0
 [v Byte_SetBit@pValue pValue `uc  1 p 1 3 ]
 "37
 } 0
-"105 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/MXK.c
-[v _MXK_SwitchTo MXK_SwitchTo `(uc  1 e 1 0 ]
+"271 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
+[v _Port_GetPin Port_GetPin `(uc  1 e 1 0 ]
 {
-[v MXK_SwitchTo@pModule pModule `E7869  1 a 1 wreg ]
-"107
-[v MXK_SwitchTo@CUR CUR `uc  1 a 1 6 ]
-"105
-[v MXK_SwitchTo@pModule pModule `E7869  1 a 1 wreg ]
-"107
-[v MXK_SwitchTo@pModule pModule `E7869  1 a 1 7 ]
-"123
+"273
+[v Port_GetPin@Output Output `uc  1 a 1 5 ]
+[s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+"271
+[s S65 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S69 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S73 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S77 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S81 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S86 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S90 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S95 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S101 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S110 . 1 `uc 1 mBits 1 0 `S62 1 . 1 0 `S65 1 . 1 0 `S69 1 . 1 0 `S73 1 . 1 0 `S77 1 . 1 0 `S81 1 . 1 0 `S86 1 . 1 0 `S90 1 . 1 0 `S95 1 . 1 0 `S101 1 . 1 0 ]
+[s S122 Byte 1 `S110 1 . 1 0 ]
+[s S124 . 2 `S122 1 LS_Byte 1 0 `S122 1 MS_Byte 1 1 ]
+[s S127 . 2 `uc 1 L 1 0 `uc 1 H 1 1 ]
+[u S130 . 2 `us 1 mBits 2 0 `S124 1 . 2 0 `S127 1 . 2 0 ]
+[s S134 Word 2 `S130 1 . 2 0 ]
+[u S136 PortProperty 2 `us 1 mWord 2 0 `S134 1 mType 2 0 ]
+[s S139 Port 10 `*.32S136 1 mProperties 2 0 `*.39S122 1 mDirection 2 2 `*.39S122 1 mOutput 2 4 `*.39S122 1 mInput 2 6 `S134 1 mType 2 8 ]
+[v Port_GetPin@pInput pInput `C*.39S139  1 p 2 0 ]
+[v Port_GetPin@pPin pPin `E6750  1 p 1 2 ]
+"277
 } 0
-"130
-[v _MXK_Release MXK_Release `(uc  1 e 1 0 ]
+"426 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Console.c
+[v _Console_PrintString Console_PrintString `(v  1 e 1 0 ]
 {
-"138
+[v Console_PrintString@pInput pInput `*.32uc  1 p 2 20 ]
+"433
 } 0
-"144
-[v _MXK_Queue MXK_Queue `(v  1 e 1 0 ]
+"322
+[v _Console_PrintChar Console_PrintChar `T(v  1 e 1 0 ]
 {
-[v MXK_Queue@pCallback pCallback `*.38(v  1 p 3 0 ]
-"147
+[v Console_PrintChar@pInput pInput `uc  1 a 1 wreg ]
+[v Console_PrintChar@pInput pInput `uc  1 a 1 wreg ]
+[v Console_PrintChar@pInput pInput `uc  1 a 1 19 ]
+"373
 } 0
-"82
-[v _MXK_BlockSwitchTo MXK_BlockSwitchTo `(uc  1 e 1 0 ]
+"260
+[v _Console_Tab Console_Tab `(v  1 e 1 0 ]
 {
-[v MXK_BlockSwitchTo@pModule pModule `E7869  1 a 1 wreg ]
-"85
-[v MXK_BlockSwitchTo@CUR CUR `uc  1 a 1 6 ]
-"82
-[v MXK_BlockSwitchTo@pModule pModule `E7869  1 a 1 wreg ]
-"85
-[v MXK_BlockSwitchTo@pModule pModule `E7869  1 a 1 7 ]
-"99
+"263
+[v Console_Tab@c c `uc  1 a 1 15 ]
+"262
+[v Console_Tab@i i `uc  1 a 1 14 ]
+"264
+[v Console_Tab@t t `uc  1 a 1 13 ]
+"270
 } 0
-"255 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.c
-[v _delay_us delay_us `(v  1 e 1 0 ]
+"8 /opt/microchip/xc8/v1.43/sources/common/awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
 {
-"256
-[v delay_us@u u `ul  1 a 4 2 ]
-"255
-[v delay_us@us us `us  1 p 2 0 ]
-"266
+"11
+[v ___awdiv@quotient quotient `i  1 a 2 6 ]
+"12
+[v ___awdiv@sign sign `uc  1 a 1 5 ]
+[v ___awdiv@counter counter `uc  1 a 1 4 ]
+"8
+[v ___awdiv@dividend dividend `i  1 p 2 0 ]
+[v ___awdiv@divisor divisor `i  1 p 2 2 ]
+"42
 } 0
-"38 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/ISR.c
+"243 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Console.c
+[v _Console_IncrementCursor Console_IncrementCursor `(uc  1 e 1 0 ]
+{
+"258
+} 0
+"175
+[v _Console_NewLine Console_NewLine `(v  1 e 1 0 ]
+{
+"190
+} 0
+"192
+[v _Console_FormFeed Console_FormFeed `(v  1 e 1 0 ]
+{
+"197
+[v Console_FormFeed@y y `uc  1 a 1 3 ]
+[v Console_FormFeed@x x `uc  1 a 1 2 ]
+"207
+} 0
+"297
+[v _Console_ResetCursor Console_ResetCursor `(v  1 e 1 0 ]
+{
+"306
+} 0
+"209
+[v _Console_Backspace Console_Backspace `(v  1 e 1 0 ]
+{
+"241
+} 0
+"308
+[v _Console_ClearCursor Console_ClearCursor `(v  1 e 1 0 ]
+{
+"315
+} 0
+"38 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/ISR.c
 [v _ISR_Function ISR_Function `II(v  1 e 1 0 ]
 {
 "81
 } 0
-"94 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Timer0.c
+"94 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Timer0.c
 [v _Timer0_ISR Timer0_ISR `(v  1 e 1 0 ]
 {
 "101
 } 0
-"75 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Motor.c
+"75 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Motor.c
 [v i2_Motor_Step Motor_Step `(v  1 e 1 0 ]
 {
 "112
 } 0
-"89 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Timer0.c
+"89 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Timer0.c
 [v i2_Timer0_Stop Timer0_Stop `(v  1 e 1 0 ]
 {
 "93
@@ -3671,10 +4667,10 @@ eMXK_None 0
 {
 "88
 } 0
-"247 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Port.c
+"247 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Port.c
 [v i2_Port_SetPin Port_SetPin `(v  1 e 1 0 ]
 {
-[v i2Port_SetPin@Type Port_SetPin `E7739  1 a 1 19 ]
+[v i2Port_SetPin@Type Port_SetPin `E6795  1 a 1 19 ]
 [s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
 `uc 1 mBit4_7 1 0 :4:4 
 ]
@@ -3732,11 +4728,11 @@ eMXK_None 0
 [u S136 PortProperty 2 `us 1 mWord 2 0 `S134 1 mType 2 0 ]
 [s S139 Port 10 `*.32S136 1 mProperties 2 0 `*.39S122 1 mDirection 2 2 `*.39S122 1 mOutput 2 4 `*.39S122 1 mInput 2 6 `S134 1 mType 2 8 ]
 [v i2Port_SetPin@pInput pInput `C*.39S139  1 p 2 15 ]
-[v i2Port_SetPin@pPin pPin `E7694  1 p 1 17 ]
+[v i2Port_SetPin@pPin pPin `E6750  1 p 1 17 ]
 [v i2Port_SetPin@pValue pValue `uc  1 p 1 18 ]
 "270
 } 0
-"156 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.c
+"156 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.c
 [v i2_Word_GetPair Word_GetPair `(uc  1 e 1 0 ]
 {
 [s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
@@ -3974,24 +4970,24 @@ eMXK_None 0
 [v i2Byte_SetBit@pValue pValue `uc  1 p 1 3 ]
 "37
 } 0
-"105 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/MXK.c
+"105 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/MXK.c
 [v i2_MXK_SwitchTo MXK_SwitchTo `(uc  1 e 1 0 ]
 {
-[v i2MXK_SwitchTo@pModule pModule `E7869  1 a 1 wreg ]
+[v i2MXK_SwitchTo@pModule pModule `E6925  1 a 1 wreg ]
 [v i2MXK_SwitchTo@CUR MXK_SwitchTo `uc  1 a 1 6 ]
-[v i2MXK_SwitchTo@pModule pModule `E7869  1 a 1 wreg ]
+[v i2MXK_SwitchTo@pModule pModule `E6925  1 a 1 wreg ]
 "107
-[v i2MXK_SwitchTo@pModule pModule `E7869  1 a 1 7 ]
+[v i2MXK_SwitchTo@pModule pModule `E6925  1 a 1 7 ]
 "123
 } 0
-"255 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/Types.c
+"255 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/Types.c
 [v i2_delay_us delay_us `(v  1 e 1 0 ]
 {
 [v i2delay_us@u delay_us `ul  1 a 4 2 ]
 [v i2delay_us@us us `us  1 p 2 0 ]
 "266
 } 0
-"130 D:\gdrive\UTS\Teaching\Mechatronics 2\Code\MX2_W3_Skeleton\Library/MXK.c
+"130 /home/solo/Desktop/mx2/Week 3 - C in PIC18/MX2_W3_Skeleton/Library/MXK.c
 [v i2_MXK_Release MXK_Release `(uc  1 e 1 0 ]
 {
 "138

@@ -30,7 +30,7 @@ void main()
     //Init LCD
     if (MXK_BlockSwitchTo(eMXK_HMI)) {
         //Task 1 - Place LCD initialisation code here
-
+        LCD_Init();
         if (MXK_Release())
             MXK_Dequeue();
     }
@@ -52,6 +52,7 @@ void main()
     //Main program loop
     loop()
     {
+        Console_PrintString("Jamin Early");
         //Write data to LCD
         if (MXK_BlockSwitchTo(eMXK_HMI)) {
             //Task 1 - Write LCD code here

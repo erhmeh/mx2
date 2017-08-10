@@ -9,5 +9,4 @@ Library/Timer0.h  \
 Library/MXK.h  \
 Library/Types.h  \
 Library/Port.h  \
-Library/Button.h  \
-Library/Types.h 
+Library/Button.h 

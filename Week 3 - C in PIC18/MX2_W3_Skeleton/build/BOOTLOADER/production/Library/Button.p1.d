@@ -4,5 +4,4 @@
 ./Events.h  \
 Library/Types.h  \
 Library/Port.h  \
-Library/Button.h  \
-Library/Types.h 
+Library/Button.h 

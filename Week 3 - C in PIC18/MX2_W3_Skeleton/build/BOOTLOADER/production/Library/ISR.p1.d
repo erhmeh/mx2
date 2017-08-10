@@ -16,5 +16,4 @@ Library/Button.h  \
 Library/Motor.h  \
 Library/SPI.h  \
 Library/Console.h  \
-Library/Types.h  \
 Library/HMI.h 

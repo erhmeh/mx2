@@ -8,5 +8,4 @@ Library/MXK.h  \
 Library/Types.h  \
 Library/Port.h  \
 Library/Button.h  \
-Library/Motor.h  \
-Library/Types.h 
+Library/Motor.h 
