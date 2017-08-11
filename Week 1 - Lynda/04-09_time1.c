@@ -3,8 +3,9 @@
 
 int main()
 {
-	printf("The current time is %ld\n",time(NULL));
+	time_t now;
+	time(&now);
+	printf("The current time is %ld\n",ctime(&now));
 
 	return(0);
 }
-

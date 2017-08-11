@@ -1,9 +1,6 @@
 #include <stdio.h>
 
-void soup(void)
-{
-	puts("Pea green soup!");
-}
+void soup(void);
 
 int main()
 {
@@ -17,3 +14,7 @@ int main()
 	return(0);
 }
 
+void soup(void)
+{
+	puts("Pea green soup!");
+}

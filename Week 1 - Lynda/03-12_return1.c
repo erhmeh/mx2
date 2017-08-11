@@ -16,4 +16,3 @@ char gimmeAnA(void)
 {
 	return('A');
 }
-

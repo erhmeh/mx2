@@ -7,8 +7,7 @@ int main()
 
 	printf("Input a number: ");
 	scanf("%f",&a);
-	printf("%f / %f = %f\n",a,b,a/b);
+	printf("%.1f / %.1f = %.1f\n",a,b,a/b);
 
 	return(0);
 }
-

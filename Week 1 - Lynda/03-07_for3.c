@@ -10,9 +10,11 @@ int main()
 	for(t='a';t<='z';t++)
 	{
 		putchar(t);
+		if(t == ch){
+			break;
+		}
 	}
 	putchar('\n');
 
 	return(0);
 }
-

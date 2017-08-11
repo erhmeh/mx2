@@ -19,6 +19,6 @@ void cheers(void)
 
 	for(x=0;x<3;x++)
 		printf("Huzzah! ");
+		return;
 	putchar('\n');
 }
-

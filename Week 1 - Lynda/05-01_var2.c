@@ -2,10 +2,9 @@
 
 int main()
 {
-	int a;
+	char a;
 
-	printf("An int variable occupies %lu bytes of storage\n",sizeof(a));
+	printf("An char variable occupies %lu bytes of storage\n",sizeof(a));
 
 	return(0);
 }
-

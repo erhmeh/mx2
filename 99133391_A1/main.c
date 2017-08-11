@@ -19,6 +19,8 @@
 #include "LED.h"
 #include "HMI.h"
 
+Motor Stepper;
+
 //Prototype functions
 void initialise();
 void displaySID();
@@ -31,11 +33,17 @@ void positionMode();
 void nullMode();
 void setMode();
 
+CUINT16 HzInc = 10;
+UINT16  Hz = 10;
+INT16   DIST = 100;
+UINT16  HzOld;
+UINT8	k = 0;
+
 /*Initialisation of components*/
 void initialise() {
     //Initialise MXK Pins
     MXK_Init();
-
+    
     //Initialise HMI
     if (MXK_BlockSwitchTo(eMXK_HMI)) {
 
@@ -47,16 +55,15 @@ void initialise() {
     }
 
     //Initialise stepper
-    //    Motor Stepper;
-    //    if (MXK_BlockSwitchTo(eMXK_Motor)) {
-    //
-    //        if (MXK_Release())
-    //                MXK_Dequeue();
-    //    }
+        if (MXK_BlockSwitchTo(eMXK_Motor)) {
+            Motor_Init(&Stepper, MXK_MOTOR);
+            if (MXK_Release())
+                    MXK_Dequeue();
+        }
 
     //Init interrupts
-    //
-    //
+    
+    
 }
 
 /*The displayStaticText function is called to display my name and SID*/
@@ -132,7 +139,7 @@ void continuousMode() {
     int speed = 0;
 
     //Default direction is clockwise. 0 is Clockwise | 1 is Anti-clockwise
-    int direction = 0;
+    INT16 direction = 0;
 
     //Remain in loop while set in continuous mode.
     while (mode == 1) {
@@ -153,13 +160,28 @@ void continuousMode() {
         }
         //Right button sets mode to clockwise
         if ((int) HMIBoard.mRight.mGetState() == 1 && (int) HMIBoard.mLeft.mGetState() == 0) {
-            direction = 0;
+            direction = -1;
         }
+        
         displayText();
         Console_SetForecolour(YELLOW);
         printf("Speed: %d\n", speed);
         printf("Direction: %d\n", direction);
         Console_Render();
+
+        if (Stepper.mDelta == 0)
+	{
+	    Hz += HzInc;
+	    if (Hz >= DIST)
+		Hz = HzInc;
+
+	    LED_Toggle(STATUS_LED);
+	    DIST = -DIST;
+
+	    Motor_Speed(&Stepper, Hz);
+	    Motor_Move(&Stepper, DIST);
+	}
+        
         mode = getMode();
         HMI_Poll();
     }
@@ -198,6 +220,7 @@ void setMode() {
 }
 
 void main() {
+    Motor Stepper;
     initialise();
 
     loop() {
@@ -207,7 +230,7 @@ void main() {
             displayText();
             
             //Set the mode
-            setMode();
+            setMode(Stepper);
 
             if (MXK_Release())
                 MXK_Dequeue();
