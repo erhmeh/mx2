@@ -576,7 +576,7 @@ eADC_Ch1 1
 eADC_Ch2 2
 eADC_Ch3 3
 ]
-"48 C:\Users\jamin\Documents\GitHub\mx2\99133391_A1\main.c
+"43 C:\Users\jamin\Documents\GitHub\mx2\99133391_A1\main.c
 [e E6938 . `uc
 eMXK_Motor 8
 eMXK_IMU 4
@@ -584,7 +584,7 @@ eMXK_HMI 1
 eMXK_FPGA 2
 eMXK_None 0
 ]
-"178
+"55
 [e E7155 . `uc
 eLED1 0
 eLED2 1
@@ -1179,27 +1179,29 @@ eLED2 1
 [v _itos itos `(v  1 e 1 0 ]
 "393
 [v _swap swap `(v  1 e 1 0 ]
-"43 C:\Users\jamin\Documents\GitHub\mx2\99133391_A1\main.c
+"42 C:\Users\jamin\Documents\GitHub\mx2\99133391_A1\main.c
+[v _FunctMotor FunctMotor `(v  1 e 1 0 ]
+"68
 [v _initialise initialise `(v  1 e 1 0 ]
-"70
+"95
 [v _displaySID displaySID `(v  1 e 1 0 ]
-"76
-[v _displayText displayText `(v  1 e 1 0 ]
 "101
+[v _displayText displayText `(v  1 e 1 0 ]
+"126
 [v _getMode getMode `(i  1 e 2 0 ]
-"115
+"141
 [v _displayMode displayMode `(v  1 e 1 0 ]
-"135
+"162
 [v _continuousMode continuousMode `(v  1 e 1 0 ]
-"190
+"210
 [v _stepMode stepMode `(v  1 e 1 0 ]
-"193
+"214
 [v _positionMode positionMode `(v  1 e 1 0 ]
-"196
+"218
 [v _nullMode nullMode `(v  1 e 1 0 ]
-"204
+"226
 [v _setMode setMode `(v  1 e 1 0 ]
-"222
+"244
 [v _main main `(v  1 e 1 0 ]
 "2847 C:\Program Files (x86)\Microchip\xc8\v1.43\include\pic18f67j50.h
 [v _SSP2CON2 SSP2CON2 `VEuc  1 e 1 @3947 ]
@@ -1813,7 +1815,7 @@ eLED2 1
 [u S12557 . 1 `S12535 1 . 1 0 `S12544 1 . 1 0 `S12553 1 . 1 0 ]
 [v _INTCONbits INTCONbits `VES12557  1 e 1 @4082 ]
 "354 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\doprnt.c
-[v _dpowers dpowers `C[5]ui  1 s 10 dpowers ]
+[v _dpowers dpowers `C[10]ul  1 s 40 dpowers ]
 "46 C:\Users\jamin\Documents\GitHub\mx2\99133391_A1\Events.c
 [v _val val `us  1 s 2 val ]
 "70
@@ -2008,77 +2010,76 @@ eLED2 1
 [v _Hz Hz `us  1 e 2 0 ]
 "38
 [v _DIST DIST `s  1 e 2 0 ]
-"222
+"244
 [v _main main `(v  1 e 1 0 ]
 {
-[v main@Stepper Stepper `S12613  1 a 6 13 ]
-"257
+"278
 } 0
-"204
+"226
 [v _setMode setMode `(v  1 e 1 0 ]
 {
-"205
-[v setMode@mode mode `i  1 a 2 62 ]
-"220
+"227
+[v setMode@mode mode `i  1 a 2 0 ]
+"242
 } 0
-"190
+"210
 [v _stepMode stepMode `(v  1 e 1 0 ]
 {
-"191
+"211
 } 0
-"193
+"214
 [v _positionMode positionMode `(v  1 e 1 0 ]
 {
-"194
+"215
 } 0
-"196
+"218
 [v _nullMode nullMode `(v  1 e 1 0 ]
 {
-"202
+"224
 } 0
-"135
+"162
 [v _continuousMode continuousMode `(v  1 e 1 0 ]
 {
-"139
-[v continuousMode@speed speed `i  1 a 2 52 ]
-"142
-[v continuousMode@direction direction `s  1 a 2 50 ]
-"137
-[v continuousMode@mode mode `i  1 a 2 48 ]
-"188
+"166
+[v continuousMode@speed speed `i  1 a 2 50 ]
+"169
+[v continuousMode@direction direction `s  1 a 2 48 ]
+"164
+[v continuousMode@mode mode `i  1 a 2 46 ]
+"207
 } 0
-"76
+"101
 [v _displayText displayText `(v  1 e 1 0 ]
 {
-"88
+"113
 } 0
-"70
+"95
 [v _displaySID displaySID `(v  1 e 1 0 ]
 {
-"73
+"98
 } 0
-"115
+"141
 [v _displayMode displayMode `(v  1 e 1 0 ]
 {
-"117
+"143
 [v displayMode@mode mode `i  1 a 2 44 ]
-"133
+"159
 } 0
 "464 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\doprnt.c
 [v _printf printf `(i  1 e 2 0 ]
 {
 "528
-[v printf@val val `ui  1 a 2 30 ]
+[v printf@val val `ul  1 a 4 35 ]
 "466
-[v printf@ap ap `[1]*.39v  1 a 2 28 ]
+[v printf@ap ap `[1]*.39v  1 a 2 33 ]
+"504
+[v printf@prec prec `i  1 a 2 30 ]
 "499
-[v printf@c c `c  1 a 1 32 ]
-"506
-[v printf@prec prec `c  1 a 1 27 ]
+[v printf@c c `c  1 a 1 39 ]
 "508
-[v printf@flag flag `uc  1 a 1 26 ]
+[v printf@flag flag `uc  1 a 1 32 ]
 "464
-[v printf@f f `*.32Cuc  1 p 2 21 ]
+[v printf@f f `*.32Cuc  1 p 2 22 ]
 "1541
 } 0
 "454 C:\Users\jamin\Documents\GitHub\mx2\99133391_A1\Library/Console.c
@@ -2155,12 +2156,22 @@ eLED2 1
 {
 "315
 } 0
-"101 C:\Users\jamin\Documents\GitHub\mx2\99133391_A1\main.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+{
+"11
+[v ___llmod@counter counter `uc  1 a 1 21 ]
+"8
+[v ___llmod@dividend dividend `ul  1 p 4 13 ]
+[v ___llmod@divisor divisor `ul  1 p 4 17 ]
+"26
+} 0
+"126 C:\Users\jamin\Documents\GitHub\mx2\99133391_A1\main.c
 [v _getMode getMode `(i  1 e 2 0 ]
 {
-"103
+"128
 [v getMode@dipState dipState `i  1 a 2 40 ]
-"114
+"139
 } 0
 "252 C:\Users\jamin\Documents\GitHub\mx2\99133391_A1\HMI.c
 [v _HMI_Poll HMI_Poll `(v  1 e 1 0 ]
@@ -2395,21 +2406,21 @@ eLED2 1
 "221
 [v _HMI_SetNumber HMI_SetNumber `(v  1 e 1 0 ]
 {
-[v HMI_SetNumber@pInput pInput `i  1 p 2 22 ]
+[v HMI_SetNumber@pInput pInput `i  1 p 2 17 ]
 "225
 } 0
 "369 C:\Users\jamin\Documents\GitHub\mx2\99133391_A1\Library/Types.c
 [v _itos itos `(v  1 e 1 0 ]
 {
 "371
-[v itos@Out Out `us  1 a 2 20 ]
+[v itos@Out Out `us  1 a 2 15 ]
 "372
-[v itos@Length Length `us  1 a 2 18 ]
+[v itos@Length Length `us  1 a 2 13 ]
 "373
-[v itos@Data Data `*.39uc  1 a 2 16 ]
+[v itos@Data Data `*.39uc  1 a 2 11 ]
 "369
-[v itos@input input `us  1 p 2 12 ]
-[v itos@destination destination `*.39uc  1 p 2 14 ]
+[v itos@input input `us  1 p 2 7 ]
+[v itos@destination destination `*.39uc  1 p 2 9 ]
 "391
 } 0
 "357
@@ -2428,10 +2439,10 @@ eLED2 1
 [v ___lwmod __lwmod `(ui  1 e 2 0 ]
 {
 "11
-[v ___lwmod@counter counter `uc  1 a 1 11 ]
+[v ___lwmod@counter counter `uc  1 a 1 4 ]
 "8
-[v ___lwmod@dividend dividend `ui  1 p 2 7 ]
-[v ___lwmod@divisor divisor `ui  1 p 2 9 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 0 ]
+[v ___lwmod@divisor divisor `ui  1 p 2 2 ]
 "26
 } 0
 "8 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
@@ -2677,6 +2688,11 @@ eLED2 1
 [v Byte_GetBit@pBit pBit `uc  1 p 1 2 ]
 "45
 } 0
+"42 C:\Users\jamin\Documents\GitHub\mx2\99133391_A1\main.c
+[v _FunctMotor FunctMotor `(v  1 e 1 0 ]
+{
+"65
+} 0
 "117 C:\Users\jamin\Documents\GitHub\mx2\99133391_A1\Library/Motor.c
 [v _Motor_Speed Motor_Speed `(uc  1 e 1 0 ]
 {
@@ -2699,10 +2715,10 @@ eLED2 1
 [v Timer0_Start@pFunction pFunction `*.38(v  1 p 3 0 ]
 "82
 } 0
-"43 C:\Users\jamin\Documents\GitHub\mx2\99133391_A1\main.c
+"68 C:\Users\jamin\Documents\GitHub\mx2\99133391_A1\main.c
 [v _initialise initialise `(v  1 e 1 0 ]
 {
-"67
+"92
 } 0
 "26 C:\Users\jamin\Documents\GitHub\mx2\99133391_A1\Library/Motor.c
 [v _Motor_Init Motor_Init `(v  1 e 1 0 ]
@@ -2743,7 +2759,7 @@ eLED2 1
 [v _Port_Init Port_Init `(v  1 e 1 0 ]
 {
 "166
-[v Port_Init@i i `uc  1 a 1 2 ]
+[v Port_Init@i i `uc  1 a 1 8 ]
 [s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
 `uc 1 mBit4_7 1 0 :4:4 
 ]
@@ -2801,15 +2817,15 @@ eLED2 1
 [s S134 Word 2 `S130 1 . 2 0 ]
 [u S136 PortProperty 2 `us 1 mWord 2 0 `S134 1 mType 2 0 ]
 [s S139 Port 10 `*.32S136 1 mProperties 2 0 `*.39S122 1 mDirection 2 2 `*.39S122 1 mOutput 2 4 `*.39S122 1 mInput 2 6 `S134 1 mType 2 8 ]
-[v Port_Init@pInput pInput `C*.39S139  1 p 2 64 ]
-[v Port_Init@pPort pPort `E6786  1 p 1 66 ]
+[v Port_Init@pInput pInput `C*.39S139  1 p 2 3 ]
+[v Port_Init@pPort pPort `E6786  1 p 1 5 ]
 "186
 } 0
 "513
 [v _Port_SetType Port_SetType `(E6475  1 e 1 0 ]
 {
 "515
-[v Port_SetType@Output Output `E6475  1 a 1 63 ]
+[v Port_SetType@Output Output `E6475  1 a 1 2 ]
 [s S62 . 1 `uc 1 mBit0_3 1 0 :4:0 
 `uc 1 mBit4_7 1 0 :4:4 
 ]

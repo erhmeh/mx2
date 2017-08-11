@@ -257,9 +257,11 @@ extern double round(double);
 #pragma warning disable 350
 
 # 354
-const static unsigned int dpowers[] = {1, 10, 100, 1000, 10000,
+const static unsigned long dpowers[] = {1, 10, 100, 1000, 10000,
 
-# 359
+100000, 1000000, 10000000, 100000000,
+1000000000
+
 };
 
 # 455
@@ -273,9 +275,10 @@ va_list ap;
 # 499
 signed char c;
 
-# 506
-signed char prec;
+# 504
+int prec;
 
+# 508
 unsigned char flag;
 
 # 523
@@ -284,7 +287,7 @@ unsigned long vd;
 double integ;
 } tmpval;
 
-unsigned int val;
+unsigned long val;
 unsigned len;
 const char * cp;
 
@@ -304,11 +307,19 @@ continue;
 # 548
 flag = 0;
 
-# 635
+# 633
+loop:
+
 switch(c = *f++) {
 
 case 0:
 goto alldone;
+
+
+case 'l':
+
+flag |= 0x10;
+goto loop;
 
 # 697
 case 'd':
@@ -334,10 +345,13 @@ continue;
 # 1253
 {
 
-# 1259
-val = (int)(*(int *)__va_arg((*(int **)ap), (int)0));
+if(flag & 0x10)
+val = (*(long *)__va_arg((*(long **)ap), (long)0));
+else
 
-if((int)val < 0) {
+val = (long)(*(int *)__va_arg((*(int **)ap), (int)0));
+
+if((long)val < 0) {
 flag |= 0x03;
 val = -val;
 }

@@ -34,16 +34,41 @@ void nullMode();
 void setMode();
 
 CUINT16 HzInc = 10;
-UINT16  Hz = 10;
-INT16   DIST = 100;
-UINT16  HzOld;
-UINT8	k = 0;
+UINT16 Hz = 10;
+INT16 DIST = 100;
+UINT16 HzOld;
+UINT8 k = 0;
+
+void FunctMotor() {
+    if (MXK_BlockSwitchTo(eMXK_Motor)) {
+#ifdef MOTORCONTINIOUS
+        Hz = HMI_GetBar() * 500;
+        if (Hz != HzOld)
+            Motor_Speed(&Stepper, Hz);
+        HzOld = Hz;
+#else
+        if (Stepper.mDelta == 0) {
+            Hz += HzInc;
+            if (Hz >= DIST)
+                Hz = HzInc;
+
+            LED_Toggle(STATUS_LED);
+            DIST = -DIST;
+
+            Motor_Speed(&Stepper, Hz);
+            Motor_Move(&Stepper, DIST);
+        }
+#endif
+        if (MXK_Release())
+            MXK_Dequeue();
+    }
+}
 
 /*Initialisation of components*/
 void initialise() {
     //Initialise MXK Pins
     MXK_Init();
-    
+
     //Initialise HMI
     if (MXK_BlockSwitchTo(eMXK_HMI)) {
 
@@ -55,15 +80,15 @@ void initialise() {
     }
 
     //Initialise stepper
-        if (MXK_BlockSwitchTo(eMXK_Motor)) {
-            Motor_Init(&Stepper, MXK_MOTOR);
-            if (MXK_Release())
-                    MXK_Dequeue();
-        }
+    if (MXK_BlockSwitchTo(eMXK_Motor)) {
+        Motor_Init(&Stepper, MXK_MOTOR);
+        if (MXK_Release())
+            MXK_Dequeue();
+    }
 
     //Init interrupts
-    
-    
+
+
 }
 
 /*The displayStaticText function is called to display my name and SID*/
@@ -112,6 +137,7 @@ int getMode() {
             return 0;
     }
 }
+
 void displayMode() {
     Console_SetForecolour(RED);
     int mode = getMode();
@@ -131,6 +157,7 @@ void displayMode() {
             break;
     }
 }
+
 /*Function for when continuous mode is selected*/
 void continuousMode() {
     //Current mode
@@ -146,12 +173,14 @@ void continuousMode() {
 
         //Up button increases speed up to a maximum value of 10 
         if ((int) HMIBoard.mUp.mGetState() == 1 && (int) HMIBoard.mDown.mGetState() == 0 & speed <= 9) {
-            while((int) HMIBoard.mUp.mGetState() == 1){}
+            while ((int) HMIBoard.mUp.mGetState() == 1) {
+            }
             speed++;
         }
         //Down button decreases speed to a minimum value of 0
         if ((int) HMIBoard.mDown.mGetState() == 1 && (int) HMIBoard.mUp.mGetState() == 0 & speed > 0) {
-            while((int) HMIBoard.mDown.mGetState() == 1){}
+            while ((int) HMIBoard.mDown.mGetState() == 1) {
+            }
             speed--;
         }
         //Left button sets mode to Anti-clockwise
@@ -162,36 +191,29 @@ void continuousMode() {
         if ((int) HMIBoard.mRight.mGetState() == 1 && (int) HMIBoard.mLeft.mGetState() == 0) {
             direction = -1;
         }
-        
+
         displayText();
         Console_SetForecolour(YELLOW);
         printf("Speed: %d\n", speed);
         printf("Direction: %d\n", direction);
+        printf("mDelta: %ld\n", (long) Stepper.mDelta);
         Console_Render();
+        FunctMotor();
 
-        if (Stepper.mDelta == 0)
-	{
-	    Hz += HzInc;
-	    if (Hz >= DIST)
-		Hz = HzInc;
-
-	    LED_Toggle(STATUS_LED);
-	    DIST = -DIST;
-
-	    Motor_Speed(&Stepper, Hz);
-	    Motor_Move(&Stepper, DIST);
-	}
-        
-        mode = getMode();
-        HMI_Poll();
     }
+
+    mode = getMode();
+    HMI_Poll();
 }
+
 /*Function for when step mode is selected*/
 void stepMode() {
 }
+
 /*Function for when position mode is selected*/
 void positionMode() {
 }
+
 /*Function for when no mode is selected*/
 void nullMode() {
     displayText();
@@ -220,7 +242,6 @@ void setMode() {
 }
 
 void main() {
-    Motor Stepper;
     initialise();
 
     loop() {
@@ -228,7 +249,7 @@ void main() {
         if (MXK_BlockSwitchTo(eMXK_HMI)) {
 
             displayText();
-            
+
             //Set the mode
             setMode(Stepper);
 
