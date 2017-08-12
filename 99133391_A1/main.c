@@ -1,4 +1,4 @@
-/* 
+/*
  * File:   main.c
  * Author: Jamin Early
  *
@@ -33,37 +33,6 @@ void positionMode();
 void nullMode();
 void setMode();
 
-CUINT16 HzInc = 10;
-UINT16 Hz = 10;
-INT16 DIST = 100;
-UINT16 HzOld;
-UINT8 k = 0;
-
-void FunctMotor() {
-    if (MXK_BlockSwitchTo(eMXK_Motor)) {
-#ifdef MOTORCONTINIOUS
-        Hz = HMI_GetBar() * 500;
-        if (Hz != HzOld)
-            Motor_Speed(&Stepper, Hz);
-        HzOld = Hz;
-#else
-        if (Stepper.mDelta == 0) {
-            Hz += HzInc;
-            if (Hz >= DIST)
-                Hz = HzInc;
-
-            LED_Toggle(STATUS_LED);
-            DIST = -DIST;
-
-            Motor_Speed(&Stepper, Hz);
-            Motor_Move(&Stepper, DIST);
-        }
-#endif
-        if (MXK_Release())
-            MXK_Dequeue();
-    }
-}
-
 /*Initialisation of components*/
 void initialise() {
     //Initialise MXK Pins
@@ -82,9 +51,11 @@ void initialise() {
     //Initialise stepper
     if (MXK_BlockSwitchTo(eMXK_Motor)) {
         Motor_Init(&Stepper, MXK_MOTOR);
-        if (MXK_Release())
-            MXK_Dequeue();
+        Motor_Move(&Stepper, 100);
     }
+    if (MXK_Release())
+        MXK_Dequeue();
+
 
     //Init interrupts
 
@@ -112,15 +83,15 @@ void displayText() {
     Console_Render();
 }
 
-/*The getMode function returns the current mode as defined by the dip switches. 
+/*The getMode function returns the current mode as defined by the dip switches.
  * The modes are defined as follows:
  * 0-Undefined
  * 1-Continuous Mode
  * 2-Step Mode
  * 3-Position Mode
- * 
+ *
  * The displayMode function prints the current mode to the console.
- * 
+ *
  * The setMode function calls the corresponding function depending on the what the getMode function returns.
  */
 int getMode() {
@@ -140,9 +111,8 @@ int getMode() {
 
 void displayMode() {
     Console_SetForecolour(RED);
-    int mode = getMode();
     printf("Current Mode:\n");
-    switch (mode) {
+    switch (getMode()) {
         case 3:
             printf(" Position\n\n");
             break;
@@ -160,8 +130,6 @@ void displayMode() {
 
 /*Function for when continuous mode is selected*/
 void continuousMode() {
-    //Current mode
-    int mode = getMode();
     //Default speed is stationary
     int speed = 0;
 
@@ -169,9 +137,9 @@ void continuousMode() {
     INT16 direction = 0;
 
     //Remain in loop while set in continuous mode.
-    while (mode == 1) {
+    while (getMode() == 1) {
 
-        //Up button increases speed up to a maximum value of 10 
+        //Up button increases speed up to a maximum value of 10
         if ((int) HMIBoard.mUp.mGetState() == 1 && (int) HMIBoard.mDown.mGetState() == 0 & speed <= 9) {
             while ((int) HMIBoard.mUp.mGetState() == 1) {
             }
@@ -198,12 +166,18 @@ void continuousMode() {
         printf("Direction: %d\n", direction);
         printf("mDelta: %ld\n", (long) Stepper.mDelta);
         Console_Render();
-        FunctMotor();
+        if (MXK_BlockSwitchTo(eMXK_Motor)) {
+            Motor_Speed(&Stepper, speed * 10);
+            Motor_Move(&Stepper, 100);
+            if (MXK_Release())
+                MXK_Dequeue();
+        }
+
+
+        HMI_Poll();
+
 
     }
-
-    mode = getMode();
-    HMI_Poll();
 }
 
 /*Function for when step mode is selected*/
@@ -251,7 +225,7 @@ void main() {
             displayText();
 
             //Set the mode
-            setMode(Stepper);
+            setMode();
 
             if (MXK_Release())
                 MXK_Dequeue();

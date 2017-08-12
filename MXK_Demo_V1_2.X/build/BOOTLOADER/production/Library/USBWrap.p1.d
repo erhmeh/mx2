@@ -1,0 +1,20 @@
+ build/BOOTLOADER/production/Library/USBWrap.d  \
+ build/BOOTLOADER/production/Library/USBWrap.p1:  \
+ Library/USBWrap.c  \
+Library/USB/inc/usb_common.h  \
+./Events.h  \
+Library/Colours.h  \
+Library/FIFO.h  \
+Library/USB/inc/usb_hal.h  \
+Library/USB/inc/usb_hal_pic18.h  \
+Library/USB/inc/usb.h  \
+Library/FIFO.h  \
+Library/USB/inc/usb_device.h  \
+./Config.h  \
+Library/Types.h  \
+Library/USB/inc/usb_device_cdc.h  \
+Library/Tetris.h  \
+Library/USB/inc/usb_ch9.h  \
+Library/USB/inc/usb_config.h  \
+Library/USBWrap.h  \
+Library/Types.h 

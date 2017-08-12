@@ -1,0 +1,6381 @@
+[p LITE_MODE AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F67J50 ]
+[d frameptr 4065 ]
+"141 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/USB/src/usb_device.c
+[e E6804 . `uc
+DETACHED_STATE 0
+ATTACHED_STATE 1
+POWERED_STATE 2
+DEFAULT_STATE 4
+ADR_PENDING_STATE 8
+ADDRESS_STATE 16
+CONFIGURED_STATE 32
+]
+"713
+[e E6553 . `ui
+EVENT_NONE 0
+EVENT_DEVICE_STACK_BASE 1
+EVENT_HOST_STACK_BASE 100
+EVENT_HUB_ATTACH 101
+EVENT_STALL 102
+EVENT_VBUS_SES_REQUEST 103
+EVENT_VBUS_OVERCURRENT 104
+EVENT_VBUS_REQUEST_POWER 105
+EVENT_VBUS_RELEASE_POWER 106
+EVENT_VBUS_POWER_AVAILABLE 107
+EVENT_UNSUPPORTED_DEVICE 108
+EVENT_CANNOT_ENUMERATE 109
+EVENT_CLIENT_INIT_ERROR 110
+EVENT_OUT_OF_MEMORY 111
+EVENT_UNSPECIFIED_ERROR 112
+EVENT_DETACH 113
+EVENT_TRANSFER 114
+EVENT_SOF 115
+EVENT_RESUME 116
+EVENT_SUSPEND 117
+EVENT_RESET 118
+EVENT_DATA_ISOC_READ 119
+EVENT_DATA_ISOC_WRITE 120
+EVENT_OVERRIDE_CLIENT_DRIVER_SELECTION 121
+EVENT_1MS 122
+EVENT_ALT_INTERFACE 123
+EVENT_HOLD_BEFORE_CONFIGURATION 124
+EVENT_GENERIC_BASE 400
+EVENT_MSD_BASE 500
+EVENT_HID_BASE 600
+EVENT_PRINTER_BASE 700
+EVENT_CDC_BASE 800
+EVENT_CHARGER_BASE 900
+EVENT_AUDIO_BASE 1000
+EVENT_USER_BASE 10000
+EVENT_BUS_ERROR 32767
+]
+"2017
+[e E6813 . `uc
+EVENT_CONFIGURED 1
+EVENT_SET_DESCRIPTOR 2
+EVENT_EP0_REQUEST 3
+EVENT_ATTACH 4
+EVENT_TRANSFER_TERMINATED 5
+]
+"426 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/USB/src/usb_device_cdc.c
+[e E6474 . `ui
+EVENT_NONE 0
+EVENT_DEVICE_STACK_BASE 1
+EVENT_HOST_STACK_BASE 100
+EVENT_HUB_ATTACH 101
+EVENT_STALL 102
+EVENT_VBUS_SES_REQUEST 103
+EVENT_VBUS_OVERCURRENT 104
+EVENT_VBUS_REQUEST_POWER 105
+EVENT_VBUS_RELEASE_POWER 106
+EVENT_VBUS_POWER_AVAILABLE 107
+EVENT_UNSUPPORTED_DEVICE 108
+EVENT_CANNOT_ENUMERATE 109
+EVENT_CLIENT_INIT_ERROR 110
+EVENT_OUT_OF_MEMORY 111
+EVENT_UNSPECIFIED_ERROR 112
+EVENT_DETACH 113
+EVENT_TRANSFER 114
+EVENT_SOF 115
+EVENT_RESUME 116
+EVENT_SUSPEND 117
+EVENT_RESET 118
+EVENT_DATA_ISOC_READ 119
+EVENT_DATA_ISOC_WRITE 120
+EVENT_OVERRIDE_CLIENT_DRIVER_SELECTION 121
+EVENT_1MS 122
+EVENT_ALT_INTERFACE 123
+EVENT_HOLD_BEFORE_CONFIGURATION 124
+EVENT_GENERIC_BASE 400
+EVENT_MSD_BASE 500
+EVENT_HID_BASE 600
+EVENT_PRINTER_BASE 700
+EVENT_CDC_BASE 800
+EVENT_CHARGER_BASE 900
+EVENT_AUDIO_BASE 1000
+EVENT_USER_BASE 10000
+EVENT_BUS_ERROR 32767
+]
+"427
+[e E6734 . `uc
+EVENT_CONFIGURED 1
+EVENT_SET_DESCRIPTOR 2
+EVENT_EP0_REQUEST 3
+EVENT_ATTACH 4
+EVENT_TRANSFER_TERMINATED 5
+]
+"49 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/USB/src/usb_events.c
+[e E6474 . `ui
+EVENT_NONE 0
+EVENT_DEVICE_STACK_BASE 1
+EVENT_HOST_STACK_BASE 100
+EVENT_HUB_ATTACH 101
+EVENT_STALL 102
+EVENT_VBUS_SES_REQUEST 103
+EVENT_VBUS_OVERCURRENT 104
+EVENT_VBUS_REQUEST_POWER 105
+EVENT_VBUS_RELEASE_POWER 106
+EVENT_VBUS_POWER_AVAILABLE 107
+EVENT_UNSUPPORTED_DEVICE 108
+EVENT_CANNOT_ENUMERATE 109
+EVENT_CLIENT_INIT_ERROR 110
+EVENT_OUT_OF_MEMORY 111
+EVENT_UNSPECIFIED_ERROR 112
+EVENT_DETACH 113
+EVENT_TRANSFER 114
+EVENT_SOF 115
+EVENT_RESUME 116
+EVENT_SUSPEND 117
+EVENT_RESET 118
+EVENT_DATA_ISOC_READ 119
+EVENT_DATA_ISOC_WRITE 120
+EVENT_OVERRIDE_CLIENT_DRIVER_SELECTION 121
+EVENT_1MS 122
+EVENT_ALT_INTERFACE 123
+EVENT_HOLD_BEFORE_CONFIGURATION 124
+EVENT_GENERIC_BASE 400
+EVENT_MSD_BASE 500
+EVENT_HID_BASE 600
+EVENT_PRINTER_BASE 700
+EVENT_CDC_BASE 800
+EVENT_CHARGER_BASE 900
+EVENT_AUDIO_BASE 1000
+EVENT_USER_BASE 10000
+EVENT_BUS_ERROR 32767
+]
+"58
+[e E7530 . `uc
+eLED1 0
+eLED2 1
+]
+"50
+[e E6734 . `uc
+EVENT_CONFIGURED 1
+EVENT_SET_DESCRIPTOR 2
+EVENT_EP0_REQUEST 3
+EVENT_ATTACH 4
+EVENT_TRANSFER_TERMINATED 5
+]
+"34 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/LCD.c
+[e E6954 . `uc
+eP0 0
+eP1 1
+eP2 2
+eP3 3
+eP4 4
+eP5 5
+eP6 6
+eP7 7
+]
+"41
+[e E6761 . `uc
+eCommand 0
+eData 1
+]
+"49
+[e E6999 . `uc
+eTypeInput 0
+eTypeOutputOpenDrain 1
+eTypeOutputOpenSource 2
+eTypeOutputPushPull 3
+]
+[e E6475 . `uc
+ePinErrorNone 0
+ePinErrorCannotDriveHigh 1
+ePinErrorCannotDriveLow 2
+ePinErrorCannotDrive 3
+ePinErrorPinInput 4
+ePinErrorState 5
+]
+"63
+[e E6875 . `uc
+eSPI1 0
+eSPI2 1
+]
+[e E6879 . `uc
+eSPI_Mode0 0
+eSPI_Mode1 1
+eSPI_Mode2 2
+eSPI_Mode3 3
+]
+"64
+[e E6885 . `uc
+eSPI_8Bit 0
+eSPI_9Bit 1
+]
+"98
+[e E6808 . `uc
+eLED1 0
+eLED2 1
+]
+"16 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/LED.c
+[e E6739 . `uc
+eLED1 0
+eLED2 1
+]
+"20
+[e E6761 . `uc
+eP0 0
+eP1 1
+eP2 2
+eP3 3
+eP4 4
+eP5 5
+eP6 6
+eP7 7
+]
+[e E6806 . `uc
+eTypeInput 0
+eTypeOutputOpenDrain 1
+eTypeOutputOpenSource 2
+eTypeOutputPushPull 3
+]
+[e E6475 . `uc
+ePinErrorNone 0
+ePinErrorCannotDriveHigh 1
+ePinErrorCannotDriveLow 2
+ePinErrorCannotDrive 3
+ePinErrorPinInput 4
+ePinErrorState 5
+]
+"22 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+[e E6786 . `uc
+ePortA 0
+ePortB 1
+ePortC 2
+ePortD 3
+ePortE 4
+ePortF 5
+ePortG 6
+]
+"113
+[e E6760 . `uc
+eP0_1 0
+eP2_3 1
+eP4_5 2
+eP6_7 3
+eP8_9 4
+eP10_11 5
+eP12_13 6
+eP14_15 7
+]
+[e E6469 . `uc
+eHL 0
+eLow 1
+eHigh 2
+eNone 3
+]
+[e E6475 . `uc
+ePinErrorNone 0
+ePinErrorCannotDriveHigh 1
+ePinErrorCannotDriveLow 2
+ePinErrorCannotDrive 3
+ePinErrorPinInput 4
+ePinErrorState 5
+]
+"117
+[e E6750 . `uc
+eP0 0
+eP1 1
+eP2 2
+eP3 3
+eP4 4
+eP5 5
+eP6 6
+eP7 7
+]
+"127
+[e E6776 . `uc
+eP0_3 0
+eP4_7 1
+eP8_11 2
+eP12_15 3
+eP16_19 4
+eP20_23 5
+eP24_27 6
+eP28_31 7
+]
+"163
+[e E6795 . `uc
+eTypeInput 0
+eTypeOutputOpenDrain 1
+eTypeOutputOpenSource 2
+eTypeOutputPushPull 3
+]
+"10 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/SPI.c
+[e E6805 . `uc
+eSPI_8Bit 0
+eSPI_9Bit 1
+]
+[e E6795 . `uc
+eSPI1 0
+eSPI2 1
+]
+"13
+[e E6799 . `uc
+eSPI_Mode0 0
+eSPI_Mode1 1
+eSPI_Mode2 2
+eSPI_Mode3 3
+]
+"39
+[e E6877 . `uc
+eP0 0
+eP1 1
+eP2 2
+eP3 3
+eP4 4
+eP5 5
+eP6 6
+eP7 7
+]
+[e E6922 . `uc
+eTypeInput 0
+eTypeOutputOpenDrain 1
+eTypeOutputOpenSource 2
+eTypeOutputPushPull 3
+]
+[e E6475 . `uc
+ePinErrorNone 0
+ePinErrorCannotDriveHigh 1
+ePinErrorCannotDriveLow 2
+ePinErrorCannotDrive 3
+ePinErrorPinInput 4
+ePinErrorState 5
+]
+"209 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.c
+[e E6469 . `uc
+eHL 0
+eLow 1
+eHigh 2
+eNone 3
+]
+"221
+[e E6475 . `uc
+ePinErrorNone 0
+ePinErrorCannotDriveHigh 1
+ePinErrorCannotDriveLow 2
+ePinErrorCannotDrive 3
+ePinErrorPinInput 4
+ePinErrorState 5
+]
+"288
+[e E6483 . `uc
+ea 95
+eb 124
+ec 88
+ed 94
+ee 123
+ef 113
+eg 111
+eh 116
+ei 4
+ej 14
+ek 122
+el 6
+em 20
+en 84
+eo 92
+ep 115
+eq 103
+er 80
+es 109
+et 120
+eu 28
+ev 98
+ew 42
+ex 100
+ey 110
+ez 91
+e0 63
+e1 6
+e2 91
+e3 79
+e4 102
+e5 109
+e6 125
+e7 7
+e8 127
+e9 111
+eA 119
+eB 127
+eC 57
+eD 63
+eE 121
+eF 113
+eG 61
+eH 118
+eI 6
+eJ 30
+eK 87
+eL 56
+eM 118
+eN 118
+eO 63
+eP 115
+eQ 63
+eR 119
+eS 109
+eT 49
+eU 62
+eV 62
+eW 126
+eX 118
+eY 102
+eZ 91
+eDot 128
+]
+"29 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\HMI.c
+[e E7162 . `uc
+eP0 0
+eP1 1
+eP2 2
+eP3 3
+eP4 4
+eP5 5
+eP6 6
+eP7 7
+]
+"49
+[e E7188 . `uc
+eP0_3 0
+eP4_7 1
+eP8_11 2
+eP12_15 3
+eP16_19 4
+eP20_23 5
+eP24_27 6
+eP28_31 7
+]
+"91
+[e E7030 . `uc
+eSPI_8Bit 0
+eSPI_9Bit 1
+]
+[e E7020 . `uc
+eSPI1 0
+eSPI2 1
+]
+"124
+[e E7024 . `uc
+eSPI_Mode0 0
+eSPI_Mode1 1
+eSPI_Mode2 2
+eSPI_Mode3 3
+]
+"233
+[e E6483 . `uc
+ea 95
+eb 124
+ec 88
+ed 94
+ee 123
+ef 113
+eg 111
+eh 116
+ei 4
+ej 14
+ek 122
+el 6
+em 20
+en 84
+eo 92
+ep 115
+eq 103
+er 80
+es 109
+et 120
+eu 28
+ev 98
+ew 42
+ex 100
+ey 110
+ez 91
+e0 63
+e1 6
+e2 91
+e3 79
+e4 102
+e5 109
+e6 125
+e7 7
+e8 127
+e9 111
+eA 119
+eB 127
+eC 57
+eD 63
+eE 121
+eF 113
+eG 61
+eH 118
+eI 6
+eJ 30
+eK 87
+eL 56
+eM 118
+eN 118
+eO 63
+eP 115
+eQ 63
+eR 119
+eS 109
+eT 49
+eU 62
+eV 62
+eW 126
+eX 118
+eY 102
+eZ 91
+eDot 128
+]
+"6 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/ADC.c
+[e E6742 . `uc
+eADC_Ch0 0
+eADC_Ch1 1
+eADC_Ch2 2
+eADC_Ch3 3
+]
+"4 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/EUSART.c
+[e E6743 . `uc
+eEUSART_Master 1
+eEUSART_Slave 0
+]
+[e E6739 . `uc
+eEUSART_Sync 1
+eEUSART_Async 0
+]
+[e E6747 . `uc
+eEUSART_9Bit 1
+eEUSART_8Bit 0
+]
+"8 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/I2C.c
+[e E6880 . `uc
+eI2C_Idle 0
+eI2C_WriteStart 1
+eI2C_WriteWaitClearFlag 2
+eI2C_WriteAddress 3
+eI2C_WriteCheckAddressACK 4
+eI2C_WriteAddrClearFlag 5
+eI2C_WriteRestart 6
+eI2C_WriteData 7
+eI2C_WriteDataCheckACK 8
+eI2C_WriteDataClearFlag 9
+eI2C_WriteStop 10
+eI2C_WriteStopClearFlag 11
+eI2C_ReadStart 16
+eI2C_ReadRestart 32
+eI2C_ReadWaitClearFlag 48
+eI2C_ReadAddress 64
+eI2C_ReadCheckAddressACK 80
+eI2C_ReadAddrClearFlag 96
+eI2C_ReadData 112
+eI2C_ReadDataCheckACK 128
+eI2C_ReadDataClearFlag 144
+eI2C_ReadStop 160
+eI2C_ReadStopClearFlag 176
+]
+"193
+[e E6967 . `uc
+eI2C_Ch1 0
+eI2C_Ch2 1
+]
+[e E6963 . `uc
+eI2C_HighSpeed 1
+eI2C_LowSpeed 0
+]
+[e E6971 . `uc
+eI2C_Slave10bitISR 15
+eI2C_Slave7bitISR 14
+eI2C_Master 8
+eI2C_MasterClk 9
+eI2C_Slave10bit 7
+eI2C_Slave7bit 6
+]
+"206
+[e E6750 . `uc
+eP0 0
+eP1 1
+eP2 2
+eP3 3
+eP4 4
+eP5 5
+eP6 6
+eP7 7
+]
+[e E6795 . `uc
+eTypeInput 0
+eTypeOutputOpenDrain 1
+eTypeOutputOpenSource 2
+eTypeOutputPushPull 3
+]
+[e E6475 . `uc
+ePinErrorNone 0
+ePinErrorCannotDriveHigh 1
+ePinErrorCannotDriveLow 2
+ePinErrorCannotDrive 3
+ePinErrorPinInput 4
+ePinErrorState 5
+]
+"362
+[e E6905 . `uc
+eI2C_NACK 0
+eI2C_ACK 1
+]
+"8 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/IMU.c
+[e E6880 . `uc
+eI2C_Idle 0
+eI2C_WriteStart 1
+eI2C_WriteWaitClearFlag 2
+eI2C_WriteAddress 3
+eI2C_WriteCheckAddressACK 4
+eI2C_WriteAddrClearFlag 5
+eI2C_WriteRestart 6
+eI2C_WriteData 7
+eI2C_WriteDataCheckACK 8
+eI2C_WriteDataClearFlag 9
+eI2C_WriteStop 10
+eI2C_WriteStopClearFlag 11
+eI2C_ReadStart 16
+eI2C_ReadRestart 32
+eI2C_ReadWaitClearFlag 48
+eI2C_ReadAddress 64
+eI2C_ReadCheckAddressACK 80
+eI2C_ReadAddrClearFlag 96
+eI2C_ReadData 112
+eI2C_ReadDataCheckACK 128
+eI2C_ReadDataClearFlag 144
+eI2C_ReadStop 160
+eI2C_ReadStopClearFlag 176
+]
+"20
+[e E6967 . `uc
+eI2C_Ch1 0
+eI2C_Ch2 1
+]
+"92
+[e E6963 . `uc
+eI2C_HighSpeed 1
+eI2C_LowSpeed 0
+]
+[e E6971 . `uc
+eI2C_Slave10bitISR 15
+eI2C_Slave7bitISR 14
+eI2C_Master 8
+eI2C_MasterClk 9
+eI2C_Slave10bit 7
+eI2C_Slave7bit 6
+]
+"33 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Motor.c
+[e E6758 . `uc
+eP0 0
+eP1 1
+eP2 2
+eP3 3
+eP4 4
+eP5 5
+eP6 6
+eP7 7
+]
+[e E6803 . `uc
+eTypeInput 0
+eTypeOutputOpenDrain 1
+eTypeOutputOpenSource 2
+eTypeOutputPushPull 3
+]
+[e E6475 . `uc
+ePinErrorNone 0
+ePinErrorCannotDriveHigh 1
+ePinErrorCannotDriveLow 2
+ePinErrorCannotDrive 3
+ePinErrorPinInput 4
+ePinErrorState 5
+]
+"77
+[e E7063 . `uc
+eMXK_Motor 8
+eMXK_IMU 4
+eMXK_HMI 1
+eMXK_FPGA 2
+eMXK_None 0
+]
+"12 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/MXK.c
+[e E6750 . `uc
+eP0 0
+eP1 1
+eP2 2
+eP3 3
+eP4 4
+eP5 5
+eP6 6
+eP7 7
+]
+[e E6795 . `uc
+eTypeInput 0
+eTypeOutputOpenDrain 1
+eTypeOutputOpenSource 2
+eTypeOutputPushPull 3
+]
+[e E6475 . `uc
+ePinErrorNone 0
+ePinErrorCannotDriveHigh 1
+ePinErrorCannotDriveLow 2
+ePinErrorCannotDrive 3
+ePinErrorPinInput 4
+ePinErrorState 5
+]
+"22
+[e E6776 . `uc
+eP0_3 0
+eP4_7 1
+eP8_11 2
+eP12_15 3
+eP16_19 4
+eP20_23 5
+eP24_27 6
+eP28_31 7
+]
+"31
+[e E7044 . `uc
+eMXK_Busy 0
+eMXK_Idle 1
+]
+"38
+[e E6786 . `uc
+ePortA 0
+ePortB 1
+ePortC 2
+ePortD 3
+ePortE 4
+ePortF 5
+ePortG 6
+]
+"55
+[e E7081 . `uc
+eLED1 0
+eLED2 1
+]
+"83
+[e E7037 . `uc
+eMXK_Motor 8
+eMXK_IMU 4
+eMXK_HMI 1
+eMXK_FPGA 2
+eMXK_None 0
+]
+"41 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/system.c
+[e E6429 . `uc
+SYSTEM_STATE_USB_START 0
+SYSTEM_STATE_USB_SUSPEND 1
+SYSTEM_STATE_USB_RESUME 2
+]
+"45
+[e E7371 . `uc
+eLED1 0
+eLED2 1
+]
+"4 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Tetris.c
+[e E6757 . `uc
+eBlockStateInactive 0
+eBlockStateActive 1
+eBlockStateDynamic 2
+eBlockStateError 3
+]
+"5
+[e E6769 . `ui
+eLN 240
+eSQ 1632
+eLL 1570
+eRL 1604
+eTE 3648
+eLZ 1584
+eRZ 1728
+]
+"71
+[e E6763 . `uc
+eBlockBody 0
+eBlockBorder 1
+eBlockOutside 2
+eBlockInactive 3
+]
+"48 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/USBWrap.c
+[e E7233 . `uc
+DETACHED_STATE 0
+ATTACHED_STATE 1
+POWERED_STATE 2
+DEFAULT_STATE 4
+ADR_PENDING_STATE 8
+ADDRESS_STATE 16
+CONFIGURED_STATE 32
+]
+"15 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Events.c
+[e E6896 . `uc
+eLED1 0
+eLED2 1
+]
+"45 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Functions.c
+[e E7037 . `uc
+eMXK_Motor 8
+eMXK_IMU 4
+eMXK_HMI 1
+eMXK_FPGA 2
+eMXK_None 0
+]
+"67
+[e E7593 . `uc
+eADC_Ch0 0
+eADC_Ch1 1
+eADC_Ch2 2
+eADC_Ch3 3
+]
+"162
+[e E7680 . `uc
+eEUSART_Master 1
+eEUSART_Slave 0
+]
+[e E7676 . `uc
+eEUSART_Sync 1
+eEUSART_Async 0
+]
+[e E7684 . `uc
+eEUSART_9Bit 1
+eEUSART_8Bit 0
+]
+"233
+[e E7314 . `uc
+eLED1 0
+eLED2 1
+]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"464 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\doprnt.c
+[v _printf printf `(i  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"20 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"27 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 2 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\memset.c
+[v _memset memset `(*.39v  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"10 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Events.c
+[v _Event_ADCSequenceComplete Event_ADCSequenceComplete `(v  1 e 1 0 ]
+"18
+[v _Event_USBRecieve Event_USBRecieve `(v  1 e 1 0 ]
+"58
+[v _Event_DIPSwitch Event_DIPSwitch `(v  1 e 1 0 ]
+"75
+[v _Event_HMI_DIPSwitch Event_HMI_DIPSwitch `(v  1 e 1 0 ]
+"92
+[v _Event_TestButton Event_TestButton `(v  1 e 1 0 ]
+"122
+[v _Event_HMI_LeftButton Event_HMI_LeftButton `(v  1 e 1 0 ]
+"149
+[v _Event_HMI_RightButton Event_HMI_RightButton `(v  1 e 1 0 ]
+"173
+[v _Event_HMI_UpButton Event_HMI_UpButton `(v  1 e 1 0 ]
+"195
+[v _Event_HMI_DownButton Event_HMI_DownButton `(v  1 e 1 0 ]
+"52 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Functions.c
+[v _FunctInitMotor FunctInitMotor `(v  1 e 1 0 ]
+"86
+[v _FunctInitLCD FunctInitLCD `(v  1 e 1 0 ]
+"134
+[v _FunctInitHMI FunctInitHMI `(v  1 e 1 0 ]
+"217
+[v _FunctMotor FunctMotor `(v  1 e 1 0 ]
+"249
+[v _FunctHMI FunctHMI `(v  1 e 1 0 ]
+"21 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\HMI.c
+[v _HMI_InitButtons HMI_InitButtons `(v  1 e 1 0 ]
+"27
+[v _HMI_LeftSwitch HMI_LeftSwitch `(uc  1 e 1 0 ]
+"32
+[v _HMI_RightSwitch HMI_RightSwitch `(uc  1 e 1 0 ]
+"37
+[v _HMI_UpSwitch HMI_UpSwitch `(uc  1 e 1 0 ]
+"42
+[v _HMI_DownSwitch HMI_DownSwitch `(uc  1 e 1 0 ]
+"47
+[v _HMI_DIPSwitch HMI_DIPSwitch `(uc  1 e 1 0 ]
+"54
+[v _OutSeg OutSeg `(v  1 e 1 0 ]
+"104
+[v _HMI_Init HMI_Init `(v  1 e 1 0 ]
+"138
+[v _HMI_Render HMI_Render `(v  1 e 1 0 ]
+"162
+[v _HMI_SetLeft HMI_SetLeft `(v  1 e 1 0 ]
+"168
+[v _HMI_SetRight HMI_SetRight `(v  1 e 1 0 ]
+"174
+[v _HMI_SetUp HMI_SetUp `(v  1 e 1 0 ]
+"180
+[v _HMI_SetDown HMI_SetDown `(v  1 e 1 0 ]
+"186
+[v _HMI_SetButton HMI_SetButton `(v  1 e 1 0 ]
+"205
+[v _HMI_SetBar HMI_SetBar `(v  1 e 1 0 ]
+"209
+[v _HMI_GetBar HMI_GetBar `(uc  1 e 1 0 ]
+"221
+[v _HMI_SetNumber HMI_SetNumber `(v  1 e 1 0 ]
+"226
+[v _HMI_SetSegments HMI_SetSegments `(v  1 e 1 0 ]
+"19 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/ADC.c
+[v _ADC_Init ADC_Init `(v  1 e 1 0 ]
+"63
+[v _ADC_Calibrate ADC_Calibrate `(v  1 e 1 0 ]
+"85
+[v _ADC_On ADC_On `(v  1 e 1 0 ]
+"94
+[v _ADC_Off ADC_Off `(v  1 e 1 0 ]
+"101
+[v _ADC_Sequence ADC_Sequence `(v  1 e 1 0 ]
+"114
+[v _ADC_Start ADC_Start `(v  1 e 1 0 ]
+"150
+[v _ADC_SetupIO ADC_SetupIO `(v  1 e 1 0 ]
+"155
+[v _ADC_SetChannel ADC_SetChannel `(v  1 e 1 0 ]
+"159
+[v _ADC_ClockDivision ADC_ClockDivision `(v  1 e 1 0 ]
+"199
+[v _ADC_ConversionTime ADC_ConversionTime `(v  1 e 1 0 ]
+"235
+[v _ADC_Sample ADC_Sample `(uc  1 e 1 0 ]
+"271
+[v _rand rand `(uc  1 e 1 0 ]
+"18 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Button.c
+[v _Button_Init Button_Init `(v  1 e 1 0 ]
+"57
+[v _Button_Poll Button_Poll `(uc  1 e 1 0 ]
+"3 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Colours.c
+[v _Colour_To565 Colour_To565 `(us  1 e 2 0 ]
+"157 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Console.c
+[v _Console_Init Console_Init `(v  1 e 1 0 ]
+"175
+[v _Console_NewLine Console_NewLine `(v  1 e 1 0 ]
+"192
+[v _Console_FormFeed Console_FormFeed `(v  1 e 1 0 ]
+"209
+[v _Console_Backspace Console_Backspace `(v  1 e 1 0 ]
+"243
+[v _Console_IncrementCursor Console_IncrementCursor `(uc  1 e 1 0 ]
+"260
+[v _Console_Tab Console_Tab `(v  1 e 1 0 ]
+"286
+[v _Console_SetForecolour Console_SetForecolour `T(v  1 e 1 0 ]
+"297
+[v _Console_ResetCursor Console_ResetCursor `(v  1 e 1 0 ]
+"308
+[v _Console_ClearCursor Console_ClearCursor `(v  1 e 1 0 ]
+"322
+[v _Console_PrintChar Console_PrintChar `T(v  1 e 1 0 ]
+"377
+[v _Console_Render Console_Render `(v  1 e 1 0 ]
+"435
+[v _Console_MakeField Console_MakeField `(*.39us  1 e 2 0 ]
+"454
+[v _putch putch `(v  1 e 1 0 ]
+"3 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/EUSART.c
+[v _EUSART_Init EUSART_Init `(v  1 e 1 0 ]
+"34
+[v _EUSART_Poll EUSART_Poll `(v  1 e 1 0 ]
+"14 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/FIFO.c
+[v _Start_2 Start_2 `T(us  1 e 2 0 ]
+"18
+[v _End_2 End_2 `T(us  1 e 2 0 ]
+"22
+[v _LoopMode LoopMode `T(uc  1 e 1 0 ]
+"99
+[v _FIFO_Put FIFO_Put `(uc  1 e 1 0 ]
+"175
+[v _FIFO_PRead FIFO_PRead `(uc  1 e 1 0 ]
+"246
+[v _FIFO_Empty FIFO_Empty `T(uc  1 e 1 0 ]
+"261
+[v _FIFO_Full FIFO_Full `T(uc  1 e 1 0 ]
+"29 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/I2C.c
+[v _I2CT_InitR I2CT_InitR `(uc  1 e 1 0 ]
+"45
+[v _I2CT_InitW I2CT_InitW `(uc  1 e 1 0 ]
+"66
+[v _I2CT_Get I2CT_Get `(uc  1 e 1 0 ]
+"77
+[v _I2CT_Put I2CT_Put `(uc  1 e 1 0 ]
+"98
+[v _I2CT_IsRead I2CT_IsRead `T(uc  1 e 1 0 ]
+"108
+[v _I2CT_Next I2CT_Next `(uc  1 e 1 0 ]
+"144
+[v _I2CT_Continue I2CT_Continue `(uc  1 e 1 0 ]
+"163
+[v _I2CT_Stop I2CT_Stop `(uc  1 e 1 0 ]
+"179
+[v _I2CT_WAddress I2CT_WAddress `T(uc  1 e 1 0 ]
+"184
+[v _I2CT_RAddress I2CT_RAddress `T(uc  1 e 1 0 ]
+"192
+[v _I2C_Init I2C_Init `(v  1 e 1 0 ]
+"257
+[v _I2C_Master_Wait1 I2C_Master_Wait1 `(v  1 e 1 0 ]
+"265
+[v _I2C_Write I2C_Write `(uc  1 e 1 0 ]
+"292
+[v _I2C_RWrite I2C_RWrite `(uc  1 e 1 0 ]
+"341
+[v _I2C_RRead I2C_RRead `(uc  1 e 1 0 ]
+"361
+[v _I2C1_ACK I2C1_ACK `T(v  1 e 1 0 ]
+"371
+[v _I2C1_ISR I2C1_ISR `T(v  1 e 1 0 ]
+"487
+[v _I2C2_ISR I2C2_ISR `T(v  1 e 1 0 ]
+"12 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/IMU.c
+[v _IMU_ReadRegFinish IMU_ReadRegFinish `(uc  1 e 1 0 ]
+"17
+[v _IMU_ReadRegContinue IMU_ReadRegContinue `(uc  1 e 1 0 ]
+"22
+[v _IMU_ReadReg IMU_ReadReg `(uc  1 e 1 0 ]
+"42
+[v _IMU_WriteRegFinish IMU_WriteRegFinish `(uc  1 e 1 0 ]
+"47
+[v _IMU_WriteRegContinue IMU_WriteRegContinue `(uc  1 e 1 0 ]
+"72
+[v _IMU_ReadPoll IMU_ReadPoll `(uc  1 e 1 0 ]
+"81
+[v _IMU_ReadComplete IMU_ReadComplete `(v  1 e 1 0 ]
+"85
+[v _IMU_Init IMU_Init `(v  1 e 1 0 ]
+"19 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/ISR.c
+[v _ISR_Disable ISR_Disable `(v  1 e 1 0 ]
+"30
+[v _ISR_Enable ISR_Enable `(v  1 e 1 0 ]
+"41
+[v _ISR_Function ISR_Function `II(v  1 e 1 0 ]
+"32 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/LCD.c
+[v _Reset_Low Reset_Low `T(v  1 e 1 0 ]
+"36
+[v _Reset_High Reset_High `T(v  1 e 1 0 ]
+"40
+[v _Mode_Set Mode_Set `T(v  1 e 1 0 ]
+"46
+[v _Configure_GPIOs Configure_GPIOs `(v  1 e 1 0 ]
+"67
+[v _LCD_Write LCD_Write `(v  1 e 1 0 ]
+"95
+[v _LCD_Reset LCD_Reset `(v  1 e 1 0 ]
+"172
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+"198
+[v _LCD_Word_Write LCD_Word_Write `(v  1 e 1 0 ]
+"214
+[v _Set_Addr_Window Set_Addr_Window `(v  1 e 1 0 ]
+"248
+[v _Set_Rotation Set_Rotation `(v  1 e 1 0 ]
+"287
+[v _LCD_Fill LCD_Fill `(v  1 e 1 0 ]
+"318
+[v _LCD_FillRectangle LCD_FillRectangle `(v  1 e 1 0 ]
+"15 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Point.h
+[s S2807 Point 4 `s 1 x 2 0 `s 1 y 2 2 ]
+"336 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/LCD.c
+[v _ToPoint ToPoint `T(S2807  1 e 4 0 ]
+"343
+[v _LCD_DrawPixel LCD_DrawPixel `(v  1 e 1 0 ]
+"353
+[v _LCD_DrawLine LCD_DrawLine `(v  1 e 1 0 ]
+"393
+[v _LCD_DrawField LCD_DrawField `(v  1 e 1 0 ]
+"15 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/LED.c
+[v _LED_Init LED_Init `(v  1 e 1 0 ]
+"33
+[v _LED_Set LED_Set `(v  1 e 1 0 ]
+"50
+[v _LED_Toggle LED_Toggle `(v  1 e 1 0 ]
+"26 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Motor.c
+[v _Motor_Init Motor_Init `(v  1 e 1 0 ]
+"51
+[v _Motor_Move Motor_Move `(uc  1 e 1 0 ]
+"75
+[v _Motor_Step Motor_Step `(v  1 e 1 0 ]
+[v i2_Motor_Step Motor_Step `(v  1 e 1 0 ]
+"117
+[v _Motor_Speed Motor_Speed `(uc  1 e 1 0 ]
+"10 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/MXK.c
+[v _MXK_InitTestButton MXK_InitTestButton `(v  1 e 1 0 ]
+"14
+[v _MXK_TestButton MXK_TestButton `(uc  1 e 1 0 ]
+"20
+[v _MXK_InitDIPSwitch MXK_InitDIPSwitch `(v  1 e 1 0 ]
+"24
+[v _MXK_DIPSwitch MXK_DIPSwitch `(uc  1 e 1 0 ]
+"33
+[v _MXK_Init MXK_Init `(v  1 e 1 0 ]
+"70
+[v _MXK_Poll MXK_Poll `(v  1 e 1 0 ]
+"82
+[v _MXK_BlockSwitchTo MXK_BlockSwitchTo `(uc  1 e 1 0 ]
+"105
+[v _MXK_SwitchTo MXK_SwitchTo `(uc  1 e 1 0 ]
+[v i2_MXK_SwitchTo MXK_SwitchTo `(uc  1 e 1 0 ]
+"130
+[v _MXK_Release MXK_Release `(uc  1 e 1 0 ]
+[v i2_MXK_Release MXK_Release `(uc  1 e 1 0 ]
+"144
+[v _MXK_Queue MXK_Queue `(v  1 e 1 0 ]
+[v i2_MXK_Queue MXK_Queue `(v  1 e 1 0 ]
+"153
+[v _MXK_Dequeue MXK_Dequeue `(v  1 e 1 0 ]
+"3 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Point.c
+[v _Point_Init Point_Init `(v  1 e 1 0 ]
+"533 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+"509
+"512
+"515
+"426
+"429
+"434
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+"21 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"439 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+"21 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"445 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+"21 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"451 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+"21 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"459 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+"21 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"465 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+"21 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"472 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+"21 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"480 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+"21 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"487 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+"21 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"497 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+"21 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[s S2340 . 2 `S2338 1 LS_Byte 1 0 `S2338 1 MS_Byte 1 1 ]
+"520 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2343 . 2 `uc 1 L 1 0 `uc 1 H 1 1 ]
+"21 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+[u S2346 . 2 `us 1 mBits 2 0 `S2340 1 . 2 0 `S2343 1 . 2 0 ]
+[s S2350 Word 2 `S2346 1 . 2 0 ]
+[u S2352 PortProperty 2 `us 1 mWord 2 0 `S2350 1 mType 2 0 ]
+[v _GetPortProperties GetPortProperties `(*.32S2352  1 e 2 0 ]
+"426 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+"429
+"434
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+"44 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"439 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+"44 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"445 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+"44 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"451 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+"44 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"459 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+"44 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"465 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+"44 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"472 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+"44 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"480 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+"44 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"487 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+"44 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"497 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+"44 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[v _GetPortPORT GetPortPORT `(*.39S2338  1 e 2 0 ]
+"426 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+"429
+"434
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+"67 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"439 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+"67 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"445 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+"67 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"451 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+"67 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"459 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+"67 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"465 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+"67 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"472 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+"67 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"480 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+"67 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"487 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+"67 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"497 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+"67 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[v _GetPortTRIS GetPortTRIS `(*.39S2338  1 e 2 0 ]
+"112
+[v _Port_CheckPairType Port_CheckPairType `(E6475  1 e 1 0 ]
+"126
+[v _Port_CheckQuadType Port_CheckQuadType `(E6475  1 e 1 0 ]
+"138
+[v _Port_CheckPortType Port_CheckPortType `(E6475  1 e 1 0 ]
+"150
+[v _Port_Init Port_Init `(v  1 e 1 0 ]
+"189
+[v _Port_SetPinType Port_SetPinType `(E6475  1 e 1 0 ]
+"247
+[v _Port_SetPin Port_SetPin `(v  1 e 1 0 ]
+[v i2_Port_SetPin Port_SetPin `(v  1 e 1 0 ]
+"271
+[v _Port_GetPin Port_GetPin `(uc  1 e 1 0 ]
+"278
+[v _Port_TogglePin Port_TogglePin `(v  1 e 1 0 ]
+"345
+[v _Port_SetPair Port_SetPair `(v  1 e 1 0 ]
+"384
+[v _Port_GetPair Port_GetPair `(uc  1 e 1 0 ]
+"399
+[v _Port_SetQuadType Port_SetQuadType `(E6475  1 e 1 0 ]
+"460
+[v _Port_SetQuad Port_SetQuad `(v  1 e 1 0 ]
+"498
+[v _Port_GetQuad Port_GetQuad `(uc  1 e 1 0 ]
+"513
+[v _Port_SetType Port_SetType `(E6475  1 e 1 0 ]
+"570
+[v _Port_Set Port_Set `(v  1 e 1 0 ]
+"613
+[v _Port_Get Port_Get `(uc  1 e 1 0 ]
+"12 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/SPI.c
+[v _SPI_Init SPI_Init `(v  1 e 1 0 ]
+"133
+[v _SPI_Busy SPI_Busy `T(uc  1 e 1 0 ]
+"142
+[v _SPI_BF SPI_BF `T(uc  1 e 1 0 ]
+"181
+[v _SPI_DisableISR SPI_DisableISR `(v  1 e 1 0 ]
+"190
+[v _SPI_MinSpeed SPI_MinSpeed `(v  1 e 1 0 ]
+"201
+[v _SPI_MaxSpeed SPI_MaxSpeed `(v  1 e 1 0 ]
+"219
+[v _SPI_DCS SPI_DCS `(v  1 e 1 0 ]
+"226
+[v _SPI_Send SPI_Send `(uc  1 e 1 0 ]
+"16 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Tetris.c
+[v _BlockInit BlockInit `(v  1 e 1 0 ]
+"30
+[v _BlockSet BlockSet `(v  1 e 1 0 ]
+"35
+[v _BlockDraw BlockDraw `(v  1 e 1 0 ]
+"93
+[v _BlockClear BlockClear `(v  1 e 1 0 ]
+"157
+[v _TetrisBlockFrame TetrisBlockFrame `T(v  1 e 1 0 ]
+"208
+[v _TetrisBlockSwap TetrisBlockSwap `T(uc  1 e 1 0 ]
+"228
+[v _TetrisBlockClockwise TetrisBlockClockwise `T(uc  1 e 1 0 ]
+"248
+[v _TetrisBlockAnticlockwise TetrisBlockAnticlockwise `T(uc  1 e 1 0 ]
+"274
+[v _TetrisBlockRowOccupied TetrisBlockRowOccupied `T(uc  1 e 1 0 ]
+"281
+[v _TetrisBlockColumnOccupied TetrisBlockColumnOccupied `T(uc  1 e 1 0 ]
+"289
+[v _TetrisBlockRowClear TetrisBlockRowClear `T(uc  1 e 1 0 ]
+"296
+[v _TetrisBlockColumnClear TetrisBlockColumnClear `T(uc  1 e 1 0 ]
+"309
+[v _TetrisBlockShiftL TetrisBlockShiftL `(uc  1 e 1 0 ]
+"322
+[v _TetrisBlockShiftR TetrisBlockShiftR `(uc  1 e 1 0 ]
+"334
+[v _TetrisBlockShiftU TetrisBlockShiftU `(uc  1 e 1 0 ]
+"346
+[v _TetrisBlockShiftD TetrisBlockShiftD `(uc  1 e 1 0 ]
+"360
+[v _TetrisBlockReframe TetrisBlockReframe `T(v  1 e 1 0 ]
+"20 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Timer0.c
+[v _Timer0_Clear Timer0_Clear `(v  1 e 1 0 ]
+"25
+[v _Timer0_Init Timer0_Init `(v  1 e 1 0 ]
+"75
+[v _Timer0_Start Timer0_Start `(v  1 e 1 0 ]
+"83
+[v _Timer0_Restart Timer0_Restart `(v  1 e 1 0 ]
+[v i2_Timer0_Restart Timer0_Restart `(v  1 e 1 0 ]
+"89
+[v _Timer0_Stop Timer0_Stop `(v  1 e 1 0 ]
+[v i2_Timer0_Stop Timer0_Stop `(v  1 e 1 0 ]
+"94
+[v _Timer0_ISR Timer0_ISR `(v  1 e 1 0 ]
+"3 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Timer2.c
+[v _Timer2_Clear Timer2_Clear `(v  1 e 1 0 ]
+"10
+[v _Timer2_Init Timer2_Init `(v  1 e 1 0 ]
+"32 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.c
+[v _Byte_SetBit Byte_SetBit `(v  1 e 1 0 ]
+[v i2_Byte_SetBit Byte_SetBit `(v  1 e 1 0 ]
+"38
+[v _Byte_GetBit Byte_GetBit `(uc  1 e 1 0 ]
+"47
+[v _Byte_SetZone Byte_SetZone `T(v  1 e 1 0 ]
+"64
+[v _Byte_GetZone Byte_GetZone `T(uc  1 e 1 0 ]
+[v i2_Byte_GetZone Byte_GetZone `T(uc  1 e 1 0 ]
+"83
+[v _Byte_SetPair Byte_SetPair `(v  1 e 1 0 ]
+"87
+[v _Byte_GetPair Byte_GetPair `(uc  1 e 1 0 ]
+[v i2_Byte_GetPair Byte_GetPair `(uc  1 e 1 0 ]
+"101
+[v _Byte_SetQuad Byte_SetQuad `(v  1 e 1 0 ]
+"105
+[v _Byte_GetQuad Byte_GetQuad `(uc  1 e 1 0 ]
+"110
+[v _Byte_SetByte Byte_SetByte `(v  1 e 1 0 ]
+"149
+[v _Word_SetPair Word_SetPair `(v  1 e 1 0 ]
+"156
+[v _Word_GetPair Word_GetPair `(uc  1 e 1 0 ]
+[v i2_Word_GetPair Word_GetPair `(uc  1 e 1 0 ]
+"194
+[v _Word_SetWord Word_SetWord `(v  1 e 1 0 ]
+"220
+[v _PortProperty_Valid PortProperty_Valid `(E6475  1 e 1 0 ]
+"240
+[v _delay_ms delay_ms `(v  1 e 1 0 ]
+"255
+[v _delay_us delay_us `(v  1 e 1 0 ]
+[v i2_delay_us delay_us `(v  1 e 1 0 ]
+"284
+[v _ToSegment ToSegment `(uc  1 e 1 0 ]
+"357
+[v _reverse reverse `(v  1 e 1 0 ]
+"369
+[v _itos itos `(v  1 e 1 0 ]
+"393
+[v _swap swap `(v  1 e 1 0 ]
+"277 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/USB/src/usb_device.c
+[v _USBDeviceInit USBDeviceInit `(v  1 e 1 0 ]
+"477
+[v _USBDeviceTasks USBDeviceTasks `(v  1 e 1 0 ]
+"878
+[v _USBEnableEndpoint USBEnableEndpoint `(v  1 e 1 0 ]
+"995
+[v _USBTransferOnePacket USBTransferOnePacket `(*.39v  1 e 2 0 ]
+"1416
+[v _USBCtrlEPAllowStatusStage USBCtrlEPAllowStatusStage `(v  1 e 1 0 ]
+"1488
+[v _USBCtrlEPAllowDataStage USBCtrlEPAllowDataStage `(v  1 e 1 0 ]
+"1543
+[v _USBConfigureEndpoint USBConfigureEndpoint `(v  1 s 1 USBConfigureEndpoint ]
+"1616
+[v _USBCtrlEPServiceComplete USBCtrlEPServiceComplete `(v  1 s 1 USBCtrlEPServiceComplete ]
+"1771
+[v _USBCtrlTrfTxService USBCtrlTrfTxService `(v  1 s 1 USBCtrlTrfTxService ]
+"1852
+[v _USBCtrlTrfRxService USBCtrlTrfRxService `(v  1 s 1 USBCtrlTrfRxService ]
+"1968
+[v _USBStdSetCfgHandler USBStdSetCfgHandler `(v  1 s 1 USBStdSetCfgHandler ]
+"2043
+[v _USBStdGetDscHandler USBStdGetDscHandler `(v  1 s 1 USBStdGetDscHandler ]
+"2129
+[v _USBStdGetStatusHandler USBStdGetStatusHandler `(v  1 s 1 USBStdGetStatusHandler ]
+"2202
+[v _USBStallHandler USBStallHandler `(v  1 s 1 USBStallHandler ]
+"2245
+[v _USBSuspend USBSuspend `(v  1 s 1 USBSuspend ]
+"2303
+[v _USBWakeFromSuspend USBWakeFromSuspend `(v  1 s 1 USBWakeFromSuspend ]
+"2372
+[v _USBCtrlEPService USBCtrlEPService `(v  1 s 1 USBCtrlEPService ]
+"2465
+[v _USBCtrlTrfSetupHandler USBCtrlTrfSetupHandler `(v  1 s 1 USBCtrlTrfSetupHandler ]
+"2538
+[v _USBCtrlTrfOutHandler USBCtrlTrfOutHandler `(v  1 s 1 USBCtrlTrfOutHandler ]
+"2592
+[v _USBCtrlTrfInHandler USBCtrlTrfInHandler `(v  1 s 1 USBCtrlTrfInHandler ]
+"2686
+[v _USBCheckStdRequest USBCheckStdRequest `(v  1 s 1 USBCheckStdRequest ]
+"2754
+[v _USBStdFeatureReqHandler USBStdFeatureReqHandler `(v  1 s 1 USBStdFeatureReqHandler ]
+"3025
+[v _USBIncrement1msInternalTimers USBIncrement1msInternalTimers `(v  1 e 1 0 ]
+"148 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/USB/src/usb_device_cdc.c
+[v _USBCheckCDCRequest USBCheckCDCRequest `(v  1 e 1 0 ]
+"295
+[v _CDCInitEP CDCInitEP `(v  1 e 1 0 ]
+"486
+[v _getsUSBUSART getsUSBUSART `(uc  1 e 1 0 ]
+"591
+[v _putUSBUSART putUSBUSART `(v  1 e 1 0 ]
+"902
+[v _CDCTxService CDCTxService `(v  1 e 1 0 ]
+"48 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/USB/src/usb_events.c
+[v _USER_USB_CALLBACK_EVENT_HANDLER USER_USB_CALLBACK_EVENT_HANDLER `(uc  1 e 1 0 ]
+"16 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/USBWrap.c
+[v _USB_Init USB_Init `(v  1 e 1 0 ]
+"27
+[v _USB_Poll USB_Poll `(v  1 e 1 0 ]
+"62
+[v _USB_Tasks USB_Tasks `(v  1 e 1 0 ]
+"18 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"646 C:\Program Files (x86)\Microchip\xc8\v1.43\include\pic18f67j50.h
+[v _UEP0 UEP0 `VEuc  1 e 1 @3916 ]
+[s S538 . 1 `uc 1 EPSTALL 1 0 :1:0 
+`uc 1 EPINEN 1 0 :1:1 
+`uc 1 EPOUTEN 1 0 :1:2 
+`uc 1 EPCONDIS 1 0 :1:3 
+`uc 1 EPHSHK 1 0 :1:4 
+]
+"674
+[s S544 . 1 `uc 1 EP0STALL 1 0 :1:0 
+`uc 1 EP0INEN 1 0 :1:1 
+`uc 1 EP0OUTEN 1 0 :1:2 
+`uc 1 EP0CONDIS 1 0 :1:3 
+`uc 1 EP0HSHK 1 0 :1:4 
+]
+[s S550 . 1 `uc 1 EPSTALL0 1 0 :1:0 
+`uc 1 EPINEN0 1 0 :1:1 
+`uc 1 EPOUTEN0 1 0 :1:2 
+`uc 1 EPCONDIS0 1 0 :1:3 
+`uc 1 EPHSHK0 1 0 :1:4 
+]
+[u S556 . 1 `S538 1 . 1 0 `S544 1 . 1 0 `S550 1 . 1 0 ]
+[v _UEP0bits UEP0bits `VES556  1 e 1 @3916 ]
+"754
+[v _UEP1 UEP1 `VEuc  1 e 1 @3917 ]
+"2118
+[v _UIE UIE `VEuc  1 e 1 @3932 ]
+[s S400 . 1 `uc 1 URSTIE 1 0 :1:0 
+`uc 1 UERRIE 1 0 :1:1 
+`uc 1 ACTVIE 1 0 :1:2 
+`uc 1 TRNIE 1 0 :1:3 
+`uc 1 IDLEIE 1 0 :1:4 
+`uc 1 STALLIE 1 0 :1:5 
+`uc 1 SOFIE 1 0 :1:6 
+]
+"2134
+[u S408 . 1 `S400 1 . 1 0 ]
+[v _UIEbits UIEbits `VES408  1 e 1 @3932 ]
+"2174
+[v _UEIE UEIE `VEuc  1 e 1 @3933 ]
+"2225
+[v _UADDR UADDR `VEuc  1 e 1 @3934 ]
+"2289
+[v _UCFG UCFG `VEuc  1 e 1 @3935 ]
+"2493
+[v _UIR UIR `VEuc  1 e 1 @3938 ]
+[s S345 . 1 `uc 1 URSTIF 1 0 :1:0 
+`uc 1 UERRIF 1 0 :1:1 
+`uc 1 ACTVIF 1 0 :1:2 
+`uc 1 TRNIF 1 0 :1:3 
+`uc 1 IDLEIF 1 0 :1:4 
+`uc 1 STALLIF 1 0 :1:5 
+`uc 1 SOFIF 1 0 :1:6 
+]
+"2509
+[u S353 . 1 `S345 1 . 1 0 ]
+[v _UIRbits UIRbits `VES353  1 e 1 @3938 ]
+"2549
+[v _UEIR UEIR `VEuc  1 e 1 @3939 ]
+"2600
+[v _USTAT USTAT `VEuc  1 e 1 @3940 ]
+"2660
+[v _UCON UCON `VEuc  1 e 1 @3941 ]
+[s S325 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 SUSPND 1 0 :1:1 
+`uc 1 RESUME 1 0 :1:2 
+`uc 1 USBEN 1 0 :1:3 
+`uc 1 PKTDIS 1 0 :1:4 
+`uc 1 SE0 1 0 :1:5 
+`uc 1 PPBRST 1 0 :1:6 
+]
+"2676
+[u S333 . 1 `S325 1 . 1 0 ]
+[v _UCONbits UCONbits `VES333  1 e 1 @3941 ]
+"2847
+[v _SSP2CON2 SSP2CON2 `VEuc  1 e 1 @3947 ]
+[s S14594 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"2890
+[s S14603 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADMSK1 1 0 :1:1 
+`uc 1 ADMSK2 1 0 :1:2 
+`uc 1 ADMSK3 1 0 :1:3 
+`uc 1 ADMSK4 1 0 :1:4 
+`uc 1 ADMSK5 1 0 :1:5 
+]
+[s S14680 . 1 `uc 1 SEN2 1 0 :1:0 
+`uc 1 ADMSK12 1 0 :1:1 
+`uc 1 ADMSK22 1 0 :1:2 
+`uc 1 ADMSK32 1 0 :1:3 
+`uc 1 ACKEN2 1 0 :1:4 
+`uc 1 ACKDT2 1 0 :1:5 
+`uc 1 ACKSTAT2 1 0 :1:6 
+`uc 1 GCEN2 1 0 :1:7 
+]
+[s S14689 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RSEN2 1 0 :1:1 
+`uc 1 PEN2 1 0 :1:2 
+`uc 1 RCEN2 1 0 :1:3 
+`uc 1 ADMSK42 1 0 :1:4 
+`uc 1 ADMSK52 1 0 :1:5 
+]
+[u S14696 . 1 `S14594 1 . 1 0 `S14603 1 . 1 0 `S14680 1 . 1 0 `S14689 1 . 1 0 ]
+[v _SSP2CON2bits SSP2CON2bits `VES14696  1 e 1 @3947 ]
+"3025
+[v _SSP2CON1 SSP2CON1 `VEuc  1 e 1 @3948 ]
+[s S2698 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"3055
+[s S2704 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[s S2709 . 1 `uc 1 SSPM02 1 0 :1:0 
+`uc 1 SSPM12 1 0 :1:1 
+`uc 1 SSPM22 1 0 :1:2 
+`uc 1 SSPM32 1 0 :1:3 
+`uc 1 CKP2 1 0 :1:4 
+`uc 1 SSPEN2 1 0 :1:5 
+`uc 1 SSPOV2 1 0 :1:6 
+`uc 1 WCOL2 1 0 :1:7 
+]
+[u S2718 . 1 `S2698 1 . 1 0 `S2704 1 . 1 0 `S2709 1 . 1 0 ]
+[v _SSP2CON1bits SSP2CON1bits `VES2718  1 e 1 @3948 ]
+"3145
+[v _SSP2STAT SSP2STAT `VEuc  1 e 1 @3949 ]
+[s S2606 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+"3287
+[s S2609 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+[s S2612 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S2621 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S2626 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+[s S2632 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S2637 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+[s S2640 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+[s S2643 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S2648 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[s S2653 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S9093 . 1 `uc 1 BF2 1 0 :1:0 
+`uc 1 UA2 1 0 :1:1 
+`uc 1 I2C_READ2 1 0 :1:2 
+`uc 1 I2C_START2 1 0 :1:3 
+`uc 1 I2C_STOP2 1 0 :1:4 
+`uc 1 DA2 1 0 :1:5 
+`uc 1 CKE2 1 0 :1:6 
+`uc 1 SMP2 1 0 :1:7 
+]
+[s S9102 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE2 1 0 :1:2 
+`uc 1 S2 1 0 :1:3 
+`uc 1 P2 1 0 :1:4 
+`uc 1 DATA_ADDRESS2 1 0 :1:5 
+]
+[s S9108 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW2 1 0 :1:2 
+`uc 1 START2 1 0 :1:3 
+`uc 1 STOP2 1 0 :1:4 
+`uc 1 D_A2 1 0 :1:5 
+]
+[s S9114 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A2 1 0 :1:5 
+]
+[s S9117 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_nA2 1 0 :1:5 
+]
+[s S9122 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W2 1 0 :1:2 
+]
+[s S9125 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_nW2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 I2C_DAT2 1 0 :1:5 
+]
+[s S9130 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W2 1 0 :1:2 
+]
+[s S9133 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_A2 1 0 :1:5 
+]
+[s S9136 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA2 1 0 :1:5 
+]
+[s S9141 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE2 1 0 :1:2 
+]
+[s S9144 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS2 1 0 :1:5 
+]
+[s S9147 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS2 1 0 :1:5 
+]
+[u S9152 . 1 `S2606 1 . 1 0 `S2609 1 . 1 0 `S2612 1 . 1 0 `S2621 1 . 1 0 `S2626 1 . 1 0 `S2632 1 . 1 0 `S2637 1 . 1 0 `S2640 1 . 1 0 `S2643 1 . 1 0 `S2648 1 . 1 0 `S2653 1 . 1 0 `S9093 1 . 1 0 `S9102 1 . 1 0 `S9108 1 . 1 0 `S9114 1 . 1 0 `S9117 1 . 1 0 `S9122 1 . 1 0 `S9125 1 . 1 0 `S9130 1 . 1 0 `S9133 1 . 1 0 `S9136 1 . 1 0 `S9141 1 . 1 0 `S9144 1 . 1 0 `S9147 1 . 1 0 ]
+[v _SSP2STATbits SSP2STATbits `VES9152  1 e 1 @3949 ]
+"3696
+[v _SSP2BUF SSP2BUF `VEuc  1 e 1 @3951 ]
+"4909
+[v _PORTA PORTA `VEuc  1 e 1 @3968 ]
+"5065
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+"5242
+[v _PORTC PORTC `VEuc  1 e 1 @3970 ]
+"5418
+[v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+"5572
+[v _PORTE PORTE `VEuc  1 e 1 @3972 ]
+"5809
+[v _PORTF PORTF `VEuc  1 e 1 @3973 ]
+[s S283 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RF2 1 0 :1:2 
+`uc 1 RF3 1 0 :1:3 
+`uc 1 RF4 1 0 :1:4 
+`uc 1 RF5 1 0 :1:5 
+`uc 1 RF6 1 0 :1:6 
+`uc 1 RF7 1 0 :1:7 
+]
+"5853
+[s S2503 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 AN7 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 AN10 1 0 :1:5 
+`uc 1 AN11 1 0 :1:6 
+`uc 1 SS 1 0 :1:7 
+]
+[s S2510 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 CVREF 1 0 :1:5 
+]
+[s S2513 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 C2INB 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 C1INB 1 0 :1:5 
+`uc 1 C1INA 1 0 :1:6 
+`uc 1 C1OUT 1 0 :1:7 
+]
+[s S2520 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PMA5 1 0 :1:2 
+]
+[s S2523 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 C1OUTF 1 0 :1:2 
+]
+[u S2526 . 1 `S283 1 . 1 0 `S2503 1 . 1 0 `S2510 1 . 1 0 `S2513 1 . 1 0 `S2520 1 . 1 0 `S2523 1 . 1 0 ]
+[v _PORTFbits PORTFbits `VES2526  1 e 1 @3973 ]
+"5943
+[v _PORTG PORTG `VEuc  1 e 1 @3974 ]
+"6101
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+"6213
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"6325
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+"6437
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"6549
+[v _LATE LATE `VEuc  1 e 1 @3981 ]
+"6661
+[v _LATF LATF `VEuc  1 e 1 @3982 ]
+"6751
+[v _LATG LATG `VEuc  1 e 1 @3983 ]
+"6827
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"7049
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"7271
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"7493
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"7715
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+"7937
+[v _TRISF TRISF `VEuc  1 e 1 @3991 ]
+[s S275 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TRISF2 1 0 :1:2 
+`uc 1 TRISF3 1 0 :1:3 
+`uc 1 TRISF4 1 0 :1:4 
+`uc 1 TRISF5 1 0 :1:5 
+`uc 1 TRISF6 1 0 :1:6 
+`uc 1 TRISF7 1 0 :1:7 
+]
+"7967
+[u S291 . 1 `S275 1 . 1 0 `S283 1 . 1 0 ]
+[v _TRISFbits TRISFbits `VES291  1 e 1 @3991 ]
+"8115
+[v _TRISG TRISG `VEuc  1 e 1 @3992 ]
+[s S15499 . 1 `uc 1 TUN0 1 0 :1:0 
+`uc 1 TUN1 1 0 :1:1 
+`uc 1 TUN2 1 0 :1:2 
+`uc 1 TUN3 1 0 :1:3 
+`uc 1 TUN4 1 0 :1:4 
+`uc 1 TUN5 1 0 :1:5 
+`uc 1 PLLEN 1 0 :1:6 
+`uc 1 INTSRC 1 0 :1:7 
+]
+"8282
+[u S15508 . 1 `S15499 1 . 1 0 ]
+[v _OSCTUNEbits OSCTUNEbits `VES15508  1 e 1 @3995 ]
+[s S8794 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 PMPIE 1 0 :1:7 
+]
+"8532
+[s S8803 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+]
+[s S8808 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 PSPIE 1 0 :1:7 
+]
+[u S8811 . 1 `S8794 1 . 1 0 `S8803 1 . 1 0 `S8808 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES8811  1 e 1 @3997 ]
+"8597
+[v _PIR1 PIR1 `VEuc  1 e 1 @3998 ]
+[s S8723 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 PMPIF 1 0 :1:7 
+]
+"8624
+[s S8732 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+]
+[s S8737 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 PSPIF 1 0 :1:7 
+]
+[u S8740 . 1 `S8723 1 . 1 0 `S8732 1 . 1 0 `S8737 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES8740  1 e 1 @3998 ]
+[s S8640 . 1 `uc 1 TMR1IP 1 0 :1:0 
+`uc 1 TMR2IP 1 0 :1:1 
+`uc 1 CCP1IP 1 0 :1:2 
+`uc 1 SSP1IP 1 0 :1:3 
+`uc 1 TX1IP 1 0 :1:4 
+`uc 1 RC1IP 1 0 :1:5 
+`uc 1 ADIP 1 0 :1:6 
+`uc 1 PMPIP 1 0 :1:7 
+]
+"8716
+[s S8649 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSPIP 1 0 :1:3 
+`uc 1 TXIP 1 0 :1:4 
+`uc 1 RCIP 1 0 :1:5 
+]
+[s S8654 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 PSPIP 1 0 :1:7 
+]
+[u S8657 . 1 `S8640 1 . 1 0 `S8649 1 . 1 0 `S8654 1 . 1 0 ]
+[v _IPR1bits IPR1bits `VES8657  1 e 1 @3999 ]
+[s S240 . 1 `uc 1 CCP2IE 1 0 :1:0 
+`uc 1 TMR3IE 1 0 :1:1 
+`uc 1 LVDIE 1 0 :1:2 
+`uc 1 BCL1IE 1 0 :1:3 
+`uc 1 USBIE 1 0 :1:4 
+`uc 1 CM1IE 1 0 :1:5 
+`uc 1 CM2IE 1 0 :1:6 
+`uc 1 OSCFIE 1 0 :1:7 
+]
+"8806
+[s S249 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 BCLIE 1 0 :1:3 
+]
+[s S252 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 CMIE 1 0 :1:6 
+]
+[u S255 . 1 `S240 1 . 1 0 `S249 1 . 1 0 `S252 1 . 1 0 ]
+[v _PIE2bits PIE2bits `VES255  1 e 1 @4000 ]
+"8861
+[v _PIR2 PIR2 `VEuc  1 e 1 @4001 ]
+[s S365 . 1 `uc 1 CCP2IF 1 0 :1:0 
+`uc 1 TMR3IF 1 0 :1:1 
+`uc 1 LVDIF 1 0 :1:2 
+`uc 1 BCL1IF 1 0 :1:3 
+`uc 1 USBIF 1 0 :1:4 
+`uc 1 CM1IF 1 0 :1:5 
+`uc 1 CM2IF 1 0 :1:6 
+`uc 1 OSCFIF 1 0 :1:7 
+]
+"8886
+[s S374 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 BCLIF 1 0 :1:3 
+]
+[s S377 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 CMIF 1 0 :1:6 
+]
+[u S380 . 1 `S365 1 . 1 0 `S374 1 . 1 0 `S377 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES380  1 e 1 @4001 ]
+[s S8833 . 1 `uc 1 CCP3IE 1 0 :1:0 
+`uc 1 CCP4IE 1 0 :1:1 
+`uc 1 CCP5IE 1 0 :1:2 
+`uc 1 TMR4IE 1 0 :1:3 
+`uc 1 TX2IE 1 0 :1:4 
+`uc 1 RC2IE 1 0 :1:5 
+`uc 1 BCL2IE 1 0 :1:6 
+`uc 1 SSP2IE 1 0 :1:7 
+]
+"9051
+[s S8842 . 1 `uc 1 RXB0IE 1 0 :1:0 
+`uc 1 RXB1IE 1 0 :1:1 
+`uc 1 TXB0IE 1 0 :1:2 
+`uc 1 TXB1IE 1 0 :1:3 
+`uc 1 TXB2IE 1 0 :1:4 
+]
+[s S8848 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIE 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXBNIE 1 0 :1:4 
+]
+[u S8853 . 1 `S8833 1 . 1 0 `S8842 1 . 1 0 `S8848 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES8853  1 e 1 @4003 ]
+"9131
+[v _PIR3 PIR3 `VEuc  1 e 1 @4004 ]
+[s S8762 . 1 `uc 1 CCP3IF 1 0 :1:0 
+`uc 1 CCP4IF 1 0 :1:1 
+`uc 1 CCP5IF 1 0 :1:2 
+`uc 1 TMR4IF 1 0 :1:3 
+`uc 1 TX2IF 1 0 :1:4 
+`uc 1 RC2IF 1 0 :1:5 
+`uc 1 BCL2IF 1 0 :1:6 
+`uc 1 SSP2IF 1 0 :1:7 
+]
+"9154
+[s S8771 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIF 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXBNIF 1 0 :1:4 
+]
+[u S8776 . 1 `S8762 1 . 1 0 `S8771 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES8776  1 e 1 @4004 ]
+[s S8679 . 1 `uc 1 CCP3IP 1 0 :1:0 
+`uc 1 CCP4IP 1 0 :1:1 
+`uc 1 CCP5IP 1 0 :1:2 
+`uc 1 TMR4IP 1 0 :1:3 
+`uc 1 TX2IP 1 0 :1:4 
+`uc 1 RC2IP 1 0 :1:5 
+`uc 1 BCL2IP 1 0 :1:6 
+`uc 1 SSP2IP 1 0 :1:7 
+]
+"9232
+[s S8688 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIP 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXBNIP 1 0 :1:4 
+]
+[u S8693 . 1 `S8679 1 . 1 0 `S8688 1 . 1 0 ]
+[v _IPR3bits IPR3bits `VES8693  1 e 1 @4005 ]
+[s S14001 . 1 `uc 1 ADCS 1 0 :3:0 
+`uc 1 ACQT 1 0 :3:3 
+`uc 1 ADCAL 1 0 :1:6 
+`uc 1 ADFM 1 0 :1:7 
+]
+"11645
+[s S14006 . 1 `uc 1 ADCS0 1 0 :1:0 
+`uc 1 ADCS1 1 0 :1:1 
+`uc 1 ADCS2 1 0 :1:2 
+`uc 1 ACQT0 1 0 :1:3 
+`uc 1 ACQT1 1 0 :1:4 
+`uc 1 ACQT2 1 0 :1:5 
+]
+[s S14013 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CHSN3 1 0 :1:3 
+`uc 1 VCFG01 1 0 :1:4 
+`uc 1 VCFG11 1 0 :1:5 
+]
+[u S14018 . 1 `S14001 1 . 1 0 `S14006 1 . 1 0 `S14013 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES14018  1 e 1 @4033 ]
+"11715
+[v _ANCON0 ANCON0 `VEuc  1 e 1 @4033 ]
+[s S13930 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_NOT_DONE 1 0 :1:1 
+]
+"11834
+[s S13933 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+`uc 1 VCFG 1 0 :2:6 
+]
+[s S13938 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 DONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 VCFG0 1 0 :1:6 
+`uc 1 VCFG1 1 0 :1:7 
+]
+[s S13947 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[s S13950 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[s S13953 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_DONE 1 0 :1:1 
+]
+[s S13956 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GODONE 1 0 :1:1 
+`uc 1 . 1 0 :5:2 
+`uc 1 ADCAL 1 0 :1:7 
+]
+[u S13961 . 1 `S13930 1 . 1 0 `S13933 1 . 1 0 `S13938 1 . 1 0 `S13947 1 . 1 0 `S13950 1 . 1 0 `S13953 1 . 1 0 `S13956 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES13961  1 e 1 @4034 ]
+"12004
+[v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
+"12011
+[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+"12018
+[v _SSP1CON2 SSP1CON2 `VEuc  1 e 1 @4037 ]
+"12066
+[s S14610 . 1 `uc 1 SEN1 1 0 :1:0 
+`uc 1 ADMSK11 1 0 :1:1 
+`uc 1 ADMSK21 1 0 :1:2 
+`uc 1 ADMSK31 1 0 :1:3 
+`uc 1 ACKEN1 1 0 :1:4 
+`uc 1 ACKDT1 1 0 :1:5 
+`uc 1 ACKSTAT1 1 0 :1:6 
+`uc 1 GCEN1 1 0 :1:7 
+]
+[s S14619 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RSEN1 1 0 :1:1 
+`uc 1 PEN1 1 0 :1:2 
+`uc 1 RCEN1 1 0 :1:3 
+`uc 1 ADMSK41 1 0 :1:4 
+`uc 1 ADMSK51 1 0 :1:5 
+]
+[u S14626 . 1 `S14594 1 . 1 0 `S14603 1 . 1 0 `S14610 1 . 1 0 `S14619 1 . 1 0 ]
+[v _SSP1CON2bits SSP1CON2bits `VES14626  1 e 1 @4037 ]
+"12372
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @4038 ]
+"12407
+[s S9300 . 1 `uc 1 SSPM01 1 0 :1:0 
+`uc 1 SSPM11 1 0 :1:1 
+`uc 1 SSPM21 1 0 :1:2 
+`uc 1 SSPM31 1 0 :1:3 
+`uc 1 CKP1 1 0 :1:4 
+`uc 1 SSPEN1 1 0 :1:5 
+`uc 1 SSPOV1 1 0 :1:6 
+`uc 1 WCOL1 1 0 :1:7 
+]
+[u S9309 . 1 `S2698 1 . 1 0 `S2704 1 . 1 0 `S9300 1 . 1 0 ]
+[v _SSP1CON1bits SSP1CON1bits `VES9309  1 e 1 @4038 ]
+"12610
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @4039 ]
+"12710
+[s S2658 . 1 `uc 1 BF1 1 0 :1:0 
+`uc 1 UA1 1 0 :1:1 
+`uc 1 RW 1 0 :1:2 
+`uc 1 START 1 0 :1:3 
+`uc 1 STOP 1 0 :1:4 
+`uc 1 DA 1 0 :1:5 
+`uc 1 CKE1 1 0 :1:6 
+`uc 1 SMP1 1 0 :1:7 
+]
+[s S2667 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW1 1 0 :1:2 
+`uc 1 START1 1 0 :1:3 
+`uc 1 STOP1 1 0 :1:4 
+`uc 1 DA1 1 0 :1:5 
+]
+[s S2673 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+]
+[s S2676 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_A 1 0 :1:5 
+]
+[u S2679 . 1 `S2606 1 . 1 0 `S2609 1 . 1 0 `S2612 1 . 1 0 `S2621 1 . 1 0 `S2626 1 . 1 0 `S2632 1 . 1 0 `S2637 1 . 1 0 `S2640 1 . 1 0 `S2643 1 . 1 0 `S2648 1 . 1 0 `S2653 1 . 1 0 `S2658 1 . 1 0 `S2667 1 . 1 0 `S2673 1 . 1 0 `S2676 1 . 1 0 ]
+[v _SSP1STATbits SSP1STATbits `VES2679  1 e 1 @4039 ]
+"13208
+[v _SSP1ADD SSP1ADD `VEuc  1 e 1 @4040 ]
+"13492
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @4041 ]
+[s S16245 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 TOUTPS 1 0 :4:3 
+]
+"13525
+[s S16249 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+[u S16257 . 1 `S16245 1 . 1 0 `S16249 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES16257  1 e 1 @4042 ]
+"13575
+[v _PR2 PR2 `VEuc  1 e 1 @4043 ]
+[s S15521 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+]
+"14011
+[s S15523 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_POR 1 0 :1:1 
+]
+[s S15526 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_PD 1 0 :1:2 
+]
+[s S15529 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_TO 1 0 :1:3 
+]
+[s S15532 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 NOT_RI 1 0 :1:4 
+]
+[s S15535 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_CM 1 0 :1:5 
+]
+[s S15538 . 1 `uc 1 nBOR 1 0 :1:0 
+`uc 1 nPOR 1 0 :1:1 
+`uc 1 nPD 1 0 :1:2 
+`uc 1 nTO 1 0 :1:3 
+`uc 1 nRI 1 0 :1:4 
+`uc 1 nCM 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 IPEN 1 0 :1:7 
+]
+[s S15547 . 1 `uc 1 BOR 1 0 :1:0 
+`uc 1 POR 1 0 :1:1 
+`uc 1 PD 1 0 :1:2 
+`uc 1 TO 1 0 :1:3 
+`uc 1 RI 1 0 :1:4 
+`uc 1 CM 1 0 :1:5 
+]
+[u S15554 . 1 `S15521 1 . 1 0 `S15523 1 . 1 0 `S15526 1 . 1 0 `S15529 1 . 1 0 `S15532 1 . 1 0 `S15535 1 . 1 0 `S15538 1 . 1 0 `S15547 1 . 1 0 ]
+[v _RCONbits RCONbits `VES15554  1 e 1 @4048 ]
+[s S16126 . 1 `uc 1 T0PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 T08BIT 1 0 :1:6 
+`uc 1 TMR0ON 1 0 :1:7 
+]
+"14905
+[s S16133 . 1 `uc 1 T0PS0 1 0 :1:0 
+`uc 1 T0PS1 1 0 :1:1 
+`uc 1 T0PS2 1 0 :1:2 
+`uc 1 T0PS3 1 0 :1:3 
+]
+[u S16138 . 1 `S16126 1 . 1 0 `S16133 1 . 1 0 ]
+[v _T0CONbits T0CONbits `VES16138  1 e 1 @4053 ]
+"14960
+[v _TMR0 TMR0 `VEus  1 e 2 @4054 ]
+[s S15078 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"15471
+[s S15087 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S15096 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S15100 . 1 `S15078 1 . 1 0 `S15087 1 . 1 0 `S15096 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES15100  1 e 1 @4082 ]
+"354 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\doprnt.c
+[v _dpowers dpowers `C[5]ui  1 s 10 dpowers ]
+"91 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Events.c
+[v _val val `us  1 s 2 val ]
+"121
+[v _pShiftVal pShiftVal `us  1 e 2 0 ]
+[s S15156 Motor 6 `s 1 mDelta 2 0 `s 1 mFrequency 2 2 `us 1 mAddress 2 4 ]
+"24 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Functions.c
+[v _Stepper Stepper `S15156  1 e 6 0 ]
+"27
+[v _HzInc HzInc `Cus  1 e 2 0 ]
+"28
+[v _Hz Hz `us  1 e 2 0 ]
+"29
+[v _DIST DIST `s  1 e 2 0 ]
+"67
+[s S13921 ADC 5 `E6742 1 mChannel 1 0 `us 1 mValue 2 1 `*.39S13921 1 mNext 2 3 ]
+[v _ADC_AN0 ADC_AN0 `S13921  1 e 5 0 ]
+"68
+[v _ADC_AN1 ADC_AN1 `S13921  1 e 5 0 ]
+"69
+[v _ADC_AN2 ADC_AN2 `S13921  1 e 5 0 ]
+"70
+[v _ADC_AN3 ADC_AN3 `S13921  1 e 5 0 ]
+[s S13396 . 1 `uc 1 pButton 1 0 :4:0 
+`uc 1 . 1 0 :4:4 
+]
+"17 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\HMI.c
+[s S13399 . 1 `uc 1 GLED 1 0 :1:0 
+`uc 1 RLED 1 0 :1:1 
+`uc 1 BLED 1 0 :1:2 
+`uc 1 YLED 1 0 :1:3 
+`uc 1 . 1 0 :4:4 
+]
+[s S13405 . 1 `uc 1 UPLED 1 0 :1:0 
+`uc 1 DOWNLED 1 0 :1:1 
+`uc 1 LEFTLED 1 0 :1:2 
+`uc 1 RIGHTLED 1 0 :1:3 
+`uc 1 . 1 0 :4:4 
+]
+[u S13411 . 1 `S13396 1 . 1 0 `S13399 1 . 1 0 `S13405 1 . 1 0 ]
+[s S13415 . 8 `[6]uc 1 pSevenSegment 6 0 `S13411 1 . 1 6 `uc 1 pBarGraph 1 7 ]
+[u S13419 . 8 `[8]uc 1 Bytes 8 0 `S13415 1 . 8 0 ]
+[s S2240 Button 10 `uc 1 mState 1 0 `uc 1 mCount 1 1 `us 1 mThreshold 2 2 `*.38(v 1 mFunction 3 4 `*.38(uc 1 mGetState 3 7 ]
+[s S13434 HMI 58 `S13419 1 . 8 0 `S2240 1 mRight 10 8 `S2240 1 mLeft 10 18 `S2240 1 mUp 10 28 `S2240 1 mDown 10 38 `S2240 1 mDIP 10 48 ]
+[v _HMIBoard HMIBoard `S13434  1 e 58 0 ]
+"5 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/ADC.c
+[v _ADC_Initialised ADC_Initialised `uc  1 s 1 ADC_Initialised ]
+"6
+[v _lCurrent lCurrent `*.39S13921  1 s 2 lCurrent ]
+"30 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Console.c
+[v _change change `uc  1 s 1 change ]
+"31
+[v _clearall clearall `uc  1 s 1 clearall ]
+"32
+[v _lBufferX lBufferX `uc  1 s 1 lBufferX ]
+[v _lBufferY lBufferY `uc  1 s 1 lBufferY ]
+"34
+[v _lCBuffer lCBuffer `[15]us  1 s 30 lCBuffer ]
+"35
+[v _lBuffer lBuffer `[15][20]uc  1 s 300 lBuffer ]
+[s S2807 Point 4 `s 1 x 2 0 `s 1 y 2 2 ]
+"50
+[v _gCursor gCursor `S2807  1 s 4 gCursor ]
+"51
+[v _gCharSize gCharSize `S2807  1 s 4 gCharSize ]
+"52
+[v _gLineSize gLineSize `S2807  1 s 4 gLineSize ]
+"53
+[v _gForecolour gForecolour `us  1 s 2 gForecolour ]
+"54
+[v _gBackcolour gBackcolour `us  1 s 2 gBackcolour ]
+"56
+[v _Font5x7 Font5x7 `C[480]uc  1 e 480 0 ]
+"6 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/I2C.c
+[v _I2C1_Done I2C1_Done `*.38(v  1 e 3 0 ]
+"7
+[v _I2C2_Done I2C2_Done `*.38(v  1 e 3 0 ]
+"8
+[v _I2C1_More I2C1_More `*.38(uc  1 e 3 0 ]
+"9
+[v _I2C2_More I2C2_More `*.38(uc  1 e 3 0 ]
+[s S14258 I2CT 6 `uc 1 mAddress 1 0 `*.39uc 1 mData 2 1 `uc 1 mIndex 1 3 `uc 1 mCount 1 4 `E6880 1 mState 1 5 ]
+"11
+[v _I2C1T I2C1T `S14258  1 e 6 0 ]
+[v _I2C2T I2C2T `S14258  1 e 6 0 ]
+[s S14973 IMU_CMD 4 `uc 1 pRegister 1 0 `*.39uc 1 pData 2 1 `uc 1 pCount 1 3 ]
+"4 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/IMU.c
+[v _pCMD pCMD `S14973  1 e 4 0 ]
+"5
+[v _Read Read `uc  1 e 1 0 ]
+"7 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/LCD.c
+[v _w w `uc  1 s 1 w ]
+"8
+[v _l l `uc  1 s 1 l ]
+"114
+[v _InitList InitList `C[89]us  1 e 178 0 ]
+"20 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Motor.c
+[v _lStepFunction lStepFunction `*.38(v  1 e 3 0 ]
+"21
+[v _lMotor lMotor `*.39S15156  1 e 2 0 ]
+"5 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/MXK.c
+[v _TestButton TestButton `S2240  1 e 10 0 ]
+"6
+[v _DIPSwitch DIPSwitch `S2240  1 e 10 0 ]
+"31
+[v _Bus_State Bus_State `E7044  1 e 1 0 ]
+"32
+[v _lQueue lQueue `VE*.38(v  1 e 3 0 ]
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+"8 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[s S2340 . 2 `S2338 1 LS_Byte 1 0 `S2338 1 MS_Byte 1 1 ]
+[s S2343 . 2 `uc 1 L 1 0 `uc 1 H 1 1 ]
+[u S2346 . 2 `us 1 mBits 2 0 `S2340 1 . 2 0 `S2343 1 . 2 0 ]
+[s S2350 Word 2 `S2346 1 . 2 0 ]
+[u S2352 PortProperty 2 `us 1 mWord 2 0 `S2350 1 mType 2 0 ]
+[s S2355 Port 10 `*.32S2352 1 mProperties 2 0 `*.39S2338 1 mDirection 2 2 `*.39S2338 1 mOutput 2 4 `*.39S2338 1 mInput 2 6 `S2350 1 mType 2 8 ]
+[v _PortF PortF `S2355  1 e 10 0 ]
+[v _PortC PortC `S2355  1 e 10 0 ]
+[v _PortA PortA `S2355  1 e 10 0 ]
+[v _PortB PortB `S2355  1 e 10 0 ]
+[v _PortD PortD `S2355  1 e 10 0 ]
+[v _PortE PortE `S2355  1 e 10 0 ]
+[v _PortG PortG `S2355  1 e 10 0 ]
+"13
+[v _PortA_Property PortA_Property `CS2352  1 s 2 PortA_Property ]
+"14
+[v _PortB_Property PortB_Property `CS2352  1 s 2 PortB_Property ]
+"15
+[v _PortC_Property PortC_Property `CS2352  1 s 2 PortC_Property ]
+"16
+[v _PortD_Property PortD_Property `CS2352  1 s 2 PortD_Property ]
+"17
+[v _PortE_Property PortE_Property `CS2352  1 s 2 PortE_Property ]
+"18
+[v _PortF_Property PortF_Property `CS2352  1 s 2 PortF_Property ]
+"19
+[v _PortG_Property PortG_Property `CS2352  1 s 2 PortG_Property ]
+"10 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/SPI.c
+[u S2695 . 3 `*.2S2338 1 SSPSTATT 3 0 `*.2S2679 1 SSPSTATTb 3 0 ]
+[u S2722 . 3 `*.2S2338 1 SSPCON1T 3 0 `S2718 1 SSPCON1Tb 1 0 ]
+[s S2725 SPI 11 `uc 1 mBusy 1 0 `E6885 1 mBits 1 1 `E6875 1 mChannel 1 2 `S2695 1 . 3 3 `S2722 1 . 3 6 `*.39uc 1 SSPBUF 2 9 ]
+[v _SPI2 SPI2 `S2725  1 e 11 0 ]
+[v _SPI1 SPI1 `S2725  1 e 11 0 ]
+[s S15678 . 2 `uc 1 mRow 1 0 `uc 1 mColumn 1 1 ]
+"4 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Tetris.c
+[u S15681 . 2 `us 1 mCount 2 0 `S15678 1 . 2 0 ]
+[s S15684 Block 10 `us 1 mBase 2 0 `us 1 mBorder 2 2 `uc 1 mX 1 4 `uc 1 mY 1 5 `E6757 1 mState 1 6 `uc 1 mChanged 1 7 `S15681 1 . 2 8 ]
+[s S15693 TetrisField 2001 `uc 1 mBorderRedraw 1 0 `[10][20]S15684 1 mBlocks 2000 1 ]
+[v _gTetrisField gTetrisField `S15693  1 e 2001 0 ]
+"17 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Timer0.c
+[v _COUNTER COUNTER `us  1 s 2 COUNTER ]
+"18
+[v _INDEX INDEX `uc  1 s 1 INDEX ]
+"74
+[v _gISR gISR `*.38(v  1 s 3 gISR ]
+"3 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.c
+[v _MASKS MASKS `C[9]uc  1 s 9 MASKS ]
+[s S504 _USB_DEVICE_DESCRIPTOR 18 `uc 1 bLength 1 0 `uc 1 bDescriptorType 1 1 `ui 1 bcdUSB 2 2 `uc 1 bDeviceClass 1 4 `uc 1 bDeviceSubClass 1 5 `uc 1 bDeviceProtocol 1 6 `uc 1 bMaxPacketSize0 1 7 `ui 1 idVendor 2 8 `ui 1 idProduct 2 10 `ui 1 bcdDevice 2 12 `uc 1 iManufacturer 1 14 `uc 1 iProduct 1 15 `uc 1 iSerialNumber 1 16 `uc 1 bNumConfigurations 1 17 ]
+"152 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/USB/src/usb_descriptors.c
+[v _device_dsc device_dsc `CS504  1 e 18 0 ]
+"171
+[v _configDescriptor1 configDescriptor1 `C[67]uc  1 e 67 0 ]
+[s S2145 . 4 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[1]ui 1 string 2 2 ]
+"257
+[v _sd000 sd000 `CS2145  1 e 4 0 ]
+[s S2149 . 52 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[25]ui 1 string 50 2 ]
+"261
+[v _sd001 sd001 `CS2149  1 e 52 0 ]
+"268
+[v _sd002 sd002 `CS2149  1 e 52 0 ]
+"275
+[v _USB_CD_Ptr USB_CD_Ptr `C[1]*.32Cuc  1 e 2 0 ]
+"280
+[v _USB_SD_Ptr USB_SD_Ptr `C[3]*.32Cuc  1 e 6 0 ]
+"141 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/USB/src/usb_device.c
+[v _USBDeviceState USBDeviceState `E6804  1 e 1 0 ]
+"142
+[v _USBActiveConfiguration USBActiveConfiguration `uc  1 e 1 0 ]
+"143
+[v _USBAlternateInterface USBAlternateInterface `[2]uc  1 e 2 0 ]
+[s S29 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"144
+[s S38 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+]
+[s S45 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S49 _BD_STAT 1 `uc 1 Val 1 0 `S29 1 . 1 0 `S38 1 . 1 0 `S45 1 . 1 0 ]
+[s S54 . 4 `S49 1 STAT 1 0 `uc 1 CNT 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S59 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`ui 1 ADR 2 2 ]
+[u S63 __BDT 4 `S54 1 . 4 0 `S59 1 . 4 0 `ul 1 Val 4 0 `[4]uc 1 v 4 0 ]
+[v _pBDTEntryEP0OutCurrent pBDTEntryEP0OutCurrent `*.39VES63  1 e 2 0 ]
+"145
+[v _pBDTEntryEP0OutNext pBDTEntryEP0OutNext `*.39VES63  1 e 2 0 ]
+"146
+[v _pBDTEntryOut pBDTEntryOut `[3]*.39VES63  1 e 6 0 ]
+"147
+[v _pBDTEntryIn pBDTEntryIn `[3]*.39VES63  1 e 6 0 ]
+"148
+[v _shortPacketStatus shortPacketStatus `uc  1 e 1 0 ]
+"149
+[v _controlTransferState controlTransferState `uc  1 e 1 0 ]
+[u S68 . 3 `*.2uc 1 bRam 3 0 `*.2Cuc 1 bRom 3 0 `*.2ui 1 wRam 3 0 `*.2Cui 1 wRom 3 0 ]
+"150
+[s S73 . 1 `uc 1 ctrl_trf_mem 1 0 :1:0 
+`uc 1 reserved 1 0 :5:1 
+`uc 1 includeZero 1 0 :1:6 
+`uc 1 busy 1 0 :1:7 
+]
+[u S78 . 1 `S73 1 bits 1 0 `uc 1 Val 1 0 ]
+[s S81 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+[u S84 . 2 `ui 1 Val 2 0 `[2]uc 1 v 2 0 `S81 1 byte 2 0 ]
+[s S88 . 6 `S68 1 pSrc 3 0 `S78 1 info 1 3 `S84 1 wCount 2 4 ]
+[v _inPipes inPipes `[1]S88  1 e 6 0 ]
+[u S92 . 3 `*.2uc 1 bRam 3 0 `*.2ui 1 wRam 3 0 ]
+"151
+[s S95 . 1 `uc 1 reserved 1 0 :7:0 
+`uc 1 busy 1 0 :1:7 
+]
+[u S98 . 1 `S95 1 bits 1 0 `uc 1 Val 1 0 ]
+[s S102 . 9 `S92 1 pDst 3 0 `S98 1 info 1 3 `S84 1 wCount 2 4 `*.38(v 1 pFunc 3 6 ]
+[v _outPipes outPipes `[1]S102  1 e 9 0 ]
+"152
+[v _pDst pDst `*.39uc  1 e 2 0 ]
+"153
+[v _RemoteWakeup RemoteWakeup `uc  1 e 1 0 ]
+"154
+[v _USBBusIsSuspended USBBusIsSuspended `uc  1 e 1 0 ]
+[s S107 . 1 `uc 1 filler1 1 0 :1:0 
+`uc 1 ping_pong 1 0 :1:1 
+`uc 1 direction 1 0 :1:2 
+`uc 1 endpoint_number 1 0 :4:3 
+]
+"155
+[u S112 __USTAT 1 `S107 1 . 1 0 `uc 1 Val 1 0 ]
+[v _USTATcopy USTATcopy `S112  1 e 1 0 ]
+"156
+[v _endpoint_number endpoint_number `uc  1 e 1 0 ]
+"157
+[v _BothEP0OutUOWNsSet BothEP0OutUOWNsSet `uc  1 e 1 0 ]
+[s S115 . 1 `uc 1 ping_pong_state 1 0 :1:0 
+`uc 1 transfer_terminated 1 0 :1:1 
+]
+"158
+[u S118 . 1 `S115 1 bits 1 0 `uc 1 Val 1 0 ]
+[v _ep_data_in ep_data_in `[3]S118  1 e 3 0 ]
+"159
+[v _ep_data_out ep_data_out `[3]S118  1 e 3 0 ]
+"160
+[v _USBStatusStageTimeoutCounter USBStatusStageTimeoutCounter `uc  1 e 1 0 ]
+"161
+[v _USBDeferStatusStagePacket USBDeferStatusStagePacket `VEuc  1 e 1 0 ]
+"162
+[v _USBStatusStageEnabledFlag1 USBStatusStageEnabledFlag1 `VEuc  1 e 1 0 ]
+"163
+[v _USBStatusStageEnabledFlag2 USBStatusStageEnabledFlag2 `VEuc  1 e 1 0 ]
+"164
+[v _USBDeferINDataStagePackets USBDeferINDataStagePackets `VEuc  1 e 1 0 ]
+"165
+[v _USBDeferOUTDataStagePackets USBDeferOUTDataStagePackets `VEuc  1 e 1 0 ]
+"166
+[v _USB1msTickCount USB1msTickCount `ul  1 e 4 0 ]
+"167
+[v _USBTicksSinceSuspendEnd USBTicksSinceSuspendEnd `uc  1 e 1 0 ]
+"174
+[v _BDT BDT `VE[12]S63  1 e 48 @1024 ]
+[s S121 . 8 `uc 1 bmRequestType 1 0 `uc 1 bRequest 1 1 `ui 1 wValue 2 2 `ui 1 wIndex 2 4 `ui 1 wLength 2 6 ]
+"179
+[s S148 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`S84 1 W_Value 2 2 `S84 1 W_Index 2 4 `S84 1 W_Length 2 6 ]
+[s S154 . 8 `uc 1 Recipient 1 0 :5:0 
+`uc 1 RequestType 1 0 :2:5 
+`uc 1 DataDir 1 0 :1:7 
+`uc 1 . 1 1 :8:0 
+`uc 1 bFeature 1 2 `uc 1 . 1 3 :8:0 
+`uc 1 . 1 4 :8:0 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S165 . 1 `uc 1 recipient 1 0 :5:0 
+`uc 1 type 1 0 :2:5 
+`uc 1 direction 1 0 :1:7 
+]
+[u S169 . 1 `uc 1 bmRequestType 1 0 `S165 1 . 1 0 ]
+[s S172 . 1 `S169 1 requestInfo 1 0 ]
+[s S174 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bDscIndex 1 2 `uc 1 bDescriptorType 1 3 `ui 1 wLangID 2 4 `uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S182 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bDevADR 1 2 `uc 1 bDevADRH 1 3 `uc 1 . 1 4 :8:0 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S191 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bConfigurationValue 1 2 `uc 1 bCfgRSD 1 3 `uc 1 . 1 4 :8:0 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S200 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bAltID 1 2 `uc 1 bAltID_H 1 3 `uc 1 bIntfID 1 4 `uc 1 bIntfID_H 1 5 `uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S209 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 . 1 2 :8:0 
+`uc 1 . 1 3 :8:0 
+`uc 1 bEPID 1 4 `uc 1 bEPID_H 1 5 `uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S218 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 . 1 2 :8:0 
+`uc 1 . 1 3 :8:0 
+`uc 1 EPNum 1 4 :4:0 
+`uc 1 . 1 4 :3:4 
+`uc 1 EPDir 1 4 :1:7 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[u S229 . 8 `S121 1 . 8 0 `S148 1 . 8 0 `S154 1 . 8 0 `S172 1 . 1 0 `S174 1 . 8 0 `S182 1 . 8 0 `S191 1 . 8 0 `S200 1 . 8 0 `S209 1 . 8 0 `S218 1 . 8 0 ]
+[v _SetupPkt SetupPkt `VES229  1 e 8 @1072 ]
+"180
+[v _CtrlTrfData CtrlTrfData `VE[8]uc  1 e 8 @1080 ]
+"66 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/USB/src/usb_device_cdc.c
+[v _cdc_data_tx cdc_data_tx `VE[64]uc  1 e 64 0 ]
+"67
+[v _cdc_data_rx cdc_data_rx `VE[64]uc  1 e 64 0 ]
+[s S1681 . 7 `[7]uc 1 _byte 7 0 ]
+"77
+[s S1683 . 7 `ul 1 dwDTERate 4 0 `uc 1 bCharFormat 1 4 `uc 1 bParityType 1 5 `uc 1 bDataBits 1 6 ]
+[u S1688 _LINE_CODING 7 `S1681 1 . 7 0 `S1683 1 . 7 0 ]
+[v _line_coding line_coding `S1688  1 e 7 0 ]
+"84
+[v _cdc_rx_len cdc_rx_len `uc  1 e 1 0 ]
+"85
+[v _cdc_trf_state cdc_trf_state `uc  1 e 1 0 ]
+[s S1695 . 2 `uc 1 bLow 1 0 `uc 1 bHigh 1 1 ]
+"86
+[u S1698 _POINTER 3 `S1695 1 . 2 0 `ui 1 _word 2 0 `*.2uc 1 bRam 3 0 `*.2ui 1 wRam 3 0 `*.2Cuc 1 bRom 3 0 `*.2Cui 1 wRom 3 0 ]
+[v _pCDCSrc pCDCSrc `S1698  1 e 3 0 ]
+"87
+[v _pCDCDst pCDCDst `S1698  1 e 3 0 ]
+"88
+[v _cdc_tx_len cdc_tx_len `uc  1 e 1 0 ]
+"89
+[v _cdc_mem_type cdc_mem_type `uc  1 e 1 0 ]
+"91
+[v _CDCDataOutHandle CDCDataOutHandle `*.39v  1 e 2 0 ]
+"92
+[v _CDCDataInHandle CDCDataInHandle `*.39v  1 e 2 0 ]
+[s S1705 . 1 `uc 1 DTE_PRESENT 1 0 :1:0 
+`uc 1 CARRIER_CONTROL 1 0 :1:1 
+]
+"95
+[u S1708 _CONTROL_SIGNAL_BITMAP 1 `uc 1 _byte 1 0 `S1705 1 . 1 0 ]
+[v _control_signal_bitmap control_signal_bitmap `S1708  1 e 1 0 ]
+"111
+[v _dummy_encapsulated_cmd_response dummy_encapsulated_cmd_response `[8]uc  1 e 8 0 ]
+"12 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/USBWrap.c
+[v _USBInputBuffer USBInputBuffer `[64]uc  1 e 64 0 ]
+"18 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"97
+} 0
+"33 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/MXK.c
+[v _MXK_Init MXK_Init `(v  1 e 1 0 ]
+{
+"69
+} 0
+"150 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+[v _Port_Init Port_Init `(v  1 e 1 0 ]
+{
+"166
+[v Port_Init@i i `uc  1 a 1 6 ]
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+"150
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[s S2340 . 2 `S2338 1 LS_Byte 1 0 `S2338 1 MS_Byte 1 1 ]
+[s S2343 . 2 `uc 1 L 1 0 `uc 1 H 1 1 ]
+[u S2346 . 2 `us 1 mBits 2 0 `S2340 1 . 2 0 `S2343 1 . 2 0 ]
+[s S2350 Word 2 `S2346 1 . 2 0 ]
+[u S2352 PortProperty 2 `us 1 mWord 2 0 `S2350 1 mType 2 0 ]
+[s S2355 Port 10 `*.32S2352 1 mProperties 2 0 `*.39S2338 1 mDirection 2 2 `*.39S2338 1 mOutput 2 4 `*.39S2338 1 mInput 2 6 `S2350 1 mType 2 8 ]
+[v Port_Init@pInput pInput `C*.39S2355  1 p 2 1 ]
+[v Port_Init@pPort pPort `E6786  1 p 1 3 ]
+"186
+} 0
+"513
+[v _Port_SetType Port_SetType `(E6475  1 e 1 0 ]
+{
+"515
+[v Port_SetType@Output Output `E6475  1 a 1 0 ]
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+"513
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[s S2340 . 2 `S2338 1 LS_Byte 1 0 `S2338 1 MS_Byte 1 1 ]
+[s S2343 . 2 `uc 1 L 1 0 `uc 1 H 1 1 ]
+[u S2346 . 2 `us 1 mBits 2 0 `S2340 1 . 2 0 `S2343 1 . 2 0 ]
+[s S2350 Word 2 `S2346 1 . 2 0 ]
+[u S2352 PortProperty 2 `us 1 mWord 2 0 `S2350 1 mType 2 0 ]
+[s S2355 Port 10 `*.32S2352 1 mProperties 2 0 `*.39S2338 1 mDirection 2 2 `*.39S2338 1 mOutput 2 4 `*.39S2338 1 mInput 2 6 `S2350 1 mType 2 8 ]
+[v Port_SetType@pInput pInput `C*.39S2355  1 p 2 58 ]
+[v Port_SetType@pType pType `E6795  1 p 1 60 ]
+"569
+} 0
+"138
+[v _Port_CheckPortType Port_CheckPortType `(E6475  1 e 1 0 ]
+{
+"140
+[v Port_CheckPortType@Output Output `E6475  1 a 1 57 ]
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+"138
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[s S2340 . 2 `S2338 1 LS_Byte 1 0 `S2338 1 MS_Byte 1 1 ]
+[s S2343 . 2 `uc 1 L 1 0 `uc 1 H 1 1 ]
+[u S2346 . 2 `us 1 mBits 2 0 `S2340 1 . 2 0 `S2343 1 . 2 0 ]
+[s S2350 Word 2 `S2346 1 . 2 0 ]
+[u S2352 PortProperty 2 `us 1 mWord 2 0 `S2350 1 mType 2 0 ]
+[s S2355 Port 10 `*.32S2352 1 mProperties 2 0 `*.39S2338 1 mDirection 2 2 `*.39S2338 1 mOutput 2 4 `*.39S2338 1 mInput 2 6 `S2350 1 mType 2 8 ]
+[v Port_CheckPortType@pInput pInput `C*.39S2355  1 p 2 54 ]
+[v Port_CheckPortType@pDrive pDrive `E6469  1 p 1 56 ]
+"147
+} 0
+"570
+[v _Port_Set Port_Set `(v  1 e 1 0 ]
+{
+"574
+[v Port_Set@TypeActual TypeActual `us  1 a 2 36 ]
+"573
+[v Port_Set@TypeRequired TypeRequired `us  1 a 2 34 ]
+"572
+[v Port_Set@Type Type `E6795  1 a 1 38 ]
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+"570
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[s S2340 . 2 `S2338 1 LS_Byte 1 0 `S2338 1 MS_Byte 1 1 ]
+[s S2343 . 2 `uc 1 L 1 0 `uc 1 H 1 1 ]
+[u S2346 . 2 `us 1 mBits 2 0 `S2340 1 . 2 0 `S2343 1 . 2 0 ]
+[s S2350 Word 2 `S2346 1 . 2 0 ]
+[u S2352 PortProperty 2 `us 1 mWord 2 0 `S2350 1 mType 2 0 ]
+[s S2355 Port 10 `*.32S2352 1 mProperties 2 0 `*.39S2338 1 mDirection 2 2 `*.39S2338 1 mOutput 2 4 `*.39S2338 1 mInput 2 6 `S2350 1 mType 2 8 ]
+[v Port_Set@pInput pInput `C*.39S2355  1 p 2 15 ]
+[v Port_Set@pValue pValue `uc  1 p 1 17 ]
+"612
+} 0
+"110 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.c
+[v _Byte_SetByte Byte_SetByte `(v  1 e 1 0 ]
+{
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[v Byte_SetByte@pInput pInput `*.39S2338  1 p 2 0 ]
+[v Byte_SetByte@pValue pValue `uc  1 p 1 2 ]
+"113
+} 0
+"426 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+"429
+"434
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+"67 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"439 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+"67 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"445 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+"67 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"451 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+"67 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"459 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+"67 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"465 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+"67 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"472 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+"67 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"480 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+"67 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"487 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+"67 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"497 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+"67 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[v _GetPortTRIS GetPortTRIS `(*.39S2338  1 e 2 0 ]
+{
+[v GetPortTRIS@pInput pInput `E6786  1 a 1 wreg ]
+[v GetPortTRIS@pInput pInput `E6786  1 a 1 wreg ]
+[v GetPortTRIS@pInput pInput `E6786  1 a 1 2 ]
+"88
+} 0
+"533 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+"509
+"512
+"515
+"426
+"429
+"434
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+"21 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"439 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+"21 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"445 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+"21 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"451 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+"21 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"459 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+"21 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"465 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+"21 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"472 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+"21 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"480 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+"21 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"487 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+"21 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"497 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+"21 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[s S2340 . 2 `S2338 1 LS_Byte 1 0 `S2338 1 MS_Byte 1 1 ]
+"520 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2343 . 2 `uc 1 L 1 0 `uc 1 H 1 1 ]
+"21 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+[u S2346 . 2 `us 1 mBits 2 0 `S2340 1 . 2 0 `S2343 1 . 2 0 ]
+[s S2350 Word 2 `S2346 1 . 2 0 ]
+[u S2352 PortProperty 2 `us 1 mWord 2 0 `S2350 1 mType 2 0 ]
+[v _GetPortProperties GetPortProperties `(*.32S2352  1 e 2 0 ]
+{
+[v GetPortProperties@pInput pInput `E6786  1 a 1 wreg ]
+[v GetPortProperties@pInput pInput `E6786  1 a 1 wreg ]
+[v GetPortProperties@pInput pInput `E6786  1 a 1 2 ]
+"42
+} 0
+"426 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+"429
+"434
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+"44 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"439 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+"44 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"445 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+"44 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"451 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+"44 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"459 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+"44 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"465 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+"44 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"472 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+"44 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"480 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+"44 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"487 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+"44 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+"497 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.h
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+"44 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[v _GetPortPORT GetPortPORT `(*.39S2338  1 e 2 0 ]
+{
+[v GetPortPORT@pInput pInput `E6786  1 a 1 wreg ]
+[v GetPortPORT@pInput pInput `E6786  1 a 1 wreg ]
+[v GetPortPORT@pInput pInput `E6786  1 a 1 2 ]
+"65
+} 0
+"15 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/LED.c
+[v _LED_Init LED_Init `(v  1 e 1 0 ]
+{
+[v LED_Init@pLED pLED `E6739  1 a 1 wreg ]
+[v LED_Init@pLED pLED `E6739  1 a 1 wreg ]
+[v LED_Init@pLED pLED `E6739  1 a 1 45 ]
+"27
+} 0
+"33
+[v _LED_Set LED_Set `(v  1 e 1 0 ]
+{
+[v LED_Set@pLED pLED `E6739  1 a 1 wreg ]
+[v LED_Set@pLED pLED `E6739  1 a 1 wreg ]
+[v LED_Set@pValue pValue `uc  1 p 1 20 ]
+[v LED_Set@pLED pLED `E6739  1 a 1 21 ]
+"44
+} 0
+"30 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/ISR.c
+[v _ISR_Enable ISR_Enable `(v  1 e 1 0 ]
+{
+"36
+} 0
+"217 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Functions.c
+[v _FunctMotor FunctMotor `(v  1 e 1 0 ]
+{
+"243
+} 0
+"117 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Motor.c
+[v _Motor_Speed Motor_Speed `(uc  1 e 1 0 ]
+{
+[s S15156 Motor 6 `s 1 mDelta 2 0 `s 1 mFrequency 2 2 `us 1 mAddress 2 4 ]
+[v Motor_Speed@pMotor pMotor `*.39S15156  1 p 2 27 ]
+[v Motor_Speed@pFrequency pFrequency `us  1 p 2 29 ]
+"122
+} 0
+"52 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Functions.c
+[v _FunctInitMotor FunctInitMotor `(v  1 e 1 0 ]
+{
+"65
+} 0
+"51 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Motor.c
+[v _Motor_Move Motor_Move `(uc  1 e 1 0 ]
+{
+[s S15156 Motor 6 `s 1 mDelta 2 0 `s 1 mFrequency 2 2 `us 1 mAddress 2 4 ]
+[v Motor_Move@pMotor pMotor `*.39S15156  1 p 2 3 ]
+[v Motor_Move@pDelta pDelta `s  1 p 2 5 ]
+"69
+} 0
+"75 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Timer0.c
+[v _Timer0_Start Timer0_Start `(v  1 e 1 0 ]
+{
+[v Timer0_Start@pFunction pFunction `*.38(v  1 p 3 0 ]
+"82
+} 0
+"26 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Motor.c
+[v _Motor_Init Motor_Init `(v  1 e 1 0 ]
+{
+[s S15156 Motor 6 `s 1 mDelta 2 0 `s 1 mFrequency 2 2 `us 1 mAddress 2 4 ]
+[v Motor_Init@pMotor pMotor `*.39S15156  1 p 2 45 ]
+[v Motor_Init@pAddress pAddress `us  1 p 2 47 ]
+"40
+} 0
+"25 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Timer0.c
+[v _Timer0_Init Timer0_Init `(v  1 e 1 0 ]
+{
+"34
+[v Timer0_Init@DIVIDE DIVIDE `ul  1 a 4 23 ]
+"27
+[v Timer0_Init@pCPUClock pCPUClock `ul  1 a 4 19 ]
+"25
+[v Timer0_Init@pFrequency pFrequency `ul  1 p 4 13 ]
+"29
+[v Timer0_Init@PRESCALE PRESCALE `C[8]us  1 s 16 PRESCALE ]
+"31
+[v Timer0_Init@PRE PRE `uc  1 s 1 PRE ]
+"32
+[v Timer0_Init@DIV DIV `ul  1 s 4 DIV ]
+"72
+} 0
+"20
+[v _Timer0_Clear Timer0_Clear `(v  1 e 1 0 ]
+{
+"24
+} 0
+"86 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Functions.c
+[v _FunctInitLCD FunctInitLCD `(v  1 e 1 0 ]
+{
+"133
+} 0
+"172 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/LCD.c
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+{
+"174
+[v LCD_Init@i i `us  1 a 2 55 ]
+"193
+} 0
+"248
+[v _Set_Rotation Set_Rotation `(v  1 e 1 0 ]
+{
+[v Set_Rotation@m m `uc  1 a 1 wreg ]
+"250
+[v Set_Rotation@rotation rotation `uc  1 a 1 6 ]
+"248
+[v Set_Rotation@m m `uc  1 a 1 wreg ]
+"250
+[v Set_Rotation@m m `uc  1 a 1 5 ]
+"286
+} 0
+"287
+[v _LCD_Fill LCD_Fill `(v  1 e 1 0 ]
+{
+"297
+[v LCD_Fill@j j `uc  1 a 1 12 ]
+"296
+[v LCD_Fill@i i `uc  1 a 1 11 ]
+"287
+[v LCD_Fill@pColour pColour `us  1 p 2 9 ]
+"303
+} 0
+"46
+[v _Configure_GPIOs Configure_GPIOs `(v  1 e 1 0 ]
+{
+"66
+} 0
+"201 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/SPI.c
+[v _SPI_MaxSpeed SPI_MaxSpeed `(v  1 e 1 0 ]
+{
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[s S2606 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+[s S2609 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+[s S2612 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S2621 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S2626 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+[s S2632 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S2637 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+[s S2640 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+[s S2643 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S2648 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[s S2653 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S2658 . 1 `uc 1 BF1 1 0 :1:0 
+`uc 1 UA1 1 0 :1:1 
+`uc 1 RW 1 0 :1:2 
+`uc 1 START 1 0 :1:3 
+`uc 1 STOP 1 0 :1:4 
+`uc 1 DA 1 0 :1:5 
+`uc 1 CKE1 1 0 :1:6 
+`uc 1 SMP1 1 0 :1:7 
+]
+[s S2667 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW1 1 0 :1:2 
+`uc 1 START1 1 0 :1:3 
+`uc 1 STOP1 1 0 :1:4 
+`uc 1 DA1 1 0 :1:5 
+]
+[s S2673 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+]
+[s S2676 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_A 1 0 :1:5 
+]
+[u S2679 . 1 `S2606 1 . 1 0 `S2609 1 . 1 0 `S2612 1 . 1 0 `S2621 1 . 1 0 `S2626 1 . 1 0 `S2632 1 . 1 0 `S2637 1 . 1 0 `S2640 1 . 1 0 `S2643 1 . 1 0 `S2648 1 . 1 0 `S2653 1 . 1 0 `S2658 1 . 1 0 `S2667 1 . 1 0 `S2673 1 . 1 0 `S2676 1 . 1 0 ]
+[u S2695 . 3 `*.2S2338 1 SSPSTATT 3 0 `*.2S2679 1 SSPSTATTb 3 0 ]
+[s S2698 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+[s S2704 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[s S2709 . 1 `uc 1 SSPM02 1 0 :1:0 
+`uc 1 SSPM12 1 0 :1:1 
+`uc 1 SSPM22 1 0 :1:2 
+`uc 1 SSPM32 1 0 :1:3 
+`uc 1 CKP2 1 0 :1:4 
+`uc 1 SSPEN2 1 0 :1:5 
+`uc 1 SSPOV2 1 0 :1:6 
+`uc 1 WCOL2 1 0 :1:7 
+]
+[u S2718 . 1 `S2698 1 . 1 0 `S2704 1 . 1 0 `S2709 1 . 1 0 ]
+[u S2722 . 3 `*.2S2338 1 SSPCON1T 3 0 `S2718 1 SSPCON1Tb 1 0 ]
+[s S2725 SPI 11 `uc 1 mBusy 1 0 `E6885 1 mBits 1 1 `E6875 1 mChannel 1 2 `S2695 1 . 3 3 `S2722 1 . 3 6 `*.39uc 1 SSPBUF 2 9 ]
+[v SPI_MaxSpeed@pInput pInput `*.39S2725  1 p 2 15 ]
+"211
+} 0
+"95 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/LCD.c
+[v _LCD_Reset LCD_Reset `(v  1 e 1 0 ]
+{
+"107
+} 0
+"240 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.c
+[v _delay_ms delay_ms `(v  1 e 1 0 ]
+{
+"242
+[v delay_ms@u u `VEul  1 a 4 2 ]
+"240
+[v delay_ms@ms ms `us  1 p 2 0 ]
+"254
+} 0
+"32 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/LCD.c
+[v _Reset_Low Reset_Low `T(v  1 e 1 0 ]
+{
+"35
+} 0
+"36
+[v _Reset_High Reset_High `T(v  1 e 1 0 ]
+{
+"39
+} 0
+"50 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/LED.c
+[v _LED_Toggle LED_Toggle `(v  1 e 1 0 ]
+{
+[v LED_Toggle@pLED pLED `E6739  1 a 1 wreg ]
+[v LED_Toggle@pLED pLED `E6739  1 a 1 wreg ]
+[v LED_Toggle@pLED pLED `E6739  1 a 1 24 ]
+"61
+} 0
+"278 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+[v _Port_TogglePin Port_TogglePin `(v  1 e 1 0 ]
+{
+"280
+[v Port_TogglePin@Value Value `uc  1 a 1 23 ]
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+"278
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[s S2340 . 2 `S2338 1 LS_Byte 1 0 `S2338 1 MS_Byte 1 1 ]
+[s S2343 . 2 `uc 1 L 1 0 `uc 1 H 1 1 ]
+[u S2346 . 2 `us 1 mBits 2 0 `S2340 1 . 2 0 `S2343 1 . 2 0 ]
+[s S2350 Word 2 `S2346 1 . 2 0 ]
+[u S2352 PortProperty 2 `us 1 mWord 2 0 `S2350 1 mType 2 0 ]
+[s S2355 Port 10 `*.32S2352 1 mProperties 2 0 `*.39S2338 1 mDirection 2 2 `*.39S2338 1 mOutput 2 4 `*.39S2338 1 mInput 2 6 `S2350 1 mType 2 8 ]
+[v Port_TogglePin@pInput pInput `C*.39S2355  1 p 2 20 ]
+[v Port_TogglePin@pPin pPin `E6750  1 p 1 22 ]
+"284
+} 0
+"271
+[v _Port_GetPin Port_GetPin `(uc  1 e 1 0 ]
+{
+"273
+[v Port_GetPin@Output Output `uc  1 a 1 5 ]
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+"271
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[s S2340 . 2 `S2338 1 LS_Byte 1 0 `S2338 1 MS_Byte 1 1 ]
+[s S2343 . 2 `uc 1 L 1 0 `uc 1 H 1 1 ]
+[u S2346 . 2 `us 1 mBits 2 0 `S2340 1 . 2 0 `S2343 1 . 2 0 ]
+[s S2350 Word 2 `S2346 1 . 2 0 ]
+[u S2352 PortProperty 2 `us 1 mWord 2 0 `S2350 1 mType 2 0 ]
+[s S2355 Port 10 `*.32S2352 1 mProperties 2 0 `*.39S2338 1 mDirection 2 2 `*.39S2338 1 mOutput 2 4 `*.39S2338 1 mInput 2 6 `S2350 1 mType 2 8 ]
+[v Port_GetPin@pInput pInput `C*.39S2355  1 p 2 0 ]
+[v Port_GetPin@pPin pPin `E6750  1 p 1 2 ]
+"277
+} 0
+"157 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Console.c
+[v _Console_Init Console_Init `(v  1 e 1 0 ]
+{
+"163
+[v Console_Init@y y `uc  1 a 1 3 ]
+[v Console_Init@x x `uc  1 a 1 2 ]
+"173
+} 0
+"134 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Functions.c
+[v _FunctInitHMI FunctInitHMI `(v  1 e 1 0 ]
+{
+"158
+} 0
+"226 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\HMI.c
+[v _HMI_SetSegments HMI_SetSegments `(v  1 e 1 0 ]
+{
+"228
+[v HMI_SetSegments@in in `us  1 a 2 4 ]
+"226
+[v HMI_SetSegments@pString pString `*.34uc  1 p 2 1 ]
+"249
+} 0
+"284 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.c
+[v _ToSegment ToSegment `(uc  1 e 1 0 ]
+{
+[v ToSegment@pCHR pCHR `uc  1 a 1 wreg ]
+[v ToSegment@pCHR pCHR `uc  1 a 1 wreg ]
+[v ToSegment@pCHR pCHR `uc  1 a 1 0 ]
+"355
+} 0
+"205 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\HMI.c
+[v _HMI_SetBar HMI_SetBar `(v  1 e 1 0 ]
+{
+[v HMI_SetBar@pValue pValue `uc  1 a 1 wreg ]
+[v HMI_SetBar@pValue pValue `uc  1 a 1 wreg ]
+"207
+[v HMI_SetBar@pValue pValue `uc  1 a 1 0 ]
+"208
+} 0
+"104
+[v _HMI_Init HMI_Init `(v  1 e 1 0 ]
+{
+"127
+[v HMI_Init@in in `us  1 a 2 59 ]
+"135
+} 0
+"190 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/SPI.c
+[v _SPI_MinSpeed SPI_MinSpeed `(v  1 e 1 0 ]
+{
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[s S2606 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+[s S2609 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+[s S2612 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S2621 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S2626 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+[s S2632 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S2637 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+[s S2640 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+[s S2643 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S2648 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[s S2653 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S2658 . 1 `uc 1 BF1 1 0 :1:0 
+`uc 1 UA1 1 0 :1:1 
+`uc 1 RW 1 0 :1:2 
+`uc 1 START 1 0 :1:3 
+`uc 1 STOP 1 0 :1:4 
+`uc 1 DA 1 0 :1:5 
+`uc 1 CKE1 1 0 :1:6 
+`uc 1 SMP1 1 0 :1:7 
+]
+[s S2667 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW1 1 0 :1:2 
+`uc 1 START1 1 0 :1:3 
+`uc 1 STOP1 1 0 :1:4 
+`uc 1 DA1 1 0 :1:5 
+]
+[s S2673 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+]
+[s S2676 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_A 1 0 :1:5 
+]
+[u S2679 . 1 `S2606 1 . 1 0 `S2609 1 . 1 0 `S2612 1 . 1 0 `S2621 1 . 1 0 `S2626 1 . 1 0 `S2632 1 . 1 0 `S2637 1 . 1 0 `S2640 1 . 1 0 `S2643 1 . 1 0 `S2648 1 . 1 0 `S2653 1 . 1 0 `S2658 1 . 1 0 `S2667 1 . 1 0 `S2673 1 . 1 0 `S2676 1 . 1 0 ]
+[u S2695 . 3 `*.2S2338 1 SSPSTATT 3 0 `*.2S2679 1 SSPSTATTb 3 0 ]
+[s S2698 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+[s S2704 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[s S2709 . 1 `uc 1 SSPM02 1 0 :1:0 
+`uc 1 SSPM12 1 0 :1:1 
+`uc 1 SSPM22 1 0 :1:2 
+`uc 1 SSPM32 1 0 :1:3 
+`uc 1 CKP2 1 0 :1:4 
+`uc 1 SSPEN2 1 0 :1:5 
+`uc 1 SSPOV2 1 0 :1:6 
+`uc 1 WCOL2 1 0 :1:7 
+]
+[u S2718 . 1 `S2698 1 . 1 0 `S2704 1 . 1 0 `S2709 1 . 1 0 ]
+[u S2722 . 3 `*.2S2338 1 SSPCON1T 3 0 `S2718 1 SSPCON1Tb 1 0 ]
+[s S2725 SPI 11 `uc 1 mBusy 1 0 `E6885 1 mBits 1 1 `E6875 1 mChannel 1 2 `S2695 1 . 3 3 `S2722 1 . 3 6 `*.39uc 1 SSPBUF 2 9 ]
+[v SPI_MinSpeed@pInput pInput `*.39S2725  1 p 2 15 ]
+"200
+} 0
+"12
+[v _SPI_Init SPI_Init `(v  1 e 1 0 ]
+{
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+"14
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[s S2606 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+[s S2609 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+[s S2612 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S2621 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S2626 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+[s S2632 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S2637 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+[s S2640 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+[s S2643 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S2648 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[s S2653 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S2658 . 1 `uc 1 BF1 1 0 :1:0 
+`uc 1 UA1 1 0 :1:1 
+`uc 1 RW 1 0 :1:2 
+`uc 1 START 1 0 :1:3 
+`uc 1 STOP 1 0 :1:4 
+`uc 1 DA 1 0 :1:5 
+`uc 1 CKE1 1 0 :1:6 
+`uc 1 SMP1 1 0 :1:7 
+]
+[s S2667 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW1 1 0 :1:2 
+`uc 1 START1 1 0 :1:3 
+`uc 1 STOP1 1 0 :1:4 
+`uc 1 DA1 1 0 :1:5 
+]
+[s S2673 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+]
+[s S2676 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_A 1 0 :1:5 
+]
+[u S2679 . 1 `S2606 1 . 1 0 `S2609 1 . 1 0 `S2612 1 . 1 0 `S2621 1 . 1 0 `S2626 1 . 1 0 `S2632 1 . 1 0 `S2637 1 . 1 0 `S2640 1 . 1 0 `S2643 1 . 1 0 `S2648 1 . 1 0 `S2653 1 . 1 0 `S2658 1 . 1 0 `S2667 1 . 1 0 `S2673 1 . 1 0 `S2676 1 . 1 0 ]
+[u S2695 . 3 `*.2S2338 1 SSPSTATT 3 0 `*.2S2679 1 SSPSTATTb 3 0 ]
+[s S2698 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+[s S2704 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[s S2709 . 1 `uc 1 SSPM02 1 0 :1:0 
+`uc 1 SSPM12 1 0 :1:1 
+`uc 1 SSPM22 1 0 :1:2 
+`uc 1 SSPM32 1 0 :1:3 
+`uc 1 CKP2 1 0 :1:4 
+`uc 1 SSPEN2 1 0 :1:5 
+`uc 1 SSPOV2 1 0 :1:6 
+`uc 1 WCOL2 1 0 :1:7 
+]
+[u S2718 . 1 `S2698 1 . 1 0 `S2704 1 . 1 0 `S2709 1 . 1 0 ]
+[u S2722 . 3 `*.2S2338 1 SSPCON1T 3 0 `S2718 1 SSPCON1Tb 1 0 ]
+[s S2725 SPI 11 `uc 1 mBusy 1 0 `E6885 1 mBits 1 1 `E6875 1 mChannel 1 2 `S2695 1 . 3 3 `S2722 1 . 3 6 `*.39uc 1 SSPBUF 2 9 ]
+[v SPI_Init@pInput pInput `*.39S2725  1 a 2 51 ]
+"12
+[v SPI_Init@pClock pClock `ul  1 p 4 45 ]
+[v SPI_Init@pChannel pChannel `E6795  1 p 1 49 ]
+[v SPI_Init@pMode pMode `E6799  1 p 1 50 ]
+"132
+} 0
+"10 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Timer2.c
+[v _Timer2_Init Timer2_Init `(v  1 e 1 0 ]
+{
+"18
+[v Timer2_Init@DIVIDE DIVIDE `ul  1 a 4 26 ]
+"17
+[v Timer2_Init@pCPUClock pCPUClock `ul  1 a 4 22 ]
+"18
+[v Timer2_Init@RDIV RDIV `ul  1 a 4 18 ]
+"10
+[v Timer2_Init@pFrequency pFrequency `ul  1 p 4 13 ]
+"12
+[v Timer2_Init@PRESCALE PRESCALE `C[3]uc  1 s 3 PRESCALE ]
+"13
+[v Timer2_Init@INDEX INDEX `uc  1 s 1 INDEX ]
+"14
+[v Timer2_Init@PRE PRE `uc  1 s 1 PRE ]
+"15
+[v Timer2_Init@DIV DIV `ul  1 s 4 DIV ]
+"51
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"11
+[v ___lldiv@quotient quotient `ul  1 a 4 8 ]
+"12
+[v ___lldiv@counter counter `uc  1 a 1 12 ]
+"8
+[v ___lldiv@dividend dividend `ul  1 p 4 0 ]
+[v ___lldiv@divisor divisor `ul  1 p 4 4 ]
+"31
+} 0
+"3 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Timer2.c
+[v _Timer2_Clear Timer2_Clear `(v  1 e 1 0 ]
+{
+"8
+} 0
+"181 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/SPI.c
+[v _SPI_DisableISR SPI_DisableISR `(v  1 e 1 0 ]
+{
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[s S2606 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+[s S2609 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+[s S2612 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S2621 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S2626 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+[s S2632 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S2637 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+[s S2640 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+[s S2643 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S2648 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[s S2653 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S2658 . 1 `uc 1 BF1 1 0 :1:0 
+`uc 1 UA1 1 0 :1:1 
+`uc 1 RW 1 0 :1:2 
+`uc 1 START 1 0 :1:3 
+`uc 1 STOP 1 0 :1:4 
+`uc 1 DA 1 0 :1:5 
+`uc 1 CKE1 1 0 :1:6 
+`uc 1 SMP1 1 0 :1:7 
+]
+[s S2667 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW1 1 0 :1:2 
+`uc 1 START1 1 0 :1:3 
+`uc 1 STOP1 1 0 :1:4 
+`uc 1 DA1 1 0 :1:5 
+]
+[s S2673 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+]
+[s S2676 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_A 1 0 :1:5 
+]
+[u S2679 . 1 `S2606 1 . 1 0 `S2609 1 . 1 0 `S2612 1 . 1 0 `S2621 1 . 1 0 `S2626 1 . 1 0 `S2632 1 . 1 0 `S2637 1 . 1 0 `S2640 1 . 1 0 `S2643 1 . 1 0 `S2648 1 . 1 0 `S2653 1 . 1 0 `S2658 1 . 1 0 `S2667 1 . 1 0 `S2673 1 . 1 0 `S2676 1 . 1 0 ]
+[u S2695 . 3 `*.2S2338 1 SSPSTATT 3 0 `*.2S2679 1 SSPSTATTb 3 0 ]
+[s S2698 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+[s S2704 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[s S2709 . 1 `uc 1 SSPM02 1 0 :1:0 
+`uc 1 SSPM12 1 0 :1:1 
+`uc 1 SSPM22 1 0 :1:2 
+`uc 1 SSPM32 1 0 :1:3 
+`uc 1 CKP2 1 0 :1:4 
+`uc 1 SSPEN2 1 0 :1:5 
+`uc 1 SSPOV2 1 0 :1:6 
+`uc 1 WCOL2 1 0 :1:7 
+]
+[u S2718 . 1 `S2698 1 . 1 0 `S2704 1 . 1 0 `S2709 1 . 1 0 ]
+[u S2722 . 3 `*.2S2338 1 SSPCON1T 3 0 `S2718 1 SSPCON1Tb 1 0 ]
+[s S2725 SPI 11 `uc 1 mBusy 1 0 `E6885 1 mBits 1 1 `E6875 1 mChannel 1 2 `S2695 1 . 3 3 `S2722 1 . 3 6 `*.39uc 1 SSPBUF 2 9 ]
+[v SPI_DisableISR@pInput pInput `*.39S2725  1 p 2 0 ]
+"189
+} 0
+"219
+[v _SPI_DCS SPI_DCS `(v  1 e 1 0 ]
+{
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[s S2606 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+[s S2609 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+[s S2612 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S2621 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S2626 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+[s S2632 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S2637 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+[s S2640 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+[s S2643 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S2648 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[s S2653 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S2658 . 1 `uc 1 BF1 1 0 :1:0 
+`uc 1 UA1 1 0 :1:1 
+`uc 1 RW 1 0 :1:2 
+`uc 1 START 1 0 :1:3 
+`uc 1 STOP 1 0 :1:4 
+`uc 1 DA 1 0 :1:5 
+`uc 1 CKE1 1 0 :1:6 
+`uc 1 SMP1 1 0 :1:7 
+]
+[s S2667 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW1 1 0 :1:2 
+`uc 1 START1 1 0 :1:3 
+`uc 1 STOP1 1 0 :1:4 
+`uc 1 DA1 1 0 :1:5 
+]
+[s S2673 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+]
+[s S2676 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_A 1 0 :1:5 
+]
+[u S2679 . 1 `S2606 1 . 1 0 `S2609 1 . 1 0 `S2612 1 . 1 0 `S2621 1 . 1 0 `S2626 1 . 1 0 `S2632 1 . 1 0 `S2637 1 . 1 0 `S2640 1 . 1 0 `S2643 1 . 1 0 `S2648 1 . 1 0 `S2653 1 . 1 0 `S2658 1 . 1 0 `S2667 1 . 1 0 `S2673 1 . 1 0 `S2676 1 . 1 0 ]
+[u S2695 . 3 `*.2S2338 1 SSPSTATT 3 0 `*.2S2679 1 SSPSTATTb 3 0 ]
+[s S2698 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+[s S2704 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[s S2709 . 1 `uc 1 SSPM02 1 0 :1:0 
+`uc 1 SSPM12 1 0 :1:1 
+`uc 1 SSPM22 1 0 :1:2 
+`uc 1 SSPM32 1 0 :1:3 
+`uc 1 CKP2 1 0 :1:4 
+`uc 1 SSPEN2 1 0 :1:5 
+`uc 1 SSPOV2 1 0 :1:6 
+`uc 1 WCOL2 1 0 :1:7 
+]
+[u S2718 . 1 `S2698 1 . 1 0 `S2704 1 . 1 0 `S2709 1 . 1 0 ]
+[u S2722 . 3 `*.2S2338 1 SSPCON1T 3 0 `S2718 1 SSPCON1Tb 1 0 ]
+[s S2725 SPI 11 `uc 1 mBusy 1 0 `E6885 1 mBits 1 1 `E6875 1 mChannel 1 2 `S2695 1 . 3 3 `S2722 1 . 3 6 `*.39uc 1 SSPBUF 2 9 ]
+[v SPI_DCS@pInput pInput `*.39S2725  1 p 2 0 ]
+"225
+} 0
+"18 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Button.c
+[v _Button_Init Button_Init `(v  1 e 1 0 ]
+{
+[s S2240 Button 10 `uc 1 mState 1 0 `uc 1 mCount 1 1 `us 1 mThreshold 2 2 `*.38(v 1 mFunction 3 4 `*.38(uc 1 mGetState 3 7 ]
+[v Button_Init@pInput pInput `C*.39S2240  1 p 2 0 ]
+[v Button_Init@pThreshold pThreshold `us  1 p 2 2 ]
+"19
+[v Button_Init@pInitIO pInitIO `*.38(v  1 p 3 4 ]
+[v Button_Init@pGetState pGetState `*.38(uc  1 p 3 7 ]
+[v Button_Init@pFunction pFunction `*.38(v  1 p 3 10 ]
+"43
+} 0
+"20 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/MXK.c
+[v _MXK_InitDIPSwitch MXK_InitDIPSwitch `(v  1 e 1 0 ]
+{
+"23
+} 0
+"21 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\HMI.c
+[v _HMI_InitButtons HMI_InitButtons `(v  1 e 1 0 ]
+{
+"24
+} 0
+"10 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/MXK.c
+[v _MXK_InitTestButton MXK_InitTestButton `(v  1 e 1 0 ]
+{
+"13
+} 0
+"189 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+[v _Port_SetPinType Port_SetPinType `(E6475  1 e 1 0 ]
+{
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+"191
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[s S2340 . 2 `S2338 1 LS_Byte 1 0 `S2338 1 MS_Byte 1 1 ]
+[s S2343 . 2 `uc 1 L 1 0 `uc 1 H 1 1 ]
+[u S2346 . 2 `us 1 mBits 2 0 `S2340 1 . 2 0 `S2343 1 . 2 0 ]
+[s S2350 Word 2 `S2346 1 . 2 0 ]
+[u S2352 PortProperty 2 `us 1 mWord 2 0 `S2350 1 mType 2 0 ]
+[v Port_SetPinType@Props Props `*.32S2352  1 a 2 43 ]
+"192
+[v Port_SetPinType@Output Output `E6475  1 a 1 42 ]
+"189
+[s S2355 Port 10 `*.32S2352 1 mProperties 2 0 `*.39S2338 1 mDirection 2 2 `*.39S2338 1 mOutput 2 4 `*.39S2338 1 mInput 2 6 `S2350 1 mType 2 8 ]
+[v Port_SetPinType@pInput pInput `C*.39S2355  1 p 2 38 ]
+[v Port_SetPinType@pPin pPin `E6750  1 p 1 40 ]
+[v Port_SetPinType@pType pType `E6795  1 p 1 41 ]
+"246
+} 0
+"399
+[v _Port_SetQuadType Port_SetQuadType `(E6475  1 e 1 0 ]
+{
+"401
+[v Port_SetQuadType@Output Output `E6475  1 a 1 58 ]
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+"399
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[s S2340 . 2 `S2338 1 LS_Byte 1 0 `S2338 1 MS_Byte 1 1 ]
+[s S2343 . 2 `uc 1 L 1 0 `uc 1 H 1 1 ]
+[u S2346 . 2 `us 1 mBits 2 0 `S2340 1 . 2 0 `S2343 1 . 2 0 ]
+[s S2350 Word 2 `S2346 1 . 2 0 ]
+[u S2352 PortProperty 2 `us 1 mWord 2 0 `S2350 1 mType 2 0 ]
+[s S2355 Port 10 `*.32S2352 1 mProperties 2 0 `*.39S2338 1 mDirection 2 2 `*.39S2338 1 mOutput 2 4 `*.39S2338 1 mInput 2 6 `S2350 1 mType 2 8 ]
+[v Port_SetQuadType@pInput pInput `C*.39S2355  1 p 2 54 ]
+[v Port_SetQuadType@pQuad pQuad `E6776  1 p 1 56 ]
+[v Port_SetQuadType@pType pType `E6795  1 p 1 57 ]
+"459
+} 0
+"149 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.c
+[v _Word_SetPair Word_SetPair `(v  1 e 1 0 ]
+{
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[s S2340 . 2 `S2338 1 LS_Byte 1 0 `S2338 1 MS_Byte 1 1 ]
+[s S2343 . 2 `uc 1 L 1 0 `uc 1 H 1 1 ]
+[u S2346 . 2 `us 1 mBits 2 0 `S2340 1 . 2 0 `S2343 1 . 2 0 ]
+[s S2350 Word 2 `S2346 1 . 2 0 ]
+[v Word_SetPair@pInput pInput `*.39S2350  1 p 2 15 ]
+[v Word_SetPair@pPair pPair `uc  1 p 1 17 ]
+[v Word_SetPair@pValue pValue `uc  1 p 1 18 ]
+"155
+} 0
+"83
+[v _Byte_SetPair Byte_SetPair `(v  1 e 1 0 ]
+{
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[v Byte_SetPair@pInput pInput `*.39S2338  1 p 2 11 ]
+[v Byte_SetPair@pPair pPair `uc  1 p 1 13 ]
+[v Byte_SetPair@pValue pValue `uc  1 p 1 14 ]
+"86
+} 0
+"126 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+[v _Port_CheckQuadType Port_CheckQuadType `(E6475  1 e 1 0 ]
+{
+"128
+[v Port_CheckQuadType@Output Output `E6475  1 a 1 53 ]
+"130
+[v Port_CheckQuadType@Pair2 Pair2 `E6760  1 a 1 52 ]
+"129
+[v Port_CheckQuadType@Pair1 Pair1 `E6760  1 a 1 51 ]
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+"126
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[s S2340 . 2 `S2338 1 LS_Byte 1 0 `S2338 1 MS_Byte 1 1 ]
+[s S2343 . 2 `uc 1 L 1 0 `uc 1 H 1 1 ]
+[u S2346 . 2 `us 1 mBits 2 0 `S2340 1 . 2 0 `S2343 1 . 2 0 ]
+[s S2350 Word 2 `S2346 1 . 2 0 ]
+[u S2352 PortProperty 2 `us 1 mWord 2 0 `S2350 1 mType 2 0 ]
+[s S2355 Port 10 `*.32S2352 1 mProperties 2 0 `*.39S2338 1 mDirection 2 2 `*.39S2338 1 mOutput 2 4 `*.39S2338 1 mInput 2 6 `S2350 1 mType 2 8 ]
+[v Port_CheckQuadType@pInput pInput `C*.39S2355  1 p 2 47 ]
+[v Port_CheckQuadType@pQuad pQuad `E6776  1 p 1 49 ]
+[v Port_CheckQuadType@pDrive pDrive `E6469  1 p 1 50 ]
+"137
+} 0
+"112
+[v _Port_CheckPairType Port_CheckPairType `(E6475  1 e 1 0 ]
+{
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+"116
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[s S2340 . 2 `S2338 1 LS_Byte 1 0 `S2338 1 MS_Byte 1 1 ]
+[s S2343 . 2 `uc 1 L 1 0 `uc 1 H 1 1 ]
+[u S2346 . 2 `us 1 mBits 2 0 `S2340 1 . 2 0 `S2343 1 . 2 0 ]
+[s S2350 Word 2 `S2346 1 . 2 0 ]
+[u S2352 PortProperty 2 `us 1 mWord 2 0 `S2350 1 mType 2 0 ]
+[v Port_CheckPairType@Props Props `*.34S2352  1 a 2 45 ]
+"114
+[v Port_CheckPairType@Output Output `E6475  1 a 1 44 ]
+"118
+[v Port_CheckPairType@Pin2 Pin2 `E6750  1 a 1 43 ]
+"117
+[v Port_CheckPairType@Pin1 Pin1 `E6750  1 a 1 42 ]
+"112
+[s S2355 Port 10 `*.32S2352 1 mProperties 2 0 `*.39S2338 1 mDirection 2 2 `*.39S2338 1 mOutput 2 4 `*.39S2338 1 mInput 2 6 `S2350 1 mType 2 8 ]
+[v Port_CheckPairType@pInput pInput `C*.39S2355  1 p 2 38 ]
+[v Port_CheckPairType@pPair pPair `E6760  1 p 1 40 ]
+[v Port_CheckPairType@pDrive pDrive `E6469  1 p 1 41 ]
+"125
+} 0
+"220 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.c
+[v _PortProperty_Valid PortProperty_Valid `(E6475  1 e 1 0 ]
+{
+"223
+[v PortProperty_Valid@Errors Errors `C[4][4]E6475  1 a 16 21 ]
+"222
+[v PortProperty_Valid@Pair Pair `E6469  1 a 1 37 ]
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+"220
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[s S2340 . 2 `S2338 1 LS_Byte 1 0 `S2338 1 MS_Byte 1 1 ]
+[s S2343 . 2 `uc 1 L 1 0 `uc 1 H 1 1 ]
+[u S2346 . 2 `us 1 mBits 2 0 `S2340 1 . 2 0 `S2343 1 . 2 0 ]
+[s S2350 Word 2 `S2346 1 . 2 0 ]
+[u S2352 PortProperty 2 `us 1 mWord 2 0 `S2350 1 mType 2 0 ]
+[v PortProperty_Valid@pInput pInput `*.34S2352  1 p 2 15 ]
+[v PortProperty_Valid@pPinDrive pPinDrive `E6469  1 p 1 17 ]
+[v PortProperty_Valid@pPin pPin `uc  1 p 1 18 ]
+"222
+[v PortProperty_Valid@F6830 F6830 `C[4][4]E6475  1 s 16 F6830 ]
+"238
+} 0
+"101
+[v _Byte_SetQuad Byte_SetQuad `(v  1 e 1 0 ]
+{
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[v Byte_SetQuad@pInput pInput `*.39S2338  1 p 2 11 ]
+[v Byte_SetQuad@pQuad pQuad `uc  1 p 1 13 ]
+[v Byte_SetQuad@pValue pValue `uc  1 p 1 14 ]
+"104
+} 0
+"47
+[v _Byte_SetZone Byte_SetZone `T(v  1 e 1 0 ]
+{
+"49
+[v Byte_SetZone@MASK MASK `uc  1 a 1 10 ]
+"50
+[v Byte_SetZone@Offset Offset `uc  1 a 1 9 ]
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+"47
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[v Byte_SetZone@pInput pInput `*.39S2338  1 p 2 0 ]
+[v Byte_SetZone@pMax pMax `uc  1 p 1 2 ]
+[v Byte_SetZone@pChunk pChunk `uc  1 p 1 3 ]
+[v Byte_SetZone@pChunkSize pChunkSize `uc  1 p 1 4 ]
+[v Byte_SetZone@pValue pValue `uc  1 p 1 5 ]
+"63
+} 0
+"249 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Functions.c
+[v _FunctHMI FunctHMI `(v  1 e 1 0 ]
+{
+"267
+[v FunctHMI@v v `uc  1 s 1 v ]
+"321
+} 0
+"464 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\doprnt.c
+[v _printf printf `(i  1 e 2 0 ]
+{
+"466
+[v printf@ap ap `[1]*.39v  1 a 2 29 ]
+"528
+[v printf@val val `ui  1 a 2 26 ]
+"499
+[v printf@c c `c  1 a 1 31 ]
+"506
+[v printf@prec prec `c  1 a 1 28 ]
+"508
+[v printf@flag flag `uc  1 a 1 25 ]
+"464
+[v printf@f f `*.32Cuc  1 p 2 21 ]
+"1541
+} 0
+"454 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Console.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+[v putch@c c `uc  1 a 1 wreg ]
+[v putch@c c `uc  1 a 1 wreg ]
+"456
+[v putch@c c `uc  1 a 1 20 ]
+"457
+} 0
+"322
+[v _Console_PrintChar Console_PrintChar `T(v  1 e 1 0 ]
+{
+[v Console_PrintChar@pInput pInput `uc  1 a 1 wreg ]
+[v Console_PrintChar@pInput pInput `uc  1 a 1 wreg ]
+[v Console_PrintChar@pInput pInput `uc  1 a 1 19 ]
+"373
+} 0
+"260
+[v _Console_Tab Console_Tab `(v  1 e 1 0 ]
+{
+"263
+[v Console_Tab@c c `uc  1 a 1 15 ]
+"262
+[v Console_Tab@i i `uc  1 a 1 14 ]
+"264
+[v Console_Tab@t t `uc  1 a 1 13 ]
+"270
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"11
+[v ___awdiv@quotient quotient `i  1 a 2 6 ]
+"12
+[v ___awdiv@sign sign `uc  1 a 1 5 ]
+[v ___awdiv@counter counter `uc  1 a 1 4 ]
+"8
+[v ___awdiv@dividend dividend `i  1 p 2 0 ]
+[v ___awdiv@divisor divisor `i  1 p 2 2 ]
+"42
+} 0
+"243 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Console.c
+[v _Console_IncrementCursor Console_IncrementCursor `(uc  1 e 1 0 ]
+{
+"258
+} 0
+"175
+[v _Console_NewLine Console_NewLine `(v  1 e 1 0 ]
+{
+"190
+} 0
+"192
+[v _Console_FormFeed Console_FormFeed `(v  1 e 1 0 ]
+{
+"197
+[v Console_FormFeed@y y `uc  1 a 1 3 ]
+[v Console_FormFeed@x x `uc  1 a 1 2 ]
+"207
+} 0
+"297
+[v _Console_ResetCursor Console_ResetCursor `(v  1 e 1 0 ]
+{
+"306
+} 0
+"209
+[v _Console_Backspace Console_Backspace `(v  1 e 1 0 ]
+{
+"241
+} 0
+"308
+[v _Console_ClearCursor Console_ClearCursor `(v  1 e 1 0 ]
+{
+"315
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwmod@counter counter `uc  1 a 1 11 ]
+"8
+[v ___lwmod@dividend dividend `ui  1 p 2 7 ]
+[v ___lwmod@divisor divisor `ui  1 p 2 9 ]
+"26
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"12
+[v ___lwdiv@counter counter `uc  1 a 1 4 ]
+"8
+[v ___lwdiv@dividend dividend `ui  1 p 2 0 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 2 ]
+"31
+} 0
+"153 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/MXK.c
+[v _MXK_Dequeue MXK_Dequeue `(v  1 e 1 0 ]
+{
+"158
+} 0
+"75 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Motor.c
+[v _Motor_Step Motor_Step `(v  1 e 1 0 ]
+{
+"112
+} 0
+"89 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Timer0.c
+[v _Timer0_Stop Timer0_Stop `(v  1 e 1 0 ]
+{
+"93
+} 0
+"83
+[v _Timer0_Restart Timer0_Restart `(v  1 e 1 0 ]
+{
+"88
+} 0
+"247 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+[v _Port_SetPin Port_SetPin `(v  1 e 1 0 ]
+{
+"249
+[v Port_SetPin@Type Type `E6795  1 a 1 19 ]
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+"247
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[s S2340 . 2 `S2338 1 LS_Byte 1 0 `S2338 1 MS_Byte 1 1 ]
+[s S2343 . 2 `uc 1 L 1 0 `uc 1 H 1 1 ]
+[u S2346 . 2 `us 1 mBits 2 0 `S2340 1 . 2 0 `S2343 1 . 2 0 ]
+[s S2350 Word 2 `S2346 1 . 2 0 ]
+[u S2352 PortProperty 2 `us 1 mWord 2 0 `S2350 1 mType 2 0 ]
+[s S2355 Port 10 `*.32S2352 1 mProperties 2 0 `*.39S2338 1 mDirection 2 2 `*.39S2338 1 mOutput 2 4 `*.39S2338 1 mInput 2 6 `S2350 1 mType 2 8 ]
+[v Port_SetPin@pInput pInput `C*.39S2355  1 p 2 15 ]
+[v Port_SetPin@pPin pPin `E6750  1 p 1 17 ]
+[v Port_SetPin@pValue pValue `uc  1 p 1 18 ]
+"270
+} 0
+"156 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.c
+[v _Word_GetPair Word_GetPair `(uc  1 e 1 0 ]
+{
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[s S2340 . 2 `S2338 1 LS_Byte 1 0 `S2338 1 MS_Byte 1 1 ]
+[s S2343 . 2 `uc 1 L 1 0 `uc 1 H 1 1 ]
+[u S2346 . 2 `us 1 mBits 2 0 `S2340 1 . 2 0 `S2343 1 . 2 0 ]
+[s S2350 Word 2 `S2346 1 . 2 0 ]
+[v Word_GetPair@pInput pInput `*.34S2350  1 p 2 12 ]
+[v Word_GetPair@pPair pPair `uc  1 p 1 14 ]
+"162
+} 0
+"87
+[v _Byte_GetPair Byte_GetPair `(uc  1 e 1 0 ]
+{
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[v Byte_GetPair@pInput pInput `*.34S2338  1 p 2 9 ]
+[v Byte_GetPair@pPair pPair `uc  1 p 1 11 ]
+"90
+} 0
+"64
+[v _Byte_GetZone Byte_GetZone `T(uc  1 e 1 0 ]
+{
+"66
+[v Byte_GetZone@Output Output `uc  1 a 1 8 ]
+"68
+[v Byte_GetZone@Offset Offset `uc  1 a 1 7 ]
+"67
+[v Byte_GetZone@MASK MASK `uc  1 a 1 6 ]
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+"64
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[v Byte_GetZone@pInput pInput `*.34S2338  1 p 2 0 ]
+[v Byte_GetZone@pMax pMax `uc  1 p 1 2 ]
+[v Byte_GetZone@pChunk pChunk `uc  1 p 1 3 ]
+[v Byte_GetZone@pChunkSize pChunkSize `uc  1 p 1 4 ]
+"81
+} 0
+"32
+[v _Byte_SetBit Byte_SetBit `(v  1 e 1 0 ]
+{
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[v Byte_SetBit@pInput pInput `*.39S2338  1 p 2 0 ]
+[v Byte_SetBit@pBit pBit `uc  1 p 1 2 ]
+[v Byte_SetBit@pValue pValue `uc  1 p 1 3 ]
+"37
+} 0
+"105 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/MXK.c
+[v _MXK_SwitchTo MXK_SwitchTo `(uc  1 e 1 0 ]
+{
+[v MXK_SwitchTo@pModule pModule `E7037  1 a 1 wreg ]
+"107
+[v MXK_SwitchTo@CUR CUR `uc  1 a 1 6 ]
+"105
+[v MXK_SwitchTo@pModule pModule `E7037  1 a 1 wreg ]
+"107
+[v MXK_SwitchTo@pModule pModule `E7037  1 a 1 7 ]
+"123
+} 0
+"130
+[v _MXK_Release MXK_Release `(uc  1 e 1 0 ]
+{
+"138
+} 0
+"144
+[v _MXK_Queue MXK_Queue `(v  1 e 1 0 ]
+{
+[v MXK_Queue@pCallback pCallback `*.38(v  1 p 3 0 ]
+"147
+} 0
+"82
+[v _MXK_BlockSwitchTo MXK_BlockSwitchTo `(uc  1 e 1 0 ]
+{
+[v MXK_BlockSwitchTo@pModule pModule `E7037  1 a 1 wreg ]
+"85
+[v MXK_BlockSwitchTo@CUR CUR `uc  1 a 1 6 ]
+"82
+[v MXK_BlockSwitchTo@pModule pModule `E7037  1 a 1 wreg ]
+"85
+[v MXK_BlockSwitchTo@pModule pModule `E7037  1 a 1 7 ]
+"99
+} 0
+"255 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.c
+[v _delay_us delay_us `(v  1 e 1 0 ]
+{
+"256
+[v delay_us@u u `ul  1 a 4 2 ]
+"255
+[v delay_us@us us `us  1 p 2 0 ]
+"266
+} 0
+"138 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\HMI.c
+[v _HMI_Render HMI_Render `(v  1 e 1 0 ]
+{
+"141
+[v HMI_Render@a a `us  1 a 2 8 ]
+"144
+} 0
+"54
+[v _OutSeg OutSeg `(v  1 e 1 0 ]
+{
+[v OutSeg@pInput pInput `uc  1 a 1 wreg ]
+"59
+[v OutSeg@out out `VEuc  1 a 1 7 ]
+"54
+[v OutSeg@pInput pInput `uc  1 a 1 wreg ]
+[v OutSeg@pSegment pSegment `uc  1 p 1 3 ]
+"58
+[v OutSeg@cur cur `uc  1 s 1 cur ]
+"60
+[v OutSeg@segset segset `uc  1 s 1 segset ]
+"61
+[v OutSeg@a a `uc  1 s 1 a ]
+"83
+[v OutSeg@pInput pInput `uc  1 a 1 6 ]
+"101
+} 0
+"286 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Console.c
+[v _Console_SetForecolour Console_SetForecolour `T(v  1 e 1 0 ]
+{
+[v Console_SetForecolour@pColour pColour `us  1 p 2 0 ]
+"291
+} 0
+"377
+[v _Console_Render Console_Render `(v  1 e 1 0 ]
+{
+[s S2807 Point 4 `s 1 x 2 0 `s 1 y 2 2 ]
+"383
+[v Console_Render@lCursor lCursor `S2807  1 a 4 38 ]
+"382
+[v Console_Render@y y `uc  1 a 1 43 ]
+[v Console_Render@x x `uc  1 a 1 42 ]
+[v Console_Render@temp temp `uc  1 a 1 37 ]
+"383
+[v Console_Render@F6956 F6956 `S2807  1 s 4 F6956 ]
+"421
+} 0
+"318 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/LCD.c
+[v _LCD_FillRectangle LCD_FillRectangle `(v  1 e 1 0 ]
+{
+"321
+[v LCD_FillRectangle@j j `uc  1 a 1 22 ]
+"320
+[v LCD_FillRectangle@i i `uc  1 a 1 21 ]
+"318
+[v LCD_FillRectangle@pColour pColour `us  1 p 2 9 ]
+[s S2807 Point 4 `s 1 x 2 0 `s 1 y 2 2 ]
+[v LCD_FillRectangle@pPoint pPoint `S2807  1 p 4 11 ]
+[v LCD_FillRectangle@pSize pSize `S2807  1 p 4 15 ]
+"335
+} 0
+"393
+[v _LCD_DrawField LCD_DrawField `(v  1 e 1 0 ]
+{
+"399
+[v LCD_DrawField@count count `us  1 a 2 30 ]
+"396
+[v LCD_DrawField@i i `uc  1 a 1 34 ]
+"398
+[v LCD_DrawField@ymax ymax `uc  1 a 1 33 ]
+"397
+[v LCD_DrawField@xmax xmax `uc  1 a 1 32 ]
+"393
+[v LCD_DrawField@pField pField `*.39us  1 p 2 18 ]
+[s S2807 Point 4 `s 1 x 2 0 `s 1 y 2 2 ]
+[v LCD_DrawField@pPoint pPoint `S2807  1 p 4 20 ]
+[v LCD_DrawField@pSize pSize `S2807  1 p 4 24 ]
+"406
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"214 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/LCD.c
+[v _Set_Addr_Window Set_Addr_Window `(v  1 e 1 0 ]
+{
+[v Set_Addr_Window@xs xs `uc  1 a 1 wreg ]
+[v Set_Addr_Window@xs xs `uc  1 a 1 wreg ]
+[v Set_Addr_Window@ys ys `uc  1 p 1 5 ]
+[v Set_Addr_Window@xe xe `uc  1 p 1 6 ]
+[v Set_Addr_Window@ye ye `uc  1 p 1 7 ]
+"216
+[v Set_Addr_Window@xs xs `uc  1 a 1 8 ]
+"232
+} 0
+"198
+[v _LCD_Word_Write LCD_Word_Write `(v  1 e 1 0 ]
+{
+[v LCD_Word_Write@value value `us  1 p 2 5 ]
+"202
+} 0
+"67
+[v _LCD_Write LCD_Write `(v  1 e 1 0 ]
+{
+[v LCD_Write@value value `uc  1 a 1 wreg ]
+[v LCD_Write@value value `uc  1 a 1 wreg ]
+[v LCD_Write@mode mode `E6761  1 p 1 3 ]
+"89
+[v LCD_Write@value value `uc  1 a 1 4 ]
+"93
+} 0
+"226 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/SPI.c
+[v _SPI_Send SPI_Send `(uc  1 e 1 0 ]
+{
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[s S2606 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+[s S2609 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+[s S2612 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S2621 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S2626 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+[s S2632 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S2637 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+[s S2640 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+[s S2643 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S2648 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[s S2653 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S2658 . 1 `uc 1 BF1 1 0 :1:0 
+`uc 1 UA1 1 0 :1:1 
+`uc 1 RW 1 0 :1:2 
+`uc 1 START 1 0 :1:3 
+`uc 1 STOP 1 0 :1:4 
+`uc 1 DA 1 0 :1:5 
+`uc 1 CKE1 1 0 :1:6 
+`uc 1 SMP1 1 0 :1:7 
+]
+[s S2667 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW1 1 0 :1:2 
+`uc 1 START1 1 0 :1:3 
+`uc 1 STOP1 1 0 :1:4 
+`uc 1 DA1 1 0 :1:5 
+]
+[s S2673 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+]
+[s S2676 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_A 1 0 :1:5 
+]
+[u S2679 . 1 `S2606 1 . 1 0 `S2609 1 . 1 0 `S2612 1 . 1 0 `S2621 1 . 1 0 `S2626 1 . 1 0 `S2632 1 . 1 0 `S2637 1 . 1 0 `S2640 1 . 1 0 `S2643 1 . 1 0 `S2648 1 . 1 0 `S2653 1 . 1 0 `S2658 1 . 1 0 `S2667 1 . 1 0 `S2673 1 . 1 0 `S2676 1 . 1 0 ]
+[u S2695 . 3 `*.2S2338 1 SSPSTATT 3 0 `*.2S2679 1 SSPSTATTb 3 0 ]
+[s S2698 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+[s S2704 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[s S2709 . 1 `uc 1 SSPM02 1 0 :1:0 
+`uc 1 SSPM12 1 0 :1:1 
+`uc 1 SSPM22 1 0 :1:2 
+`uc 1 SSPM32 1 0 :1:3 
+`uc 1 CKP2 1 0 :1:4 
+`uc 1 SSPEN2 1 0 :1:5 
+`uc 1 SSPOV2 1 0 :1:6 
+`uc 1 WCOL2 1 0 :1:7 
+]
+[u S2718 . 1 `S2698 1 . 1 0 `S2704 1 . 1 0 `S2709 1 . 1 0 ]
+[u S2722 . 3 `*.2S2338 1 SSPCON1T 3 0 `S2718 1 SSPCON1Tb 1 0 ]
+[s S2725 SPI 11 `uc 1 mBusy 1 0 `E6885 1 mBits 1 1 `E6875 1 mChannel 1 2 `S2695 1 . 3 3 `S2722 1 . 3 6 `*.39uc 1 SSPBUF 2 9 ]
+[v SPI_Send@pInput pInput `*.39S2725  1 p 2 0 ]
+[v SPI_Send@pData pData `uc  1 p 1 2 ]
+"272
+} 0
+"40 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/LCD.c
+[v _Mode_Set Mode_Set `T(v  1 e 1 0 ]
+{
+[v Mode_Set@pMode pMode `E6761  1 a 1 wreg ]
+[v Mode_Set@pMode pMode `E6761  1 a 1 wreg ]
+"42
+[v Mode_Set@pMode pMode `E6761  1 a 1 0 ]
+"43
+} 0
+"435 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Console.c
+[v _Console_MakeField Console_MakeField `(*.39us  1 e 2 0 ]
+{
+[v Console_MakeField@pInput pInput `uc  1 a 1 wreg ]
+"445
+[v Console_MakeField@y y `uc  1 a 1 17 ]
+"443
+[v Console_MakeField@x x `uc  1 a 1 16 ]
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+"441
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[v Console_MakeField@Column Column `*.32S2338  1 a 2 12 ]
+"440
+[v Console_MakeField@Index Index `us  1 a 2 9 ]
+"435
+[v Console_MakeField@pInput pInput `uc  1 a 1 wreg ]
+"437
+[v Console_MakeField@Fill Fill `[7][5]us  1 s 70 Fill ]
+[v Console_MakeField@pInput pInput `uc  1 a 1 11 ]
+"451
+} 0
+"38 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.c
+[v _Byte_GetBit Byte_GetBit `(uc  1 e 1 0 ]
+{
+"40
+[v Byte_GetBit@Output Output `uc  1 a 1 4 ]
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+"38
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[v Byte_GetBit@pInput pInput `*.32S2338  1 p 2 0 ]
+[v Byte_GetBit@pBit pBit `uc  1 p 1 2 ]
+"45
+} 0
+"41 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/ISR.c
+[v _ISR_Function ISR_Function `II(v  1 e 1 0 ]
+{
+"97
+} 0
+"94 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Timer0.c
+[v _Timer0_ISR Timer0_ISR `(v  1 e 1 0 ]
+{
+"101
+} 0
+"75 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Motor.c
+[v i2_Motor_Step Motor_Step `(v  1 e 1 0 ]
+{
+"112
+} 0
+"89 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Timer0.c
+[v i2_Timer0_Stop Timer0_Stop `(v  1 e 1 0 ]
+{
+"93
+} 0
+"83
+[v i2_Timer0_Restart Timer0_Restart `(v  1 e 1 0 ]
+{
+"88
+} 0
+"247 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Port.c
+[v i2_Port_SetPin Port_SetPin `(v  1 e 1 0 ]
+{
+[v i2Port_SetPin@Type Port_SetPin `E6795  1 a 1 19 ]
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[s S2340 . 2 `S2338 1 LS_Byte 1 0 `S2338 1 MS_Byte 1 1 ]
+[s S2343 . 2 `uc 1 L 1 0 `uc 1 H 1 1 ]
+[u S2346 . 2 `us 1 mBits 2 0 `S2340 1 . 2 0 `S2343 1 . 2 0 ]
+[s S2350 Word 2 `S2346 1 . 2 0 ]
+[u S2352 PortProperty 2 `us 1 mWord 2 0 `S2350 1 mType 2 0 ]
+[s S2355 Port 10 `*.32S2352 1 mProperties 2 0 `*.39S2338 1 mDirection 2 2 `*.39S2338 1 mOutput 2 4 `*.39S2338 1 mInput 2 6 `S2350 1 mType 2 8 ]
+[v i2Port_SetPin@pInput pInput `C*.39S2355  1 p 2 15 ]
+[v i2Port_SetPin@pPin pPin `E6750  1 p 1 17 ]
+[v i2Port_SetPin@pValue pValue `uc  1 p 1 18 ]
+"270
+} 0
+"156 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.c
+[v i2_Word_GetPair Word_GetPair `(uc  1 e 1 0 ]
+{
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[s S2340 . 2 `S2338 1 LS_Byte 1 0 `S2338 1 MS_Byte 1 1 ]
+[s S2343 . 2 `uc 1 L 1 0 `uc 1 H 1 1 ]
+[u S2346 . 2 `us 1 mBits 2 0 `S2340 1 . 2 0 `S2343 1 . 2 0 ]
+[s S2350 Word 2 `S2346 1 . 2 0 ]
+[v i2Word_GetPair@pInput pInput `*.34S2350  1 p 2 12 ]
+[v i2Word_GetPair@pPair pPair `uc  1 p 1 14 ]
+"162
+} 0
+"87
+[v i2_Byte_GetPair Byte_GetPair `(uc  1 e 1 0 ]
+{
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[v i2Byte_GetPair@pInput pInput `*.34S2338  1 p 2 9 ]
+[v i2Byte_GetPair@pPair pPair `uc  1 p 1 11 ]
+"90
+} 0
+"64
+[v i2_Byte_GetZone Byte_GetZone `T(uc  1 e 1 0 ]
+{
+[v i2Byte_GetZone@Output Byte_GetZone `uc  1 a 1 8 ]
+[v i2Byte_GetZone@Offset Byte_GetZone `uc  1 a 1 7 ]
+[v i2Byte_GetZone@MASK Byte_GetZone `uc  1 a 1 6 ]
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[v i2Byte_GetZone@pInput pInput `*.34S2338  1 p 2 0 ]
+[v i2Byte_GetZone@pMax pMax `uc  1 p 1 2 ]
+[v i2Byte_GetZone@pChunk pChunk `uc  1 p 1 3 ]
+[v i2Byte_GetZone@pChunkSize pChunkSize `uc  1 p 1 4 ]
+"81
+} 0
+"32
+[v i2_Byte_SetBit Byte_SetBit `(v  1 e 1 0 ]
+{
+[s S2278 . 1 `uc 1 mBit0_3 1 0 :4:0 
+`uc 1 mBit4_7 1 0 :4:4 
+]
+[s S2281 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_4 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[s S2285 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_5 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[s S2289 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 mBit3_6 1 0 :4:3 
+`uc 1 . 1 0 :1:7 
+]
+[s S2293 . 1 `uc 1 mBit0_2 1 0 :3:0 
+`uc 1 mBit3_5 1 0 :3:3 
+`uc 1 mBit6_7 1 0 :2:6 
+]
+[s S2297 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_3 1 0 :3:1 
+`uc 1 mBit4_6 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[s S2302 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 mBit2_4 1 0 :3:2 
+`uc 1 mBit5_7 1 0 :3:5 
+]
+[s S2306 . 1 `uc 1 mBit0_1 1 0 :2:0 
+`uc 1 mBit2_3 1 0 :2:2 
+`uc 1 mBit4_5 1 0 :2:4 
+`uc 1 . 1 0 :2:6 
+]
+[s S2311 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 mBit1_2 1 0 :2:1 
+`uc 1 mBit3_4 1 0 :2:3 
+`uc 1 mBit5_6 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[s S2317 . 1 `uc 1 mBit0 1 0 :1:0 
+`uc 1 mBit1 1 0 :1:1 
+`uc 1 mBit2 1 0 :1:2 
+`uc 1 mBit3 1 0 :1:3 
+`uc 1 mBit4 1 0 :1:4 
+`uc 1 mBit5 1 0 :1:5 
+`uc 1 mBit6 1 0 :1:6 
+`uc 1 mBit7 1 0 :1:7 
+]
+[u S2326 . 1 `uc 1 mBits 1 0 `S2278 1 . 1 0 `S2281 1 . 1 0 `S2285 1 . 1 0 `S2289 1 . 1 0 `S2293 1 . 1 0 `S2297 1 . 1 0 `S2302 1 . 1 0 `S2306 1 . 1 0 `S2311 1 . 1 0 `S2317 1 . 1 0 ]
+[s S2338 Byte 1 `S2326 1 . 1 0 ]
+[v i2Byte_SetBit@pInput pInput `*.39S2338  1 p 2 0 ]
+[v i2Byte_SetBit@pBit pBit `uc  1 p 1 2 ]
+[v i2Byte_SetBit@pValue pValue `uc  1 p 1 3 ]
+"37
+} 0
+"105 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/MXK.c
+[v i2_MXK_SwitchTo MXK_SwitchTo `(uc  1 e 1 0 ]
+{
+[v i2MXK_SwitchTo@pModule pModule `E7037  1 a 1 wreg ]
+[v i2MXK_SwitchTo@CUR MXK_SwitchTo `uc  1 a 1 6 ]
+[v i2MXK_SwitchTo@pModule pModule `E7037  1 a 1 wreg ]
+"107
+[v i2MXK_SwitchTo@pModule pModule `E7037  1 a 1 7 ]
+"123
+} 0
+"255 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/Types.c
+[v i2_delay_us delay_us `(v  1 e 1 0 ]
+{
+[v i2delay_us@u delay_us `ul  1 a 4 2 ]
+[v i2delay_us@us us `us  1 p 2 0 ]
+"266
+} 0
+"130 C:\Users\jamin\Desktop\MXK_Demo_V1_2.X\Library/MXK.c
+[v i2_MXK_Release MXK_Release `(uc  1 e 1 0 ]
+{
+"138
+} 0
+"144
+[v i2_MXK_Queue MXK_Queue `(v  1 e 1 0 ]
+{
+[v i2MXK_Queue@pCallback pCallback `*.38(v  1 p 3 0 ]
+"147
+} 0

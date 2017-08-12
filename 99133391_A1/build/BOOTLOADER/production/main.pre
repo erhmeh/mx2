@@ -8748,33 +8748,6 @@ void positionMode();
 void nullMode();
 void setMode();
 
-CUINT16 HzInc = 10;
-UINT16 Hz = 10;
-INT16 DIST = 100;
-UINT16 HzOld;
-UINT8 k = 0;
-
-void FunctMotor() {
-if (MXK_BlockSwitchTo(eMXK_Motor)) {
-
-# 50
-if (Stepper.mDelta == 0) {
-Hz += HzInc;
-if (Hz >= DIST)
-Hz = HzInc;
-
-LED_Toggle(eLED1);
-DIST = -DIST;
-
-Motor_Speed(&Stepper, Hz);
-Motor_Move(&Stepper, DIST);
-}
-
-if (MXK_Release())
-MXK_Dequeue();
-}
-}
-
 
 void initialise() {
 
@@ -8793,13 +8766,12 @@ MXK_Dequeue();
 
 if (MXK_BlockSwitchTo(eMXK_Motor)) {
 Motor_Init(&Stepper, 0b1000);
+Motor_Move(&Stepper, 100);
+}
 if (MXK_Release())
 MXK_Dequeue();
-}
 
-
-
-
+# 63
 }
 
 
@@ -8823,7 +8795,7 @@ displayMode();
 Console_Render();
 }
 
-# 126
+# 97
 int getMode() {
 HMI_Poll();
 int dipState = HMIBoard.mDIP.mGetState();
@@ -8841,9 +8813,8 @@ return 0;
 
 void displayMode() {
 Console_SetForecolour(0xF800);
-int mode = getMode();
 printf("Current Mode:\n");
-switch (mode) {
+switch (getMode()) {
 case 3:
 printf(" Position\n\n");
 break;
@@ -8862,15 +8833,13 @@ break;
 
 void continuousMode() {
 
-int mode = getMode();
-
 int speed = 0;
 
 
 INT16 direction = 0;
 
 
-while (mode == 1) {
+while (getMode() == 1) {
 
 
 if ((int) HMIBoard.mUp.mGetState() == 1 && (int) HMIBoard.mDown.mGetState() == 0 & speed <= 9) {
@@ -8899,12 +8868,18 @@ printf("Speed: %d\n", speed);
 printf("Direction: %d\n", direction);
 printf("mDelta: %ld\n", (long) Stepper.mDelta);
 Console_Render();
-FunctMotor();
-
+if (MXK_BlockSwitchTo(eMXK_Motor)) {
+Motor_Speed(&Stepper, speed * 10);
+Motor_Move(&Stepper, 100);
+if (MXK_Release())
+MXK_Dequeue();
 }
 
-mode = getMode();
+
 HMI_Poll();
+
+
+}
 }
 
 
@@ -8952,12 +8927,12 @@ if (MXK_BlockSwitchTo(eMXK_HMI)) {
 displayText();
 
 
-setMode(Stepper);
+setMode();
 
 if (MXK_Release())
 MXK_Dequeue();
 }
 
-# 277
+# 251
 }
 }
