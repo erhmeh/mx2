@@ -51,14 +51,12 @@ void initialise() {
     //Initialise stepper
     if (MXK_BlockSwitchTo(eMXK_Motor)) {
         Motor_Init(&Stepper, MXK_MOTOR);
-        Motor_Move(&Stepper, 100);
+        if (MXK_Release())
+            MXK_Dequeue();
     }
-    if (MXK_Release())
-        MXK_Dequeue();
-
 
     //Init interrupts
-
+    ISR_Enable();
 
 }
 
@@ -134,10 +132,12 @@ void continuousMode() {
     int speed = 0;
 
     //Default direction is clockwise. 0 is Clockwise | 1 is Anti-clockwise
-    INT16 direction = 0;
+    int direction = 0;
+
+    int mode = 1;
 
     //Remain in loop while set in continuous mode.
-    while (getMode() == 1) {
+    while (mode == 1) {
 
         //Up button increases speed up to a maximum value of 10
         if ((int) HMIBoard.mUp.mGetState() == 1 && (int) HMIBoard.mDown.mGetState() == 0 & speed <= 9) {
@@ -166,17 +166,17 @@ void continuousMode() {
         printf("Direction: %d\n", direction);
         printf("mDelta: %ld\n", (long) Stepper.mDelta);
         Console_Render();
-        if (MXK_BlockSwitchTo(eMXK_Motor)) {
-            Motor_Speed(&Stepper, speed * 10);
-            Motor_Move(&Stepper, 100);
-            if (MXK_Release())
-                MXK_Dequeue();
-        }
-
-
+                if (MXK_BlockSwitchTo(eMXK_Motor)) {
+                    Motor_Speed(&Stepper, MHZ(speed));
+                    Motor_Move(&Stepper, direction);
+                    if (MXK_Release())
+                        MXK_Dequeue();
+                }
+        
+        
         HMI_Poll();
 
-
+        mode = getMode();
     }
 }
 

@@ -21,12 +21,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _MXK_Dequeue `(v ~T0 @X0 0 ef ]
 "38 Library\Motor.h
 [v _Motor_Init `(v ~T0 @X0 0 ef2`*S643`us ]
-"49
-[v _Motor_Move `(uc ~T0 @X0 0 ef2`*S643`s ]
+"19 Library\ISR.h
+[v _ISR_Enable `(v ~T0 @X0 0 ef ]
 [v F6998 `(v ~T0 @X0 1 tf1`us ]
 "34 Library\Console.h
 [v _Console_SetForecolour `TF6998 ~T0 @X0 0 e ]
-"195 C:\Program Files (x86)\Microchip\xc8\v1.43\include\stdio.h
+"195 C:\Program Files (x86)\Microchip\xc8\v1.42\include\stdio.h
 [v _printf `(i ~T0 @X0 0 ev`*Cuc ]
 "29 main.c
 [v _displayMode `(v ~T0 @X0 0 ef ]
@@ -64,12 +64,14 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _HMIBoard `S645 ~T0 @X0 0 e ]
 "61 Library\Motor.h
 [v _Motor_Speed `(uc ~T0 @X0 0 ef2`*S643`us ]
+"49
+[v _Motor_Move `(uc ~T0 @X0 0 ef2`*S643`s ]
 [p mainexit ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
 [; ;pic18f67j50.h: 50: extern volatile unsigned short PMSTAT @ 0xF40;
-"52 C:\Program Files (x86)\Microchip\xc8\v1.43\include\pic18f67j50.h
+"52 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f67j50.h
 [; ;pic18f67j50.h: 52: asm("PMSTAT equ 0F40h");
 [; <" PMSTAT equ 0F40h ;# ">
 [; ;pic18f67j50.h: 57: extern volatile unsigned char PMSTATL @ 0xF40;
@@ -6639,206 +6641,210 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 53: Motor_Init(&Stepper, 0b1000);
 "53
 [e ( _Motor_Init (2 , &U _Stepper -> -> 8 `i `us ]
-[; ;main.c: 54: Motor_Move(&Stepper, 100);
+[; ;main.c: 54: if (MXK_Release())
 "54
-[e ( _Motor_Move (2 , &U _Stepper -> -> 100 `i `s ]
-"55
-}
-[e :U 655 ]
-[; ;main.c: 55: }
-[; ;main.c: 56: if (MXK_Release())
-"56
 [e $ ! != -> ( _MXK_Release ..  `i -> -> -> 0 `i `uc `i 656  ]
-[; ;main.c: 57: MXK_Dequeue();
-"57
+[; ;main.c: 55: MXK_Dequeue();
+"55
 [e ( _MXK_Dequeue ..  ]
 [e :U 656 ]
-[; ;main.c: 63: }
-"63
+"56
+}
+[e :U 655 ]
+[; ;main.c: 56: }
+[; ;main.c: 59: ISR_Enable();
+"59
+[e ( _ISR_Enable ..  ]
+[; ;main.c: 61: }
+"61
 [e :UE 652 ]
 }
-"66
+"64
 [v _displaySID `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 66: void displaySID() {
+[; ;main.c: 64: void displaySID() {
 [e :U _displaySID ]
 [f ]
-[; ;main.c: 67: Console_SetForecolour(0x07E0);
-"67
+[; ;main.c: 65: Console_SetForecolour(0x07E0);
+"65
 [e ( _Console_SetForecolour (1 -> -> 2016 `i `us ]
-[; ;main.c: 68: printf("Jamin Early 99133391\n");
-"68
+[; ;main.c: 66: printf("Jamin Early 99133391\n");
+"66
 [e ( _printf :s 1C ]
-[; ;main.c: 69: }
-"69
+[; ;main.c: 67: }
+"67
 [e :UE 657 ]
 }
-"72
+"70
 [v _displayText `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 72: void displayText() {
+[; ;main.c: 70: void displayText() {
 [e :U _displayText ]
 [f ]
-[; ;main.c: 74: printf("%c", (char)35);
-"74
+[; ;main.c: 72: printf("%c", (char)35);
+"72
 [e ( _printf , (. :s 2C -> -> -> 35 `i `uc `i ]
-[; ;main.c: 77: displaySID();
-"77
+[; ;main.c: 75: displaySID();
+"75
 [e ( _displaySID ..  ]
-[; ;main.c: 80: displayMode();
-"80
+[; ;main.c: 78: displayMode();
+"78
 [e ( _displayMode ..  ]
-[; ;main.c: 83: Console_Render();
-"83
+[; ;main.c: 81: Console_Render();
+"81
 [e ( _Console_Render ..  ]
-[; ;main.c: 84: }
-"84
+[; ;main.c: 82: }
+"82
 [e :UE 658 ]
 }
-"97
+"95
 [v _getMode `(i ~T0 @X0 1 ef ]
 {
-[; ;main.c: 97: int getMode() {
+[; ;main.c: 95: int getMode() {
 [e :U _getMode ]
 [f ]
-[; ;main.c: 98: HMI_Poll();
-"98
+[; ;main.c: 96: HMI_Poll();
+"96
 [e ( _HMI_Poll ..  ]
-"99
+"97
 [v _dipState `i ~T0 @X0 1 a ]
-[; ;main.c: 99: int dipState = HMIBoard.mDIP.mGetState();
+[; ;main.c: 97: int dipState = HMIBoard.mDIP.mGetState();
 [e = _dipState -> ( *U . . _HMIBoard 5 4 ..  `i ]
-[; ;main.c: 100: switch (dipState) {
-"100
+[; ;main.c: 98: switch (dipState) {
+"98
 [e $U 661  ]
 {
-[; ;main.c: 101: case 2:
-"101
+[; ;main.c: 99: case 2:
+"99
 [e :U 662 ]
-[; ;main.c: 102: return 3;
-"102
+[; ;main.c: 100: return 3;
+"100
 [e ) -> 3 `i ]
 [e $UE 659  ]
-[; ;main.c: 103: case 4:
-"103
+[; ;main.c: 101: case 4:
+"101
 [e :U 663 ]
-[; ;main.c: 104: return 2;
-"104
+[; ;main.c: 102: return 2;
+"102
 [e ) -> 2 `i ]
 [e $UE 659  ]
-[; ;main.c: 105: case 8:
-"105
+[; ;main.c: 103: case 8:
+"103
 [e :U 664 ]
-[; ;main.c: 106: return 1;
-"106
+[; ;main.c: 104: return 1;
+"104
 [e ) -> 1 `i ]
 [e $UE 659  ]
-[; ;main.c: 107: default:
-"107
+[; ;main.c: 105: default:
+"105
 [e :U 665 ]
-[; ;main.c: 108: return 0;
-"108
+[; ;main.c: 106: return 0;
+"106
 [e ) -> 0 `i ]
 [e $UE 659  ]
-"109
+"107
 }
-[; ;main.c: 109: }
+[; ;main.c: 107: }
 [e $U 660  ]
-"100
+"98
 [e :U 661 ]
 [e [\ _dipState , $ -> 2 `i 662
  , $ -> 4 `i 663
  , $ -> 8 `i 664
  665 ]
-"109
+"107
 [e :U 660 ]
-[; ;main.c: 110: }
-"110
+[; ;main.c: 108: }
+"108
 [e :UE 659 ]
 }
-"112
+"110
 [v _displayMode `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 112: void displayMode() {
+[; ;main.c: 110: void displayMode() {
 [e :U _displayMode ]
 [f ]
-[; ;main.c: 113: Console_SetForecolour(0xF800);
-"113
+[; ;main.c: 111: Console_SetForecolour(0xF800);
+"111
 [e ( _Console_SetForecolour (1 -> -> 63488 `ui `us ]
-[; ;main.c: 114: printf("Current Mode:\n");
-"114
+[; ;main.c: 112: printf("Current Mode:\n");
+"112
 [e ( _printf :s 3C ]
-[; ;main.c: 115: switch (getMode()) {
-"115
+[; ;main.c: 113: switch (getMode()) {
+"113
 [e $U 668  ]
 {
-[; ;main.c: 116: case 3:
-"116
+[; ;main.c: 114: case 3:
+"114
 [e :U 669 ]
-[; ;main.c: 117: printf(" Position\n\n");
-"117
-[e ( _printf :s 4C ]
-[; ;main.c: 118: break;
-"118
-[e $U 667  ]
-[; ;main.c: 119: case 2:
-"119
-[e :U 670 ]
-[; ;main.c: 120: printf(" Step\n\n");
-"120
-[e ( _printf :s 5C ]
-[; ;main.c: 121: break;
-"121
-[e $U 667  ]
-[; ;main.c: 122: case 1:
-"122
-[e :U 671 ]
-[; ;main.c: 123: printf(" Continuous\n\n");
-"123
-[e ( _printf :s 6C ]
-[; ;main.c: 124: break;
-"124
-[e $U 667  ]
-[; ;main.c: 125: default:
-"125
-[e :U 672 ]
-[; ;main.c: 126: printf(" Undefined\n\n");
-"126
-[e ( _printf :s 7C ]
-[; ;main.c: 127: break;
-"127
-[e $U 667  ]
-"128
-}
-[; ;main.c: 128: }
-[e $U 667  ]
+[; ;main.c: 115: printf(" Position\n\n");
 "115
+[e ( _printf :s 4C ]
+[; ;main.c: 116: break;
+"116
+[e $U 667  ]
+[; ;main.c: 117: case 2:
+"117
+[e :U 670 ]
+[; ;main.c: 118: printf(" Step\n\n");
+"118
+[e ( _printf :s 5C ]
+[; ;main.c: 119: break;
+"119
+[e $U 667  ]
+[; ;main.c: 120: case 1:
+"120
+[e :U 671 ]
+[; ;main.c: 121: printf(" Continuous\n\n");
+"121
+[e ( _printf :s 6C ]
+[; ;main.c: 122: break;
+"122
+[e $U 667  ]
+[; ;main.c: 123: default:
+"123
+[e :U 672 ]
+[; ;main.c: 124: printf(" Undefined\n\n");
+"124
+[e ( _printf :s 7C ]
+[; ;main.c: 125: break;
+"125
+[e $U 667  ]
+"126
+}
+[; ;main.c: 126: }
+[e $U 667  ]
+"113
 [e :U 668 ]
 [e [\ ( _getMode ..  , $ -> 3 `i 669
  , $ -> 2 `i 670
  , $ -> 1 `i 671
  672 ]
-"128
+"126
 [e :U 667 ]
-[; ;main.c: 129: }
-"129
+[; ;main.c: 127: }
+"127
 [e :UE 666 ]
 }
-"132
+"130
 [v _continuousMode `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 132: void continuousMode() {
+[; ;main.c: 130: void continuousMode() {
 [e :U _continuousMode ]
 [f ]
-"134
+"132
 [v _speed `i ~T0 @X0 1 a ]
-[; ;main.c: 134: int speed = 0;
+[; ;main.c: 132: int speed = 0;
 [e = _speed -> 0 `i ]
+"135
+[v _direction `i ~T0 @X0 1 a ]
+[; ;main.c: 135: int direction = 0;
+[e = _direction -> 0 `i ]
 "137
-[v _direction `s ~T0 @X0 1 a ]
-[; ;main.c: 137: INT16 direction = 0;
-[e = _direction -> -> 0 `i `s ]
-[; ;main.c: 140: while (getMode() == 1) {
+[v _mode `i ~T0 @X0 1 a ]
+[; ;main.c: 137: int mode = 1;
+[e = _mode -> 1 `i ]
+[; ;main.c: 140: while (mode == 1) {
 "140
 [e $U 674  ]
 [e :U 675 ]
@@ -6895,7 +6901,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 {
 [; ;main.c: 156: direction = 1;
 "156
-[e = _direction -> -> 1 `i `s ]
+[e = _direction -> 1 `i ]
 "157
 }
 [e :U 685 ]
@@ -6906,7 +6912,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 {
 [; ;main.c: 160: direction = -1;
 "160
-[e = _direction -> -U -> 1 `i `s ]
+[e = _direction -U -> 1 `i ]
 "161
 }
 [e :U 686 ]
@@ -6922,7 +6928,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e ( _printf , (. :s 8C _speed ]
 [; ;main.c: 166: printf("Direction: %d\n", direction);
 "166
-[e ( _printf , (. :s 9C -> _direction `i ]
+[e ( _printf , (. :s 9C _direction ]
 [; ;main.c: 167: printf("mDelta: %ld\n", (long) Stepper.mDelta);
 "167
 [e ( _printf , (. :s 10C -> . _Stepper 0 `l ]
@@ -6933,12 +6939,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 "169
 [e $ ! != -> ( _MXK_BlockSwitchTo (1 . `E6938 0 `i -> -> -> 0 `i `uc `i 687  ]
 {
-[; ;main.c: 170: Motor_Speed(&Stepper, speed * 10);
+[; ;main.c: 170: Motor_Speed(&Stepper, (speed*1000000L));
 "170
-[e ( _Motor_Speed (2 , &U _Stepper -> * _speed -> 10 `i `us ]
-[; ;main.c: 171: Motor_Move(&Stepper, 100);
+[e ( _Motor_Speed (2 , &U _Stepper -> * -> _speed `l -> 1000000 `l `us ]
+[; ;main.c: 171: Motor_Move(&Stepper, direction);
 "171
-[e ( _Motor_Move (2 , &U _Stepper -> -> 100 `i `s ]
+[e ( _Motor_Move (2 , &U _Stepper -> _direction `s ]
 [; ;main.c: 172: if (MXK_Release())
 "172
 [e $ ! != -> ( _MXK_Release ..  `i -> -> -> 0 `i `uc `i 688  ]
@@ -6953,11 +6959,14 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 177: HMI_Poll();
 "177
 [e ( _HMI_Poll ..  ]
+[; ;main.c: 179: mode = getMode();
+"179
+[e = _mode ( _getMode ..  ]
 "180
 }
 [e :U 674 ]
 "140
-[e $ == ( _getMode ..  -> 1 `i 675  ]
+[e $ == _mode -> 1 `i 675  ]
 [e :U 676 ]
 [; ;main.c: 180: }
 [; ;main.c: 181: }

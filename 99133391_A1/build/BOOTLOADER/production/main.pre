@@ -1,17 +1,17 @@
 
 # 1 "main.c"
 
-# 26 "C:\Program Files (x86)\Microchip\xc8\v1.43\include\htc.h"
+# 26 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\htc.h"
 extern const char __xc8_OPTIM_SPEED;
 
 extern double __fpnormalize(double);
 
 
-# 13 "C:\Program Files (x86)\Microchip\xc8\v1.43\include\xc8debug.h"
+# 13 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\xc8debug.h"
 #pragma intrinsic(__builtin_software_breakpoint)
 extern void __builtin_software_breakpoint(void);
 
-# 50 "C:\Program Files (x86)\Microchip\xc8\v1.43\include\pic18f67j50.h"
+# 50 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f67j50.h"
 extern volatile unsigned short PMSTAT @ 0xF40;
 
 asm("PMSTAT equ 0F40h");
@@ -7895,7 +7895,7 @@ extern volatile __bit nW2 @ (((unsigned) &SSP2STAT)*8) + 2;
 
 extern volatile __bit nWRITE2 @ (((unsigned) &SSP2STAT)*8) + 2;
 
-# 18 "C:\Program Files (x86)\Microchip\xc8\v1.43\include\pic18.h"
+# 18 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18.h"
 __attribute__((__unsupported__("The " "flash_write" " routine is no longer supported. Please use the MPLAB X MCC."))) void flash_write(const unsigned char *, unsigned int, __far unsigned char *);
 __attribute__((__unsupported__("The " "EraseFlash" " routine is no longer supported. Please use the MPLAB X MCC."))) void EraseFlash(unsigned long startaddr, unsigned long endaddr);
 
@@ -7936,7 +7936,7 @@ extern __nonreentrant void _delay3(unsigned char);
 #pragma config MSSPMSK = MSK5
 #pragma config CCP2MX = DEFAULT
 
-# 12 "C:\Program Files (x86)\Microchip\xc8\v1.43\include\stdbool.h"
+# 12 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\stdbool.h"
 typedef unsigned char bool;
 
 # 273 "Library\Types.h"
@@ -8504,10 +8504,10 @@ inline void Console_SetBackcolour (Colour pColour);
 inline void Console_SetForecolourRGB(UINT8 r, UINT8 g, UINT8 b);
 inline void Console_SetBackcolourRGB(UINT8 r, UINT8 g, UINT8 b);
 
-# 4 "C:\Program Files (x86)\Microchip\xc8\v1.43\include\__size_t.h"
+# 4 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\__size_t.h"
 typedef unsigned size_t;
 
-# 7 "C:\Program Files (x86)\Microchip\xc8\v1.43\include\stdarg.h"
+# 7 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\stdarg.h"
 typedef void * va_list[1];
 
 #pragma intrinsic(__va_start)
@@ -8516,17 +8516,17 @@ extern void * __va_start(void);
 #pragma intrinsic(__va_arg)
 extern void * __va_arg(void *, ...);
 
-# 43 "C:\Program Files (x86)\Microchip\xc8\v1.43\include\stdio.h"
+# 43 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\stdio.h"
 struct __prbuf
 {
 char * ptr;
 void (* func)(char);
 };
 
-# 29 "C:\Program Files (x86)\Microchip\xc8\v1.43\include\errno.h"
+# 29 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\errno.h"
 extern int errno;
 
-# 12 "C:\Program Files (x86)\Microchip\xc8\v1.43\include\conio.h"
+# 12 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\conio.h"
 extern void init_uart(void);
 
 extern char getch(void);
@@ -8540,7 +8540,7 @@ extern __bit kbhit(void);
 extern char * cgets(char *);
 extern void cputs(const char *);
 
-# 88 "C:\Program Files (x86)\Microchip\xc8\v1.43\include\stdio.h"
+# 88 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\stdio.h"
 extern int cprintf(char *, ...);
 #pragma printf_check(cprintf)
 
@@ -8766,12 +8766,13 @@ MXK_Dequeue();
 
 if (MXK_BlockSwitchTo(eMXK_Motor)) {
 Motor_Init(&Stepper, 0b1000);
-Motor_Move(&Stepper, 100);
-}
 if (MXK_Release())
 MXK_Dequeue();
+}
 
-# 63
+
+ISR_Enable();
+
 }
 
 
@@ -8795,7 +8796,7 @@ displayMode();
 Console_Render();
 }
 
-# 97
+# 95
 int getMode() {
 HMI_Poll();
 int dipState = HMIBoard.mDIP.mGetState();
@@ -8836,10 +8837,12 @@ void continuousMode() {
 int speed = 0;
 
 
-INT16 direction = 0;
+int direction = 0;
+
+int mode = 1;
 
 
-while (getMode() == 1) {
+while (mode == 1) {
 
 
 if ((int) HMIBoard.mUp.mGetState() == 1 && (int) HMIBoard.mDown.mGetState() == 0 & speed <= 9) {
@@ -8869,8 +8872,8 @@ printf("Direction: %d\n", direction);
 printf("mDelta: %ld\n", (long) Stepper.mDelta);
 Console_Render();
 if (MXK_BlockSwitchTo(eMXK_Motor)) {
-Motor_Speed(&Stepper, speed * 10);
-Motor_Move(&Stepper, 100);
+Motor_Speed(&Stepper, (speed*1000000L));
+Motor_Move(&Stepper, direction);
 if (MXK_Release())
 MXK_Dequeue();
 }
@@ -8878,7 +8881,7 @@ MXK_Dequeue();
 
 HMI_Poll();
 
-
+mode = getMode();
 }
 }
 
