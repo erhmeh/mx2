@@ -7288,9 +7288,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;HMI.c: 253: {
 [e :U _HMI_Poll ]
 [f ]
-[; ;HMI.c: 254: TRISE = 0xFF;
+[; ;HMI.c: 254: TRISE = 0xFC;
 "254
-[e = _TRISE -> -> 255 `i `uc ]
+[e = _TRISE -> -> 252 `i `uc ]
 [; ;HMI.c: 255: Button_Poll(&(HMIBoard.mDIP), 1);
 "255
 [e ( _Button_Poll (2 , -> &U . _HMIBoard 5 `C*S640 -> -> 1 `i `uc ]

@@ -8733,8 +8733,11 @@ void HMI_SetSegments (str pString);
 
 void HMI_Poll ();
 
-# 22 "main.c"
+# 23 "main.c"
 Motor Stepper;
+int direction;
+int speed;
+int mode;
 
 
 void initialise();
@@ -8743,6 +8746,7 @@ void displayText();
 int getMode();
 void displayMode();
 void continuousMode();
+void continuousModeText();
 void stepMode();
 void positionMode();
 void nullMode();
@@ -8753,17 +8757,7 @@ void initialise() {
 
 MXK_Init();
 
-
-if (MXK_BlockSwitchTo(eMXK_HMI)) {
-
-LCD_Init();
-Console_Init();
-HMI_Init();
-if (MXK_Release())
-MXK_Dequeue();
-}
-
-
+# 56
 if (MXK_BlockSwitchTo(eMXK_Motor)) {
 Motor_Init(&Stepper, 0b1000);
 if (MXK_Release())
@@ -8796,7 +8790,7 @@ displayMode();
 Console_Render();
 }
 
-# 95
+# 99
 int getMode() {
 HMI_Poll();
 int dipState = HMIBoard.mDIP.mGetState();
@@ -8813,9 +8807,11 @@ return 0;
 }
 
 void displayMode() {
+
 Console_SetForecolour(0xF800);
+int mode = getMode();
 printf("Current Mode:\n");
-switch (getMode()) {
+switch (mode) {
 case 3:
 printf(" Position\n\n");
 break;
@@ -8834,16 +8830,9 @@ break;
 
 void continuousMode() {
 
-int speed = 0;
+int mode = getMode();
 
-
-int direction = 0;
-
-int mode = 1;
-
-
-while (mode == 1) {
-
+HMI_Poll();
 
 if ((int) HMIBoard.mUp.mGetState() == 1 && (int) HMIBoard.mDown.mGetState() == 0 & speed <= 9) {
 while ((int) HMIBoard.mUp.mGetState() == 1) {
@@ -8865,24 +8854,24 @@ if ((int) HMIBoard.mRight.mGetState() == 1 && (int) HMIBoard.mLeft.mGetState() =
 direction = -1;
 }
 
+if (MXK_BlockSwitchTo(eMXK_HMI)) {
 displayText();
 Console_SetForecolour(0xFFE0);
 printf("Speed: %d\n", speed);
 printf("Direction: %d\n", direction);
-printf("mDelta: %ld\n", (long) Stepper.mDelta);
 Console_Render();
-if (MXK_BlockSwitchTo(eMXK_Motor)) {
-Motor_Speed(&Stepper, (speed*1000000L));
-Motor_Move(&Stepper, direction);
 if (MXK_Release())
 MXK_Dequeue();
 }
 
-
-HMI_Poll();
-
-mode = getMode();
+if (MXK_BlockSwitchTo(eMXK_Motor)) {
+Motor_Speed(&Stepper, 256);
+Motor_Continious(&Stepper, direction);
+if (MXK_Release())
+MXK_Dequeue();
 }
+mode = getMode();
+
 }
 
 
@@ -8895,11 +8884,18 @@ void positionMode() {
 
 
 void nullMode() {
+if (MXK_BlockSwitchTo(eMXK_HMI)) {
+
 displayText();
 printf("                      \n");
 printf("                      \n");
 printf("                      \n");
 Console_Render();
+
+if (MXK_Release())
+MXK_Dequeue();
+}
+
 }
 
 void setMode() {
@@ -8922,20 +8918,12 @@ break;
 
 void main() {
 initialise();
-
-for(;;) {
-
-if (MXK_BlockSwitchTo(eMXK_HMI)) {
-
-displayText();
-
-
-setMode();
-
+if (MXK_BlockSwitchTo(eMXK_Motor)) {
+Motor_Speed(&Stepper, 256);
+Motor_Move(&Stepper, 1);
 if (MXK_Release())
 MXK_Dequeue();
 }
 
-# 251
-}
+# 261
 }

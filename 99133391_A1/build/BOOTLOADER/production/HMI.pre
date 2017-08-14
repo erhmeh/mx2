@@ -8874,7 +8874,7 @@ in++;
 
 void HMI_Poll()
 {
-TRISE = 0xFF;
+TRISE = 0xFC;
 Button_Poll(&(HMIBoard.mDIP), 1);
 Button_Poll(&(HMIBoard.mLeft), 1);
 Button_Poll(&(HMIBoard.mRight), 1);

@@ -1,4 +1,4 @@
-/*
+/* 
  * File:   main.c
  * Author: Jamin Early
  *
@@ -19,7 +19,11 @@
 #include "LED.h"
 #include "HMI.h"
 
+
 Motor Stepper;
+int direction;
+int speed;
+int mode;
 
 //Prototype functions
 void initialise();
@@ -28,6 +32,7 @@ void displayText();
 int getMode();
 void displayMode();
 void continuousMode();
+void continuousModeText();
 void stepMode();
 void positionMode();
 void nullMode();
@@ -39,14 +44,13 @@ void initialise() {
     MXK_Init();
 
     //Initialise HMI
-    if (MXK_BlockSwitchTo(eMXK_HMI)) {
-
-        LCD_Init();
-        Console_Init();
-        HMI_Init();
-        if (MXK_Release())
-            MXK_Dequeue();
-    }
+//    if (MXK_BlockSwitchTo(eMXK_HMI)) {
+//        LCD_Init();
+//        Console_Init();
+//        HMI_Init();
+//        if (MXK_Release())
+//            MXK_Dequeue();
+//    }
 
     //Initialise stepper
     if (MXK_BlockSwitchTo(eMXK_Motor)) {
@@ -81,15 +85,15 @@ void displayText() {
     Console_Render();
 }
 
-/*The getMode function returns the current mode as defined by the dip switches.
+/*The getMode function returns the current mode as defined by the dip switches. 
  * The modes are defined as follows:
  * 0-Undefined
  * 1-Continuous Mode
  * 2-Step Mode
  * 3-Position Mode
- *
+ * 
  * The displayMode function prints the current mode to the console.
- *
+ * 
  * The setMode function calls the corresponding function depending on the what the getMode function returns.
  */
 int getMode() {
@@ -108,9 +112,11 @@ int getMode() {
 }
 
 void displayMode() {
+
     Console_SetForecolour(RED);
+    int mode = getMode();
     printf("Current Mode:\n");
-    switch (getMode()) {
+    switch (mode) {
         case 3:
             printf(" Position\n\n");
             break;
@@ -128,56 +134,49 @@ void displayMode() {
 
 /*Function for when continuous mode is selected*/
 void continuousMode() {
+    //Current mode
+    int mode = getMode();
     //Default speed is stationary
-    int speed = 0;
-
-    //Default direction is clockwise. 0 is Clockwise | 1 is Anti-clockwise
-    int direction = 0;
-
-    int mode = 1;
-
-    //Remain in loop while set in continuous mode.
-    while (mode == 1) {
-
-        //Up button increases speed up to a maximum value of 10
-        if ((int) HMIBoard.mUp.mGetState() == 1 && (int) HMIBoard.mDown.mGetState() == 0 & speed <= 9) {
-            while ((int) HMIBoard.mUp.mGetState() == 1) {
-            }
-            speed++;
+    HMI_Poll();
+    //Up button increases speed up to a maximum value of 10 
+    if ((int) HMIBoard.mUp.mGetState() == 1 && (int) HMIBoard.mDown.mGetState() == 0 & speed <= 9) {
+        while ((int) HMIBoard.mUp.mGetState() == 1) {
         }
-        //Down button decreases speed to a minimum value of 0
-        if ((int) HMIBoard.mDown.mGetState() == 1 && (int) HMIBoard.mUp.mGetState() == 0 & speed > 0) {
-            while ((int) HMIBoard.mDown.mGetState() == 1) {
-            }
-            speed--;
+        speed++;
+    }
+    //Down button decreases speed to a minimum value of 0
+    if ((int) HMIBoard.mDown.mGetState() == 1 && (int) HMIBoard.mUp.mGetState() == 0 & speed > 0) {
+        while ((int) HMIBoard.mDown.mGetState() == 1) {
         }
-        //Left button sets mode to Anti-clockwise
-        if ((int) HMIBoard.mLeft.mGetState() == 1 && (int) HMIBoard.mRight.mGetState() == 0) {
-            direction = 1;
-        }
-        //Right button sets mode to clockwise
-        if ((int) HMIBoard.mRight.mGetState() == 1 && (int) HMIBoard.mLeft.mGetState() == 0) {
-            direction = -1;
-        }
+        speed--;
+    }
+    //Left button sets mode to Anti-clockwise
+    if ((int) HMIBoard.mLeft.mGetState() == 1 && (int) HMIBoard.mRight.mGetState() == 0) {
+        direction = 1;
+    }
+    //Right button sets mode to clockwise
+    if ((int) HMIBoard.mRight.mGetState() == 1 && (int) HMIBoard.mLeft.mGetState() == 0) {
+        direction = -1;
+    }
 
+    if (MXK_BlockSwitchTo(eMXK_HMI)) {
         displayText();
         Console_SetForecolour(YELLOW);
         printf("Speed: %d\n", speed);
         printf("Direction: %d\n", direction);
-        printf("mDelta: %ld\n", (long) Stepper.mDelta);
         Console_Render();
-                if (MXK_BlockSwitchTo(eMXK_Motor)) {
-                    Motor_Speed(&Stepper, MHZ(speed));
-                    Motor_Move(&Stepper, direction);
-                    if (MXK_Release())
-                        MXK_Dequeue();
-                }
-        
-        
-        HMI_Poll();
-
-        mode = getMode();
+        if (MXK_Release())
+            MXK_Dequeue();
     }
+
+    if (MXK_BlockSwitchTo(eMXK_Motor)) {
+        Motor_Speed(&Stepper, 256);
+        Motor_Continious(&Stepper, direction);
+        if (MXK_Release())
+            MXK_Dequeue();
+    }
+    mode = getMode();
+
 }
 
 /*Function for when step mode is selected*/
@@ -190,11 +189,18 @@ void positionMode() {
 
 /*Function for when no mode is selected*/
 void nullMode() {
-    displayText();
-    printf("                      \n");
-    printf("                      \n");
-    printf("                      \n");
-    Console_Render();
+    if (MXK_BlockSwitchTo(eMXK_HMI)) {
+
+        displayText();
+        printf("                      \n");
+        printf("                      \n");
+        printf("                      \n");
+        Console_Render();
+
+        if (MXK_Release())
+            MXK_Dequeue();
+    }
+
 }
 
 void setMode() {
@@ -217,36 +223,39 @@ void setMode() {
 
 void main() {
     initialise();
-
-    loop() {
-        //Write data to LCD
-        if (MXK_BlockSwitchTo(eMXK_HMI)) {
-
-            displayText();
-
-            //Set the mode
-            setMode();
-
+            if (MXK_BlockSwitchTo(eMXK_Motor)) {
+            Motor_Speed(&Stepper, 256);
+            Motor_Move(&Stepper, 1);
             if (MXK_Release())
                 MXK_Dequeue();
         }
-
-        //Read IR sensor
-        //
-        //
-
-        //HMI code
-        //        if (MXK_BlockSwitchTo(eMXK_HMI)) {
-        //
-        //            if (MXK_Release())
-        //            MXK_Dequeue();
-        //        }
-        //
-        //        //Stepper code
-        //        if (MXK_BlockSwitchTo(eMXK_Motor)) {
-        //
-        //            if (MXK_Release())
-        //            MXK_Dequeue();
-        //        }
-    }
+//
+//    loop() {
+//        //Write data to LCD
+//        if (MXK_BlockSwitchTo(eMXK_HMI)) {
+//
+//            displayText();
+//
+//            if (MXK_Release())
+//                MXK_Dequeue();
+//        }
+//
+//        //Read IR sensor
+//        //
+//        //
+//
+//        //HMI code
+//        //        if (MXK_BlockSwitchTo(eMXK_HMI)) {
+//        //
+//        //            if (MXK_Release())
+//        //            MXK_Dequeue();
+//        //        }
+//        //
+//        //        //Stepper code
+//        if (MXK_BlockSwitchTo(eMXK_Motor)) {
+//            setMode();
+//            if (MXK_Release())
+//                MXK_Dequeue();
+//        }
+//    }
 }
