@@ -18,14 +18,14 @@ Version 3.2 HI-TECH Software Intermediate Code
 [u S642 `uc -> 8 `i `S643 1 ]
 [n S642 . Bytes . ]
 [v F6740 `(v ~T0 @X0 0 tf1`uc ]
-[v F6764 `(uc ~T0 @X0 0 tf ]
+[v F6766 `(uc ~T0 @X0 0 tf ]
 "21 Library\Button.h
-[s S640 `uc 1 `uc 1 `us 1 `*F6740 1 `*F6764 1 ]
+[s S640 `uc 1 `uc 1 `us 1 `*F6740 1 `*F6766 1 ]
 [n S640 Button mState mCount mThreshold mFunction mGetState ]
 "20 Library\HMI.h
 [s S641 `S642 1 `S640 1 `S640 1 `S640 1 `S640 1 `S640 1 ]
 [n S641 HMI . mRight mLeft mUp mDown mDIP ]
-"7715 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f67j50.h
+"7715 C:\Program Files (x86)\Microchip\xc8\v1.43\include\pic18f67j50.h
 [v _TRISE `Vuc ~T0 @X0 0 e@3990 ]
 "434 Library\Types.h
 [s S627 :4 `uc 1 :4 `uc 1 ]
@@ -81,25 +81,25 @@ Version 3.2 HI-TECH Software Intermediate Code
 "99 Library\Port.h
 [s S654 `*S625 1 `*S623 1 `*S623 1 `*S623 1 `S624 1 ]
 [n S654 Port mProperties mDirection mOutput mInput mType ]
-[v F6997 `*S654 ~T0 @X0 1 t ]
+[v F6999 `*S654 ~T0 @X0 1 t ]
 "29 HMI.c
-[c E7005 0 1 2 3 4 5 6 7 .. ]
-[n E7005 . eP0 eP1 eP2 eP3 eP4 eP5 eP6 eP7  ]
+[c E7007 0 1 2 3 4 5 6 7 .. ]
+[n E7007 . eP0 eP1 eP2 eP3 eP4 eP5 eP6 eP7  ]
 "123 Library\Port.h
-[v _Port_GetPin `(uc ~T0 @X0 0 ef2`C*S654`E7005 ]
+[v _Port_GetPin `(uc ~T0 @X0 0 ef2`C*S654`E7007 ]
 "25
 [v _PortE `S654 ~T0 @X0 0 e ]
 "49 HMI.c
-[c E7031 0 1 2 3 4 5 6 7 .. ]
-[n E7031 . eP0_3 eP4_7 eP8_11 eP12_15 eP16_19 eP20_23 eP24_27 eP28_31  ]
+[c E7033 0 1 2 3 4 5 6 7 .. ]
+[n E7033 . eP0_3 eP4_7 eP8_11 eP12_15 eP16_19 eP20_23 eP24_27 eP28_31  ]
 "133 Library\Port.h
-[v _Port_GetQuad `(uc ~T0 @X0 0 ef2`C*S654`E7031 ]
+[v _Port_GetQuad `(uc ~T0 @X0 0 ef2`C*S654`E7033 ]
 "91 HMI.c
-[c E6867 0 1 .. ]
-[n E6867 . eSPI_8Bit eSPI_9Bit  ]
-[c E6857 0 1 .. ]
-[n E6857 . eSPI1 eSPI2  ]
-"12914 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f67j50.h
+[c E6869 0 1 .. ]
+[n E6869 . eSPI_8Bit eSPI_9Bit  ]
+[c E6859 0 1 .. ]
+[n E6859 . eSPI1 eSPI2  ]
+"12914 C:\Program Files (x86)\Microchip\xc8\v1.43\include\pic18f67j50.h
 [s S495 :2 `uc 1 :1 `uc 1 ]
 [n S495 . . R_NOT_W ]
 "12918
@@ -150,7 +150,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 "107 Library\SPI.h
 [u S651 `*S623 1 `*S494 1 ]
 [n S651 . SSPSTATT SSPSTATTb ]
-"3031 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f67j50.h
+"3031 C:\Program Files (x86)\Microchip\xc8\v1.43\include\pic18f67j50.h
 [s S116 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S116 . SSPM CKP SSPEN SSPOV WCOL ]
 "3038
@@ -166,31 +166,23 @@ Version 3.2 HI-TECH Software Intermediate Code
 [u S652 `*S623 1 `S115 1 ]
 [n S652 . SSPCON1T SSPCON1Tb ]
 "87
-[s S648 `uc 1 `E6867 1 `E6857 1 `S651 1 `S652 1 `*uc 1 ]
+[s S648 `uc 1 `E6869 1 `E6859 1 `S651 1 `S652 1 `*uc 1 ]
 [n S648 SPI mBusy mBits mChannel . . SSPBUF ]
 "134
 [v _SPI_Send `(uc ~T0 @X0 0 ef2`*S648`uc ]
 "50
 [v _SPI1 `S648 ~T0 @X0 0 e ]
-[v F6769 `*S640 ~T0 @X0 1 t ]
+[v F6771 `*S640 ~T0 @X0 1 t ]
 [v F6459 `(v ~T0 @X0 0 tf ]
 "30 Library\Button.h
-[v _Button_Init `(v ~T0 @X0 0 ef5`C*S640`us`*F6459`*F6764`*F6740 ]
-"19 ./Events.h
-[v _Event_HMI_DIPSwitch `(v ~T0 @X0 0 ef1`uc ]
-"20
-[v _Event_HMI_LeftButton `(v ~T0 @X0 0 ef1`uc ]
-"21
-[v _Event_HMI_RightButton `(v ~T0 @X0 0 ef1`uc ]
-"22
-[v _Event_HMI_UpButton `(v ~T0 @X0 0 ef1`uc ]
-"23
-[v _Event_HMI_DownButton `(v ~T0 @X0 0 ef1`uc ]
+[v _Button_Init `(v ~T0 @X0 0 ef5`C*S640`us`*F6459`*F6766`*F6740 ]
+"24 ./Events.h
+[v _Event_NULL `(v ~T0 @X0 0 ef1`uc ]
 "124 HMI.c
-[c E6861 0 1 2 3 .. ]
-[n E6861 . eSPI_Mode0 eSPI_Mode1 eSPI_Mode2 eSPI_Mode3  ]
+[c E6863 0 1 2 3 .. ]
+[n E6863 . eSPI_Mode0 eSPI_Mode1 eSPI_Mode2 eSPI_Mode3  ]
 "121 Library\SPI.h
-[v _SPI_Init `(v ~T0 @X0 0 ef3`ul`E6857`E6861 ]
+[v _SPI_Init `(v ~T0 @X0 0 ef3`ul`E6859`E6863 ]
 "130
 [v _SPI_MinSpeed `(v ~T0 @X0 0 ef1`*S648 ]
 "619 Library\Types.h
@@ -208,7 +200,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
 [; ;pic18f67j50.h: 50: extern volatile unsigned short PMSTAT @ 0xF40;
-"52 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f67j50.h
+"52 C:\Program Files (x86)\Microchip\xc8\v1.43\include\pic18f67j50.h
 [; ;pic18f67j50.h: 52: asm("PMSTAT equ 0F40h");
 [; <" PMSTAT equ 0F40h ;# ">
 [; ;pic18f67j50.h: 57: extern volatile unsigned char PMSTATL @ 0xF40;
@@ -6389,6 +6381,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;Events.h: 21: void Event_HMI_RightButton(UINT8 pState);
 [; ;Events.h: 22: void Event_HMI_UpButton(UINT8 pState);
 [; ;Events.h: 23: void Event_HMI_DownButton(UINT8 pState);
+[; ;Events.h: 24: void Event_NULL(UINT8 pState);
 [; ;Button.h: 14: typedef UINT8 (*Button_State)();
 [; ;Button.h: 15: typedef Function Button_InitIO;
 [; ;Button.h: 19: typedef struct Button Button;
@@ -6705,9 +6698,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;HMI.c: 22: {
 [e :U _HMI_InitButtons ]
 [f ]
-[; ;HMI.c: 23: TRISE = 0xFF;
+[; ;HMI.c: 23: TRISE = 0xFC;
 "23
-[e = _TRISE -> -> 255 `i `uc ]
+[e = _TRISE -> -> 252 `i `uc ]
 [; ;HMI.c: 24: }
 "24
 [e :UE 655 ]
@@ -6722,7 +6715,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [f ]
 [; ;HMI.c: 29: return Port_GetPin(&PortE, eP5);
 "29
-[e ) ( _Port_GetPin (2 , -> &U _PortE `C*S654 . `E7005 5 ]
+[e ) ( _Port_GetPin (2 , -> &U _PortE `C*S654 . `E7007 5 ]
 [e $UE 656  ]
 [; ;HMI.c: 30: }
 "30
@@ -6738,7 +6731,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [f ]
 [; ;HMI.c: 34: return Port_GetPin(&PortE, eP4);
 "34
-[e ) ( _Port_GetPin (2 , -> &U _PortE `C*S654 . `E7005 4 ]
+[e ) ( _Port_GetPin (2 , -> &U _PortE `C*S654 . `E7007 4 ]
 [e $UE 657  ]
 [; ;HMI.c: 35: }
 "35
@@ -6754,7 +6747,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [f ]
 [; ;HMI.c: 39: return Port_GetPin(&PortE, eP7);
 "39
-[e ) ( _Port_GetPin (2 , -> &U _PortE `C*S654 . `E7005 7 ]
+[e ) ( _Port_GetPin (2 , -> &U _PortE `C*S654 . `E7007 7 ]
 [e $UE 658  ]
 [; ;HMI.c: 40: }
 "40
@@ -6770,7 +6763,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [f ]
 [; ;HMI.c: 44: return Port_GetPin(&PortE, eP6);
 "44
-[e ) ( _Port_GetPin (2 , -> &U _PortE `C*S654 . `E7005 6 ]
+[e ) ( _Port_GetPin (2 , -> &U _PortE `C*S654 . `E7007 6 ]
 [e $UE 659  ]
 [; ;HMI.c: 45: }
 "45
@@ -6786,7 +6779,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [f ]
 [; ;HMI.c: 49: return Port_GetQuad(&PortE, eP0_3);
 "49
-[e ) ( _Port_GetQuad (2 , -> &U _PortE `C*S654 . `E7031 0 ]
+[e ) ( _Port_GetQuad (2 , -> &U _PortE `C*S654 . `E7033 0 ]
 [e $UE 660  ]
 [; ;HMI.c: 50: }
 "50
@@ -6805,13 +6798,13 @@ Version 3.2 HI-TECH Software Intermediate Code
 "55
 [f ]
 "58
-[v F7182 `uc ~T0 @X0 1 s cur ]
+[v F7184 `uc ~T0 @X0 1 s cur ]
 "59
 [v _out `Vuc ~T0 @X0 1 a ]
 "60
-[v F7184 `uc ~T0 @X0 1 s segset ]
+[v F7186 `uc ~T0 @X0 1 s segset ]
 "61
-[v F7185 `uc ~T0 @X0 1 s a ]
+[v F7187 `uc ~T0 @X0 1 s a ]
 [; ;HMI.c: 58: static UINT8 cur;
 [; ;HMI.c: 59: volatile UINT8 out;
 [; ;HMI.c: 60: static UINT8 segset;
@@ -6824,12 +6817,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 {
 [; ;HMI.c: 85: cur = pInput;
 "85
-[e = F7182 _pInput ]
+[e = F7184 _pInput ]
 [; ;HMI.c: 86: for (a = 0u; a<8u; a++)
 "86
 {
-[e = F7185 -> -> 0 `ui `uc ]
-[e $ < -> F7185 `ui -> 8 `ui 663  ]
+[e = F7187 -> -> 0 `ui `uc ]
+[e $ < -> F7187 `ui -> 8 `ui 663  ]
 [e $U 664  ]
 "87
 [e :U 663 ]
@@ -6837,21 +6830,21 @@ Version 3.2 HI-TECH Software Intermediate Code
 {
 [; ;HMI.c: 88: segset = (cur & 1u)<<6u;
 "88
-[e = F7184 -> << & -> F7182 `ui -> 1 `ui -> 6 `ui `uc ]
+[e = F7186 -> << & -> F7184 `ui -> 1 `ui -> 6 `ui `uc ]
 [; ;HMI.c: 89: out = (pSegment<<3u) | a | segset;
 "89
-[e = _out -> | | << -> _pSegment `i -> 3 `ui -> F7185 `i -> F7184 `i `uc ]
+[e = _out -> | | << -> _pSegment `i -> 3 `ui -> F7187 `i -> F7186 `i `uc ]
 [; ;HMI.c: 90: cur >>= 1;
 "90
-[e =>> F7182 -> 1 `i ]
+[e =>> F7184 -> 1 `i ]
 [; ;HMI.c: 91: SPI_Send(&SPI1, out);
 "91
 [e ( _SPI_Send (2 , &U _SPI1 _out ]
 "96
 }
 "86
-[e ++ F7185 -> -> 1 `i `uc ]
-[e $ < -> F7185 `ui -> 8 `ui 663  ]
+[e ++ F7187 -> -> 1 `i `uc ]
+[e $ < -> F7187 `ui -> 8 `ui 663  ]
 [e :U 664 ]
 "96
 }
@@ -6876,28 +6869,28 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U _HMI_Init ]
 [f ]
 [; ;HMI.c: 107: Button_Init(&(HMIBoard.mDIP), 2,
-[; ;HMI.c: 108: HMI_InitButtons, HMI_DIPSwitch, Event_HMI_DIPSwitch);
+[; ;HMI.c: 108: HMI_InitButtons, HMI_DIPSwitch, Event_NULL);
 "108
-[e ( _Button_Init (4 , , , , -> &U . _HMIBoard 5 `C*S640 -> -> 2 `i `us &U _HMI_InitButtons &U _HMI_DIPSwitch &U _Event_HMI_DIPSwitch ]
+[e ( _Button_Init (4 , , , , -> &U . _HMIBoard 5 `C*S640 -> -> 2 `i `us &U _HMI_InitButtons &U _HMI_DIPSwitch &U _Event_NULL ]
 [; ;HMI.c: 110: Button_Init(&(HMIBoard.mLeft), 2,
-[; ;HMI.c: 111: HMI_InitButtons, HMI_LeftSwitch, Event_HMI_LeftButton);
+[; ;HMI.c: 111: HMI_InitButtons, HMI_LeftSwitch, Event_NULL);
 "111
-[e ( _Button_Init (4 , , , , -> &U . _HMIBoard 2 `C*S640 -> -> 2 `i `us &U _HMI_InitButtons &U _HMI_LeftSwitch &U _Event_HMI_LeftButton ]
+[e ( _Button_Init (4 , , , , -> &U . _HMIBoard 2 `C*S640 -> -> 2 `i `us &U _HMI_InitButtons &U _HMI_LeftSwitch &U _Event_NULL ]
 [; ;HMI.c: 113: Button_Init(&(HMIBoard.mRight), 2,
-[; ;HMI.c: 114: HMI_InitButtons, HMI_RightSwitch, Event_HMI_RightButton);
+[; ;HMI.c: 114: HMI_InitButtons, HMI_RightSwitch, Event_NULL);
 "114
-[e ( _Button_Init (4 , , , , -> &U . _HMIBoard 1 `C*S640 -> -> 2 `i `us &U _HMI_InitButtons &U _HMI_RightSwitch &U _Event_HMI_RightButton ]
+[e ( _Button_Init (4 , , , , -> &U . _HMIBoard 1 `C*S640 -> -> 2 `i `us &U _HMI_InitButtons &U _HMI_RightSwitch &U _Event_NULL ]
 [; ;HMI.c: 116: Button_Init(&(HMIBoard.mUp), 2,
-[; ;HMI.c: 117: HMI_InitButtons, HMI_UpSwitch, Event_HMI_UpButton);
+[; ;HMI.c: 117: HMI_InitButtons, HMI_UpSwitch, Event_NULL);
 "117
-[e ( _Button_Init (4 , , , , -> &U . _HMIBoard 3 `C*S640 -> -> 2 `i `us &U _HMI_InitButtons &U _HMI_UpSwitch &U _Event_HMI_UpButton ]
+[e ( _Button_Init (4 , , , , -> &U . _HMIBoard 3 `C*S640 -> -> 2 `i `us &U _HMI_InitButtons &U _HMI_UpSwitch &U _Event_NULL ]
 [; ;HMI.c: 119: Button_Init(&(HMIBoard.mDown), 2,
-[; ;HMI.c: 120: HMI_InitButtons, HMI_DownSwitch, Event_HMI_DownButton);
+[; ;HMI.c: 120: HMI_InitButtons, HMI_DownSwitch, Event_NULL);
 "120
-[e ( _Button_Init (4 , , , , -> &U . _HMIBoard 4 `C*S640 -> -> 2 `i `us &U _HMI_InitButtons &U _HMI_DownSwitch &U _Event_HMI_DownButton ]
+[e ( _Button_Init (4 , , , , -> &U . _HMIBoard 4 `C*S640 -> -> 2 `i `us &U _HMI_InitButtons &U _HMI_DownSwitch &U _Event_NULL ]
 [; ;HMI.c: 124: SPI_Init((100*1000L), eSPI1, eSPI_Mode2);
 "124
-[e ( _SPI_Init (3 , , -> * -> -> 100 `i `l -> 1000 `l `ul . `E6857 0 . `E6861 2 ]
+[e ( _SPI_Init (3 , , -> * -> -> 100 `i `l -> 1000 `l `ul . `E6859 0 . `E6863 2 ]
 [; ;HMI.c: 125: SPI_MinSpeed(&SPI1);
 "125
 [e ( _SPI_MinSpeed (1 &U _SPI1 ]
@@ -6960,23 +6953,23 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U _HMI_GRender ]
 [f ]
 "150
-[v F7203 `us ~T0 @X0 1 s a ]
-[i F7203
+[v F7205 `us ~T0 @X0 1 s a ]
+[i F7205
 -> -> 0 `i `us
 ]
 [; ;HMI.c: 150: static UINT16 a = 0;
 [; ;HMI.c: 152: OutSeg(HMIBoard.Bytes[a], a);
 "152
-[e ( _OutSeg (2 , *U + &U . . _HMIBoard 0 0 * -> F7203 `ux -> -> # *U &U . . _HMIBoard 0 0 `ui `ux -> F7203 `uc ]
+[e ( _OutSeg (2 , *U + &U . . _HMIBoard 0 0 * -> F7205 `ux -> -> # *U &U . . _HMIBoard 0 0 `ui `ux -> F7205 `uc ]
 [; ;HMI.c: 154: a++;
 "154
-[e ++ F7203 -> -> 1 `i `us ]
+[e ++ F7205 -> -> 1 `i `us ]
 [; ;HMI.c: 156: if (a >= sizeof(HMI))
 "156
-[e $ ! >= -> F7203 `ui -> # `S641 `ui 675  ]
+[e $ ! >= -> F7205 `ui -> # `S641 `ui 675  ]
 [; ;HMI.c: 157: a=0;
 "157
-[e = F7203 -> -> 0 `i `us ]
+[e = F7205 -> -> 0 `i `us ]
 [e :U 675 ]
 [; ;HMI.c: 159: }
 "159
@@ -7065,8 +7058,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _pValue `uc ~T0 @X0 1 r1 ]
 "187
 [f ]
-[v F7211 `Cuc ~T0 @X0 -> 0 `x s ]
-[i F7211
+[v F7213 `Cuc ~T0 @X0 -> 0 `x s ]
+[i F7213
 :U ..
 "188
 -> -> 0 `i `uc
@@ -7077,7 +7070,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 ]
 [v _reindex `Cuc ~T0 @X0 4  a ]
 [; ;HMI.c: 188: const UINT8 reindex[] = {0, 2, 1, 3};
-[e = _reindex F7211 ]
+[e = _reindex F7213 ]
 "189
 [v _v `uc ~T0 @X0 1 a ]
 [; ;HMI.c: 189: UINT8 v = 0b00010001;

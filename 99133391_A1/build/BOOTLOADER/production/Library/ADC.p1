@@ -7,7 +7,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S640 ADC mChannel mValue mNext ]
 "15 Library/ADC.c
 [v _ADC_SetChannel `(v ~T0 @X0 0 ef1`E6742 ]
-"11795 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f67j50.h
+"11795 C:\Program Files (x86)\Microchip\xc8\v1.43\include\pic18f67j50.h
 [s S449 :1 `uc 1 :1 `uc 1 ]
 [n S449 . . GO_NOT_DONE ]
 "11799
@@ -59,7 +59,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _ADC_On `(v ~T0 @X0 0 ef ]
 "11
 [v _ADC_Off `(v ~T0 @X0 0 ef ]
-"8511 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f67j50.h
+"8511 C:\Program Files (x86)\Microchip\xc8\v1.43\include\pic18f67j50.h
 [s S319 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S319 . TMR1IE TMR2IE CCP1IE SSP1IE TX1IE RC1IE ADIE PMPIE ]
 "8521
@@ -101,7 +101,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
 [; ;pic18f67j50.h: 50: extern volatile unsigned short PMSTAT @ 0xF40;
-"52 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f67j50.h
+"52 C:\Program Files (x86)\Microchip\xc8\v1.43\include\pic18f67j50.h
 [; ;pic18f67j50.h: 52: asm("PMSTAT equ 0F40h");
 [; <" PMSTAT equ 0F40h ;# ">
 [; ;pic18f67j50.h: 57: extern volatile unsigned char PMSTATL @ 0xF40;
@@ -6304,6 +6304,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;Events.h: 21: void Event_HMI_RightButton(UINT8 pState);
 [; ;Events.h: 22: void Event_HMI_UpButton(UINT8 pState);
 [; ;Events.h: 23: void Event_HMI_DownButton(UINT8 pState);
+[; ;Events.h: 24: void Event_NULL(UINT8 pState);
 "5 Library/ADC.c
 [v _ADC_Initialised `uc ~T0 @X0 1 s ]
 [i _ADC_Initialised
@@ -6976,7 +6977,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U _rand ]
 [f ]
 "273
-[v F6831 `uc ~T0 @X0 1 s screw ]
+[v F6833 `uc ~T0 @X0 1 s screw ]
 "274
 [v _result `uc ~T0 @X0 1 a ]
 [; ;ADC.c: 273: static UINT8 screw;
@@ -7012,13 +7013,13 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;ADC.c: 282: }
 [; ;ADC.c: 283: result ^= screw;
 "283
-[e =^ _result F6831 ]
+[e =^ _result F6833 ]
 [; ;ADC.c: 284: screw <<= 1;
 "284
-[e =<< F6831 -> 1 `i ]
+[e =<< F6833 -> 1 `i ]
 [; ;ADC.c: 285: screw ^= result;
 "285
-[e =^ F6831 _result ]
+[e =^ F6833 _result ]
 [; ;ADC.c: 286: return result;
 "286
 [e ) _result ]

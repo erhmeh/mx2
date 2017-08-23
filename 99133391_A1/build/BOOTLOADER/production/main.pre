@@ -1,17 +1,17 @@
 
 # 1 "main.c"
 
-# 26 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\htc.h"
+# 26 "C:\Program Files (x86)\Microchip\xc8\v1.43\include\htc.h"
 extern const char __xc8_OPTIM_SPEED;
 
 extern double __fpnormalize(double);
 
 
-# 13 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\xc8debug.h"
+# 13 "C:\Program Files (x86)\Microchip\xc8\v1.43\include\xc8debug.h"
 #pragma intrinsic(__builtin_software_breakpoint)
 extern void __builtin_software_breakpoint(void);
 
-# 50 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f67j50.h"
+# 50 "C:\Program Files (x86)\Microchip\xc8\v1.43\include\pic18f67j50.h"
 extern volatile unsigned short PMSTAT @ 0xF40;
 
 asm("PMSTAT equ 0F40h");
@@ -7895,7 +7895,7 @@ extern volatile __bit nW2 @ (((unsigned) &SSP2STAT)*8) + 2;
 
 extern volatile __bit nWRITE2 @ (((unsigned) &SSP2STAT)*8) + 2;
 
-# 18 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18.h"
+# 18 "C:\Program Files (x86)\Microchip\xc8\v1.43\include\pic18.h"
 __attribute__((__unsupported__("The " "flash_write" " routine is no longer supported. Please use the MPLAB X MCC."))) void flash_write(const unsigned char *, unsigned int, __far unsigned char *);
 __attribute__((__unsupported__("The " "EraseFlash" " routine is no longer supported. Please use the MPLAB X MCC."))) void EraseFlash(unsigned long startaddr, unsigned long endaddr);
 
@@ -7936,7 +7936,7 @@ extern __nonreentrant void _delay3(unsigned char);
 #pragma config MSSPMSK = MSK5
 #pragma config CCP2MX = DEFAULT
 
-# 12 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\stdbool.h"
+# 12 "C:\Program Files (x86)\Microchip\xc8\v1.43\include\stdbool.h"
 typedef unsigned char bool;
 
 # 273 "Library\Types.h"
@@ -8247,6 +8247,34 @@ void ISR_Disable();
 void ISR_Enable();
 void interrupt ISR_Function();
 
+# 18 "Library\ADC.h"
+typedef struct ADC ADC;
+typedef ADC * ADCPtr;
+
+typedef enum
+{
+eADC_Ch0 = 0,
+eADC_Ch1 = 1,
+eADC_Ch2 = 2,
+eADC_Ch3 = 3
+} eADC_Channel;
+
+struct ADC
+{
+eADC_Channel mChannel;
+UINT16 mValue;
+ADCPtr mNext;
+};
+
+void ADC_Init (ADCPtr pInput, eADC_Channel pChannel);
+void ADC_Sequence(ADCPtr pItemA, ADCPtr pItemB);
+void ADC_Start (ADCPtr pInput);
+void ADC_ISR();
+float ADC_Voltage(ADCPtr pInput);
+
+UINT8 rand();
+UINT8 rand_between(UINT8 pValA, UINT8 pValB);
+
 # 19 "Library\Port.h"
 typedef struct Port Port;
 typedef Port * const PortPtr;
@@ -8383,6 +8411,7 @@ void Event_HMI_LeftButton(UINT8 pState);
 void Event_HMI_RightButton(UINT8 pState);
 void Event_HMI_UpButton(UINT8 pState);
 void Event_HMI_DownButton(UINT8 pState);
+void Event_NULL(UINT8 pState);
 
 # 14 "Library\Button.h"
 typedef UINT8 (*Button_State)();
@@ -8504,10 +8533,10 @@ inline void Console_SetBackcolour (Colour pColour);
 inline void Console_SetForecolourRGB(UINT8 r, UINT8 g, UINT8 b);
 inline void Console_SetBackcolourRGB(UINT8 r, UINT8 g, UINT8 b);
 
-# 4 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\__size_t.h"
+# 4 "C:\Program Files (x86)\Microchip\xc8\v1.43\include\__size_t.h"
 typedef unsigned size_t;
 
-# 7 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\stdarg.h"
+# 7 "C:\Program Files (x86)\Microchip\xc8\v1.43\include\stdarg.h"
 typedef void * va_list[1];
 
 #pragma intrinsic(__va_start)
@@ -8516,17 +8545,17 @@ extern void * __va_start(void);
 #pragma intrinsic(__va_arg)
 extern void * __va_arg(void *, ...);
 
-# 43 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\stdio.h"
+# 43 "C:\Program Files (x86)\Microchip\xc8\v1.43\include\stdio.h"
 struct __prbuf
 {
 char * ptr;
 void (* func)(char);
 };
 
-# 29 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\errno.h"
+# 29 "C:\Program Files (x86)\Microchip\xc8\v1.43\include\errno.h"
 extern int errno;
 
-# 12 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\conio.h"
+# 12 "C:\Program Files (x86)\Microchip\xc8\v1.43\include\conio.h"
 extern void init_uart(void);
 
 extern char getch(void);
@@ -8540,7 +8569,7 @@ extern __bit kbhit(void);
 extern char * cgets(char *);
 extern void cputs(const char *);
 
-# 88 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\stdio.h"
+# 88 "C:\Program Files (x86)\Microchip\xc8\v1.43\include\stdio.h"
 extern int cprintf(char *, ...);
 #pragma printf_check(cprintf)
 
@@ -8566,6 +8595,34 @@ extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupport
 #pragma printf_check(sprintf) const
 extern int sprintf(char *, const char *, ...);
 extern int printf(const char *, ...);
+
+# 30 "C:\Program Files (x86)\Microchip\xc8\v1.43\include\math.h"
+extern double fabs(double);
+extern double floor(double);
+extern double ceil(double);
+extern double modf(double, double *);
+extern double sqrt(double);
+extern double atof(const char *);
+extern double sin(double) ;
+extern double cos(double) ;
+extern double tan(double) ;
+extern double asin(double) ;
+extern double acos(double) ;
+extern double atan(double);
+extern double atan2(double, double) ;
+extern double log(double);
+extern double log10(double);
+extern double pow(double, double) ;
+extern double exp(double) ;
+extern double sinh(double) ;
+extern double cosh(double) ;
+extern double tanh(double);
+extern double eval_poly(double, const double *, int);
+extern double frexp(double, int *);
+extern double ldexp(double, int);
+extern double fmod(double, double);
+extern double trunc(double);
+extern double round(double);
 
 # 16 "Library\Motor.h"
 typedef struct Motor Motor;
@@ -8733,197 +8790,149 @@ void HMI_SetSegments (str pString);
 
 void HMI_Poll ();
 
-# 23 "main.c"
-Motor Stepper;
-int direction;
-int speed;
-int mode;
-
-
-void initialise();
-void displaySID();
-void displayText();
-int getMode();
-void displayMode();
-void continuousMode();
-void continuousModeText();
-void stepMode();
-void positionMode();
-void nullMode();
-void setMode();
-
-
-void initialise() {
+# 27 "main.c"
+void main()
+{
 
 MXK_Init();
 
-# 56
-if (MXK_BlockSwitchTo(eMXK_Motor)) {
-Motor_Init(&Stepper, 0b1000);
+bool lockedMode = 1;
+
+int Direction = 200;
+int Speed = 0;
+
+int Steps = 0;
+
+# 43
+if (MXK_BlockSwitchTo(eMXK_HMI)) {
+HMI_Init();
+LCD_Init();
+Console_Init();
 if (MXK_Release())
 MXK_Dequeue();
 }
+
+
+Motor Stepper;
+if (MXK_BlockSwitchTo(eMXK_Motor)) {
+Motor_Init(&Stepper,0b1000);
+if (MXK_Release())
+MXK_Dequeue();
+}
+
+
 
 
 ISR_Enable();
+extern ADC ADC_AN0;
+FunctInitADC();
+FunctInitButton();
 
-}
-
-
-void displaySID() {
-Console_SetForecolour(0x07E0);
-printf("Jamin Early 99133391\n");
-}
+for(;;)
+{
 
 
-void displayText() {
 
-printf("%c", (char)35);
-
-
-displaySID();
-
-
-displayMode();
-
-
-Console_Render();
-}
-
-# 99
-int getMode() {
+FunctADC();
 HMI_Poll();
-int dipState = HMIBoard.mDIP.mGetState();
-switch (dipState) {
+int DipValue = DIPSwitch.mGetState();
+bool UpValue = HMIBoard.mUp.mGetState();
+bool DownValue = HMIBoard.mDown.mGetState();
+bool LeftValue = HMIBoard.mLeft.mGetState();
+bool RightValue = HMIBoard.mRight.mGetState();
+
+
+
+if (MXK_BlockSwitchTo(eMXK_HMI)) {
+printf("%c",(char)35);
+printf("Matt Woods\n9914517\nAssignment1\n\n");
+
+
+printf("DIP Switches: %d\n",DipValue);
+switch (DipValue){
+case 1:
+printf("Continuous Mode:\n");
+printf("Direction: ");
+if(Direction>0){
+printf("CCW\n");
+}else{
+printf("CW\n");
+}
+printf("Speed: %dHz\n",Speed);
+if(LeftValue){
+Direction = -200;
+}else if(RightValue){
+Direction = 200;
+}else if(UpValue){
+Speed++;
+}else if (DownValue && Speed>0){
+Speed--;
+}
+break;
 case 2:
-return 3;
+printf("Step Mode:\n");
+printf("Steps: %d\n\n",Steps);
+if(LeftValue == 1 && Steps > 0){
+Steps--;
+}else if(RightValue){
+Steps++;
+}else if(UpValue){
+Steps=0;
+}else if (DownValue){
+
+}
+break;
 case 4:
-return 2;
-case 8:
-return 1;
-default:
-return 0;
-}
-}
+printf("Position Mode\n");
 
-void displayMode() {
-
-Console_SetForecolour(0xF800);
-int mode = getMode();
-printf("Current Mode:\n");
-switch (mode) {
-case 3:
-printf(" Position\n\n");
-break;
-case 2:
-printf(" Step\n\n");
-break;
-case 1:
-printf(" Continuous\n\n");
 break;
 default:
-printf(" Undefined\n\n");
-break;
+lockedMode = 1;
+printf("Invalid Mode!\n\n\n\n\n\n");
+
 }
-}
-
-
-void continuousMode() {
-
-int mode = getMode();
-
-HMI_Poll();
-
-if ((int) HMIBoard.mUp.mGetState() == 1 && (int) HMIBoard.mDown.mGetState() == 0 & speed <= 9) {
-while ((int) HMIBoard.mUp.mGetState() == 1) {
-}
-speed++;
-}
-
-if ((int) HMIBoard.mDown.mGetState() == 1 && (int) HMIBoard.mUp.mGetState() == 0 & speed > 0) {
-while ((int) HMIBoard.mDown.mGetState() == 1) {
-}
-speed--;
-}
-
-if ((int) HMIBoard.mLeft.mGetState() == 1 && (int) HMIBoard.mRight.mGetState() == 0) {
-direction = 1;
-}
-
-if ((int) HMIBoard.mRight.mGetState() == 1 && (int) HMIBoard.mLeft.mGetState() == 0) {
-direction = -1;
-}
-
-if (MXK_BlockSwitchTo(eMXK_HMI)) {
-displayText();
-Console_SetForecolour(0xFFE0);
-printf("Speed: %d\n", speed);
-printf("Direction: %d\n", direction);
 Console_Render();
+float ADCVoltage = ADC_Voltage(&ADC_AN0);
+
+int IRDistance = 65*pow(ADCVoltage, -1.10);
+
+HMI_SetNumber(IRDistance);
+HMI_Render();
 if (MXK_Release())
 MXK_Dequeue();
 }
+
 
 if (MXK_BlockSwitchTo(eMXK_Motor)) {
-Motor_Speed(&Stepper, 256);
-Motor_Continious(&Stepper, direction);
-if (MXK_Release())
-MXK_Dequeue();
-}
-mode = getMode();
-
-}
-
-
-void stepMode() {
-}
-
-
-void positionMode() {
-}
-
-
-void nullMode() {
-if (MXK_BlockSwitchTo(eMXK_HMI)) {
-
-displayText();
-printf("                      \n");
-printf("                      \n");
-printf("                      \n");
-Console_Render();
-
-if (MXK_Release())
-MXK_Dequeue();
-}
-
-}
-
-void setMode() {
-int mode = getMode();
-switch (mode) {
+switch (DipValue){
 case 1:
-continuousMode();
+Motor_Speed(&Stepper,(Speed*1000L));
+Motor_Move(&Stepper,Direction);
 break;
 case 2:
-stepMode();
-break;
-case 3:
-positionMode();
-break;
-default:
-nullMode();
-break;
+if(lockedMode){
+lockedMode=0;
+Stepper.mDelta = 0;
 }
+if(DownValue && Stepper.mDelta == 0){
+Motor_Speed(&Stepper, (1*1000L));
+Motor_Move(&Stepper, Steps);
+}
+break;
+case 4:
+if(lockedMode){
+int rotation = 0;
+lockedMode = 0;
+int movetoPos = 0;
 }
 
-void main() {
-initialise();
-if (MXK_BlockSwitchTo(eMXK_Motor)) {
-Motor_Speed(&Stepper, 256);
-Motor_Move(&Stepper, 1);
+
+break;
+default:
+break;
+}
 if (MXK_Release())
 MXK_Dequeue();
 }
-
-# 261
+}
 }

@@ -20,7 +20,7 @@ HMI HMIBoard;
 
 void            HMI_InitButtons()
 {
-    TRISE = 0xFF;
+    TRISE = 0xFC;
 }
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
@@ -105,19 +105,19 @@ void    HMI_Init()
 {
     //Initailise buttons
     Button_Init(&(HMIBoard.mDIP),   DEBOUNCE, 
-		HMI_InitButtons, HMI_DIPSwitch,	    Event_HMI_DIPSwitch);
+		HMI_InitButtons, HMI_DIPSwitch,	    Event_NULL);
     
     Button_Init(&(HMIBoard.mLeft),  DEBOUNCE, 
-		HMI_InitButtons, HMI_LeftSwitch,    Event_HMI_LeftButton);
+		HMI_InitButtons, HMI_LeftSwitch,    Event_NULL);
     
     Button_Init(&(HMIBoard.mRight), DEBOUNCE, 
-		HMI_InitButtons, HMI_RightSwitch,   Event_HMI_RightButton);
+		HMI_InitButtons, HMI_RightSwitch,   Event_NULL);
     
     Button_Init(&(HMIBoard.mUp),    DEBOUNCE, 
-		HMI_InitButtons, HMI_UpSwitch,	    Event_HMI_UpButton);
+		HMI_InitButtons, HMI_UpSwitch,	    Event_NULL);
     
     Button_Init(&(HMIBoard.mDown),  DEBOUNCE, 
-		HMI_InitButtons, HMI_DownSwitch,    Event_HMI_DownButton);
+		HMI_InitButtons, HMI_DownSwitch,    Event_NULL);
     
     ////////////////////////////////////////////////////////////////////////////
     //Initialize the SPI port used to drive all of the LEDs on the HMI board

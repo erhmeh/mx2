@@ -1,9 +1,9 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"14 Events.c
-[c E6784 0 1 .. ]
-[n E6784 . eLED1 eLED2  ]
+"19 Events.c
+[c E6786 0 1 .. ]
+[n E6786 . eLED1 eLED2  ]
 "42 Library\LED.h
-[v _LED_Toggle `(v ~T0 @X0 0 ef1`E6784 ]
+[v _LED_Toggle `(v ~T0 @X0 0 ef1`E6786 ]
 "93 Library\HMI.h
 [v _HMI_GetBar `(uc ~T0 @X0 0 ef ]
 "99
@@ -24,7 +24,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
 [; ;pic18f67j50.h: 50: extern volatile unsigned short PMSTAT @ 0xF40;
-"52 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f67j50.h
+"52 C:\Program Files (x86)\Microchip\xc8\v1.43\include\pic18f67j50.h
 [; ;pic18f67j50.h: 52: asm("PMSTAT equ 0F40h");
 [; <" PMSTAT equ 0F40h ;# ">
 [; ;pic18f67j50.h: 57: extern volatile unsigned char PMSTATL @ 0xF40;
@@ -6205,6 +6205,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;Events.h: 21: void Event_HMI_RightButton(UINT8 pState);
 [; ;Events.h: 22: void Event_HMI_UpButton(UINT8 pState);
 [; ;Events.h: 23: void Event_HMI_DownButton(UINT8 pState);
+[; ;Events.h: 24: void Event_NULL(UINT8 pState);
 [; ;Button.h: 14: typedef UINT8 (*Button_State)();
 [; ;Button.h: 15: typedef Function Button_InitIO;
 [; ;Button.h: 19: typedef struct Button Button;
@@ -6343,313 +6344,328 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;ADC.h: 42: UINT8 rand();
 [; ;ADC.h: 43: UINT8 rand_between(UINT8 pValA, UINT8 pValB);
 "9 Events.c
-[v _Event_ADCSequenceComplete `(v ~T0 @X0 1 ef1`uc ]
+[v _Event_NULL `(v ~T0 @X0 1 ef1`uc ]
 "10
 {
-[; ;Events.c: 9: void Event_ADCSequenceComplete(UINT8 pLength)
+[; ;Events.c: 9: void Event_NULL(UINT8 pState)
 [; ;Events.c: 10: {
-[e :U _Event_ADCSequenceComplete ]
+[e :U _Event_NULL ]
 "9
-[v _pLength `uc ~T0 @X0 1 r1 ]
+[v _pState `uc ~T0 @X0 1 r1 ]
 "10
 [f ]
-[; ;Events.c: 14: LED_Toggle(eLED2);
-"14
-[e ( _LED_Toggle (1 . `E6784 1 ]
-[; ;Events.c: 15: }
-"15
+[; ;Events.c: 12: }
+"12
 [e :UE 650 ]
 }
-"17
-[v _Event_DIPSwitch `(v ~T0 @X0 1 ef1`uc ]
-"18
+"14
+[v _Event_ADCSequenceComplete `(v ~T0 @X0 1 ef1`uc ]
+"15
 {
-[; ;Events.c: 17: void Event_DIPSwitch(UINT8 pState)
-[; ;Events.c: 18: {
-[e :U _Event_DIPSwitch ]
-"17
-[v _pState `uc ~T0 @X0 1 r1 ]
-"18
+[; ;Events.c: 14: void Event_ADCSequenceComplete(UINT8 pLength)
+[; ;Events.c: 15: {
+[e :U _Event_ADCSequenceComplete ]
+"14
+[v _pLength `uc ~T0 @X0 1 r1 ]
+"15
 [f ]
+[; ;Events.c: 19: LED_Toggle(eLED2);
 "19
-[v _Bar `uc ~T0 @X0 1 a ]
-[; ;Events.c: 19: UINT8 Bar = HMI_GetBar();
-[e = _Bar ( _HMI_GetBar ..  ]
-[; ;Events.c: 20: Bar &= 0x0F;
+[e ( _LED_Toggle (1 . `E6786 1 ]
+[; ;Events.c: 20: }
 "20
-[e =& _Bar -> -> 15 `i `uc ]
-[; ;Events.c: 21: pState <<= 4;
-"21
-[e =<< _pState -> 4 `i ]
-[; ;Events.c: 24: HMI_SetBar(pState | Bar);
-"24
-[e ( _HMI_SetBar (1 -> | -> _pState `i -> _Bar `i `uc ]
-[; ;Events.c: 27: LED_Toggle(eLED1);
-"27
-[e ( _LED_Toggle (1 . `E6784 0 ]
-[; ;Events.c: 28: }
-"28
 [e :UE 651 ]
 }
-"30
-[v _Event_HMI_DIPSwitch `(v ~T0 @X0 1 ef1`uc ]
-"31
+"22
+[v _Event_DIPSwitch `(v ~T0 @X0 1 ef1`uc ]
+"23
 {
-[; ;Events.c: 30: void Event_HMI_DIPSwitch(UINT8 pState)
-[; ;Events.c: 31: {
-[e :U _Event_HMI_DIPSwitch ]
-"30
+[; ;Events.c: 22: void Event_DIPSwitch(UINT8 pState)
+[; ;Events.c: 23: {
+[e :U _Event_DIPSwitch ]
+"22
 [v _pState `uc ~T0 @X0 1 r1 ]
-"31
+"23
 [f ]
-"32
+"24
 [v _Bar `uc ~T0 @X0 1 a ]
-[; ;Events.c: 32: UINT8 Bar = HMI_GetBar();
+[; ;Events.c: 24: UINT8 Bar = HMI_GetBar();
 [e = _Bar ( _HMI_GetBar ..  ]
-[; ;Events.c: 33: HMI_SetBar(pState | Bar);
-"33
+[; ;Events.c: 25: Bar &= 0x0F;
+"25
+[e =& _Bar -> -> 15 `i `uc ]
+[; ;Events.c: 26: pState <<= 4;
+"26
+[e =<< _pState -> 4 `i ]
+[; ;Events.c: 29: HMI_SetBar(pState | Bar);
+"29
 [e ( _HMI_SetBar (1 -> | -> _pState `i -> _Bar `i `uc ]
-[; ;Events.c: 35: Bar &= 0xF0;
-"35
-[e =& _Bar -> -> 240 `i `uc ]
-[; ;Events.c: 36: pState &= 0x0F;
-"36
-[e =& _pState -> -> 15 `i `uc ]
-[; ;Events.c: 42: LED_Toggle(eLED1);
-"42
-[e ( _LED_Toggle (1 . `E6784 0 ]
-[; ;Events.c: 43: }
-"43
+[; ;Events.c: 32: LED_Toggle(eLED1);
+"32
+[e ( _LED_Toggle (1 . `E6786 0 ]
+[; ;Events.c: 33: }
+"33
 [e :UE 652 ]
 }
-"45
+"35
+[v _Event_HMI_DIPSwitch `(v ~T0 @X0 1 ef1`uc ]
+"36
+{
+[; ;Events.c: 35: void Event_HMI_DIPSwitch(UINT8 pState)
+[; ;Events.c: 36: {
+[e :U _Event_HMI_DIPSwitch ]
+"35
+[v _pState `uc ~T0 @X0 1 r1 ]
+"36
+[f ]
+"37
+[v _Bar `uc ~T0 @X0 1 a ]
+[; ;Events.c: 37: UINT8 Bar = HMI_GetBar();
+[e = _Bar ( _HMI_GetBar ..  ]
+[; ;Events.c: 38: HMI_SetBar(pState | Bar);
+"38
+[e ( _HMI_SetBar (1 -> | -> _pState `i -> _Bar `i `uc ]
+[; ;Events.c: 40: Bar &= 0xF0;
+"40
+[e =& _Bar -> -> 240 `i `uc ]
+[; ;Events.c: 41: pState &= 0x0F;
+"41
+[e =& _pState -> -> 15 `i `uc ]
+[; ;Events.c: 47: LED_Toggle(eLED1);
+"47
+[e ( _LED_Toggle (1 . `E6786 0 ]
+[; ;Events.c: 48: }
+"48
+[e :UE 653 ]
+}
+"50
 [v _i `uc ~T0 @X0 1 e ]
 [v _j `uc ~T0 @X0 1 e ]
 [v _u `uc ~T0 @X0 1 e ]
-[; ;Events.c: 45: UINT8 i, j, u;
-"46
-[v _val `us ~T0 @X0 1 s ]
-[; ;Events.c: 46: static UINT16 val;
-"47
-[v _Event_TestButton `(v ~T0 @X0 1 ef1`uc ]
-"48
-{
-[; ;Events.c: 47: void Event_TestButton(UINT8 pState)
-[; ;Events.c: 48: {
-[e :U _Event_TestButton ]
-"47
-[v _pState `uc ~T0 @X0 1 r1 ]
-"48
-[f ]
-[v F6959 `uc ~T0 @X0 1 s j ]
-[i F6959
+[; ;Events.c: 50: UINT8 i, j, u;
 "51
+[v _val `us ~T0 @X0 1 s ]
+[; ;Events.c: 51: static UINT16 val;
+"52
+[v _Event_TestButton `(v ~T0 @X0 1 ef1`uc ]
+"53
+{
+[; ;Events.c: 52: void Event_TestButton(UINT8 pState)
+[; ;Events.c: 53: {
+[e :U _Event_TestButton ]
+"52
+[v _pState `uc ~T0 @X0 1 r1 ]
+"53
+[f ]
+[v F6962 `uc ~T0 @X0 1 s j ]
+[i F6962
+"56
 -> -> 0 `i `uc
 ]
-[; ;Events.c: 51: static UINT8 j = 0;
-[; ;Events.c: 55: if (pState == 0)
-"55
-[e $ ! == -> _pState `i -> 0 `i 654  ]
-[; ;Events.c: 56: {
-"56
+[; ;Events.c: 56: static UINT8 j = 0;
+[; ;Events.c: 60: if (pState == 0)
+"60
+[e $ ! == -> _pState `i -> 0 `i 655  ]
+[; ;Events.c: 61: {
+"61
 {
-[; ;Events.c: 57: j++;
-"57
-[e ++ F6959 -> -> 1 `i `uc ]
-[; ;Events.c: 58: val += j;
-"58
-[e =+ _val -> F6959 `us ]
-[; ;Events.c: 59: HMI_SetNumber( val );
-"59
-[e ( _HMI_SetNumber (1 -> _val `i ]
-[; ;Events.c: 62: HMI_SetButton( j & 3 );
+[; ;Events.c: 62: j++;
 "62
-[e ( _HMI_SetButton (1 -> & -> F6959 `i -> 3 `i `uc ]
+[e ++ F6962 -> -> 1 `i `uc ]
+[; ;Events.c: 63: val += j;
 "63
-}
-[e :U 654 ]
-[; ;Events.c: 63: }
-[; ;Events.c: 67: LED_Toggle(eLED1);
+[e =+ _val -> F6962 `us ]
+[; ;Events.c: 64: HMI_SetNumber( val );
+"64
+[e ( _HMI_SetNumber (1 -> _val `i ]
+[; ;Events.c: 67: HMI_SetButton( j & 3 );
 "67
-[e ( _LED_Toggle (1 . `E6784 0 ]
-[; ;Events.c: 68: }
+[e ( _HMI_SetButton (1 -> & -> F6962 `i -> 3 `i `uc ]
 "68
-[e :UE 653 ]
 }
-"70
+[e :U 655 ]
+[; ;Events.c: 68: }
+[; ;Events.c: 72: LED_Toggle(eLED1);
+"72
+[e ( _LED_Toggle (1 . `E6786 0 ]
+[; ;Events.c: 73: }
+"73
+[e :UE 654 ]
+}
+"75
 [v _pShiftVal `us ~T0 @X0 1 e ]
 [i _pShiftVal
 -> -> 0 `i `us
 ]
-[; ;Events.c: 70: UINT16 pShiftVal = 0;
-"71
-[v _Event_HMI_LeftButton `(v ~T0 @X0 1 ef1`uc ]
-"72
-{
-[; ;Events.c: 71: void Event_HMI_LeftButton(UINT8 pState)
-[; ;Events.c: 72: {
-[e :U _Event_HMI_LeftButton ]
-"71
-[v _pState `uc ~T0 @X0 1 r1 ]
-"72
-[f ]
-[; ;Events.c: 74: HMI_SetLeft(pState);
-"74
-[e ( _HMI_SetLeft (1 _pState ]
-[; ;Events.c: 76: if (pState == 0)
+[; ;Events.c: 75: UINT16 pShiftVal = 0;
 "76
-[e $ ! == -> _pState `i -> 0 `i 656  ]
-[; ;Events.c: 77: {
+[v _Event_HMI_LeftButton `(v ~T0 @X0 1 ef1`uc ]
 "77
 {
-[; ;Events.c: 78: pShiftVal <<= 1;
-"78
-[e =<< _pShiftVal -> 1 `i ]
-[; ;Events.c: 79: if (pShiftVal == 0xFF00)
-"79
-[e $ ! == -> _pShiftVal `ui -> 65280 `ui 657  ]
-[; ;Events.c: 80: pShiftVal = 0;
-"80
-[e = _pShiftVal -> -> 0 `i `us ]
-[e $U 658  ]
-"81
-[e :U 657 ]
-[; ;Events.c: 81: else if (pShiftVal < 0xFF)
-[e $ ! < -> _pShiftVal `ui -> -> 255 `i `ui 659  ]
-[; ;Events.c: 82: pShiftVal |= 1;
-"82
-[e =| _pShiftVal -> -> 1 `i `us ]
-[e :U 659 ]
-"84
-[e :U 658 ]
-[; ;Events.c: 84: HMI_SetBar(pShiftVal & 0xFF);
-[e ( _HMI_SetBar (1 -> & -> _pShiftVal `ui -> -> 255 `i `ui `uc ]
-"85
-}
-[e :U 656 ]
-[; ;Events.c: 85: }
-[; ;Events.c: 88: LED_Toggle(eLED1);
-"88
-[e ( _LED_Toggle (1 . `E6784 0 ]
-[; ;Events.c: 89: }
-"89
-[e :UE 655 ]
-}
-"91
-[v _Event_HMI_RightButton `(v ~T0 @X0 1 ef1`uc ]
-"92
-{
-[; ;Events.c: 91: void Event_HMI_RightButton(UINT8 pState)
-[; ;Events.c: 92: {
-[e :U _Event_HMI_RightButton ]
-"91
+[; ;Events.c: 76: void Event_HMI_LeftButton(UINT8 pState)
+[; ;Events.c: 77: {
+[e :U _Event_HMI_LeftButton ]
+"76
 [v _pState `uc ~T0 @X0 1 r1 ]
-"92
+"77
 [f ]
-[; ;Events.c: 94: HMI_SetRight(pState);
+[; ;Events.c: 79: HMI_SetLeft(pState);
+"79
+[e ( _HMI_SetLeft (1 _pState ]
+[; ;Events.c: 81: if (pState == 0)
+"81
+[e $ ! == -> _pState `i -> 0 `i 657  ]
+[; ;Events.c: 82: {
+"82
+{
+[; ;Events.c: 83: pShiftVal <<= 1;
+"83
+[e =<< _pShiftVal -> 1 `i ]
+[; ;Events.c: 84: if (pShiftVal == 0xFF00)
+"84
+[e $ ! == -> _pShiftVal `ui -> 65280 `ui 658  ]
+[; ;Events.c: 85: pShiftVal = 0;
+"85
+[e = _pShiftVal -> -> 0 `i `us ]
+[e $U 659  ]
+"86
+[e :U 658 ]
+[; ;Events.c: 86: else if (pShiftVal < 0xFF)
+[e $ ! < -> _pShiftVal `ui -> -> 255 `i `ui 660  ]
+[; ;Events.c: 87: pShiftVal |= 1;
+"87
+[e =| _pShiftVal -> -> 1 `i `us ]
+[e :U 660 ]
+"89
+[e :U 659 ]
+[; ;Events.c: 89: HMI_SetBar(pShiftVal & 0xFF);
+[e ( _HMI_SetBar (1 -> & -> _pShiftVal `ui -> -> 255 `i `ui `uc ]
+"90
+}
+[e :U 657 ]
+[; ;Events.c: 90: }
+[; ;Events.c: 93: LED_Toggle(eLED1);
+"93
+[e ( _LED_Toggle (1 . `E6786 0 ]
+[; ;Events.c: 94: }
 "94
-[e ( _HMI_SetRight (1 _pState ]
-[; ;Events.c: 96: if (pState == 0)
+[e :UE 656 ]
+}
 "96
-[e $ ! == -> _pState `i -> 0 `i 661  ]
-[; ;Events.c: 97: {
+[v _Event_HMI_RightButton `(v ~T0 @X0 1 ef1`uc ]
 "97
 {
-[; ;Events.c: 98: if (pShiftVal == 0)
-"98
-[e $ ! == -> _pShiftVal `ui -> -> 0 `i `ui 662  ]
-[; ;Events.c: 99: pShiftVal = 0xFF00;
-"99
-[e = _pShiftVal -> -> 65280 `ui `us ]
-[e :U 662 ]
-[; ;Events.c: 100: pShiftVal >>= 1;
-"100
-[e =>> _pShiftVal -> 1 `i ]
-[; ;Events.c: 102: HMI_SetBar(pShiftVal & 0xFF);
-"102
-[e ( _HMI_SetBar (1 -> & -> _pShiftVal `ui -> -> 255 `i `ui `uc ]
-"103
-}
-[e :U 661 ]
-[; ;Events.c: 103: }
-[; ;Events.c: 105: LED_Toggle(eLED1);
-"105
-[e ( _LED_Toggle (1 . `E6784 0 ]
-[; ;Events.c: 106: }
-"106
-[e :UE 660 ]
-}
-"108
-[v _Event_HMI_UpButton `(v ~T0 @X0 1 ef1`uc ]
-"109
-{
-[; ;Events.c: 108: void Event_HMI_UpButton(UINT8 pState)
-[; ;Events.c: 109: {
-[e :U _Event_HMI_UpButton ]
-"108
+[; ;Events.c: 96: void Event_HMI_RightButton(UINT8 pState)
+[; ;Events.c: 97: {
+[e :U _Event_HMI_RightButton ]
+"96
 [v _pState `uc ~T0 @X0 1 r1 ]
-"109
+"97
 [f ]
-[; ;Events.c: 111: HMI_SetUp(pState);
+[; ;Events.c: 99: HMI_SetRight(pState);
+"99
+[e ( _HMI_SetRight (1 _pState ]
+[; ;Events.c: 101: if (pState == 0)
+"101
+[e $ ! == -> _pState `i -> 0 `i 662  ]
+[; ;Events.c: 102: {
+"102
+{
+[; ;Events.c: 103: if (pShiftVal == 0)
+"103
+[e $ ! == -> _pShiftVal `ui -> -> 0 `i `ui 663  ]
+[; ;Events.c: 104: pShiftVal = 0xFF00;
+"104
+[e = _pShiftVal -> -> 65280 `ui `us ]
+[e :U 663 ]
+[; ;Events.c: 105: pShiftVal >>= 1;
+"105
+[e =>> _pShiftVal -> 1 `i ]
+[; ;Events.c: 107: HMI_SetBar(pShiftVal & 0xFF);
+"107
+[e ( _HMI_SetBar (1 -> & -> _pShiftVal `ui -> -> 255 `i `ui `uc ]
+"108
+}
+[e :U 662 ]
+[; ;Events.c: 108: }
+[; ;Events.c: 110: LED_Toggle(eLED1);
+"110
+[e ( _LED_Toggle (1 . `E6786 0 ]
+[; ;Events.c: 111: }
 "111
-[e ( _HMI_SetUp (1 _pState ]
-[; ;Events.c: 113: if (pState == 0)
+[e :UE 661 ]
+}
 "113
-[e $ ! == -> _pState `i -> 0 `i 664  ]
-[; ;Events.c: 114: {
+[v _Event_HMI_UpButton `(v ~T0 @X0 1 ef1`uc ]
 "114
 {
-[; ;Events.c: 115: val += 1;
-"115
-[e =+ _val -> -> 1 `i `us ]
-[; ;Events.c: 116: HMI_SetNumber(val);
-"116
-[e ( _HMI_SetNumber (1 -> _val `i ]
-"117
-}
-[e :U 664 ]
-[; ;Events.c: 117: }
-[; ;Events.c: 120: LED_Toggle(eLED1);
-"120
-[e ( _LED_Toggle (1 . `E6784 0 ]
-[; ;Events.c: 121: }
-"121
-[e :UE 663 ]
-}
-"123
-[v _Event_HMI_DownButton `(v ~T0 @X0 1 ef1`uc ]
-"124
-{
-[; ;Events.c: 123: void Event_HMI_DownButton(UINT8 pState)
-[; ;Events.c: 124: {
-[e :U _Event_HMI_DownButton ]
-"123
+[; ;Events.c: 113: void Event_HMI_UpButton(UINT8 pState)
+[; ;Events.c: 114: {
+[e :U _Event_HMI_UpButton ]
+"113
 [v _pState `uc ~T0 @X0 1 r1 ]
-"124
+"114
 [f ]
-[; ;Events.c: 126: HMI_SetDown(pState);
+[; ;Events.c: 116: HMI_SetUp(pState);
+"116
+[e ( _HMI_SetUp (1 _pState ]
+[; ;Events.c: 118: if (pState == 0)
+"118
+[e $ ! == -> _pState `i -> 0 `i 665  ]
+[; ;Events.c: 119: {
+"119
+{
+[; ;Events.c: 120: val += 1;
+"120
+[e =+ _val -> -> 1 `i `us ]
+[; ;Events.c: 121: HMI_SetNumber(val);
+"121
+[e ( _HMI_SetNumber (1 -> _val `i ]
+"122
+}
+[e :U 665 ]
+[; ;Events.c: 122: }
+[; ;Events.c: 125: LED_Toggle(eLED1);
+"125
+[e ( _LED_Toggle (1 . `E6786 0 ]
+[; ;Events.c: 126: }
 "126
-[e ( _HMI_SetDown (1 _pState ]
-[; ;Events.c: 128: if (pState == 0)
+[e :UE 664 ]
+}
 "128
-[e $ ! == -> _pState `i -> 0 `i 666  ]
-[; ;Events.c: 129: {
+[v _Event_HMI_DownButton `(v ~T0 @X0 1 ef1`uc ]
 "129
 {
-[; ;Events.c: 130: val -= 1;
-"130
-[e =- _val -> -> 1 `i `us ]
-[; ;Events.c: 131: HMI_SetNumber(val);
+[; ;Events.c: 128: void Event_HMI_DownButton(UINT8 pState)
+[; ;Events.c: 129: {
+[e :U _Event_HMI_DownButton ]
+"128
+[v _pState `uc ~T0 @X0 1 r1 ]
+"129
+[f ]
+[; ;Events.c: 131: HMI_SetDown(pState);
 "131
-[e ( _HMI_SetNumber (1 -> _val `i ]
-"132
-}
-[e :U 666 ]
-[; ;Events.c: 132: }
-[; ;Events.c: 135: LED_Toggle(eLED1);
+[e ( _HMI_SetDown (1 _pState ]
+[; ;Events.c: 133: if (pState == 0)
+"133
+[e $ ! == -> _pState `i -> 0 `i 667  ]
+[; ;Events.c: 134: {
+"134
+{
+[; ;Events.c: 135: val -= 1;
 "135
-[e ( _LED_Toggle (1 . `E6784 0 ]
-[; ;Events.c: 136: }
+[e =- _val -> -> 1 `i `us ]
+[; ;Events.c: 136: HMI_SetNumber(val);
 "136
-[e :UE 665 ]
+[e ( _HMI_SetNumber (1 -> _val `i ]
+"137
+}
+[e :U 667 ]
+[; ;Events.c: 137: }
+[; ;Events.c: 140: LED_Toggle(eLED1);
+"140
+[e ( _LED_Toggle (1 . `E6786 0 ]
+[; ;Events.c: 141: }
+"141
+[e :UE 666 ]
 }

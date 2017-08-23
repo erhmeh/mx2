@@ -15,6 +15,7 @@ Functions.h  \
 Library/ISR.h  \
 Library/Button.h  \
 ./Config.h  \
+Library/ADC.h  \
 Library/Point.h  \
 Library/MXK.h  \
 Library/Console.h  \

@@ -78,10 +78,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 "18
 [v _Timer0_Start `(v ~T0 @X0 0 ef1`*F6459 ]
 "77 Library/Motor.c
-[c E6951 8 4 1 2 0 .. ]
-[n E6951 . eMXK_Motor eMXK_IMU eMXK_HMI eMXK_FPGA eMXK_None  ]
+[c E6953 8 4 1 2 0 .. ]
+[n E6953 . eMXK_Motor eMXK_IMU eMXK_HMI eMXK_FPGA eMXK_None  ]
 "51 Library/MXK.h
-[v _MXK_SwitchTo `(uc ~T0 @X0 0 ef1`E6951 ]
+[v _MXK_SwitchTo `(uc ~T0 @X0 0 ef1`E6953 ]
 "52
 [v _MXK_Release `(uc ~T0 @X0 0 ef ]
 "21 Library/Timer0.h
@@ -94,7 +94,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
 [; ;pic18f67j50.h: 50: extern volatile unsigned short PMSTAT @ 0xF40;
-"52 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f67j50.h
+"52 C:\Program Files (x86)\Microchip\xc8\v1.43\include\pic18f67j50.h
 [; ;pic18f67j50.h: 52: asm("PMSTAT equ 0F40h");
 [; <" PMSTAT equ 0F40h ;# ">
 [; ;pic18f67j50.h: 57: extern volatile unsigned char PMSTATL @ 0xF40;
@@ -6385,6 +6385,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;Events.h: 21: void Event_HMI_RightButton(UINT8 pState);
 [; ;Events.h: 22: void Event_HMI_UpButton(UINT8 pState);
 [; ;Events.h: 23: void Event_HMI_DownButton(UINT8 pState);
+[; ;Events.h: 24: void Event_NULL(UINT8 pState);
 [; ;Button.h: 14: typedef UINT8 (*Button_State)();
 [; ;Button.h: 15: typedef Function Button_InitIO;
 [; ;Button.h: 19: typedef struct Button Button;
@@ -6526,7 +6527,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [f ]
 [; ;Motor.c: 77: if (MXK_SwitchTo(lMotor->mAddress))
 "77
-[e $ ! != -> ( _MXK_SwitchTo (1 -> . *U _lMotor 2 `E6951 `i -> -> -> 0 `i `uc `i 647  ]
+[e $ ! != -> ( _MXK_SwitchTo (1 -> . *U _lMotor 2 `E6953 `i -> -> -> 0 `i `uc `i 647  ]
 [; ;Motor.c: 78: {
 "78
 {

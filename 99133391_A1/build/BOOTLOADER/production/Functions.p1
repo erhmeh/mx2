@@ -1,13 +1,13 @@
 Version 3.2 HI-TECH Software Intermediate Code
 [v F6740 `(v ~T0 @X0 0 tf1`uc ]
-[v F6905 `(uc ~T0 @X0 0 tf ]
+[v F6907 `(uc ~T0 @X0 0 tf ]
 "21 Library\Button.h
-[s S641 `uc 1 `uc 1 `us 1 `*F6740 1 `*F6905 1 ]
+[s S641 `uc 1 `uc 1 `us 1 `*F6740 1 `*F6907 1 ]
 [n S641 Button mState mCount mThreshold mFunction mGetState ]
-[v F6910 `*S641 ~T0 @X0 1 t ]
+[v F6912 `*S641 ~T0 @X0 1 t ]
 [v F6459 `(v ~T0 @X0 0 tf ]
 "30
-[v _Button_Init `(v ~T0 @X0 0 ef5`C*S641`us`*F6459`*F6905`*F6740 ]
+[v _Button_Init `(v ~T0 @X0 0 ef5`C*S641`us`*F6459`*F6907`*F6740 ]
 "34 Library\MXK.h
 [v _TestButton `S641 ~T0 @X0 0 e ]
 "59
@@ -25,13 +25,13 @@ Version 3.2 HI-TECH Software Intermediate Code
 "18 Events.h
 [v _Event_DIPSwitch `(v ~T0 @X0 0 ef1`uc ]
 "26 Functions.c
-[c E7237 0 1 2 3 .. ]
-[n E7237 . eADC_Ch0 eADC_Ch1 eADC_Ch2 eADC_Ch3  ]
+[c E7239 0 1 2 3 .. ]
+[n E7239 . eADC_Ch0 eADC_Ch1 eADC_Ch2 eADC_Ch3  ]
 "29 Library\ADC.h
-[s S652 `E7237 1 `us 1 `*S652 1 ]
+[s S652 `E7239 1 `us 1 `*S652 1 ]
 [n S652 ADC mChannel mValue mNext ]
 "36
-[v _ADC_Init `(v ~T0 @X0 0 ef2`*S652`E7237 ]
+[v _ADC_Init `(v ~T0 @X0 0 ef2`*S652`E7239 ]
 "37
 [v _ADC_Sequence `(v ~T0 @X0 0 ef2`*S652`*S652 ]
 "45 Functions.c
@@ -46,7 +46,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
 [; ;pic18f67j50.h: 50: extern volatile unsigned short PMSTAT @ 0xF40;
-"52 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f67j50.h
+"52 C:\Program Files (x86)\Microchip\xc8\v1.43\include\pic18f67j50.h
 [; ;pic18f67j50.h: 52: asm("PMSTAT equ 0F40h");
 [; <" PMSTAT equ 0F40h ;# ">
 [; ;pic18f67j50.h: 57: extern volatile unsigned char PMSTATL @ 0xF40;
@@ -6227,6 +6227,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;Events.h: 21: void Event_HMI_RightButton(UINT8 pState);
 [; ;Events.h: 22: void Event_HMI_UpButton(UINT8 pState);
 [; ;Events.h: 23: void Event_HMI_DownButton(UINT8 pState);
+[; ;Events.h: 24: void Event_NULL(UINT8 pState);
 [; ;Port.h: 19: typedef struct Port Port;
 [; ;Port.h: 20: typedef Port * const PortPtr;
 [; ;Port.h: 25: extern Port PortA, PortB, PortC, PortD, PortE, PortF, PortG;
@@ -6599,16 +6600,16 @@ Version 3.2 HI-TECH Software Intermediate Code
 [f ]
 [; ;Functions.c: 33: ADC_Init(&ADC_AN0, eADC_Ch0);
 "33
-[e ( _ADC_Init (2 , &U _ADC_AN0 . `E7237 0 ]
+[e ( _ADC_Init (2 , &U _ADC_AN0 . `E7239 0 ]
 [; ;Functions.c: 34: ADC_Init(&ADC_AN1, eADC_Ch1);
 "34
-[e ( _ADC_Init (2 , &U _ADC_AN1 . `E7237 1 ]
+[e ( _ADC_Init (2 , &U _ADC_AN1 . `E7239 1 ]
 [; ;Functions.c: 35: ADC_Init(&ADC_AN2, eADC_Ch2);
 "35
-[e ( _ADC_Init (2 , &U _ADC_AN2 . `E7237 2 ]
+[e ( _ADC_Init (2 , &U _ADC_AN2 . `E7239 2 ]
 [; ;Functions.c: 36: ADC_Init(&ADC_AN3, eADC_Ch3);
 "36
-[e ( _ADC_Init (2 , &U _ADC_AN3 . `E7237 3 ]
+[e ( _ADC_Init (2 , &U _ADC_AN3 . `E7239 3 ]
 [; ;Functions.c: 39: ADC_Sequence(&ADC_AN0, &ADC_AN1);
 "39
 [e ( _ADC_Sequence (2 , &U _ADC_AN0 &U _ADC_AN1 ]

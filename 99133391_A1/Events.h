@@ -21,6 +21,7 @@ void Event_HMI_LeftButton(UINT8 pState);
 void Event_HMI_RightButton(UINT8 pState);
 void Event_HMI_UpButton(UINT8 pState);
 void Event_HMI_DownButton(UINT8 pState);
+void Event_NULL(UINT8 pState);
 
 #endif	/* EVENTS_H */
 
