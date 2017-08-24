@@ -1,16 +1,16 @@
-/* 
+/*
  * File:   main.c
- * Author: Robert Stephenson
+ * Author: Jamin Early
  *
- * MX2: MXK Skeleton
+ * MX2: Sensing and Actuating
  */
 #include <xc.h>
 #include "ProcessorConfig.h"
 #include "ISR.h"
-#include "ADC.h"
 #include "MXK.h"
 #include "Config.h"
 #include "Functions.h"
+#include "ADC.h"
 
 #include "Colours.h"
 #include "Console.h"
@@ -21,24 +21,50 @@
 #include "LED.h"
 #include "HMI.h"
 
+//Continuous
+int direction = 200;
+int speed = 0;
+//Step Mode    
+int steps = 0;
+int remainingSteps = 0;
+int locked = 0;
+int angle = 0;
+int currentPos = 200;
 
 
+//Global Variables
+Motor Stepper;
+extern ADC ADC_AN0;
+int mode;
+int dip;
+bool upState;
+bool downState;
+bool leftState;
+bool rightState;
+float ADCVoltage = 0;
+int IRDistance;
+int diff;
 
-void main()
-{
+//Function Prototypes
+void initialise();
+void getMode();
+void displaySID();
+void displayContinuousMode();
+void displayStepMode();
+void displayPositionMode();
+void displayNullMode();
+void continuousMode();
+void stepMode();
+void positionMode();
+void nullMode();
+void inputVar();
+
+//Initialising function
+
+void initialise() {
     //Init MXK Pins
     MXK_Init();
-	
-	bool lockedMode = 1;
-    //Continuous
-    int Direction = 200;
-    int Speed = 0;
-    //Step Mode    
-    int Steps = 0;
-    
-    //IRStuff
-    
-    
+
     //Init HMI
     if (MXK_BlockSwitchTo(eMXK_HMI)) {
         HMI_Init();
@@ -47,128 +73,227 @@ void main()
         if (MXK_Release())
             MXK_Dequeue();
     }
-    
-    //Init stepper
-    Motor Stepper;
+
     if (MXK_BlockSwitchTo(eMXK_Motor)) {
-        Motor_Init(&Stepper,MXK_MOTOR);
+        Motor_Init(&Stepper, MXK_MOTOR);
         if (MXK_Release())
-                MXK_Dequeue();
+            MXK_Dequeue();
     }
 
-    //Init interrupts
-    //
-    //
     ISR_Enable();
-    extern ADC ADC_AN0;
     FunctInitADC();
-	FunctInitButton();
-    
-    loop()
-    {
+    FunctInitButton();
+}
+
+void inputVar() {
+    FunctADC();
+    HMI_Poll();
+    dip = DIPSwitch.mGetState();
+    upState = HMIBoard.mUp.mGetState();
+    downState = HMIBoard.mDown.mGetState();
+    leftState = HMIBoard.mLeft.mGetState();
+    rightState = HMIBoard.mRight.mGetState();
+}
+
+/*The getMode function sets the current mode as defined by the dip switches. 
+ * The modes are defined as follows:
+ * 0-Undefined
+ * 1-Continuous Mode
+ * 2-Step Mode
+ * 3-Position Mode
+ * 
+ * The displayMode function prints the current mode to the console.
+ * 
+ * The setMode function calls the corresponding function depending on the what the getMode function returns.
+ */
+void getMode() {
+    switch (dip) {
+
+        case 2:
+            mode = 2;
+            return;
+        case 4:
+            mode = 3;
+            return;
+        case 1:
+            mode = 1;
+            return;
+        default:
+            mode = 0;
+            return;
+    }
+}
+
+//Displays SID
+
+void displaySID() {
+    Console_SetForecolour(GREEN);
+    printf("Jamin Early 99133391\n\n");
+}
+
+//Displays text for continuous mode
+
+void displayContinuousMode() {
+    printf("Current Mode:\n Continuous Mode\n");
+    printf("Direction: ");
+    if (direction > 0) {
+        printf("CW\n");
+    } else {
+        printf("CCW\n");
+    }
+    printf("Speed: %dHz\n", speed);
+    if (leftState) {
+        direction = -200;
+    } else if (rightState) {
+        direction = 200;
+    } else if (upState) {
+        speed++;
+    } else if (downState && speed > 0) {
+        speed--;
+    }
+}
+
+//Displays text for step mode
+
+void displayStepMode() {
+    printf("Current Mode:\n Step Mode\n");
+    printf("Steps: %d\n", steps);
+    printf("Remaining Steps: %d\n\n", remainingSteps);
+    if (leftState == 1 && steps > 0) {
+        steps--;
+    } else if (rightState) {
+        steps++;
+    } else if (upState) {
+        steps = 0;
+    } else if (downState) {
+        //Run
+    }
+}
+
+//Displays text for position mode
+
+void displayPositionMode() {
+    printf("Current Mode:\n Position Mode\n\n");
+    float angleDegrees = ((float) angle * 1.8);
+    printf("Target Angle:\n %f \n", angleDegrees);
+
+}
+
+//Displays text when the mode is undefined
+
+void displayNullMode() {
+    printf("Current Mode:\n Undefined\n");
+    printf("                      \n");
+    printf("                      \n");
+    printf("                      \n");
+}
+
+void nullMode() {
+
+}
+
+void continuousMode() {
+    Motor_Speed(&Stepper, speed);
+    Motor_Move(&Stepper, direction);
+}
+
+void stepMode() {
+    //    if (locked) {
+    //        locked = 0;
+    //        Stepper.mDelta = 0;
+    //    }
+    if (downState && Stepper.mDelta == 0) {
+        Motor_Speed(&Stepper, KHZ(1));
+        Motor_Move(&Stepper, steps);
+        remainingSteps = steps;
+    }
+    if (Stepper.mDelta != 0) {
+        remainingSteps--;
+    }
+}
+
+void positionMode() {
+    diff = angle - currentPos;
+    if (Stepper.mDelta == 0 && diff > 0) {
+        Motor_Speed(&Stepper, KHZ(1));
+        Motor_Move(&Stepper, diff);
+        currentPos--;
+    }
+    if (Stepper.mDelta == 0 && diff < 0) {
+        Motor_Speed(&Stepper, KHZ(1));
+        Motor_Move(&Stepper, diff);
+        currentPos++;
+    }
+}
+
+void main() {
+    initialise();
+
+    loop() {
+        inputVar();
+
         //Read IR sensor
-        // 
         //
-        FunctADC();
-        HMI_Poll();
-        int DipValue = DIPSwitch.mGetState();
-        bool UpValue = HMIBoard.mUp.mGetState();
-        bool DownValue = HMIBoard.mDown.mGetState();
-        bool LeftValue = HMIBoard.mLeft.mGetState();
-        bool RightValue = HMIBoard.mRight.mGetState();
-        
-        
+        //
+
         //HMI code
         if (MXK_BlockSwitchTo(eMXK_HMI)) {
-            printf("%c",ENDOFTEXT);
-            printf("Matt Woods\n9914517\nAssignment1\n\n");
-            
-            
-            printf("DIP Switches: %d\n",DipValue);
-            switch (DipValue){
+            getMode();
+            printf("%c", ENDOFTEXT);
+            printf("%d\n", angle);
+            displaySID();
+            Console_SetForecolour(RED);
+            switch (mode) {
                 case 1:
-                    printf("Continuous Mode:\n");
-                    printf("Direction: ");
-                    if(Direction>0){
-                        printf("CCW\n");
-                    }else{
-                        printf("CW\n");
-                    }
-                    printf("Speed: %dHz\n",Speed);
-                    if(LeftValue){
-                        Direction = -200;
-                    }else if(RightValue){
-                        Direction = 200;
-                    }else if(UpValue){
-                        Speed++;
-                    }else if (DownValue && Speed>0){
-                        Speed--;
-                    }
+                    displayContinuousMode();
                     break;
                 case 2:
-                    printf("Step Mode:\n");
-                    printf("Steps: %d\n\n",Steps);
-                    if(LeftValue == 1 && Steps > 0){
-                        Steps--;
-                    }else if(RightValue){
-                        Steps++;
-                    }else if(UpValue){
-                        Steps=0;
-                    }else if (DownValue){
-                        //Run
-                    }
+                    displayStepMode();
                     break;
-				case 4:
-					printf("Position Mode\n");
-					
-					break;
+                case 3:
+                    ADCVoltage = ADC_Voltage(&ADC_AN0);
+                    IRDistance = 58 * pow(ADCVoltage, -1.10);
+                    angle = ((IRDistance - 17) * (200) / (117 - 17));
+                    if (angle >= 200) {
+                        angle = 200;
+                    }
+                    if (angle < 0) {
+                        angle = 0;
+                    }
+                    displayPositionMode();
+                    break;
                 default:
-					lockedMode = 1;
-                    printf("Invalid Mode!\n\n\n\n\n\n");
-                    
+                    displayNullMode();
+                    break;
             }
-            Console_Render();
-            float ADCVoltage = ADC_Voltage(&ADC_AN0);           
 
-            int IRDistance = 65*pow(ADCVoltage, -1.10);
-            
+
+
+            Console_Render();
             HMI_SetNumber(IRDistance);
             HMI_Render();
             if (MXK_Release())
-            MXK_Dequeue();
+                MXK_Dequeue();
         }
 
         //Stepper code
         if (MXK_BlockSwitchTo(eMXK_Motor)) {
-            switch (DipValue){
+            switch (mode) {
+                case 0:
+                    nullMode();
+                    break;
                 case 1:
-                    Motor_Speed(&Stepper,KHZ(Speed));
-                    Motor_Move(&Stepper,Direction);
+                    continuousMode();
                     break;
                 case 2:
-					if(lockedMode){
-						lockedMode=0;
-						Stepper.mDelta = 0;
-					}
-					if(DownValue && Stepper.mDelta == 0){
-						Motor_Speed(&Stepper, KHZ(1));
-						Motor_Move(&Stepper, Steps);
-					}
+                    stepMode();
                     break;
-				case 4:
-					if(lockedMode){
-						int rotation = 0;
-						lockedMode = 0;
-						int movetoPos = 0;
-					}
-
-					
-					break;
-                default:
-                    break;    
+                case 3:
+                    positionMode();
+                    break;
             }
             if (MXK_Release())
-            MXK_Dequeue();
+                MXK_Dequeue();
         }
     }
 }

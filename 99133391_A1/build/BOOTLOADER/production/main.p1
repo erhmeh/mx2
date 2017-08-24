@@ -1,12 +1,14 @@
 Version 3.2 HI-TECH Software Intermediate Code
-[p mainexit ]
+"22 Library\Motor.h
+[s S644 `s 1 `s 1 `us 1 ]
+[n S644 Motor mDelta mFrequency mAddress ]
 "40 Library\MXK.h
 [v _MXK_Init `(v ~T0 @X0 0 ef ]
-"43 main.c
-[c E6967 8 4 1 2 0 .. ]
-[n E6967 . eMXK_Motor eMXK_IMU eMXK_HMI eMXK_FPGA eMXK_None  ]
+"69 main.c
+[c E6940 8 4 1 2 0 .. ]
+[n E6940 . eMXK_Motor eMXK_IMU eMXK_HMI eMXK_FPGA eMXK_None  ]
 "50 Library\MXK.h
-[v _MXK_BlockSwitchTo `(uc ~T0 @X0 0 ef1`E6967 ]
+[v _MXK_BlockSwitchTo `(uc ~T0 @X0 0 ef1`E6940 ]
 "84 Library\HMI.h
 [v _HMI_Init `(v ~T0 @X0 0 ef ]
 "102 Library\LCD.h
@@ -17,19 +19,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _MXK_Release `(uc ~T0 @X0 0 ef ]
 "54
 [v _MXK_Dequeue `(v ~T0 @X0 0 ef ]
-"22 Library\Motor.h
-[s S644 `s 1 `s 1 `us 1 ]
-[n S644 Motor mDelta mFrequency mAddress ]
-"38
+"38 Library\Motor.h
 [v _Motor_Init `(v ~T0 @X0 0 ef2`*S644`us ]
 "19 Library\ISR.h
 [v _ISR_Enable `(v ~T0 @X0 0 ef ]
-"63 main.c
-[c E6755 0 1 2 3 .. ]
-[n E6755 . eADC_Ch0 eADC_Ch1 eADC_Ch2 eADC_Ch3  ]
-"29 Library\ADC.h
-[s S640 `E6755 1 `us 1 `*S640 1 ]
-[n S640 ADC mChannel mValue mNext ]
 "22 Functions.h
 [v _FunctInitADC `(v ~T0 @X0 0 ef ]
 "18
@@ -38,13 +31,13 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _FunctADC `(v ~T0 @X0 0 ef ]
 "106 Library\HMI.h
 [v _HMI_Poll `(v ~T0 @X0 0 ef ]
-[v F6921 `(v ~T0 @X0 0 tf1`uc ]
-[v F6947 `(uc ~T0 @X0 0 tf ]
+[v F6894 `(v ~T0 @X0 0 tf1`uc ]
+[v F6920 `(uc ~T0 @X0 0 tf ]
 "21 Library\Button.h
-[s S642 `uc 1 `uc 1 `us 1 `*F6921 1 `*F6947 1 ]
-[n S642 Button mState mCount mThreshold mFunction mGetState ]
+[s S641 `uc 1 `uc 1 `us 1 `*F6894 1 `*F6920 1 ]
+[n S641 Button mState mCount mThreshold mFunction mGetState ]
 "35 Library\MXK.h
-[v _DIPSwitch `S642 ~T0 @X0 0 e ]
+[v _DIPSwitch `S641 ~T0 @X0 0 e ]
 "32 Library\HMI.h
 [s S650 :4 `uc 1 :4 `uc 1 ]
 [n S650 . pButton . ]
@@ -64,31 +57,43 @@ Version 3.2 HI-TECH Software Intermediate Code
 [u S647 `uc -> 8 `i `S648 1 ]
 [n S647 . Bytes . ]
 "20
-[s S646 `S647 1 `S642 1 `S642 1 `S642 1 `S642 1 `S642 1 ]
+[s S646 `S647 1 `S641 1 `S641 1 `S641 1 `S641 1 `S641 1 ]
 [n S646 HMI . mRight mLeft mUp mDown mDIP ]
 "18
 [v _HMIBoard `S646 ~T0 @X0 0 e ]
-"195 C:\Program Files (x86)\Microchip\xc8\v1.43\include\stdio.h
+[v F7027 `(v ~T0 @X0 1 tf1`us ]
+"34 Library\Console.h
+[v _Console_SetForecolour `TF7027 ~T0 @X0 0 e ]
+"195 C:\Program Files (x86)\Microchip\xc8\v1.42\include\stdio.h
 [v _printf `(i ~T0 @X0 0 ev`*Cuc ]
-"28 Library\Console.h
-[v _Console_Render `(v ~T0 @X0 0 ef ]
-"40 Library\ADC.h
-[v _ADC_Voltage `(f ~T0 @X0 0 ef1`*S640 ]
-"45 C:\Program Files (x86)\Microchip\xc8\v1.43\include\math.h
-[v _pow `(d ~T0 @X0 0 ef2`d`d ]
-"103 Library\HMI.h
-[v _HMI_SetNumber `(v ~T0 @X0 0 ef1`i ]
-"86
-[v _HMI_Render `(v ~T0 @X0 0 ef ]
 "61 Library\Motor.h
 [v _Motor_Speed `(uc ~T0 @X0 0 ef2`*S644`us ]
 "49
 [v _Motor_Move `(uc ~T0 @X0 0 ef2`*S644`s ]
+[p mainexit ]
+"254 main.c
+[c E6987 0 1 2 3 .. ]
+[n E6987 . eADC_Ch0 eADC_Ch1 eADC_Ch2 eADC_Ch3  ]
+"29 Library\ADC.h
+[s S642 `E6987 1 `us 1 `*S642 1 ]
+[n S642 ADC mChannel mValue mNext ]
+"40
+[v _ADC_Voltage `(f ~T0 @X0 0 ef1`*S642 ]
+"37 main.c
+[v _ADC_AN0 `S642 ~T0 @X0 0 e ]
+"45 C:\Program Files (x86)\Microchip\xc8\v1.42\include\math.h
+[v _pow `(d ~T0 @X0 0 ef2`d`d ]
+"28 Library\Console.h
+[v _Console_Render `(v ~T0 @X0 0 ef ]
+"103 Library\HMI.h
+[v _HMI_SetNumber `(v ~T0 @X0 0 ef1`i ]
+"86
+[v _HMI_Render `(v ~T0 @X0 0 ef ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
 [; ;pic18f67j50.h: 50: extern volatile unsigned short PMSTAT @ 0xF40;
-"52 C:\Program Files (x86)\Microchip\xc8\v1.43\include\pic18f67j50.h
+"52 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f67j50.h
 [; ;pic18f67j50.h: 52: asm("PMSTAT equ 0F40h");
 [; <" PMSTAT equ 0F40h ;# ">
 [; ;pic18f67j50.h: 57: extern volatile unsigned char PMSTATL @ 0xF40;
@@ -6290,28 +6295,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;ISR.h: 18: void ISR_Disable();
 [; ;ISR.h: 19: void ISR_Enable();
 [; ;ISR.h: 20: void interrupt ISR_Function();
-[; ;ADC.h: 18: typedef struct ADC ADC;
-[; ;ADC.h: 19: typedef ADC * ADCPtr;
-[; ;ADC.h: 21: typedef enum
-[; ;ADC.h: 22: {
-[; ;ADC.h: 23: eADC_Ch0 = 0,
-[; ;ADC.h: 24: eADC_Ch1 = 1,
-[; ;ADC.h: 25: eADC_Ch2 = 2,
-[; ;ADC.h: 26: eADC_Ch3 = 3
-[; ;ADC.h: 27: } eADC_Channel;
-[; ;ADC.h: 29: struct ADC
-[; ;ADC.h: 30: {
-[; ;ADC.h: 31: eADC_Channel mChannel;
-[; ;ADC.h: 32: UINT16 mValue;
-[; ;ADC.h: 33: ADCPtr mNext;
-[; ;ADC.h: 34: };
-[; ;ADC.h: 36: void ADC_Init (ADCPtr pInput, eADC_Channel pChannel);
-[; ;ADC.h: 37: void ADC_Sequence(ADCPtr pItemA, ADCPtr pItemB);
-[; ;ADC.h: 38: void ADC_Start (ADCPtr pInput);
-[; ;ADC.h: 39: void ADC_ISR();
-[; ;ADC.h: 40: float ADC_Voltage(ADCPtr pInput);
-[; ;ADC.h: 42: UINT8 rand();
-[; ;ADC.h: 43: UINT8 rand_between(UINT8 pValA, UINT8 pValB);
 [; ;Port.h: 19: typedef struct Port Port;
 [; ;Port.h: 20: typedef Port * const PortPtr;
 [; ;Port.h: 25: extern Port PortA, PortB, PortC, PortD, PortE, PortF, PortG;
@@ -6475,6 +6458,28 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;Functions.h: 29: void FunctMotor();
 [; ;Functions.h: 30: void FunctHMI();
 [; ;Functions.h: 31: void FunctADC();
+[; ;ADC.h: 18: typedef struct ADC ADC;
+[; ;ADC.h: 19: typedef ADC * ADCPtr;
+[; ;ADC.h: 21: typedef enum
+[; ;ADC.h: 22: {
+[; ;ADC.h: 23: eADC_Ch0 = 0,
+[; ;ADC.h: 24: eADC_Ch1 = 1,
+[; ;ADC.h: 25: eADC_Ch2 = 2,
+[; ;ADC.h: 26: eADC_Ch3 = 3
+[; ;ADC.h: 27: } eADC_Channel;
+[; ;ADC.h: 29: struct ADC
+[; ;ADC.h: 30: {
+[; ;ADC.h: 31: eADC_Channel mChannel;
+[; ;ADC.h: 32: UINT16 mValue;
+[; ;ADC.h: 33: ADCPtr mNext;
+[; ;ADC.h: 34: };
+[; ;ADC.h: 36: void ADC_Init (ADCPtr pInput, eADC_Channel pChannel);
+[; ;ADC.h: 37: void ADC_Sequence(ADCPtr pItemA, ADCPtr pItemB);
+[; ;ADC.h: 38: void ADC_Start (ADCPtr pInput);
+[; ;ADC.h: 39: void ADC_ISR();
+[; ;ADC.h: 40: float ADC_Voltage(ADCPtr pInput);
+[; ;ADC.h: 42: UINT8 rand();
+[; ;ADC.h: 43: UINT8 rand_between(UINT8 pValA, UINT8 pValB);
 [; ;Colours.h: 14: typedef UINT16 Colour;
 [; ;Colours.h: 15: typedef Colour * ColourPtr;
 [; ;Colours.h: 33: Colour Colour_To565(UINT8 r, UINT8 g, UINT8 b);
@@ -6654,459 +6659,796 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;HMI.h: 103: void HMI_SetNumber (int pInput);
 [; ;HMI.h: 104: void HMI_SetSegments (str pString);
 [; ;HMI.h: 106: void HMI_Poll ();
-[v $root$_main `(v ~T0 @X0 0 e ]
-"27 main.c
-[v _main `(v ~T0 @X0 1 ef ]
+"25 main.c
+[v _direction `i ~T0 @X0 1 e ]
+[i _direction
+-> 200 `i
+]
+[; ;main.c: 25: int direction = 200;
+"26
+[v _speed `i ~T0 @X0 1 e ]
+[i _speed
+-> 0 `i
+]
+[; ;main.c: 26: int speed = 0;
 "28
-{
-[; ;main.c: 27: void main()
-[; ;main.c: 28: {
-[e :U _main ]
-[f ]
-[; ;main.c: 30: MXK_Init();
+[v _steps `i ~T0 @X0 1 e ]
+[i _steps
+-> 0 `i
+]
+[; ;main.c: 28: int steps = 0;
+"29
+[v _remainingSteps `i ~T0 @X0 1 e ]
+[i _remainingSteps
+-> 0 `i
+]
+[; ;main.c: 29: int remainingSteps = 0;
 "30
-[e ( _MXK_Init ..  ]
+[v _locked `i ~T0 @X0 1 e ]
+[i _locked
+-> 0 `i
+]
+[; ;main.c: 30: int locked = 0;
+"31
+[v _angle `i ~T0 @X0 1 e ]
+[i _angle
+-> 0 `i
+]
+[; ;main.c: 31: int angle = 0;
 "32
-[v _lockedMode `uc ~T0 @X0 1 a ]
-[; ;main.c: 32: bool lockedMode = 1;
-[e = _lockedMode -> -> 1 `i `uc ]
-"34
-[v _Direction `i ~T0 @X0 1 a ]
-[; ;main.c: 34: int Direction = 200;
-[e = _Direction -> 200 `i ]
-"35
-[v _Speed `i ~T0 @X0 1 a ]
-[; ;main.c: 35: int Speed = 0;
-[e = _Speed -> 0 `i ]
-"37
-[v _Steps `i ~T0 @X0 1 a ]
-[; ;main.c: 37: int Steps = 0;
-[e = _Steps -> 0 `i ]
-[; ;main.c: 43: if (MXK_BlockSwitchTo(eMXK_HMI)) {
+[v _currentPos `i ~T0 @X0 1 e ]
+[i _currentPos
+-> 200 `i
+]
+[; ;main.c: 32: int currentPos = 200;
+"36
+[v _Stepper `S644 ~T0 @X0 1 e ]
+[; ;main.c: 36: Motor Stepper;
+[; ;main.c: 37: extern ADC ADC_AN0;
+"38
+[v _mode `i ~T0 @X0 1 e ]
+[; ;main.c: 38: int mode;
+"39
+[v _dip `i ~T0 @X0 1 e ]
+[; ;main.c: 39: int dip;
+"40
+[v _upState `uc ~T0 @X0 1 e ]
+[; ;main.c: 40: bool upState;
+"41
+[v _downState `uc ~T0 @X0 1 e ]
+[; ;main.c: 41: bool downState;
+"42
+[v _leftState `uc ~T0 @X0 1 e ]
+[; ;main.c: 42: bool leftState;
 "43
-[e $ ! != -> ( _MXK_BlockSwitchTo (1 . `E6967 2 `i -> -> -> 0 `i `uc `i 654  ]
-{
-[; ;main.c: 44: HMI_Init();
+[v _rightState `uc ~T0 @X0 1 e ]
+[; ;main.c: 43: bool rightState;
 "44
-[e ( _HMI_Init ..  ]
-[; ;main.c: 45: LCD_Init();
+[v _ADCVoltage `f ~T0 @X0 1 e ]
+[i _ADCVoltage
+-> -> 0 `i `f
+]
+[; ;main.c: 44: float ADCVoltage = 0;
 "45
-[e ( _LCD_Init ..  ]
-[; ;main.c: 46: Console_Init();
+[v _IRDistance `i ~T0 @X0 1 e ]
+[; ;main.c: 45: int IRDistance;
 "46
+[v _diff `i ~T0 @X0 1 e ]
+[; ;main.c: 46: int diff;
+[; ;main.c: 49: void initialise();
+[; ;main.c: 50: void getMode();
+[; ;main.c: 51: void displaySID();
+[; ;main.c: 52: void displayContinuousMode();
+[; ;main.c: 53: void displayStepMode();
+[; ;main.c: 54: void displayPositionMode();
+[; ;main.c: 55: void displayNullMode();
+[; ;main.c: 56: void continuousMode();
+[; ;main.c: 57: void stepMode();
+[; ;main.c: 58: void positionMode();
+[; ;main.c: 59: void nullMode();
+[; ;main.c: 60: void inputVar();
+"64
+[v _initialise `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 64: void initialise() {
+[e :U _initialise ]
+[f ]
+[; ;main.c: 66: MXK_Init();
+"66
+[e ( _MXK_Init ..  ]
+[; ;main.c: 69: if (MXK_BlockSwitchTo(eMXK_HMI)) {
+"69
+[e $ ! != -> ( _MXK_BlockSwitchTo (1 . `E6940 2 `i -> -> -> 0 `i `uc `i 654  ]
+{
+[; ;main.c: 70: HMI_Init();
+"70
+[e ( _HMI_Init ..  ]
+[; ;main.c: 71: LCD_Init();
+"71
+[e ( _LCD_Init ..  ]
+[; ;main.c: 72: Console_Init();
+"72
 [e ( _Console_Init ..  ]
-[; ;main.c: 47: if (MXK_Release())
-"47
+[; ;main.c: 73: if (MXK_Release())
+"73
 [e $ ! != -> ( _MXK_Release ..  `i -> -> -> 0 `i `uc `i 655  ]
-[; ;main.c: 48: MXK_Dequeue();
-"48
+[; ;main.c: 74: MXK_Dequeue();
+"74
 [e ( _MXK_Dequeue ..  ]
 [e :U 655 ]
-"49
+"75
 }
 [e :U 654 ]
-"52
-[v _Stepper `S644 ~T0 @X0 1 a ]
-[; ;main.c: 49: }
-[; ;main.c: 52: Motor Stepper;
-[; ;main.c: 53: if (MXK_BlockSwitchTo(eMXK_Motor)) {
-"53
-[e $ ! != -> ( _MXK_BlockSwitchTo (1 . `E6967 0 `i -> -> -> 0 `i `uc `i 656  ]
+[; ;main.c: 75: }
+[; ;main.c: 77: if (MXK_BlockSwitchTo(eMXK_Motor)) {
+"77
+[e $ ! != -> ( _MXK_BlockSwitchTo (1 . `E6940 0 `i -> -> -> 0 `i `uc `i 656  ]
 {
-[; ;main.c: 54: Motor_Init(&Stepper,0b1000);
-"54
+[; ;main.c: 78: Motor_Init(&Stepper, 0b1000);
+"78
 [e ( _Motor_Init (2 , &U _Stepper -> -> 8 `i `us ]
-[; ;main.c: 55: if (MXK_Release())
-"55
+[; ;main.c: 79: if (MXK_Release())
+"79
 [e $ ! != -> ( _MXK_Release ..  `i -> -> -> 0 `i `uc `i 657  ]
-[; ;main.c: 56: MXK_Dequeue();
-"56
+[; ;main.c: 80: MXK_Dequeue();
+"80
 [e ( _MXK_Dequeue ..  ]
 [e :U 657 ]
-"57
+"81
 }
 [e :U 656 ]
-[; ;main.c: 57: }
-[; ;main.c: 62: ISR_Enable();
-"62
-[e ( _ISR_Enable ..  ]
-"63
-[v _ADC_AN0 `S640 ~T0 @X0 0 e ]
-[; ;main.c: 63: extern ADC ADC_AN0;
-[; ;main.c: 64: FunctInitADC();
-"64
-[e ( _FunctInitADC ..  ]
-[; ;main.c: 65: FunctInitButton();
-"65
-[e ( _FunctInitButton ..  ]
-[; ;main.c: 67: for(;;)
-"67
-{
-"68
-[e :U 658 ]
-[; ;main.c: 68: {
-{
-[; ;main.c: 72: FunctADC();
-"72
-[e ( _FunctADC ..  ]
-[; ;main.c: 73: HMI_Poll();
-"73
-[e ( _HMI_Poll ..  ]
-"74
-[v _DipValue `i ~T0 @X0 1 a ]
-[; ;main.c: 74: int DipValue = DIPSwitch.mGetState();
-[e = _DipValue -> ( *U . _DIPSwitch 4 ..  `i ]
-"75
-[v _UpValue `uc ~T0 @X0 1 a ]
-[; ;main.c: 75: bool UpValue = HMIBoard.mUp.mGetState();
-[e = _UpValue ( *U . . _HMIBoard 3 4 ..  ]
-"76
-[v _DownValue `uc ~T0 @X0 1 a ]
-[; ;main.c: 76: bool DownValue = HMIBoard.mDown.mGetState();
-[e = _DownValue ( *U . . _HMIBoard 4 4 ..  ]
-"77
-[v _LeftValue `uc ~T0 @X0 1 a ]
-[; ;main.c: 77: bool LeftValue = HMIBoard.mLeft.mGetState();
-[e = _LeftValue ( *U . . _HMIBoard 2 4 ..  ]
-"78
-[v _RightValue `uc ~T0 @X0 1 a ]
-[; ;main.c: 78: bool RightValue = HMIBoard.mRight.mGetState();
-[e = _RightValue ( *U . . _HMIBoard 1 4 ..  ]
-[; ;main.c: 82: if (MXK_BlockSwitchTo(eMXK_HMI)) {
-"82
-[e $ ! != -> ( _MXK_BlockSwitchTo (1 . `E6967 2 `i -> -> -> 0 `i `uc `i 661  ]
-{
-[; ;main.c: 83: printf("%c",(char)35);
+[; ;main.c: 81: }
+[; ;main.c: 83: ISR_Enable();
 "83
-[e ( _printf , (. :s 1C -> -> -> 35 `i `uc `i ]
-[; ;main.c: 84: printf("Matt Woods\n9914517\nAssignment1\n\n");
+[e ( _ISR_Enable ..  ]
+[; ;main.c: 84: FunctInitADC();
 "84
-[e ( _printf :s 2C ]
-[; ;main.c: 87: printf("DIP Switches: %d\n",DipValue);
-"87
-[e ( _printf , (. :s 3C _DipValue ]
-[; ;main.c: 88: switch (DipValue){
-"88
-[e $U 663  ]
-{
-[; ;main.c: 89: case 1:
-"89
-[e :U 664 ]
-[; ;main.c: 90: printf("Continuous Mode:\n");
-"90
-[e ( _printf :s 4C ]
-[; ;main.c: 91: printf("Direction: ");
-"91
-[e ( _printf :s 5C ]
-[; ;main.c: 92: if(Direction>0){
-"92
-[e $ ! > _Direction -> 0 `i 665  ]
-{
-[; ;main.c: 93: printf("CCW\n");
-"93
-[e ( _printf :s 6C ]
-"94
-}
-[; ;main.c: 94: }else{
-[e $U 666  ]
-[e :U 665 ]
-{
-[; ;main.c: 95: printf("CW\n");
-"95
-[e ( _printf :s 7C ]
-"96
-}
-[e :U 666 ]
-[; ;main.c: 96: }
-[; ;main.c: 97: printf("Speed: %dHz\n",Speed);
-"97
-[e ( _printf , (. :s 8C _Speed ]
-[; ;main.c: 98: if(LeftValue){
-"98
-[e $ ! != -> _LeftValue `i -> -> -> 0 `i `uc `i 667  ]
-{
-[; ;main.c: 99: Direction = -200;
-"99
-[e = _Direction -U -> 200 `i ]
-"100
-}
-[; ;main.c: 100: }else if(RightValue){
-[e $U 668  ]
-[e :U 667 ]
-[e $ ! != -> _RightValue `i -> -> -> 0 `i `uc `i 669  ]
-{
-[; ;main.c: 101: Direction = 200;
-"101
-[e = _Direction -> 200 `i ]
-"102
-}
-[; ;main.c: 102: }else if(UpValue){
-[e $U 670  ]
-[e :U 669 ]
-[e $ ! != -> _UpValue `i -> -> -> 0 `i `uc `i 671  ]
-{
-[; ;main.c: 103: Speed++;
-"103
-[e ++ _Speed -> 1 `i ]
-"104
-}
-[; ;main.c: 104: }else if (DownValue && Speed>0){
-[e $U 672  ]
-[e :U 671 ]
-[e $ ! && != -> _DownValue `i -> -> -> 0 `i `uc `i > _Speed -> 0 `i 673  ]
-{
-[; ;main.c: 105: Speed--;
-"105
-[e -- _Speed -> 1 `i ]
-"106
-}
-[e :U 673 ]
-"107
-[e :U 672 ]
-[e :U 670 ]
-[e :U 668 ]
-[; ;main.c: 106: }
-[; ;main.c: 107: break;
-[e $U 662  ]
-[; ;main.c: 108: case 2:
-"108
-[e :U 674 ]
-[; ;main.c: 109: printf("Step Mode:\n");
-"109
-[e ( _printf :s 9C ]
-[; ;main.c: 110: printf("Steps: %d\n\n",Steps);
-"110
-[e ( _printf , (. :s 10C _Steps ]
-[; ;main.c: 111: if(LeftValue == 1 && Steps > 0){
-"111
-[e $ ! && == -> _LeftValue `i -> 1 `i > _Steps -> 0 `i 675  ]
-{
-[; ;main.c: 112: Steps--;
-"112
-[e -- _Steps -> 1 `i ]
-"113
-}
-[; ;main.c: 113: }else if(RightValue){
-[e $U 676  ]
-[e :U 675 ]
-[e $ ! != -> _RightValue `i -> -> -> 0 `i `uc `i 677  ]
-{
-[; ;main.c: 114: Steps++;
-"114
-[e ++ _Steps -> 1 `i ]
-"115
-}
-[; ;main.c: 115: }else if(UpValue){
-[e $U 678  ]
-[e :U 677 ]
-[e $ ! != -> _UpValue `i -> -> -> 0 `i `uc `i 679  ]
-{
-[; ;main.c: 116: Steps=0;
-"116
-[e = _Steps -> 0 `i ]
-"117
-}
-[; ;main.c: 117: }else if (DownValue){
-[e $U 680  ]
-[e :U 679 ]
-[e $ ! != -> _DownValue `i -> -> -> 0 `i `uc `i 681  ]
-{
-"119
-}
-[e :U 681 ]
-"120
-[e :U 680 ]
-[e :U 678 ]
-[e :U 676 ]
-[; ;main.c: 119: }
-[; ;main.c: 120: break;
-[e $U 662  ]
-[; ;main.c: 121: case 4:
-"121
-[e :U 682 ]
-[; ;main.c: 122: printf("Position Mode\n");
-"122
-[e ( _printf :s 11C ]
-[; ;main.c: 124: break;
-"124
-[e $U 662  ]
-[; ;main.c: 125: default:
-"125
-[e :U 683 ]
-[; ;main.c: 126: lockedMode = 1;
-"126
-[e = _lockedMode -> -> 1 `i `uc ]
-[; ;main.c: 127: printf("Invalid Mode!\n\n\n\n\n\n");
-"127
-[e ( _printf :s 12C ]
-"129
-}
-[; ;main.c: 129: }
-[e $U 662  ]
-"88
-[e :U 663 ]
-[e [\ _DipValue , $ -> 1 `i 664
- , $ -> 2 `i 674
- , $ -> 4 `i 682
- 683 ]
-"129
-[e :U 662 ]
-[; ;main.c: 130: Console_Render();
-"130
-[e ( _Console_Render ..  ]
-"131
-[v _ADCVoltage `f ~T0 @X0 1 a ]
-[; ;main.c: 131: float ADCVoltage = ADC_Voltage(&ADC_AN0);
-[e = _ADCVoltage ( _ADC_Voltage (1 &U _ADC_AN0 ]
-"133
-[v _IRDistance `i ~T0 @X0 1 a ]
-[; ;main.c: 133: int IRDistance = 65*pow(ADCVoltage, -1.10);
-[e = _IRDistance -> * -> -> 65 `i `d ( _pow (2 , -> _ADCVoltage `d -U .1.10 `i ]
-[; ;main.c: 135: HMI_SetNumber(IRDistance);
-"135
-[e ( _HMI_SetNumber (1 _IRDistance ]
-[; ;main.c: 136: HMI_Render();
-"136
-[e ( _HMI_Render ..  ]
-[; ;main.c: 137: if (MXK_Release())
-"137
-[e $ ! != -> ( _MXK_Release ..  `i -> -> -> 0 `i `uc `i 684  ]
-[; ;main.c: 138: MXK_Dequeue();
-"138
-[e ( _MXK_Dequeue ..  ]
-[e :U 684 ]
-"139
-}
-[e :U 661 ]
-[; ;main.c: 139: }
-[; ;main.c: 142: if (MXK_BlockSwitchTo(eMXK_Motor)) {
-"142
-[e $ ! != -> ( _MXK_BlockSwitchTo (1 . `E6967 0 `i -> -> -> 0 `i `uc `i 685  ]
-{
-[; ;main.c: 143: switch (DipValue){
-"143
-[e $U 687  ]
-{
-[; ;main.c: 144: case 1:
-"144
-[e :U 688 ]
-[; ;main.c: 145: Motor_Speed(&Stepper,(Speed*1000L));
-"145
-[e ( _Motor_Speed (2 , &U _Stepper -> * -> _Speed `l -> 1000 `l `us ]
-[; ;main.c: 146: Motor_Move(&Stepper,Direction);
-"146
-[e ( _Motor_Move (2 , &U _Stepper -> _Direction `s ]
-[; ;main.c: 147: break;
-"147
-[e $U 686  ]
-[; ;main.c: 148: case 2:
-"148
-[e :U 689 ]
-[; ;main.c: 149: if(lockedMode){
-"149
-[e $ ! != -> _lockedMode `i -> -> -> 0 `i `uc `i 690  ]
-{
-[; ;main.c: 150: lockedMode=0;
-"150
-[e = _lockedMode -> -> 0 `i `uc ]
-[; ;main.c: 151: Stepper.mDelta = 0;
-"151
-[e = . _Stepper 0 -> -> 0 `i `s ]
-"152
-}
-[e :U 690 ]
-[; ;main.c: 152: }
-[; ;main.c: 153: if(DownValue && Stepper.mDelta == 0){
-"153
-[e $ ! && != -> _DownValue `i -> -> -> 0 `i `uc `i == -> . _Stepper 0 `i -> 0 `i 691  ]
-{
-[; ;main.c: 154: Motor_Speed(&Stepper, (1*1000L));
-"154
-[e ( _Motor_Speed (2 , &U _Stepper -> * -> -> 1 `i `l -> 1000 `l `us ]
-[; ;main.c: 155: Motor_Move(&Stepper, Steps);
-"155
-[e ( _Motor_Move (2 , &U _Stepper -> _Steps `s ]
-"156
-}
-[e :U 691 ]
-[; ;main.c: 156: }
-[; ;main.c: 157: break;
-"157
-[e $U 686  ]
-[; ;main.c: 158: case 4:
-"158
-[e :U 692 ]
-[; ;main.c: 159: if(lockedMode){
-"159
-[e $ ! != -> _lockedMode `i -> -> -> 0 `i `uc `i 693  ]
-{
-"160
-[v _rotation `i ~T0 @X0 1 a ]
-[; ;main.c: 160: int rotation = 0;
-[e = _rotation -> 0 `i ]
-[; ;main.c: 161: lockedMode = 0;
-"161
-[e = _lockedMode -> -> 0 `i `uc ]
-"162
-[v _movetoPos `i ~T0 @X0 1 a ]
-[; ;main.c: 162: int movetoPos = 0;
-[e = _movetoPos -> 0 `i ]
-"163
-}
-[e :U 693 ]
-[; ;main.c: 163: }
-[; ;main.c: 166: break;
-"166
-[e $U 686  ]
-[; ;main.c: 167: default:
-"167
-[e :U 694 ]
-[; ;main.c: 168: break;
-"168
-[e $U 686  ]
-"169
-}
-[; ;main.c: 169: }
-[e $U 686  ]
-"143
-[e :U 687 ]
-[e [\ _DipValue , $ -> 1 `i 688
- , $ -> 2 `i 689
- , $ -> 4 `i 692
- 694 ]
-"169
-[e :U 686 ]
-[; ;main.c: 170: if (MXK_Release())
-"170
-[e $ ! != -> ( _MXK_Release ..  `i -> -> -> 0 `i `uc `i 695  ]
-[; ;main.c: 171: MXK_Dequeue();
-"171
-[e ( _MXK_Dequeue ..  ]
-[e :U 695 ]
-"172
-}
-[e :U 685 ]
-"173
-}
-[; ;main.c: 172: }
-[; ;main.c: 173: }
-[e $U 658  ]
-[e :U 659 ]
-}
-[; ;main.c: 174: }
-"174
+[e ( _FunctInitADC ..  ]
+[; ;main.c: 85: FunctInitButton();
+"85
+[e ( _FunctInitButton ..  ]
+[; ;main.c: 86: }
+"86
 [e :UE 653 ]
 }
-[p f _printf 8913024 ]
-[a 1C 37 99 0 ]
-[a 5C 68 105 114 101 99 116 105 111 110 58 32 0 ]
-[a 8C 83 112 101 101 100 58 32 37 100 72 122 10 0 ]
-[a 11C 80 111 115 105 116 105 111 110 32 77 111 100 101 10 0 ]
-[a 3C 68 73 80 32 83 119 105 116 99 104 101 115 58 32 37 100 10 0 ]
-[a 6C 67 67 87 10 0 ]
-[a 7C 67 87 10 0 ]
-[a 4C 67 111 110 116 105 110 117 111 117 115 32 77 111 100 101 58 10 0 ]
-[a 9C 83 116 101 112 32 77 111 100 101 58 10 0 ]
-[a 10C 83 116 101 112 115 58 32 37 100 10 10 0 ]
-[a 2C 77 97 116 116 32 87 111 111 100 115 10 57 57 49 52 53 49 55 10 65 115 115 105 103 110 109 101 110 116 49 10 10 0 ]
-[a 12C 73 110 118 97 108 105 100 32 77 111 100 101 33 10 10 10 10 10 10 0 ]
+"88
+[v _inputVar `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 88: void inputVar() {
+[e :U _inputVar ]
+[f ]
+[; ;main.c: 89: FunctADC();
+"89
+[e ( _FunctADC ..  ]
+[; ;main.c: 90: HMI_Poll();
+"90
+[e ( _HMI_Poll ..  ]
+[; ;main.c: 91: dip = DIPSwitch.mGetState();
+"91
+[e = _dip -> ( *U . _DIPSwitch 4 ..  `i ]
+[; ;main.c: 92: upState = HMIBoard.mUp.mGetState();
+"92
+[e = _upState ( *U . . _HMIBoard 3 4 ..  ]
+[; ;main.c: 93: downState = HMIBoard.mDown.mGetState();
+"93
+[e = _downState ( *U . . _HMIBoard 4 4 ..  ]
+[; ;main.c: 94: leftState = HMIBoard.mLeft.mGetState();
+"94
+[e = _leftState ( *U . . _HMIBoard 2 4 ..  ]
+[; ;main.c: 95: rightState = HMIBoard.mRight.mGetState();
+"95
+[e = _rightState ( *U . . _HMIBoard 1 4 ..  ]
+[; ;main.c: 96: }
+"96
+[e :UE 658 ]
+}
+"109
+[v _getMode `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 109: void getMode() {
+[e :U _getMode ]
+[f ]
+[; ;main.c: 110: switch (dip) {
+"110
+[e $U 661  ]
+{
+[; ;main.c: 112: case 2:
+"112
+[e :U 662 ]
+[; ;main.c: 113: mode = 2;
+"113
+[e = _mode -> 2 `i ]
+[; ;main.c: 114: return;
+"114
+[e $UE 659  ]
+[; ;main.c: 115: case 4:
+"115
+[e :U 663 ]
+[; ;main.c: 116: mode = 3;
+"116
+[e = _mode -> 3 `i ]
+[; ;main.c: 117: return;
+"117
+[e $UE 659  ]
+[; ;main.c: 118: case 1:
+"118
+[e :U 664 ]
+[; ;main.c: 119: mode = 1;
+"119
+[e = _mode -> 1 `i ]
+[; ;main.c: 120: return;
+"120
+[e $UE 659  ]
+[; ;main.c: 121: default:
+"121
+[e :U 665 ]
+[; ;main.c: 122: mode = 0;
+"122
+[e = _mode -> 0 `i ]
+[; ;main.c: 123: return;
+"123
+[e $UE 659  ]
+"124
+}
+[; ;main.c: 124: }
+[e $U 660  ]
+"110
+[e :U 661 ]
+[e [\ _dip , $ -> 2 `i 662
+ , $ -> 4 `i 663
+ , $ -> 1 `i 664
+ 665 ]
+"124
+[e :U 660 ]
+[; ;main.c: 125: }
+"125
+[e :UE 659 ]
+}
+"129
+[v _displaySID `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 129: void displaySID() {
+[e :U _displaySID ]
+[f ]
+[; ;main.c: 130: Console_SetForecolour(0x07E0);
+"130
+[e ( _Console_SetForecolour (1 -> -> 2016 `i `us ]
+[; ;main.c: 131: printf("Jamin Early 99133391\n\n");
+"131
+[e ( _printf :s 1C ]
+[; ;main.c: 132: }
+"132
+[e :UE 666 ]
+}
+"136
+[v _displayContinuousMode `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 136: void displayContinuousMode() {
+[e :U _displayContinuousMode ]
+[f ]
+[; ;main.c: 137: printf("Current Mode:\n Continuous Mode\n");
+"137
+[e ( _printf :s 2C ]
+[; ;main.c: 138: printf("Direction: ");
+"138
+[e ( _printf :s 3C ]
+[; ;main.c: 139: if (direction > 0) {
+"139
+[e $ ! > _direction -> 0 `i 668  ]
+{
+[; ;main.c: 140: printf("CW\n");
+"140
+[e ( _printf :s 4C ]
+"141
+}
+[; ;main.c: 141: } else {
+[e $U 669  ]
+[e :U 668 ]
+{
+[; ;main.c: 142: printf("CCW\n");
+"142
+[e ( _printf :s 5C ]
+"143
+}
+[e :U 669 ]
+[; ;main.c: 143: }
+[; ;main.c: 144: printf("Speed: %dHz\n", speed);
+"144
+[e ( _printf , (. :s 6C _speed ]
+[; ;main.c: 145: if (leftState) {
+"145
+[e $ ! != -> _leftState `i -> -> -> 0 `i `uc `i 670  ]
+{
+[; ;main.c: 146: direction = -200;
+"146
+[e = _direction -U -> 200 `i ]
+"147
+}
+[; ;main.c: 147: } else if (rightState) {
+[e $U 671  ]
+[e :U 670 ]
+[e $ ! != -> _rightState `i -> -> -> 0 `i `uc `i 672  ]
+{
+[; ;main.c: 148: direction = 200;
+"148
+[e = _direction -> 200 `i ]
+"149
+}
+[; ;main.c: 149: } else if (upState) {
+[e $U 673  ]
+[e :U 672 ]
+[e $ ! != -> _upState `i -> -> -> 0 `i `uc `i 674  ]
+{
+[; ;main.c: 150: speed++;
+"150
+[e ++ _speed -> 1 `i ]
+"151
+}
+[; ;main.c: 151: } else if (downState && speed > 0) {
+[e $U 675  ]
+[e :U 674 ]
+[e $ ! && != -> _downState `i -> -> -> 0 `i `uc `i > _speed -> 0 `i 676  ]
+{
+[; ;main.c: 152: speed--;
+"152
+[e -- _speed -> 1 `i ]
+"153
+}
+[e :U 676 ]
+"154
+[e :U 675 ]
+[e :U 673 ]
+[e :U 671 ]
+[; ;main.c: 153: }
+[; ;main.c: 154: }
+[e :UE 667 ]
+}
+"158
+[v _displayStepMode `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 158: void displayStepMode() {
+[e :U _displayStepMode ]
+[f ]
+[; ;main.c: 159: printf("Current Mode:\n Step Mode\n");
+"159
+[e ( _printf :s 7C ]
+[; ;main.c: 160: printf("Steps: %d\n", steps);
+"160
+[e ( _printf , (. :s 8C _steps ]
+[; ;main.c: 161: printf("Remaining Steps: %d\n\n", remainingSteps);
+"161
+[e ( _printf , (. :s 9C _remainingSteps ]
+[; ;main.c: 162: if (leftState == 1 && steps > 0) {
+"162
+[e $ ! && == -> _leftState `i -> 1 `i > _steps -> 0 `i 678  ]
+{
+[; ;main.c: 163: steps--;
+"163
+[e -- _steps -> 1 `i ]
+"164
+}
+[; ;main.c: 164: } else if (rightState) {
+[e $U 679  ]
+[e :U 678 ]
+[e $ ! != -> _rightState `i -> -> -> 0 `i `uc `i 680  ]
+{
+[; ;main.c: 165: steps++;
+"165
+[e ++ _steps -> 1 `i ]
+"166
+}
+[; ;main.c: 166: } else if (upState) {
+[e $U 681  ]
+[e :U 680 ]
+[e $ ! != -> _upState `i -> -> -> 0 `i `uc `i 682  ]
+{
+[; ;main.c: 167: steps = 0;
+"167
+[e = _steps -> 0 `i ]
+"168
+}
+[; ;main.c: 168: } else if (downState) {
+[e $U 683  ]
+[e :U 682 ]
+[e $ ! != -> _downState `i -> -> -> 0 `i `uc `i 684  ]
+{
+"170
+}
+[e :U 684 ]
+"171
+[e :U 683 ]
+[e :U 681 ]
+[e :U 679 ]
+[; ;main.c: 170: }
+[; ;main.c: 171: }
+[e :UE 677 ]
+}
+"175
+[v _displayPositionMode `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 175: void displayPositionMode() {
+[e :U _displayPositionMode ]
+[f ]
+[; ;main.c: 176: printf("Current Mode:\n Position Mode\n\n");
+"176
+[e ( _printf :s 10C ]
+"177
+[v _angleDegrees `f ~T0 @X0 1 a ]
+[; ;main.c: 177: float angleDegrees = ((float) angle * 1.8);
+[e = _angleDegrees -> * -> -> _angle `f `d .1.8 `f ]
+[; ;main.c: 178: printf("Target Angle:\n %f \n", angleDegrees);
+"178
+[e ( _printf , (. :s 11C -> _angleDegrees `d ]
+[; ;main.c: 180: }
+"180
+[e :UE 685 ]
+}
+"184
+[v _displayNullMode `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 184: void displayNullMode() {
+[e :U _displayNullMode ]
+[f ]
+[; ;main.c: 185: printf("Current Mode:\n Undefined\n");
+"185
+[e ( _printf :s 12C ]
+[; ;main.c: 186: printf("                      \n");
+"186
+[e ( _printf :s 13C ]
+[; ;main.c: 187: printf("                      \n");
+"187
+[e ( _printf :s 14C ]
+[; ;main.c: 188: printf("                      \n");
+"188
+[e ( _printf :s 15C ]
+[; ;main.c: 189: }
+"189
+[e :UE 686 ]
+}
+"191
+[v _nullMode `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 191: void nullMode() {
+[e :U _nullMode ]
+[f ]
+[; ;main.c: 193: }
+"193
+[e :UE 687 ]
+}
+"195
+[v _continuousMode `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 195: void continuousMode() {
+[e :U _continuousMode ]
+[f ]
+[; ;main.c: 196: Motor_Speed(&Stepper, speed);
+"196
+[e ( _Motor_Speed (2 , &U _Stepper -> _speed `us ]
+[; ;main.c: 197: Motor_Move(&Stepper, direction);
+"197
+[e ( _Motor_Move (2 , &U _Stepper -> _direction `s ]
+[; ;main.c: 198: }
+"198
+[e :UE 688 ]
+}
+"200
+[v _stepMode `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 200: void stepMode() {
+[e :U _stepMode ]
+[f ]
+[; ;main.c: 205: if (downState && Stepper.mDelta == 0) {
+"205
+[e $ ! && != -> _downState `i -> -> -> 0 `i `uc `i == -> . _Stepper 0 `i -> 0 `i 690  ]
+{
+[; ;main.c: 206: Motor_Speed(&Stepper, (1*1000L));
+"206
+[e ( _Motor_Speed (2 , &U _Stepper -> * -> -> 1 `i `l -> 1000 `l `us ]
+[; ;main.c: 207: Motor_Move(&Stepper, steps);
+"207
+[e ( _Motor_Move (2 , &U _Stepper -> _steps `s ]
+[; ;main.c: 208: remainingSteps = steps;
+"208
+[e = _remainingSteps _steps ]
+"209
+}
+[e :U 690 ]
+[; ;main.c: 209: }
+[; ;main.c: 210: if (Stepper.mDelta != 0) {
+"210
+[e $ ! != -> . _Stepper 0 `i -> 0 `i 691  ]
+{
+[; ;main.c: 211: remainingSteps--;
+"211
+[e -- _remainingSteps -> 1 `i ]
+"212
+}
+[e :U 691 ]
+[; ;main.c: 212: }
+[; ;main.c: 213: }
+"213
+[e :UE 689 ]
+}
+"215
+[v _positionMode `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 215: void positionMode() {
+[e :U _positionMode ]
+[f ]
+[; ;main.c: 216: diff = angle - currentPos;
+"216
+[e = _diff - _angle _currentPos ]
+[; ;main.c: 217: if (Stepper.mDelta == 0 && diff > 0) {
+"217
+[e $ ! && == -> . _Stepper 0 `i -> 0 `i > _diff -> 0 `i 693  ]
+{
+[; ;main.c: 218: Motor_Speed(&Stepper, (1*1000L));
+"218
+[e ( _Motor_Speed (2 , &U _Stepper -> * -> -> 1 `i `l -> 1000 `l `us ]
+[; ;main.c: 219: Motor_Move(&Stepper, diff);
+"219
+[e ( _Motor_Move (2 , &U _Stepper -> _diff `s ]
+[; ;main.c: 220: currentPos--;
+"220
+[e -- _currentPos -> 1 `i ]
+"221
+}
+[e :U 693 ]
+[; ;main.c: 221: }
+[; ;main.c: 222: if (Stepper.mDelta == 0 && diff < 0) {
+"222
+[e $ ! && == -> . _Stepper 0 `i -> 0 `i < _diff -> 0 `i 694  ]
+{
+[; ;main.c: 223: Motor_Speed(&Stepper, (1*1000L));
+"223
+[e ( _Motor_Speed (2 , &U _Stepper -> * -> -> 1 `i `l -> 1000 `l `us ]
+[; ;main.c: 224: Motor_Move(&Stepper, diff);
+"224
+[e ( _Motor_Move (2 , &U _Stepper -> _diff `s ]
+[; ;main.c: 225: currentPos++;
+"225
+[e ++ _currentPos -> 1 `i ]
+"226
+}
+[e :U 694 ]
+[; ;main.c: 226: }
+[; ;main.c: 227: }
+"227
+[e :UE 692 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"229
+[v _main `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 229: void main() {
+[e :U _main ]
+[f ]
+[; ;main.c: 230: initialise();
+"230
+[e ( _initialise ..  ]
+[; ;main.c: 232: for(;;) {
+"232
+{
+[e :U 696 ]
+{
+[; ;main.c: 233: inputVar();
+"233
+[e ( _inputVar ..  ]
+[; ;main.c: 240: if (MXK_BlockSwitchTo(eMXK_HMI)) {
+"240
+[e $ ! != -> ( _MXK_BlockSwitchTo (1 . `E6940 2 `i -> -> -> 0 `i `uc `i 699  ]
+{
+[; ;main.c: 241: getMode();
+"241
+[e ( _getMode ..  ]
+[; ;main.c: 242: printf("%c", (char)35);
+"242
+[e ( _printf , (. :s 16C -> -> -> 35 `i `uc `i ]
+[; ;main.c: 243: printf("%d\n", angle);
+"243
+[e ( _printf , (. :s 17C _angle ]
+[; ;main.c: 244: displaySID();
+"244
+[e ( _displaySID ..  ]
+[; ;main.c: 245: Console_SetForecolour(0xF800);
+"245
+[e ( _Console_SetForecolour (1 -> -> 63488 `ui `us ]
+[; ;main.c: 246: switch (mode) {
+"246
+[e $U 701  ]
+{
+[; ;main.c: 247: case 1:
+"247
+[e :U 702 ]
+[; ;main.c: 248: displayContinuousMode();
+"248
+[e ( _displayContinuousMode ..  ]
+[; ;main.c: 249: break;
+"249
+[e $U 700  ]
+[; ;main.c: 250: case 2:
+"250
+[e :U 703 ]
+[; ;main.c: 251: displayStepMode();
+"251
+[e ( _displayStepMode ..  ]
+[; ;main.c: 252: break;
+"252
+[e $U 700  ]
+[; ;main.c: 253: case 3:
+"253
+[e :U 704 ]
+[; ;main.c: 254: ADCVoltage = ADC_Voltage(&ADC_AN0);
+"254
+[e = _ADCVoltage ( _ADC_Voltage (1 &U _ADC_AN0 ]
+[; ;main.c: 255: IRDistance = 58 * pow(ADCVoltage, -1.10);
+"255
+[e = _IRDistance -> * -> -> 58 `i `d ( _pow (2 , -> _ADCVoltage `d -U .1.10 `i ]
+[; ;main.c: 256: angle = ((IRDistance - 17) * (200) / (117 - 17));
+"256
+[e = _angle / * - _IRDistance -> 17 `i -> 200 `i - -> 117 `i -> 17 `i ]
+[; ;main.c: 257: if (angle >= 200) {
+"257
+[e $ ! >= _angle -> 200 `i 705  ]
+{
+[; ;main.c: 258: angle = 200;
+"258
+[e = _angle -> 200 `i ]
+"259
+}
+[e :U 705 ]
+[; ;main.c: 259: }
+[; ;main.c: 260: if (angle < 0) {
+"260
+[e $ ! < _angle -> 0 `i 706  ]
+{
+[; ;main.c: 261: angle = 0;
+"261
+[e = _angle -> 0 `i ]
+"262
+}
+[e :U 706 ]
+[; ;main.c: 262: }
+[; ;main.c: 263: displayPositionMode();
+"263
+[e ( _displayPositionMode ..  ]
+[; ;main.c: 264: break;
+"264
+[e $U 700  ]
+[; ;main.c: 265: default:
+"265
+[e :U 707 ]
+[; ;main.c: 266: displayNullMode();
+"266
+[e ( _displayNullMode ..  ]
+[; ;main.c: 267: break;
+"267
+[e $U 700  ]
+"268
+}
+[; ;main.c: 268: }
+[e $U 700  ]
+"246
+[e :U 701 ]
+[e [\ _mode , $ -> 1 `i 702
+ , $ -> 2 `i 703
+ , $ -> 3 `i 704
+ 707 ]
+"268
+[e :U 700 ]
+[; ;main.c: 272: Console_Render();
+"272
+[e ( _Console_Render ..  ]
+[; ;main.c: 273: HMI_SetNumber(IRDistance);
+"273
+[e ( _HMI_SetNumber (1 _IRDistance ]
+[; ;main.c: 274: HMI_Render();
+"274
+[e ( _HMI_Render ..  ]
+[; ;main.c: 275: if (MXK_Release())
+"275
+[e $ ! != -> ( _MXK_Release ..  `i -> -> -> 0 `i `uc `i 708  ]
+[; ;main.c: 276: MXK_Dequeue();
+"276
+[e ( _MXK_Dequeue ..  ]
+[e :U 708 ]
+"277
+}
+[e :U 699 ]
+[; ;main.c: 277: }
+[; ;main.c: 280: if (MXK_BlockSwitchTo(eMXK_Motor)) {
+"280
+[e $ ! != -> ( _MXK_BlockSwitchTo (1 . `E6940 0 `i -> -> -> 0 `i `uc `i 709  ]
+{
+[; ;main.c: 281: switch (mode) {
+"281
+[e $U 711  ]
+{
+[; ;main.c: 282: case 0:
+"282
+[e :U 712 ]
+[; ;main.c: 283: nullMode();
+"283
+[e ( _nullMode ..  ]
+[; ;main.c: 284: break;
+"284
+[e $U 710  ]
+[; ;main.c: 285: case 1:
+"285
+[e :U 713 ]
+[; ;main.c: 286: continuousMode();
+"286
+[e ( _continuousMode ..  ]
+[; ;main.c: 287: break;
+"287
+[e $U 710  ]
+[; ;main.c: 288: case 2:
+"288
+[e :U 714 ]
+[; ;main.c: 289: stepMode();
+"289
+[e ( _stepMode ..  ]
+[; ;main.c: 290: break;
+"290
+[e $U 710  ]
+[; ;main.c: 291: case 3:
+"291
+[e :U 715 ]
+[; ;main.c: 292: positionMode();
+"292
+[e ( _positionMode ..  ]
+[; ;main.c: 293: break;
+"293
+[e $U 710  ]
+"294
+}
+[; ;main.c: 294: }
+[e $U 710  ]
+"281
+[e :U 711 ]
+[e [\ _mode , $ -> 0 `i 712
+ , $ -> 1 `i 713
+ , $ -> 2 `i 714
+ , $ -> 3 `i 715
+ 710 ]
+"294
+[e :U 710 ]
+[; ;main.c: 295: if (MXK_Release())
+"295
+[e $ ! != -> ( _MXK_Release ..  `i -> -> -> 0 `i `uc `i 716  ]
+[; ;main.c: 296: MXK_Dequeue();
+"296
+[e ( _MXK_Dequeue ..  ]
+[e :U 716 ]
+"297
+}
+[e :U 709 ]
+"298
+}
+[; ;main.c: 297: }
+[; ;main.c: 298: }
+[e $U 696  ]
+[e :U 697 ]
+}
+[; ;main.c: 299: }
+"299
+[e :UE 695 ]
+}
+[p f _printf 8921216 ]
+[a 16C 37 99 0 ]
+[a 3C 68 105 114 101 99 116 105 111 110 58 32 0 ]
+[a 6C 83 112 101 101 100 58 32 37 100 72 122 10 0 ]
+[a 2C 67 117 114 114 101 110 116 32 77 111 100 101 58 10 32 67 111 110 116 105 110 117 111 117 115 32 77 111 100 101 10 0 ]
+[a 7C 67 117 114 114 101 110 116 32 77 111 100 101 58 10 32 83 116 101 112 32 77 111 100 101 10 0 ]
+[a 12C 67 117 114 114 101 110 116 32 77 111 100 101 58 10 32 85 110 100 101 102 105 110 101 100 10 0 ]
+[a 8C 83 116 101 112 115 58 32 37 100 10 0 ]
+[a 17C 37 100 10 0 ]
+[a 5C 67 67 87 10 0 ]
+[a 4C 67 87 10 0 ]
+[a 11C 84 97 114 103 101 116 32 65 110 103 108 101 58 10 32 37 102 32 10 0 ]
+[a 13C 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 10 0 ]
+[a 14C 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 10 0 ]
+[a 15C 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 10 0 ]
+[a 10C 67 117 114 114 101 110 116 32 77 111 100 101 58 10 32 80 111 115 105 116 105 111 110 32 77 111 100 101 10 10 0 ]
+[a 9C 82 101 109 97 105 110 105 110 103 32 83 116 101 112 115 58 32 37 100 10 10 0 ]
+[a 1C 74 97 109 105 110 32 69 97 114 108 121 32 57 57 49 51 51 51 57 49 10 10 0 ]
