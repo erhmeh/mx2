@@ -21,17 +21,6 @@
 #include "LED.h"
 #include "HMI.h"
 
-//Continuous
-int direction = 200;
-int speed = 0;
-//Step Mode
-int steps = 0;
-int remainingSteps = 0;
-int locked = 0;
-int angle = 0;
-int currentPos = 200;
-
-
 //Global Variables
 Motor Stepper;
 extern ADC ADC_AN0;
@@ -44,6 +33,13 @@ bool rightState;
 float ADCVoltage = 0;
 int IRDistance;
 int diff;
+int direction = 200;
+int speed = 0;
+int steps = 0;
+int remainingSteps = 0;
+int locked = 0;
+int angle = 0;
+int currentPos = 200;
 
 //Function Prototypes
 void initialise();
@@ -83,7 +79,7 @@ void initialise() {
             MXK_Dequeue();
     }
 
-    //Init Interupts
+    //Init Interrupts
     ISR_Enable();
 
     //Init ADC
@@ -102,7 +98,7 @@ void inputVar() {
     //Read and store the dip switch value in the 'dip' variable
     dip = DIPSwitch.mGetState();
 
-    //Read the button states and store them in corresponding varables
+    //Read the button states and store them in corresponding variables
     upState = HMIBoard.mUp.mGetState();
     downState = HMIBoard.mDown.mGetState();
     leftState = HMIBoard.mLeft.mGetState();
@@ -118,13 +114,14 @@ void inputVar() {
  *
  * The displayMode function prints the current mode to the console.
  *
- * The setMode function calls the corresponding function depending on the what the getMode function returns.
+ * The setMode function calls the corresponding function depending on the 
+ * what the getMode function returns.
  */
 void getMode() {
     switch (dip) {
-      case 1:
-          mode = 1;
-          return;
+        case 1:
+            mode = 1;
+            return;
         case 2:
             mode = 2;
             return;
@@ -144,14 +141,17 @@ void displaySID() {
     printf("Jamin Early 99133391\n\n");
 }
 
-//Displays text for continuous mode and manipulates the speed and direction variables based of button presses.
+/* Displays text for continuous mode and manipulates the speed and direction 
+ * variables based of button presses.
+ */
 
 void displayContinuousMode() {
-    //Staticlly display the current mode
+    //Display the current mode
     printf("Current Mode:\n Continuous Mode\n");
     printf("Direction: ");
     /*My motor spins clockwise when the value for direction is greater than 0.
-     *The direction is shown on the screen, with 'CW' for clockwise and 'CCW' for counter-clockwise.
+     *The direction is shown on the screen, with 'CW' for clockwise and 'CCW' 
+     *for counter-clockwise.
      */
     if (direction > 0) {
         printf("CW\n");
@@ -161,9 +161,10 @@ void displayContinuousMode() {
     //Speed is displayed
     printf("Speed: %d\n", speed);
 
-    /*Button states are read from their respective variables and direction and speed is altered respectively.
-     *This is in accordance to the instructions outlined in the assignment brief.
-     *These values are used in a later function, 'continuousMode()'.
+    /*Button states are read from their respective variables and direction and 
+     *speed is altered respectively. This is in accordance to the instructions 
+     *outlined in the assignment brief. These values are used in a later 
+     *function, 'continuousMode()'.
      */
     if (rightState) {
         direction = 200;
@@ -179,7 +180,9 @@ void displayContinuousMode() {
 //Displays text for step mode
 
 void displayStepMode() {
-  //Displays the current mode as step mode, the user-selected steps and the amount of steps remaining.
+    /*Displays the current mode as step mode, the user-selected steps and the 
+     *amount of steps remaining.
+     */ 
     printf("Current Mode:\n Step Mode\n");
     printf("Steps: %d\n", steps);
     printf("Remaining Steps: %d\n\n", remainingSteps);
@@ -189,21 +192,21 @@ void displayStepMode() {
         steps++;
     } else if (upState) {
         steps = 0;
-      }
+    }
 }
 
 //Displays text for position mode
 
 void displayPositionMode() {
-  ADCVoltage = ADC_Voltage(&ADC_AN0);
-  IRDistance = 58 * pow(ADCVoltage, -1.10);
-  angle = ((IRDistance - 17) * (200) / (117 - 17));
-  if (angle >= 200) {
-      angle = 200;
-  }
-  if (angle < 0) {
-      angle = 0;
-  }
+    ADCVoltage = ADC_Voltage(&ADC_AN0);
+    IRDistance = 58 * pow(ADCVoltage, -1.10);
+    angle = ((IRDistance - 17) * (200) / (117 - 17));
+    if (angle >= 200) {
+        angle = 200;
+    }
+    if (angle < 0) {
+        angle = 0;
+    }
     printf("Current Mode:\n Position Mode\n\n");
     float angleDegrees = ((float) angle * 1.8);
     printf("Target Angle:\n %f \n", angleDegrees);
@@ -220,8 +223,9 @@ void displayNullMode() {
 }
 
 //Called when the current mode is undefined
+
 void nullMode() {
-//do nothing
+    //do nothing
 }
 
 //Called when the current mode is continuous
@@ -252,15 +256,10 @@ void stepMode() {
 
 void positionMode() {
     diff = angle - currentPos;
-    if (Stepper.mDelta == 0 && diff > 0) {
+    if (Stepper.mDelta == 0) {
         Motor_Speed(&Stepper, KHZ(1));
         Motor_Move(&Stepper, diff);
-        currentPos--;
-    }
-    if (Stepper.mDelta == 0 && diff < 0) {
-        Motor_Speed(&Stepper, KHZ(1));
-        Motor_Move(&Stepper, diff);
-        currentPos++;
+        currentPos = angle;
     }
 }
 
