@@ -8807,8 +8807,9 @@ int speed = 0;
 int steps = 0;
 int remainingSteps = 0;
 int locked = 0;
-int angle = 0;
+float angle = 0;
 int currentPos = 200;
+int mDelta = 0;
 
 
 void initialise();
@@ -8874,7 +8875,7 @@ leftState = HMIBoard.mLeft.mGetState();
 rightState = HMIBoard.mRight.mGetState();
 }
 
-# 119
+# 121
 void getMode() {
 switch (dip) {
 case 1:
@@ -8899,14 +8900,13 @@ Console_SetForecolour(0x07E0);
 printf("Jamin Early 99133391\n\n");
 }
 
-
-
+# 149
 void displayContinuousMode() {
 
 printf("Current Mode:\n Continuous Mode\n");
 printf("Direction: ");
 
-# 152
+# 157
 if (direction > 0) {
 printf("CW\n");
 } else {
@@ -8915,7 +8915,7 @@ printf("CCW\n");
 
 printf("Speed: %d\n", speed);
 
-# 164
+# 170
 if (rightState) {
 direction = 200;
 } else if (leftState) {
@@ -8931,6 +8931,7 @@ speed--;
 
 void displayStepMode() {
 
+# 187
 printf("Current Mode:\n Step Mode\n");
 printf("Steps: %d\n", steps);
 printf("Remaining Steps: %d\n\n", remainingSteps);
@@ -8946,18 +8947,16 @@ steps = 0;
 
 
 void displayPositionMode() {
-ADCVoltage = ADC_Voltage(&ADC_AN0);
-IRDistance = 58 * pow(ADCVoltage, -1.10);
 angle = ((IRDistance - 17) * (200) / (117 - 17));
-if (angle >= 200) {
+if (angle >= 180) {
 angle = 200;
 }
 if (angle < 0) {
-angle = 0;
+angle = 200;
 }
 printf("Current Mode:\n Position Mode\n\n");
-float angleDegrees = ((float) angle * 1.8);
-printf("Target Angle:\n %f \n", angleDegrees);
+int angleDegrees = angle * 1.8;
+printf("Target Angle:\n %d \n", angleDegrees);
 
 }
 
@@ -8970,10 +8969,12 @@ printf("                      \n");
 printf("                      \n");
 }
 
-
-
+# 228
 void nullMode() {
-
+steps = 0;
+remainingSteps = 0;
+speed = 0;
+direction = 0;
 }
 
 
@@ -8986,10 +8987,6 @@ Motor_Move(&Stepper, direction);
 
 
 void stepMode() {
-
-
-
-
 if (downState && Stepper.mDelta == 0) {
 Motor_Speed(&Stepper, (1*1000L));
 Motor_Move(&Stepper, steps);
@@ -9004,15 +9001,10 @@ remainingSteps--;
 
 void positionMode() {
 diff = angle - currentPos;
-if (Stepper.mDelta == 0 && diff > 0) {
-Motor_Speed(&Stepper, (1*1000L));
+if (Stepper.mDelta == 0) {
+Motor_Speed(&Stepper, 200);
 Motor_Move(&Stepper, diff);
-currentPos--;
-}
-if (Stepper.mDelta == 0 && diff < 0) {
-Motor_Speed(&Stepper, (1*1000L));
-Motor_Move(&Stepper, diff);
-currentPos++;
+currentPos = angle;
 }
 }
 
@@ -9025,7 +9017,6 @@ inputVar();
 if (MXK_BlockSwitchTo(eMXK_HMI)) {
 getMode();
 printf("%c", (char)35);
-printf("%d\n", angle);
 displaySID();
 Console_SetForecolour(0xF800);
 switch (mode) {
@@ -9043,6 +9034,8 @@ displayNullMode();
 break;
 }
 Console_Render();
+ADCVoltage = ADC_Voltage(&ADC_AN0);
+IRDistance = 63 * pow(ADCVoltage, -1.10);
 HMI_SetNumber(IRDistance);
 HMI_Render();
 if (MXK_Release())

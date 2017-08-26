@@ -38,8 +38,9 @@ int speed = 0;
 int steps = 0;
 int remainingSteps = 0;
 int locked = 0;
-int angle = 0;
+float angle = 0;
 int currentPos = 200;
+int mDelta = 0;
 
 //Function Prototypes
 void initialise();
@@ -182,7 +183,7 @@ void displayContinuousMode() {
 void displayStepMode() {
     /*Displays the current mode as step mode, the user-selected steps and the 
      *amount of steps remaining.
-     */ 
+     */
     printf("Current Mode:\n Step Mode\n");
     printf("Steps: %d\n", steps);
     printf("Remaining Steps: %d\n\n", remainingSteps);
@@ -198,18 +199,16 @@ void displayStepMode() {
 //Displays text for position mode
 
 void displayPositionMode() {
-    ADCVoltage = ADC_Voltage(&ADC_AN0);
-    IRDistance = 58 * pow(ADCVoltage, -1.10);
     angle = ((IRDistance - 17) * (200) / (117 - 17));
-    if (angle >= 200) {
+    if (angle >= 180) {
         angle = 200;
     }
     if (angle < 0) {
-        angle = 0;
+        angle = 200;
     }
     printf("Current Mode:\n Position Mode\n\n");
-    float angleDegrees = ((float) angle * 1.8);
-    printf("Target Angle:\n %f \n", angleDegrees);
+    int angleDegrees = angle * 1.8;
+    printf("Target Angle:\n %d \n", angleDegrees);
 
 }
 
@@ -222,10 +221,15 @@ void displayNullMode() {
     printf("                      \n");
 }
 
-//Called when the current mode is undefined
+/* Called when the current mode is undefined. This flushes variables in order 
+ * to ensure when a new mode is entered everything is at it's default value.
+ */
 
 void nullMode() {
-    //do nothing
+    steps = 0;
+    remainingSteps = 0;
+    speed = 0;
+    direction = 0;
 }
 
 //Called when the current mode is continuous
@@ -238,10 +242,6 @@ void continuousMode() {
 //Called when the current mode is step mode
 
 void stepMode() {
-    //    if (locked) {
-    //        locked = 0;
-    //        Stepper.mDelta = 0;
-    //    }
     if (downState && Stepper.mDelta == 0) {
         Motor_Speed(&Stepper, KHZ(1));
         Motor_Move(&Stepper, steps);
@@ -257,7 +257,7 @@ void stepMode() {
 void positionMode() {
     diff = angle - currentPos;
     if (Stepper.mDelta == 0) {
-        Motor_Speed(&Stepper, KHZ(1));
+        Motor_Speed(&Stepper, 200);
         Motor_Move(&Stepper, diff);
         currentPos = angle;
     }
@@ -272,7 +272,6 @@ void main() {
         if (MXK_BlockSwitchTo(eMXK_HMI)) {
             getMode();
             printf("%c", ENDOFTEXT);
-            printf("%d\n", angle);
             displaySID();
             Console_SetForecolour(RED);
             switch (mode) {
@@ -290,6 +289,8 @@ void main() {
                     break;
             }
             Console_Render();
+            ADCVoltage = ADC_Voltage(&ADC_AN0);
+            IRDistance = 63 * pow(ADCVoltage, -1.10);
             HMI_SetNumber(IRDistance);
             HMI_Render();
             if (MXK_Release())
