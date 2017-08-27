@@ -56,7 +56,7 @@ void stepMode();
 void positionMode();
 void nullMode();
 void inputVar();
-
+void multiSampleADC();
 
 //Initialising function
 
@@ -67,8 +67,8 @@ void initialise() {
     //Init HMI
     if (MXK_BlockSwitchTo(eMXK_HMI)) {
         HMI_Init();
-        LCD_Init();
         Console_Init();
+        LCD_Init();
         if (MXK_Release())
             MXK_Dequeue();
     }
@@ -93,7 +93,7 @@ void initialise() {
 //Assigns various input variables such as dip switch and button states
 
 void inputVar() {
-    FunctADC();
+    multiSampleADC();
     HMI_Poll();
 
     //Read and store the dip switch value in the 'dip' variable
@@ -115,7 +115,7 @@ void inputVar() {
  *
  * The displayMode function prints the current mode to the console.
  *
- * The setMode function calls the corresponding function depending on the 
+ * The setMode function calls the corresponding function depending on the
  * what the getMode function returns.
  */
 void getMode() {
@@ -142,7 +142,7 @@ void displaySID() {
     printf("Jamin Early 99133391\n\n");
 }
 
-/* Displays text for continuous mode and manipulates the speed and direction 
+/* Displays text for continuous mode and manipulates the speed and direction
  * variables based of button presses.
  */
 
@@ -151,7 +151,7 @@ void displayContinuousMode() {
     printf("Current Mode:\n Continuous Mode\n");
     printf("Direction: ");
     /*My motor spins clockwise when the value for direction is greater than 0.
-     *The direction is shown on the screen, with 'CW' for clockwise and 'CCW' 
+     *The direction is shown on the screen, with 'CW' for clockwise and 'CCW'
      *for counter-clockwise.
      */
     if (direction > 0) {
@@ -162,9 +162,9 @@ void displayContinuousMode() {
     //Speed is displayed
     printf("Speed: %d\n", speed);
 
-    /*Button states are read from their respective variables and direction and 
-     *speed is altered respectively. This is in accordance to the instructions 
-     *outlined in the assignment brief. These values are used in a later 
+    /*Button states are read from their respective variables and direction and
+     *speed is altered respectively. This is in accordance to the instructions
+     *outlined in the assignment brief. These values are used in a later
      *function, 'continuousMode()'.
      */
     if (rightState) {
@@ -181,7 +181,7 @@ void displayContinuousMode() {
 //Displays text for step mode
 
 void displayStepMode() {
-    /*Displays the current mode as step mode, the user-selected steps and the 
+    /*Displays the current mode as step mode, the user-selected steps and the
      *amount of steps remaining.
      */
     printf("Current Mode:\n Step Mode\n");
@@ -221,7 +221,7 @@ void displayNullMode() {
     printf("                      \n");
 }
 
-/* Called when the current mode is undefined. This flushes variables in order 
+/* Called when the current mode is undefined. This flushes variables in order
  * to ensure when a new mode is entered everything is at it's default value.
  */
 
@@ -247,7 +247,7 @@ void stepMode() {
         Motor_Move(&Stepper, steps);
         remainingSteps = steps;
     }
-    if (Stepper.mDelta != 0) {
+    if (Stepper.mDelta != 0 && remainingSteps > 0) {
         remainingSteps--;
     }
 }
@@ -263,14 +263,34 @@ void positionMode() {
     }
 }
 
+//Take 5 samples from the ADC and average them out to get a precise reading.
+
+void multiSampleADC(){
+  ADCVoltage = 0;
+  FunctADC();
+  ADCVoltage += ADC_Voltage(&ADC_AN0);
+  FunctADC();
+  ADCVoltage += ADC_Voltage(&ADC_AN0);
+  FunctADC();
+  ADCVoltage += ADC_Voltage(&ADC_AN0);
+  FunctADC();
+  ADCVoltage += ADC_Voltage(&ADC_AN0);
+  FunctADC();
+  ADCVoltage += ADC_Voltage(&ADC_AN0);
+  ADCVoltage = (ADCVoltage / 5);
+}
+
+//Main Function
+
 void main() {
     initialise();
 
+    //Main Loop
     loop() {
         inputVar();
+        getMode();
         //HMI code
         if (MXK_BlockSwitchTo(eMXK_HMI)) {
-            getMode();
             printf("%c", ENDOFTEXT);
             displaySID();
             Console_SetForecolour(RED);
@@ -289,7 +309,6 @@ void main() {
                     break;
             }
             Console_Render();
-            ADCVoltage = ADC_Voltage(&ADC_AN0);
             IRDistance = 63 * pow(ADCVoltage, -1.10);
             HMI_SetNumber(IRDistance);
             HMI_Render();

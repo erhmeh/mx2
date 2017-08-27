@@ -11,10 +11,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _MXK_BlockSwitchTo `(uc ~T0 @X0 0 ef1`E6940 ]
 "84 Library\HMI.h
 [v _HMI_Init `(v ~T0 @X0 0 ef ]
-"102 Library\LCD.h
-[v _LCD_Init `(v ~T0 @X0 0 ef ]
 "20 Library\Console.h
 [v _Console_Init `(v ~T0 @X0 0 ef ]
+"102 Library\LCD.h
+[v _LCD_Init `(v ~T0 @X0 0 ef ]
 "52 Library\MXK.h
 [v _MXK_Release `(uc ~T0 @X0 0 ef ]
 "54
@@ -27,8 +27,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _FunctInitADC `(v ~T0 @X0 0 ef ]
 "18
 [v _FunctInitButton `(v ~T0 @X0 0 ef ]
-"31
-[v _FunctADC `(v ~T0 @X0 0 ef ]
+"59 main.c
+[v _multiSampleADC `(v ~T0 @X0 0 ef ]
 "106 Library\HMI.h
 [v _HMI_Poll `(v ~T0 @X0 0 ef ]
 [v F6894 `(v ~T0 @X0 0 tf1`uc ]
@@ -70,10 +70,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _Motor_Speed `(uc ~T0 @X0 0 ef2`*S644`us ]
 "49
 [v _Motor_Move `(uc ~T0 @X0 0 ef2`*S644`s ]
-[p mainexit ]
-"28 Library\Console.h
-[v _Console_Render `(v ~T0 @X0 0 ef ]
-"292 main.c
+"31 Functions.h
+[v _FunctADC `(v ~T0 @X0 0 ef ]
+"271 main.c
 [c E6987 0 1 2 3 .. ]
 [n E6987 . eADC_Ch0 eADC_Ch1 eADC_Ch2 eADC_Ch3  ]
 "29 Library\ADC.h
@@ -83,6 +82,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _ADC_Voltage `(f ~T0 @X0 0 ef1`*S642 ]
 "26 main.c
 [v _ADC_AN0 `S642 ~T0 @X0 0 e ]
+[p mainexit ]
+"28 Library\Console.h
+[v _Console_Render `(v ~T0 @X0 0 ef ]
 "45 C:\Program Files (x86)\Microchip\xc8\v1.43\include\math.h
 [v _pow `(d ~T0 @X0 0 ef2`d`d ]
 "103 Library\HMI.h
@@ -6754,6 +6756,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 56: void positionMode();
 [; ;main.c: 57: void nullMode();
 [; ;main.c: 58: void inputVar();
+[; ;main.c: 59: void multiSampleADC();
 "63
 [v _initialise `(v ~T0 @X0 1 ef ]
 {
@@ -6770,12 +6773,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 69: HMI_Init();
 "69
 [e ( _HMI_Init ..  ]
-[; ;main.c: 70: LCD_Init();
+[; ;main.c: 70: Console_Init();
 "70
-[e ( _LCD_Init ..  ]
-[; ;main.c: 71: Console_Init();
-"71
 [e ( _Console_Init ..  ]
+[; ;main.c: 71: LCD_Init();
+"71
+[e ( _LCD_Init ..  ]
 [; ;main.c: 72: if (MXK_Release())
 "72
 [e $ ! != -> ( _MXK_Release ..  `i -> -> -> 0 `i `uc `i 655  ]
@@ -6824,9 +6827,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 95: void inputVar() {
 [e :U _inputVar ]
 [f ]
-[; ;main.c: 96: FunctADC();
+[; ;main.c: 96: multiSampleADC();
 "96
-[e ( _FunctADC ..  ]
+[e ( _multiSampleADC ..  ]
 [; ;main.c: 97: HMI_Poll();
 "97
 [e ( _HMI_Poll ..  ]
@@ -7190,9 +7193,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 }
 [e :U 690 ]
 [; ;main.c: 249: }
-[; ;main.c: 250: if (Stepper.mDelta != 0) {
+[; ;main.c: 250: if (Stepper.mDelta != 0 && remainingSteps > 0) {
 "250
-[e $ ! != -> . _Stepper 0 `i -> 0 `i 691  ]
+[e $ ! && != -> . _Stepper 0 `i -> 0 `i > _remainingSteps -> 0 `i 691  ]
 {
 [; ;main.c: 251: remainingSteps--;
 "251
@@ -7235,195 +7238,238 @@ Version 3.2 HI-TECH Software Intermediate Code
 "264
 [e :UE 692 ]
 }
+"268
+[v _multiSampleADC `(v ~T0 @X0 1 ef ]
+{
+[; ;main.c: 268: void multiSampleADC(){
+[e :U _multiSampleADC ]
+[f ]
+[; ;main.c: 269: ADCVoltage = 0;
+"269
+[e = _ADCVoltage -> -> 0 `i `f ]
+[; ;main.c: 270: FunctADC();
+"270
+[e ( _FunctADC ..  ]
+[; ;main.c: 271: ADCVoltage += ADC_Voltage(&ADC_AN0);
+"271
+[e =+ _ADCVoltage ( _ADC_Voltage (1 &U _ADC_AN0 ]
+[; ;main.c: 272: FunctADC();
+"272
+[e ( _FunctADC ..  ]
+[; ;main.c: 273: ADCVoltage += ADC_Voltage(&ADC_AN0);
+"273
+[e =+ _ADCVoltage ( _ADC_Voltage (1 &U _ADC_AN0 ]
+[; ;main.c: 274: FunctADC();
+"274
+[e ( _FunctADC ..  ]
+[; ;main.c: 275: ADCVoltage += ADC_Voltage(&ADC_AN0);
+"275
+[e =+ _ADCVoltage ( _ADC_Voltage (1 &U _ADC_AN0 ]
+[; ;main.c: 276: FunctADC();
+"276
+[e ( _FunctADC ..  ]
+[; ;main.c: 277: ADCVoltage += ADC_Voltage(&ADC_AN0);
+"277
+[e =+ _ADCVoltage ( _ADC_Voltage (1 &U _ADC_AN0 ]
+[; ;main.c: 278: FunctADC();
+"278
+[e ( _FunctADC ..  ]
+[; ;main.c: 279: ADCVoltage += ADC_Voltage(&ADC_AN0);
+"279
+[e =+ _ADCVoltage ( _ADC_Voltage (1 &U _ADC_AN0 ]
+[; ;main.c: 280: ADCVoltage = (ADCVoltage / 5);
+"280
+[e = _ADCVoltage / _ADCVoltage -> -> 5 `i `f ]
+[; ;main.c: 281: }
+"281
+[e :UE 694 ]
+}
 [v $root$_main `(v ~T0 @X0 0 e ]
-"266
+"285
 [v _main `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 266: void main() {
+[; ;main.c: 285: void main() {
 [e :U _main ]
 [f ]
-[; ;main.c: 267: initialise();
-"267
-[e ( _initialise ..  ]
-[; ;main.c: 269: for(;;) {
-"269
-{
-[e :U 695 ]
-{
-[; ;main.c: 270: inputVar();
-"270
-[e ( _inputVar ..  ]
-[; ;main.c: 272: if (MXK_BlockSwitchTo(eMXK_HMI)) {
-"272
-[e $ ! != -> ( _MXK_BlockSwitchTo (1 . `E6940 2 `i -> -> -> 0 `i `uc `i 698  ]
-{
-[; ;main.c: 273: getMode();
-"273
-[e ( _getMode ..  ]
-[; ;main.c: 274: printf("%c", (char)35);
-"274
-[e ( _printf , (. :s 16C -> -> -> 35 `i `uc `i ]
-[; ;main.c: 275: displaySID();
-"275
-[e ( _displaySID ..  ]
-[; ;main.c: 276: Console_SetForecolour(0xF800);
-"276
-[e ( _Console_SetForecolour (1 -> -> 63488 `ui `us ]
-[; ;main.c: 277: switch (mode) {
-"277
-[e $U 700  ]
-{
-[; ;main.c: 278: case 1:
-"278
-[e :U 701 ]
-[; ;main.c: 279: displayContinuousMode();
-"279
-[e ( _displayContinuousMode ..  ]
-[; ;main.c: 280: break;
-"280
-[e $U 699  ]
-[; ;main.c: 281: case 2:
-"281
-[e :U 702 ]
-[; ;main.c: 282: displayStepMode();
-"282
-[e ( _displayStepMode ..  ]
-[; ;main.c: 283: break;
-"283
-[e $U 699  ]
-[; ;main.c: 284: case 3:
-"284
-[e :U 703 ]
-[; ;main.c: 285: displayPositionMode();
-"285
-[e ( _displayPositionMode ..  ]
-[; ;main.c: 286: break;
+[; ;main.c: 286: initialise();
 "286
-[e $U 699  ]
-[; ;main.c: 287: default:
-"287
-[e :U 704 ]
-[; ;main.c: 288: displayNullMode();
-"288
-[e ( _displayNullMode ..  ]
-[; ;main.c: 289: break;
+[e ( _initialise ..  ]
+[; ;main.c: 289: for(;;) {
 "289
-[e $U 699  ]
-"290
-}
-[; ;main.c: 290: }
-[e $U 699  ]
-"277
-[e :U 700 ]
-[e [\ _mode , $ -> 1 `i 701
- , $ -> 2 `i 702
- , $ -> 3 `i 703
- 704 ]
-"290
-[e :U 699 ]
-[; ;main.c: 291: Console_Render();
-"291
-[e ( _Console_Render ..  ]
-[; ;main.c: 292: ADCVoltage = ADC_Voltage(&ADC_AN0);
-"292
-[e = _ADCVoltage ( _ADC_Voltage (1 &U _ADC_AN0 ]
-[; ;main.c: 293: IRDistance = 63 * pow(ADCVoltage, -1.10);
-"293
-[e = _IRDistance -> * -> -> 63 `i `d ( _pow (2 , -> _ADCVoltage `d -U .1.10 `i ]
-[; ;main.c: 294: HMI_SetNumber(IRDistance);
-"294
-[e ( _HMI_SetNumber (1 _IRDistance ]
-[; ;main.c: 295: HMI_Render();
-"295
-[e ( _HMI_Render ..  ]
-[; ;main.c: 296: if (MXK_Release())
-"296
-[e $ ! != -> ( _MXK_Release ..  `i -> -> -> 0 `i `uc `i 705  ]
-[; ;main.c: 297: MXK_Dequeue();
-"297
-[e ( _MXK_Dequeue ..  ]
-[e :U 705 ]
-"298
-}
-[e :U 698 ]
-[; ;main.c: 298: }
-[; ;main.c: 301: if (MXK_BlockSwitchTo(eMXK_Motor)) {
-"301
-[e $ ! != -> ( _MXK_BlockSwitchTo (1 . `E6940 0 `i -> -> -> 0 `i `uc `i 706  ]
 {
-[; ;main.c: 302: switch (mode) {
-"302
-[e $U 708  ]
-{
-[; ;main.c: 303: case 0:
-"303
-[e :U 709 ]
-[; ;main.c: 304: nullMode();
-"304
-[e ( _nullMode ..  ]
-[; ;main.c: 305: break;
-"305
-[e $U 707  ]
-[; ;main.c: 306: case 1:
-"306
-[e :U 710 ]
-[; ;main.c: 307: continuousMode();
-"307
-[e ( _continuousMode ..  ]
-[; ;main.c: 308: break;
-"308
-[e $U 707  ]
-[; ;main.c: 309: case 2:
-"309
-[e :U 711 ]
-[; ;main.c: 310: stepMode();
-"310
-[e ( _stepMode ..  ]
-[; ;main.c: 311: break;
-"311
-[e $U 707  ]
-[; ;main.c: 312: case 3:
-"312
-[e :U 712 ]
-[; ;main.c: 313: positionMode();
-"313
-[e ( _positionMode ..  ]
-[; ;main.c: 314: break;
-"314
-[e $U 707  ]
-"315
-}
-[; ;main.c: 315: }
-[e $U 707  ]
-"302
-[e :U 708 ]
-[e [\ _mode , $ -> 0 `i 709
- , $ -> 1 `i 710
- , $ -> 2 `i 711
- , $ -> 3 `i 712
- 707 ]
-"315
-[e :U 707 ]
-[; ;main.c: 316: if (MXK_Release())
-"316
-[e $ ! != -> ( _MXK_Release ..  `i -> -> -> 0 `i `uc `i 713  ]
-[; ;main.c: 317: MXK_Dequeue();
-"317
-[e ( _MXK_Dequeue ..  ]
-[e :U 713 ]
-"318
-}
-[e :U 706 ]
-"319
-}
-[; ;main.c: 318: }
-[; ;main.c: 319: }
-[e $U 695  ]
 [e :U 696 ]
+{
+[; ;main.c: 290: inputVar();
+"290
+[e ( _inputVar ..  ]
+[; ;main.c: 291: getMode();
+"291
+[e ( _getMode ..  ]
+[; ;main.c: 293: if (MXK_BlockSwitchTo(eMXK_HMI)) {
+"293
+[e $ ! != -> ( _MXK_BlockSwitchTo (1 . `E6940 2 `i -> -> -> 0 `i `uc `i 699  ]
+{
+[; ;main.c: 294: printf("%c", (char)35);
+"294
+[e ( _printf , (. :s 16C -> -> -> 35 `i `uc `i ]
+[; ;main.c: 295: displaySID();
+"295
+[e ( _displaySID ..  ]
+[; ;main.c: 296: Console_SetForecolour(0xF800);
+"296
+[e ( _Console_SetForecolour (1 -> -> 63488 `ui `us ]
+[; ;main.c: 297: switch (mode) {
+"297
+[e $U 701  ]
+{
+[; ;main.c: 298: case 1:
+"298
+[e :U 702 ]
+[; ;main.c: 299: displayContinuousMode();
+"299
+[e ( _displayContinuousMode ..  ]
+[; ;main.c: 300: break;
+"300
+[e $U 700  ]
+[; ;main.c: 301: case 2:
+"301
+[e :U 703 ]
+[; ;main.c: 302: displayStepMode();
+"302
+[e ( _displayStepMode ..  ]
+[; ;main.c: 303: break;
+"303
+[e $U 700  ]
+[; ;main.c: 304: case 3:
+"304
+[e :U 704 ]
+[; ;main.c: 305: displayPositionMode();
+"305
+[e ( _displayPositionMode ..  ]
+[; ;main.c: 306: break;
+"306
+[e $U 700  ]
+[; ;main.c: 307: default:
+"307
+[e :U 705 ]
+[; ;main.c: 308: displayNullMode();
+"308
+[e ( _displayNullMode ..  ]
+[; ;main.c: 309: break;
+"309
+[e $U 700  ]
+"310
 }
-[; ;main.c: 320: }
+[; ;main.c: 310: }
+[e $U 700  ]
+"297
+[e :U 701 ]
+[e [\ _mode , $ -> 1 `i 702
+ , $ -> 2 `i 703
+ , $ -> 3 `i 704
+ 705 ]
+"310
+[e :U 700 ]
+[; ;main.c: 311: Console_Render();
+"311
+[e ( _Console_Render ..  ]
+[; ;main.c: 312: IRDistance = 63 * pow(ADCVoltage, -1.10);
+"312
+[e = _IRDistance -> * -> -> 63 `i `d ( _pow (2 , -> _ADCVoltage `d -U .1.10 `i ]
+[; ;main.c: 313: HMI_SetNumber(IRDistance);
+"313
+[e ( _HMI_SetNumber (1 _IRDistance ]
+[; ;main.c: 314: HMI_Render();
+"314
+[e ( _HMI_Render ..  ]
+[; ;main.c: 315: if (MXK_Release())
+"315
+[e $ ! != -> ( _MXK_Release ..  `i -> -> -> 0 `i `uc `i 706  ]
+[; ;main.c: 316: MXK_Dequeue();
+"316
+[e ( _MXK_Dequeue ..  ]
+[e :U 706 ]
+"317
+}
+[e :U 699 ]
+[; ;main.c: 317: }
+[; ;main.c: 320: if (MXK_BlockSwitchTo(eMXK_Motor)) {
 "320
-[e :UE 694 ]
+[e $ ! != -> ( _MXK_BlockSwitchTo (1 . `E6940 0 `i -> -> -> 0 `i `uc `i 707  ]
+{
+[; ;main.c: 321: switch (mode) {
+"321
+[e $U 709  ]
+{
+[; ;main.c: 322: case 0:
+"322
+[e :U 710 ]
+[; ;main.c: 323: nullMode();
+"323
+[e ( _nullMode ..  ]
+[; ;main.c: 324: break;
+"324
+[e $U 708  ]
+[; ;main.c: 325: case 1:
+"325
+[e :U 711 ]
+[; ;main.c: 326: continuousMode();
+"326
+[e ( _continuousMode ..  ]
+[; ;main.c: 327: break;
+"327
+[e $U 708  ]
+[; ;main.c: 328: case 2:
+"328
+[e :U 712 ]
+[; ;main.c: 329: stepMode();
+"329
+[e ( _stepMode ..  ]
+[; ;main.c: 330: break;
+"330
+[e $U 708  ]
+[; ;main.c: 331: case 3:
+"331
+[e :U 713 ]
+[; ;main.c: 332: positionMode();
+"332
+[e ( _positionMode ..  ]
+[; ;main.c: 333: break;
+"333
+[e $U 708  ]
+"334
+}
+[; ;main.c: 334: }
+[e $U 708  ]
+"321
+[e :U 709 ]
+[e [\ _mode , $ -> 0 `i 710
+ , $ -> 1 `i 711
+ , $ -> 2 `i 712
+ , $ -> 3 `i 713
+ 708 ]
+"334
+[e :U 708 ]
+[; ;main.c: 335: if (MXK_Release())
+"335
+[e $ ! != -> ( _MXK_Release ..  `i -> -> -> 0 `i `uc `i 714  ]
+[; ;main.c: 336: MXK_Dequeue();
+"336
+[e ( _MXK_Dequeue ..  ]
+[e :U 714 ]
+"337
+}
+[e :U 707 ]
+"338
+}
+[; ;main.c: 337: }
+[; ;main.c: 338: }
+[e $U 696  ]
+[e :U 697 ]
+}
+[; ;main.c: 339: }
+"339
+[e :UE 695 ]
 }
 [p f _printf 8913024 ]
 [a 16C 37 99 0 ]

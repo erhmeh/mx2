@@ -8825,7 +8825,7 @@ void stepMode();
 void positionMode();
 void nullMode();
 void inputVar();
-
+void multiSampleADC();
 
 
 
@@ -8836,8 +8836,8 @@ MXK_Init();
 
 if (MXK_BlockSwitchTo(eMXK_HMI)) {
 HMI_Init();
-LCD_Init();
 Console_Init();
+LCD_Init();
 if (MXK_Release())
 MXK_Dequeue();
 }
@@ -8862,7 +8862,7 @@ FunctInitButton();
 
 
 void inputVar() {
-FunctADC();
+multiSampleADC();
 HMI_Poll();
 
 
@@ -8992,7 +8992,7 @@ Motor_Speed(&Stepper, (1*1000L));
 Motor_Move(&Stepper, steps);
 remainingSteps = steps;
 }
-if (Stepper.mDelta != 0) {
+if (Stepper.mDelta != 0 && remainingSteps > 0) {
 remainingSteps--;
 }
 }
@@ -9008,14 +9008,34 @@ currentPos = angle;
 }
 }
 
+
+
+void multiSampleADC(){
+ADCVoltage = 0;
+FunctADC();
+ADCVoltage += ADC_Voltage(&ADC_AN0);
+FunctADC();
+ADCVoltage += ADC_Voltage(&ADC_AN0);
+FunctADC();
+ADCVoltage += ADC_Voltage(&ADC_AN0);
+FunctADC();
+ADCVoltage += ADC_Voltage(&ADC_AN0);
+FunctADC();
+ADCVoltage += ADC_Voltage(&ADC_AN0);
+ADCVoltage = (ADCVoltage / 5);
+}
+
+
+
 void main() {
 initialise();
 
+
 for(;;) {
 inputVar();
+getMode();
 
 if (MXK_BlockSwitchTo(eMXK_HMI)) {
-getMode();
 printf("%c", (char)35);
 displaySID();
 Console_SetForecolour(0xF800);
@@ -9034,7 +9054,6 @@ displayNullMode();
 break;
 }
 Console_Render();
-ADCVoltage = ADC_Voltage(&ADC_AN0);
 IRDistance = 63 * pow(ADCVoltage, -1.10);
 HMI_SetNumber(IRDistance);
 HMI_Render();
