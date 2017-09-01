@@ -1,8 +1,7 @@
-/* 
- * File:   main.c
- * Author: Robert Stephenson
- *
- * MX2: MXK W6 Skeleton
+/*
+ * File: main.c
+ * Author: Chadwick Aryana *
+ * MX2: Week 6 iRobot Basic
  */
 #include <xc.h>
 #include "ProcessorConfig.h"
@@ -10,73 +9,99 @@
 #include "MXK.h"
 #include "Config.h"
 #include "Functions.h"
-
 #include "Colours.h"
 #include "Console.h"
 #include <stdio.h>
+#include <pic18f67j50.h>
 #include "Motor.h"
 #include "LCD.h"
 #include "LED.h"
 #include "HMI.h"
 
-void main()
-{
+void eusart_putch(uint8_t uartSendChar) { //EUSART data transmit function
+    while (!TXSTA1bits.TRMT) {
+    }; //Wait for transmission to finish
+    TXREG1 = uartSendChar; //Send character (EUSART transmit register)
+}
+
+char eusart_getch(void) { //EUSART data receive function
+    uint8_t uartReceiveChar = RCREG1; //EUSART receive register
+    while (!PIR1bits.RC1IF) {
+    }; //Wait for character input
+    return uartReceiveChar; //Return contents of EUSART receive register
+}
+
+void main() {
     //Init MXK Pins
     MXK_Init();
-
     //Init HMI
-    if (MXK_BlockSwitchTo(eMXK_HMI)) {
-
-        if (MXK_Release())
+    if
+        (MXK_BlockSwitchTo
+            (eMXK_HMI)) {
+        Console_Init();
+        HMI_Init();
+        LCD_Init();
+        if
+            (MXK_Release())
             MXK_Dequeue();
+
     }
 
-    //Task 1 - Initialise the EUART (refer to datasheet section 20.0)
-    //
-    //Set correct pin directions (refer to schematic)  Hint: TX=OUT and RX=IN
-    //Set correct number of transmission bits (refer to iRobot user manual)
-    //Enable transmission
-    //Decide on transmission mode
-    //Disable sync break characters
-    
-    //Enable the serial port
-    //Set correct number of reception bits (same as transmission)
-    //Enable continuous reception
-    //Disable any framing or overrun errors
-    
-    //Disable data inversion
-    //Idle state is high
-    //Disable monitoring of the RX pin for wake up
-    //Disable automatic baud detection
-    
-    //Task 2 - Set the baud rate (bits per second)
-    //
-    //Check the iRobot user guide for the required baud rate and note it down
-    //Use the formulas in the datasheet (table 20-1) to calculate the required value for SPBRG
-    //Ensure that BRGH and BRG16 are set according to the formula you chose to use
-    //Calculate the baud rate error using the formulas in the datasheet (example 20-1)
-    
-    loop()
-    {
-        //Task 3 - Transmit commands to the iRobot
-        //
-        //Use the same conditional looping technique that was used last week to
-        //poll the TRMT bit (shows the status of the transmission shift register)
-        //If the shift register is empty then assign a value to be transmitted
-        //Transmission will now take place automatically
-        
-        //Task 4 - Receive data from the iRobot
-        //
-        //Use the same conditional looping technique above to check the receive flag
-        //If you are expecting data to be returned then you must wait for it
-        //Once data is received you can read it from the receiver and store it
-        //Clear any relevant flags as the final step
-        
+    //Setup pins on MXK
+    TRISCbits.TRISC6 = 0; //TX Pin (Output)
+    TRISCbits.TRISC7 = 1; //RX Pin (Input)
+
+    //Setup Registers
+    TXSTA1 = 0b00100000; //Setup TXSTA1 Register
+    /* TXSTA1 Register Configuration
+     * CSRC = 0
+     * TX9 = 0 8-bit tranmission
+     * TXEN = 1 Enable transmission
+     * SYNC = 0 Asynchronous mode
+     * SENDB = 0 Disable sync break?
+     * BRGH = 0
+     * TMRT = 0
+     * TX9D = X
+     */
+
+    RCSTA1 = 0b10010000; //Setup TXSTA1 Register
+    /* RCSTA1 Register Configuration
+     * SPEN = 1 Enable serial port
+     * RX9 = 0 8-bit receiving
+     * SREN = X
+     * CREN = 1 Enable continuous receiving
+     * ADDEN = X
+     * FERR = 0 Disable framing errors
+     * OERR = 0 Disable overrun errors
+     * RX9D = X
+     */
+
+    BAUDCON1bits.DTRXP = 0; //Disable inversion
+    BAUDCON1bits.SCKP = 0; //High idle state
+    BAUDCON1bits.WUE = 0; //Disable monitoring on the RX pin
+    BAUDCON1bits.ABDEN = 0; //Disable automatic baud detection
+
+    //Setup baud rate
+    TXSTA1bits.BRGH = 1;
+    BAUDCON1bits.BRG16 = 0;
+    //SPBRGH1:SPBRG1 calculated as 13 when; Set BRGH, Clear BRG16
+    SPBRG1 = 13; //0.16% Error
+
+    ISR_Enable(); //Enable Interrupts
+
+    //iRobot Init
+    eusart_putch(128); //Setup iRobot
+    eusart_putch(132); //Activate "Full Mode"
+
+    loop() {
+        eusart_putch(); //Send Data
+        eusart_getch(); //Receive Data
         //HMI code
         if (MXK_BlockSwitchTo(eMXK_HMI)) {
-
+            //Put shit from eusart_getch() i.e. robot readouts here and other relevant crap
             if (MXK_Release())
-            MXK_Dequeue();
+                MXK_Dequeue();
         }
     }
 }
+

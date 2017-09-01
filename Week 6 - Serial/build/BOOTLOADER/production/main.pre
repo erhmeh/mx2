@@ -8734,28 +8734,73 @@ void HMI_SetSegments (str pString);
 
 void HMI_Poll ();
 
-# 22 "main.c"
-void main()
-{
+# 21 "main.c"
+void eusart_putch(uint8_t uartSendChar) {
+while (!TXSTA1bits.TRMT) {
+};
+TXREG1 = uartSendChar;
+}
+
+char eusart_getch(void) {
+uint8_t uartReceiveChar = RCREG1;
+while (!PIR1bits.RC1IF) {
+};
+return uartReceiveChar;
+}
+
+void main() {
 
 MXK_Init();
 
+if
+(MXK_BlockSwitchTo
+(eMXK_HMI)) {
+Console_Init();
+HMI_Init();
+LCD_Init();
+if
+(MXK_Release())
+MXK_Dequeue();
+
+}
+
+
+TRISCbits.TRISC6 = 0;
+TRISCbits.TRISC7 = 1;
+
+
+TXSTA1 = 0b00100000;
+
+# 67
+RCSTA1 = 0b10010000;
+
+# 79
+BAUDCON1bits.DTRXP = 0;
+BAUDCON1bits.SCKP = 0;
+BAUDCON1bits.WUE = 0;
+BAUDCON1bits.ABDEN = 0;
+
+
+TXSTA1bits.BRGH = 1;
+BAUDCON1bits.BRG16 = 0;
+
+SPBRG1 = 13;
+
+ISR_Enable();
+
+
+eusart_putch(128);
+eusart_putch(132);
+
+for(;;) {
+eusart_putch();
+eusart_getch();
 
 if (MXK_BlockSwitchTo(eMXK_HMI)) {
 
 if (MXK_Release())
 MXK_Dequeue();
 }
-
-# 59
-for(;;)
-{
-
-# 76
-if (MXK_BlockSwitchTo(eMXK_HMI)) {
-
-if (MXK_Release())
-MXK_Dequeue();
 }
 }
-}
+
